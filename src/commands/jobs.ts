@@ -1201,6 +1201,15 @@ export async function registerBuiltinHandlers(worker: MinionWorker, engine: Brai
   worker.register('subagent_aggregator', subagentAggregatorHandler);
   process.stderr.write('[minion worker] subagent handlers enabled\n');
 
+  // Sino-StockBrain: sense-layer recipe handlers (deterministic HTTP pulls,
+  // no LLM cost, no PROTECTED gate). Each handler writes markdown into
+  // <brain_dir>/<category>/ for `gbrain sync` to pick up on next pass.
+  {
+    const { twseDailyQuotesHandler } = await import('../core/minions/handlers/twse-daily-quotes.ts');
+    worker.register('twse-daily-quotes', twseDailyQuotesHandler);
+    process.stderr.write('[minion worker] twse-daily-quotes handler enabled\n');
+  }
+
   // ============================================================
   // v0.36+ brain-health-100 wave: 11 new handlers for autonomous
   // remediation via `gbrain doctor --remediate` and autopilot.

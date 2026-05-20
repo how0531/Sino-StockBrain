@@ -1,18 +1,34 @@
 storage:
   # Directories that are version-controlled — human-curated, edited by hand.
   db_tracked:
-    - people/
-    - companies/
-    - deals/
-    - concepts/
-    - yc/
+    # --- generic gbrain ---
+    - people/                    # 分析師、基金經理人、CEO、IR 窗口
+    - companies/                 # 非上市公司、上下游廠商
+    - deals/                     # M&A、私募、IPO 案
+    - concepts/                  # 投資概念（P/E、margin financing、市場結構）
     - ideas/
     - projects/
+
+    # --- sino-stockbrain additions ---
+    - tickers/                   # 個股基本面（公司、產業、歷史里程碑）
+    - sectors/                   # 產業分類（半導體、車用、生技…）
+    - themes/                    # 主題（AI 算力、CoWoS、低軌衛星、車用電子）
+    - playbooks/                 # 分析師的研究筆記、每日日報草稿
+    - client-prep/               # 合規預檢通過、可對外推送的內容池
 
   # Directories persisted via the brain database only — bulk machine-generated
   # content. .gitignored automatically by `gbrain sync`. Restorable from the DB
   # via `gbrain export --restore-only`.
   db_only:
+    # --- generic gbrain ---
     - media/x/
     - media/articles/
     - meetings/transcripts/
+
+    # --- sino-stockbrain additions (bulk machine-generated) ---
+    - prices/                    # 每日 OHLCV (TWSE / NASDAQ / NYSE)
+    - news/                      # 財經新聞 RSS
+    - filings/                   # 公告、財報、SEC 8-K/10-K
+    - earnings-calls/            # 法說會逐字稿
+    - analyst-notes/             # 賣方研報
+    - institutional-flow/        # 三大法人買賣超
