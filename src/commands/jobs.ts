@@ -1214,6 +1214,11 @@ export async function registerBuiltinHandlers(worker: MinionWorker, engine: Brai
     worker.register('twse-institutional-flow', twseInstitutionalFlowHandler);
     process.stderr.write('[minion worker] twse-institutional-flow handler enabled\n');
   }
+  {
+    const { newsIngestHandler } = await import('../core/minions/handlers/news-ingest.ts');
+    worker.register('news-ingest', newsIngestHandler);
+    process.stderr.write('[minion worker] news-ingest handler enabled\n');
+  }
 
   // ============================================================
   // v0.36+ brain-health-100 wave: 11 new handlers for autonomous
