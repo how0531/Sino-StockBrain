@@ -1,0 +1,10 @@
+{"intent":"今天最熱的股票","expected_skill":"daily-market-digest"}
+{"intent":"幫我寫今天的市場日報","expected_skill":"daily-market-digest"}
+{"intent":"今日熱門個股清單","expected_skill":"daily-market-digest"}
+{"intent":"盤後分析","expected_skill":"daily-market-digest"}
+{"intent":"daily market digest","expected_skill":"daily-market-digest"}
+{"intent":"今天 brain 重點","expected_skill":"daily-market-digest"}
+{"intent":"國巨最近怎麼樣","expected_skill":"query","ambiguous_with":["daily-market-digest"]}
+{"intent":"2330 法說會內容","expected_skill":"query","ambiguous_with":["daily-market-digest"]}
+{"intent":"今天我要做什麼","expected_skill":"daily-task-prep","ambiguous_with":["daily-market-digest"]}
+{"intent":"morning prep","expected_skill":"daily-task-prep"}
