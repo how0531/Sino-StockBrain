@@ -1,17 +1,17 @@
 ---
 id: twse-daily-quotes
 name: TWSE Daily Quotes
-version: 0.1.0
-description: 每日收盤後拉取台灣證交所所有上市股票的 OHLCV，寫入 brain 作為 anomaly detection 與 heat_score 的原始輸入。
+version: 0.2.0
+description: 每日收盤後拉取台股 OHLCV，寫入 brain 作為 anomaly detection 與 heat_score 的原始輸入。透過 StockDataSource adapter 支援 mock / twse-openapi / 未來客戶 DB。
 category: sense
 requires: []
 secrets: []
 health_checks:
   - type: http
     url: "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
-    label: "TWSE Open API"
+    label: "TWSE Open API (only used when source=twse-openapi)"
 setup_time: 5 min
-cost_estimate: "$0 (TWSE Open API 免費、無需 API key)"
+cost_estimate: "$0 (mock mode); $0 (twse-openapi mode); 視客戶 DB 而定"
 ---
 
 # TWSE Daily Quotes — 台股每日收盤行情拉取
@@ -23,7 +23,7 @@ cost_estimate: "$0 (TWSE Open API 免費、無需 API key)"
 ## Architecture
 
 ```
-TWSE OpenAPI (免費 GET，無需 token)
+Stock Data Source (mock | twse-openapi | future: customer-db)
   ↓
 gbrain Minion job (name=twse-daily-quotes)
   ↓ filter by watchlist (tickers/ 下已有頁面的 ticker_code)
@@ -32,6 +32,20 @@ Brain Repo:
   prices/twse/YYYY-MM-DD/2330.md   ← 每檔個股 + 該日資料
   prices/twse/YYYY-MM-DD/_summary.md ← 當日全市場異常清單
 ```
+
+## Source Modes
+
+`--params '{"source":"mock"}'`（**預設**，未來換真實 DB 前的開發模式）
+- Deterministic simulated data — 同 (ticker, date) 永遠回相同數字
+- 統計屬性逼真：log-normal volume、normal returns、~5% 機率有 3σ event
+- 用 `tickers/` 下的個股清單，沒在 baseline 表的 ticker 走 default
+
+`--params '{"source":"twse-openapi"}'`（用 TWSE Open API）
+- 真實當日收盤資料，免費，無需 token
+- 注意：盤中無資料，要盤中即時得另接 Fugle / 元大 API
+
+未來會加 `'customer-db'`：見 `src/core/data-sources/stock-data.ts` 介面與
+`mock-stock-data.ts` 的實作範本，新增一個檔案 + factory 一個 case 即可。
 
 ## Why a Minion job, not a shell cron
 

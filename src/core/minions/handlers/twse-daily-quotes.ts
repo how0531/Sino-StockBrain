@@ -1,71 +1,49 @@
 /**
  * `twse-daily-quotes` job handler.
  *
- * Pulls daily OHLCV for every TWSE-listed stock from the free TWSE Open API,
+ * Pulls daily OHLCV for every TWSE-listed stock through the `StockDataSource`
+ * adapter (default: mock; switchable to twse-openapi or future customer-db),
  * filters to the operator's watchlist (the tickers/ directory), and writes
  * one markdown snapshot per ticker under
  * `<brain_dir>/prices/twse/<YYYY-MM-DD>/<code>.md` plus a `_summary.md`.
  *
- * Why a handler instead of a shell cron:
- *   - Stall detection + automatic retry on transient HTTP failures
- *   - Idempotency-key dedup (`twse-daily-quotes:<YYYY-MM-DD>`)
- *   - Wires into `gbrain jobs list` / `--follow` for observability
+ * Why an adapter rather than direct HTTP: the customer's real ticker DB will
+ * eventually back this. Adapter pattern lets us keep the handler stable
+ * across the swap — only the `source` param changes.
  *
  * What this handler does NOT do (kept intentionally narrow):
  *   - No DB writes. Output goes to disk; `gbrain sync` ingests it next pass.
- *   - No anomaly detection. That's the dream cycle's job (find_anomalies +
- *     market-heat phase, both pure functions over the snapshots written here).
- *   - No call to LLMs. Deterministic data pull only.
+ *   - No anomaly detection. That's the dream cycle's job.
+ *   - No LLM calls.
  *
- * Trust model: this is a sense-layer recipe handler. It only HTTP-GETs
- * a public endpoint and writes inside `brain_dir`. Job submission is
- * NOT in PROTECTED_JOB_NAMES — fine for any caller, no RCE surface.
+ * Trust model: NOT in PROTECTED_JOB_NAMES — no RCE surface, no LLM cost.
  */
 
-import { mkdirSync, readdirSync, writeFileSync, existsSync } from 'node:fs';
+import { mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import type { MinionJobContext } from '../types.ts';
 import { UnrecoverableError } from '../types.ts';
-
-/** TWSE Open API — daily summary of every listed stock. Free, no auth. */
-const TWSE_STOCK_DAY_ALL_URL =
-  'https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL';
-
-/** Max time we wait for the TWSE response before failing the attempt.
- *  Endpoint usually responds <2s; 15s is comfortable headroom. */
-const FETCH_TIMEOUT_MS = 15_000;
+import type { DailyQuote, MarketSnapshot } from '../../data-sources/stock-data.ts';
+import { resolveStockDataSource } from '../../data-sources/stock-data.ts';
+import { readWatchlist } from '../../data-sources/mock-stock-data.ts';
 
 export interface TwseDailyQuotesParams {
   /** Brain repo absolute path. REQUIRED. */
   brain_dir: string;
   /** Target trading day. Accepts 'today' or 'YYYY-MM-DD'. Default 'today'. */
   date?: string;
-  /** When true, only write snapshots for tickers that already have a
-   *  `tickers/<code>.md` page (i.e. the operator's watchlist). Default true. */
+  /** Restrict output to tickers/<code>.md members. Default true (saves disk). */
   watchlist_only?: boolean;
-  /** Override URL for tests. */
-  source_url?: string;
-}
-
-/** What TWSE Open API returns (one entry per listed stock).
- *  Endpoint is documented at https://openapi.twse.com.tw/. */
-interface TwseQuoteRow {
-  Code: string;          // 證券代號 (e.g. "2330")
-  Name: string;          // 證券名稱 (中文)
-  TradeVolume: string;   // 成交股數
-  TradeValue: string;    // 成交金額 (元)
-  OpeningPrice: string;
-  HighestPrice: string;
-  LowestPrice: string;
-  ClosingPrice: string;
-  Change: string;        // 漲跌價差 (帶 +/- 符號)
-  Transaction: string;   // 成交筆數
+  /** Data source: 'mock' | 'twse-openapi'. Default 'mock' until the
+   *  customer DB adapter lands. */
+  source?: string;
 }
 
 export interface TwseDailyQuotesResult {
   status: 'ok' | 'skipped';
   reason?: string;
   date: string;
+  source: string;
   rows_fetched: number;
   rows_written: number;
   output_dir: string;
@@ -75,71 +53,72 @@ export async function twseDailyQuotesHandler(
   ctx: MinionJobContext,
 ): Promise<TwseDailyQuotesResult> {
   const params = validateParams(ctx.data);
-  const targetDate = resolveDate(params.date ?? 'today');
+  const date = resolveDate(params.date ?? 'today');
+  const sourceName = params.source ?? 'mock';
 
-  // Weekend short-circuit. Cheap to detect, avoids burning the rate-limit
-  // budget on days TWSE returns yesterday's data.
-  const dow = new Date(targetDate + 'T08:00:00+08:00').getUTCDay();
-  if (dow === 0 || dow === 6) {
+  if (isNonTradingDay(date)) {
     return {
       status: 'skipped',
       reason: 'non-trading day (weekend)',
-      date: targetDate,
+      date,
+      source: sourceName,
       rows_fetched: 0,
       rows_written: 0,
       output_dir: '',
     };
   }
 
-  const outputDir = join(params.brain_dir, 'prices', 'twse', targetDate);
+  const outputDir = join(params.brain_dir, 'prices', 'twse', date);
   mkdirSync(outputDir, { recursive: true });
 
   const watchlist = params.watchlist_only !== false
-    ? loadWatchlist(params.brain_dir)
+    ? readWatchlist(params.brain_dir)
     : null;
 
   await ctx.log(
-    `[twse-daily-quotes] fetching ${TWSE_STOCK_DAY_ALL_URL} for ${targetDate}` +
-    (watchlist ? ` (watchlist=${watchlist.size} tickers)` : ' (all)'),
+    `[twse-daily-quotes] source=${sourceName} date=${date}` +
+    (watchlist ? ` watchlist=${watchlist.size}` : ' (all tickers)'),
   );
 
-  const rows = await fetchQuotes(params.source_url ?? TWSE_STOCK_DAY_ALL_URL, ctx.signal);
+  const dataSource = await resolveStockDataSource(sourceName, {
+    brain_dir: params.brain_dir,
+  });
+  const snapshot: MarketSnapshot = await dataSource.getDailySnapshot('TWSE', date);
 
   let written = 0;
-  const writtenRows: TwseQuoteRow[] = [];
-  for (const row of rows) {
+  const writtenRows: DailyQuote[] = [];
+  for (const quote of snapshot.quotes) {
     if (ctx.signal.aborted) throw new Error('aborted');
-    if (watchlist && !watchlist.has(row.Code)) continue;
+    if (watchlist && !watchlist.has(quote.ticker)) continue;
 
-    const filePath = join(outputDir, `${row.Code}.md`);
-    // Skip-if-exists is the cheap idempotency layer for resumes mid-run.
-    // The job-level idempotency_key handles whole-day re-submits.
-    if (existsSync(filePath)) continue;
+    const filePath = join(outputDir, `${quote.ticker}.md`);
+    if (existsSync(filePath)) continue; // skip-if-exists for cheap resume
 
-    writeFileSync(filePath, renderQuoteMarkdown(row, targetDate), 'utf8');
-    writtenRows.push(row);
+    writeFileSync(filePath, renderQuoteMarkdown(quote, snapshot.source), 'utf8');
+    writtenRows.push(quote);
     written++;
   }
 
-  // Always rewrite summary so re-runs reflect the full current state.
+  // Always rewrite summary so it reflects current full snapshot.
   const summaryPath = join(outputDir, '_summary.md');
-  writeFileSync(summaryPath, renderSummary(rows, writtenRows, targetDate), 'utf8');
+  writeFileSync(summaryPath, renderSummary(snapshot, writtenRows), 'utf8');
 
   await ctx.log(
-    `[twse-daily-quotes] wrote ${written} ticker snapshots + summary to ${outputDir}`,
+    `[twse-daily-quotes] wrote ${written} snapshots + summary to ${outputDir}`,
   );
 
   return {
     status: 'ok',
-    date: targetDate,
-    rows_fetched: rows.length,
+    date,
+    source: snapshot.source,
+    rows_fetched: snapshot.quotes.length,
     rows_written: written,
     output_dir: outputDir,
   };
 }
 
 // ---------------------------------------------------------------------------
-// helpers (kept private to this handler)
+// helpers
 // ---------------------------------------------------------------------------
 
 function validateParams(data: Record<string, unknown>): TwseDailyQuotesParams {
@@ -154,22 +133,19 @@ function validateParams(data: Record<string, unknown>): TwseDailyQuotesParams {
   if (data.watchlist_only !== undefined && typeof data.watchlist_only !== 'boolean') {
     throw new UnrecoverableError('twse-daily-quotes: "watchlist_only" must be boolean');
   }
-  if (data.source_url !== undefined && typeof data.source_url !== 'string') {
-    throw new UnrecoverableError('twse-daily-quotes: "source_url" must be a string');
+  if (data.source !== undefined && typeof data.source !== 'string') {
+    throw new UnrecoverableError('twse-daily-quotes: "source" must be a string');
   }
-  // Explicit construction beats a wide cast — every field is type-checked above,
-  // so this also serves as a structural contract test.
   return {
     brain_dir: data.brain_dir,
     date: data.date as string | undefined,
     watchlist_only: data.watchlist_only as boolean | undefined,
-    source_url: data.source_url as string | undefined,
+    source: data.source as string | undefined,
   };
 }
 
 function resolveDate(input: string): string {
   if (input === 'today') {
-    // Use Asia/Taipei date — TWSE is a Taipei market.
     const tw = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Taipei' }));
     const y = tw.getFullYear();
     const m = String(tw.getMonth() + 1).padStart(2, '0');
@@ -182,126 +158,93 @@ function resolveDate(input: string): string {
   return input;
 }
 
-/** Walk tickers/ for `<CODE>.md` files. Returns the set of CODE strings.
- *  Skips the `_template.md` placeholder and any non-md files. */
-function loadWatchlist(brainDir: string): Set<string> {
-  const tickersDir = join(brainDir, 'tickers');
-  if (!existsSync(tickersDir)) return new Set();
-  const codes = new Set<string>();
-  for (const name of readdirSync(tickersDir)) {
-    if (!name.endsWith('.md')) continue;
-    if (name.startsWith('_')) continue;
-    const code = name.replace(/\.md$/, '');
-    // TWSE codes are numeric (4 digits typically). US tickers are
-    // alphabetic and won't match here — fine, watchlist filter is
-    // strictly per-exchange.
-    if (/^\d{3,6}$/.test(code)) codes.add(code);
-  }
-  return codes;
+function isNonTradingDay(date: string): boolean {
+  // Weekend short-circuit. Holiday calendar (TWSE-published) not wired yet.
+  const dow = new Date(date + 'T08:00:00+08:00').getUTCDay();
+  return dow === 0 || dow === 6;
 }
 
-async function fetchQuotes(url: string, signal: AbortSignal): Promise<TwseQuoteRow[]> {
-  // Compose timeout with the job-level abort.
-  const timeoutCtrl = new AbortController();
-  const timer = setTimeout(() => timeoutCtrl.abort(new Error('timeout')), FETCH_TIMEOUT_MS);
-  const onJobAbort = () => timeoutCtrl.abort(signal.reason);
-  signal.addEventListener('abort', onJobAbort, { once: true });
-
-  try {
-    const res = await fetch(url, { signal: timeoutCtrl.signal });
-    if (!res.ok) {
-      throw new Error(`TWSE Open API returned HTTP ${res.status} ${res.statusText}`);
-    }
-    const json = (await res.json()) as unknown;
-    if (!Array.isArray(json)) {
-      throw new Error('TWSE Open API: expected JSON array, got ' + typeof json);
-    }
-    return json as TwseQuoteRow[];
-  } finally {
-    clearTimeout(timer);
-    signal.removeEventListener('abort', onJobAbort);
-  }
-}
-
-function renderQuoteMarkdown(row: TwseQuoteRow, date: string): string {
-  const close = parseFloat(row.ClosingPrice);
-  const open = parseFloat(row.OpeningPrice);
-  const changePct = open > 0 ? ((close - open) / open) * 100 : 0;
-  const tickerLink = `[[tickers/${row.Code}]]`;
-  // Frontmatter uses YAML-safe numeric strings (NaN → null).
-  const num = (s: string): string => {
-    const n = parseFloat(s);
-    return Number.isFinite(n) ? String(n) : 'null';
-  };
+function renderQuoteMarkdown(quote: DailyQuote, sourceName: string): string {
   return `---
 type: price_snapshot
-slug: prices/twse/${date}/${row.Code}
-ticker: "${row.Code}"
-name: "${escapeYamlString(row.Name)}"
+slug: prices/twse/${quote.date}/${quote.ticker}
+ticker: "${quote.ticker}"
+name: "${escapeYamlString(quote.name)}"
 exchange: TWSE
-date: ${date}
-source: twse-openapi
+date: ${quote.date}
+source: ${sourceName}
 ohlcv:
-  open: ${num(row.OpeningPrice)}
-  high: ${num(row.HighestPrice)}
-  low: ${num(row.LowestPrice)}
-  close: ${num(row.ClosingPrice)}
-  volume: ${num(row.TradeVolume)}
-  trades: ${num(row.Transaction)}
-  turnover: ${num(row.TradeValue)}
-change_pct: ${changePct.toFixed(2)}
+  open: ${quote.open}
+  high: ${quote.high}
+  low: ${quote.low}
+  close: ${quote.close}
+  prev_close: ${quote.prev_close}
+  volume: ${quote.volume}
+  trades: ${quote.trades}
+  turnover: ${quote.turnover}
+change: ${quote.change}
+change_pct: ${quote.change_pct}
 ---
 
-# ${row.Name} (${row.Code}) — ${date}
+# ${quote.name} (${quote.ticker}) — ${quote.date}
 
-收盤 **${row.ClosingPrice}** TWD（漲跌 ${row.Change}，當日 ${changePct.toFixed(2)}%）。
-成交量 ${row.TradeVolume} 股 / ${row.Transaction} 筆。
+收盤 **${quote.close}**（漲跌 ${quote.change >= 0 ? '+' : ''}${quote.change}，當日 ${quote.change_pct >= 0 ? '+' : ''}${quote.change_pct}%）。
+成交量 ${quote.volume.toLocaleString()} 股 / ${quote.trades.toLocaleString()} 筆，成交金額 ${(quote.turnover / 1e8).toFixed(2)} 億 TWD。
 
-關聯：${tickerLink}
+關聯：[[tickers/${quote.ticker}]]
 `;
 }
 
-function renderSummary(
-  all: TwseQuoteRow[],
-  written: TwseQuoteRow[],
-  date: string,
-): string {
-  const up = all.filter((r) => parseFloat(r.Change) > 0).length;
-  const down = all.filter((r) => parseFloat(r.Change) < 0).length;
+function renderSummary(snapshot: MarketSnapshot, written: DailyQuote[]): string {
+  const all = snapshot.quotes;
+  const up = all.filter((r) => r.change > 0).length;
+  const down = all.filter((r) => r.change < 0).length;
   const flat = all.length - up - down;
-  const totalTurnover = all.reduce((s, r) => s + (parseFloat(r.TradeValue) || 0), 0);
-  // 成交量 top 20 in absolute volume terms.
-  const top = [...all]
-    .filter((r) => parseFloat(r.TradeVolume) > 0)
-    .sort((a, b) => parseFloat(b.TradeVolume) - parseFloat(a.TradeVolume))
-    .slice(0, 20);
+  const totalTurnover = all.reduce((s, r) => s + r.turnover, 0);
 
-  const topLines = top
-    .map((r) => `- ${r.Name} (${r.Code}) — vol=${r.TradeVolume}, close=${r.ClosingPrice}, chg=${r.Change}`)
-    .join('\n');
+  const topByVolume = [...all]
+    .sort((a, b) => b.volume - a.volume)
+    .slice(0, 10);
 
-  const writtenLinks = written
-    .map((r) => `- [[tickers/${r.Code}]] ${r.Name} — close ${r.ClosingPrice}, chg ${r.Change}`)
-    .join('\n');
+  const topGainers = [...all]
+    .sort((a, b) => b.change_pct - a.change_pct)
+    .slice(0, 5);
+
+  const topLosers = [...all]
+    .sort((a, b) => a.change_pct - b.change_pct)
+    .slice(0, 5);
+
+  const fmtRow = (r: DailyQuote): string =>
+    `- [[tickers/${r.ticker}]] ${r.name} — close ${r.close}, ${r.change_pct >= 0 ? '+' : ''}${r.change_pct}%, vol ${r.volume.toLocaleString()}`;
+
+  const writtenLinks = written.map(fmtRow).join('\n');
 
   return `---
 type: market_summary
-slug: prices/twse/${date}/_summary
-date: ${date}
+slug: prices/twse/${snapshot.date}/_summary
+date: ${snapshot.date}
 market: TWSE
-source: twse-openapi
+source: ${snapshot.source}
 ---
 
-# TWSE ${date} Daily Summary
+# TWSE ${snapshot.date} Daily Summary
 
 - 漲跌家數：${up} 漲 / ${down} 跌 / ${flat} 平盤
 - 總成交金額：${(totalTurnover / 1e8).toFixed(2)} 億 TWD
-- API 回傳筆數：${all.length}
+- 來源筆數：${all.length}
 - 寫入 watchlist 筆數：${written.length}
 
-## Top 20 by Volume
+## Top 10 by Volume
 
-${topLines || '(empty)'}
+${topByVolume.map(fmtRow).join('\n') || '(empty)'}
+
+## Top 5 Gainers
+
+${topGainers.map(fmtRow).join('\n') || '(empty)'}
+
+## Top 5 Losers
+
+${topLosers.map(fmtRow).join('\n') || '(empty)'}
 
 ## Watchlist Snapshots Written
 
