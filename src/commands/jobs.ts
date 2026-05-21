@@ -1220,6 +1220,11 @@ export async function registerBuiltinHandlers(worker: MinionWorker, engine: Brai
     process.stderr.write('[minion worker] news-ingest handler enabled\n');
   }
   {
+    const { rssNewsFetchHandler } = await import('../core/minions/handlers/rss-news-fetch.ts');
+    worker.register('rss-news-fetch', rssNewsFetchHandler);
+    process.stderr.write('[minion worker] rss-news-fetch handler enabled\n');
+  }
+  {
     const { marketHeatHandler } = await import('../core/minions/handlers/market-heat.ts');
     worker.register('market-heat', marketHeatHandler);
     process.stderr.write('[minion worker] market-heat handler enabled\n');

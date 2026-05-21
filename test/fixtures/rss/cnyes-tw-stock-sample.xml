@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>財經新聞 - 台股</title>
+    <link>https://news.example-finance.com/rss/cat/tw_stock</link>
+    <description>台股即時新聞</description>
+    <language>zh-TW</language>
+    <item>
+      <title><![CDATA[國巨MLCC報價傳調漲 車用拉貨潮再起]]></title>
+      <link>https://news.example-finance.com/news/id/5483921</link>
+      <description><![CDATA[<p>被動元件龍頭國巨 (2327) 近期傳出對車用 MLCC 客戶開出新一輪報價，漲幅約 5-8%。華新科、奇力新等同業亦傳跟進。</p><p>法人指出，歐美電動車與 ADAS 滲透率持續攀升，車用被動元件單機用量較消費性產品高 3-5 倍，是這波報價調整的主因。</p>]]></description>
+      <pubDate>Wed, 20 May 2026 08:30:00 +0800</pubDate>
+      <guid isPermaLink="false">5483921</guid>
+    </item>
+    <item>
+      <title><![CDATA[外資連3日買超台積電 看好AI需求遞延效應]]></title>
+      <link>https://news.example-finance.com/news/id/5483955</link>
+      <description><![CDATA[<p>外資及陸資今日續站買方，買超台積電逾 5 萬張，連續第 3 個交易日淨買超。NVIDIA 上週法說會釋出 Blackwell 平台拉貨優於預期訊息，台積電作為唯一 4nm/3nm 代工廠直接受惠。</p><p>CoWoS 產能擴張進度方面，台積電已將 2025 年月產能目標上修。台達電在 AI 伺服器電源市佔率約 50%。</p>]]></description>
+      <pubDate>Wed, 20 May 2026 10:15:00 +0800</pubDate>
+      <guid isPermaLink="false">5483955</guid>
+    </item>
+    <item>
+      <title><![CDATA[日電貿法說會：被動元件下半年能見度提升]]></title>
+      <link>https://news.example-finance.com/news/id/5484012</link>
+      <description><![CDATA[<p>通路商日電貿今日召開法說會，董事長表示被動元件下半年能見度較上半年明顯提升。原廠如國巨、華新科對車用與工控需求拉貨積極。</p><p>毛利率方面，日電貿 Q2 自結毛利率回升，存貨周轉天數降至 90 天以下，已脫離庫存高點。</p>]]></description>
+      <pubDate>Wed, 20 May 2026 14:05:00 +0800</pubDate>
+      <guid isPermaLink="false">5484012</guid>
+    </item>
+    <item>
+      <title>大立光9月營收創高 iPhone拉貨優於預期</title>
+      <link>https://news.example-finance.com/news/id/5484099</link>
+      <description>大立光公布合併營收創歷史新高，Apple iPhone 新機備貨節奏較往年提前，潛望式長焦鏡頭良率穩定。</description>
+      <pubDate>Wed, 20 May 2026 16:40:00 +0800</pubDate>
+      <guid isPermaLink="false">5484099</guid>
+    </item>
+  </channel>
+</rss>
