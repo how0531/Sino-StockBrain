@@ -54,4 +54,4 @@ parents: []
 - 每季 [[tickers/3090]] 法說 — 通路商視角，下游需求最即時
 - 中國 618、雙 11、農曆年前手機品牌拉貨
 - 歐美車廠庫存指引 (Ford、GM、VW 季度法說)
-- AI server 機櫃出貨節奏 (從 [[tickers/NVDA]] 反推)
+- AI server 機櫃出貨節奏 (從 [[tickers/nvda]] 反推)

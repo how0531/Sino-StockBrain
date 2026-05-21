@@ -202,7 +202,7 @@ function readFlowSnapshots(dir: string): Map<string, number> {
 function readNewsMentions(summaryPath: string): Map<string, number> {
   const out = new Map<string, number>();
   const raw = readFileSync(summaryPath, 'utf8');
-  const re = /\[\[tickers\/([A-Z0-9]+)\]\]\s*—\s*提及\s*(\d+)\s*次/g;
+  const re = /\[\[tickers\/([A-Za-z0-9]+)\]\]\s*—\s*提及\s*(\d+)\s*次/g;
   let m: RegExpExecArray | null;
   while ((m = re.exec(raw)) !== null) {
     const ticker = m[1]!;

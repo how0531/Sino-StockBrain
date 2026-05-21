@@ -22,14 +22,14 @@ watchlist_tier: core    # core / extended / experimental（決定 cron 抓的頻
 
 ## Business Segments
 
-- **<事業群 A>** — 佔營收 X%，主要客戶 [[tickers/AAPL]]、[[tickers/NVDA]]
+- **<事業群 A>** — 佔營收 X%，主要客戶 [[tickers/aapl]]、[[tickers/nvda]]
 - **<事業群 B>** — 佔營收 Y%
 
 ## Supply Chain & Relationships
 
 - 供應商：[[companies/asml]]（曝光機）、[[tickers/3008]] (大立光，光學)
-- 客戶：[[tickers/NVDA]]、[[tickers/AAPL]]、[[tickers/AMD]]
-- 競爭對手：[[tickers/005930]] (Samsung)、[[tickers/INTC]]
+- 客戶：[[tickers/nvda]]、[[tickers/aapl]]、[[tickers/amd]]
+- 競爭對手：[[tickers/005930]] (Samsung)、[[tickers/intc]]
 - 同業：[[tickers/2454]] (聯發科)
 
 ## Key Catalysts to Watch

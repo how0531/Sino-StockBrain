@@ -15,7 +15,7 @@ parents:
 
 - [[tickers/2330]] (TSMC) — 全球龍頭，先進製程獨佔
 - [[tickers/2303]] (UMC) — 成熟製程
-- [[tickers/INTC]] (Intel Foundry Services) — 後進者
+- [[tickers/intc]] (Intel Foundry Services) — 後進者
 - Samsung Foundry (非單獨上市)
 - SMIC (中芯國際，港股 0981)
 

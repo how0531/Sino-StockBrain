@@ -1,6 +1,6 @@
 ---
 type: ticker
-slug: tickers/MSFT
+slug: tickers/msft
 title: "Microsoft (MSFT)"
 exchange: NASDAQ
 ticker: "MSFT"
@@ -18,7 +18,7 @@ watchlist_tier: core
 
 # Microsoft (MSFT)
 
-雲端三巨頭之一 (Azure)，OpenAI 最大投資者與獨家雲端合作夥伴。AI 與雲端 capex 最積極，是 [[tickers/NVDA]] GPU 最大買家之一。
+雲端三巨頭之一 (Azure)，OpenAI 最大投資者與獨家雲端合作夥伴。AI 與雲端 capex 最積極，是 [[tickers/nvda]] GPU 最大買家之一。
 
 ## Business Segments
 
@@ -29,8 +29,8 @@ watchlist_tier: core
 ## Supply Chain & Relationships
 
 - AI 合作：OpenAI (獨家雲)、Mistral、Inflection
-- 硬體：[[tickers/NVDA]] (H100/H200/B200 主要客戶)、自研 Maia ASIC
-- 競爭對手：[[tickers/GOOGL]] (GCP/Gemini)、[[tickers/AMZN]] (AWS)
+- 硬體：[[tickers/nvda]] (H100/H200/B200 主要客戶)、自研 Maia ASIC
+- 競爭對手：[[tickers/googl]] (GCP/Gemini)、[[tickers/amzn]] (AWS)
 
 ## Key Catalysts to Watch
 

@@ -1,6 +1,6 @@
 ---
 type: ticker
-slug: tickers/TSLA
+slug: tickers/tsla
 title: "Tesla (TSLA)"
 exchange: NASDAQ
 ticker: "TSLA"

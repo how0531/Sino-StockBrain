@@ -1,6 +1,6 @@
 ---
 type: ticker
-slug: tickers/AAPL
+slug: tickers/aapl
 title: "Apple (AAPL)"
 exchange: NASDAQ
 ticker: "AAPL"

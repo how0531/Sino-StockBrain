@@ -1,6 +1,6 @@
 ---
 type: ticker
-slug: tickers/NVDA
+slug: tickers/nvda
 title: "NVIDIA (NVDA)"
 exchange: NASDAQ
 ticker: "NVDA"
@@ -32,7 +32,7 @@ AI 算力時代的核心受益者。GPU + CUDA + 系統 (HGX/DGX/GB200) + 軟體
 - 晶圓代工：[[tickers/2330]] (TSMC) 4nm/3nm 獨家
 - CoWoS 封裝：[[tickers/2330]] 為主，產能即出貨上限
 - 系統組裝：[[tickers/2317]] (鴻海)、Quanta、Wiwynn
-- 競爭對手：[[tickers/AMD]] (MI300X)、[[tickers/INTC]] (Gaudi)、自研 ASIC (Google TPU、AWS Trainium)
+- 競爭對手：[[tickers/amd]] (MI300X)、[[tickers/intc]] (Gaudi)、自研 ASIC (Google TPU、AWS Trainium)
 
 ## Key Catalysts to Watch
 

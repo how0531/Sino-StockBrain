@@ -1,6 +1,6 @@
 ---
 type: ticker
-slug: tickers/GOOGL
+slug: tickers/googl
 title: "Alphabet (GOOGL)"
 exchange: NASDAQ
 ticker: "GOOGL"
@@ -28,8 +28,8 @@ watchlist_tier: core
 
 ## Supply Chain & Relationships
 
-- 自研 TPU (晶圓由 [[tickers/2330]] 代工)，減少 [[tickers/NVDA]] 依賴
-- 競爭對手：[[tickers/MSFT]] (搜尋廣告 + 雲)、[[tickers/AMZN]] (AWS)、[[tickers/META]] (廣告)
+- 自研 TPU (晶圓由 [[tickers/2330]] 代工)，減少 [[tickers/nvda]] 依賴
+- 競爭對手：[[tickers/msft]] (搜尋廣告 + 雲)、[[tickers/amzn]] (AWS)、[[tickers/meta]] (廣告)
 - AI 競爭：OpenAI / Anthropic / xAI
 
 ## Key Catalysts to Watch

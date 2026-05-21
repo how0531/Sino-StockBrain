@@ -7,21 +7,21 @@ market_scope: US
 
 # 美國 Mega Cap 科技股
 
-俗稱 Magnificent 7 / Mag7：[[tickers/AAPL]]、[[tickers/MSFT]]、[[tickers/GOOGL]]、Amazon、[[tickers/NVDA]]、Meta、[[tickers/TSLA]]。佔 S&P 500 約 30% 權重，是美股大盤主要驅動力。
+俗稱 Magnificent 7 / Mag7：[[tickers/aapl]]、[[tickers/msft]]、[[tickers/googl]]、Amazon、[[tickers/nvda]]、Meta、[[tickers/tsla]]。佔 S&P 500 約 30% 權重，是美股大盤主要驅動力。
 
 ## Constituents
 
-- [[tickers/AAPL]] (Apple)
-- [[tickers/MSFT]] (Microsoft)
-- [[tickers/GOOGL]] (Alphabet)
-- [[tickers/NVDA]] (NVIDIA)
-- [[tickers/TSLA]] (Tesla)
+- [[tickers/aapl]] (Apple)
+- [[tickers/msft]] (Microsoft)
+- [[tickers/googl]] (Alphabet)
+- [[tickers/nvda]] (NVIDIA)
+- [[tickers/tsla]] (Tesla)
 - AMZN (Amazon) — 待建頁
 - META (Meta Platforms) — 待建頁
 
 ## Key Drivers
 
-- **AI Capex 競賽** — Microsoft / Google / Meta / Amazon 對 [[tickers/NVDA]] 的採購規模
+- **AI Capex 競賽** — Microsoft / Google / Meta / Amazon 對 [[tickers/nvda]] 的採購規模
 - **公司護城河差異化** — 搜尋廣告 vs 雲服務 vs 終端硬體
 - **聯準會利率政策** — 對高估值科技股估值倍數敏感
 - **反壟斷訴訟** — Google、Apple、Amazon 都有未結案
