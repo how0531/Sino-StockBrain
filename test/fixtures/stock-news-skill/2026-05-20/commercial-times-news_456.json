@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "article_id": "commercial-times-news_456",
+  "source_name": "commercial-times",
+  "published_at": "2026-05-20T10:15:00+08:00",
+  "title": "外資連 3 日買超台積電，看好 AI 需求",
+  "body": "外資及陸資今日續站買方，買超台積電逾 5 萬張，連續第 3 個交易日淨買超。NVIDIA 上週法說會釋出 Blackwell 平台拉貨優於預期訊息，台積電作為唯一 4nm/3nm 代工廠直接受惠。",
+  "url": "https://ctee.com.tw/news/stocks/12345",
+  "hint_tickers": ["2330", "NVDA"],
+  "hint_themes": ["ai-infrastructure"]
+}

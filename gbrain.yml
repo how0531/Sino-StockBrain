@@ -27,7 +27,8 @@ storage:
 
     # --- sino-stockbrain additions (bulk machine-generated) ---
     - prices/                    # 每日 OHLCV (TWSE / NASDAQ / NYSE)
-    - news/                      # 財經新聞 RSS
+    - news-raw/                  # 第三方 skill 抓的原始 JSON（adapter 讀這裡）
+    - news/                      # wikified markdown (news-ingest handler 寫)
     - filings/                   # 公告、財報、SEC 8-K/10-K
     - earnings-calls/            # 法說會逐字稿
     - analyst-notes/             # 賣方研報

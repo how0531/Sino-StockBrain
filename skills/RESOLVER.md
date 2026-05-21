@@ -54,6 +54,7 @@ This is the dispatcher. Skills are the implementation. **Read the skill file bef
 | Morning prep, meeting context, day planning | `skills/daily-task-prep/SKILL.md` |
 | Daily briefing, "what's happening today" | `skills/briefing/SKILL.md` |
 | "市場日報", "今日熱門個股", "今天最熱的股票", "盤後分析", "daily market digest" | `skills/daily-market-digest/SKILL.md` |
+| "抓財經新聞", "fetch finance news", "新聞抓取", "pull stock news rss" | `skills/stock-news-skill/SKILL.md` |
 | Cron scheduling, quiet hours, job staggering | `skills/cron-scheduler/SKILL.md` |
 | Save or load reports | `skills/reports/SKILL.md` |
 | "Create a skill", "improve this skill" | `skills/skill-creator/SKILL.md` |

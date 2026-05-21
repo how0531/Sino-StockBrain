@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "article_id": "test-malformed",
+  "source_name": "test",
+  "published_at": "2026-05-20T08:00:00+08:00",
+  "title": "missing body field — adapter must skip"
+}

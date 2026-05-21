@@ -1,0 +1,8 @@
+{"intent":"抓今天的財經新聞","expected_skill":"stock-news-skill"}
+{"intent":"幫我把今天的新聞抓下來","expected_skill":"stock-news-skill"}
+{"intent":"pull finance RSS","expected_skill":"stock-news-skill"}
+{"intent":"fetch stock news","expected_skill":"stock-news-skill"}
+{"intent":"更新新聞 brain","expected_skill":"stock-news-skill"}
+{"intent":"今天最熱的股票","expected_skill":"daily-market-digest","ambiguous_with":["stock-news-skill"]}
+{"intent":"國巨最近怎麼樣","expected_skill":"query","ambiguous_with":["stock-news-skill"]}
+{"intent":"幫我寫今天的市場日報","expected_skill":"daily-market-digest"}

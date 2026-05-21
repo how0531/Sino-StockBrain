@@ -1,0 +1,8 @@
+{
+  "schema_version": 2,
+  "article_id": "future-schema",
+  "source_name": "test",
+  "published_at": "2026-05-20T08:00:00+08:00",
+  "title": "wrong schema version — adapter must skip",
+  "body": "this would otherwise be valid"
+}

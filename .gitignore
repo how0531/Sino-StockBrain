@@ -46,6 +46,7 @@ reports/network-intelligence/
 # `db_only` paths so they don't accidentally land in commits before
 # `gbrain sync` auto-manages .gitignore.
 /prices/
+/news-raw/
 /news/
 /filings/
 /earnings-calls/

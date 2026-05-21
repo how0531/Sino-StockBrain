@@ -57,9 +57,13 @@ export async function resolveNewsSource(
       const mod = await import('./mock-news-data.ts');
       return new mod.MockNewsSource(opts);
     }
+    case 'stock-news-skill': {
+      const mod = await import('./stock-news-skill-news-data.ts');
+      return new mod.StockNewsSkillNewsSource(opts);
+    }
     default:
       throw new Error(
-        `Unknown news source "${name}". Valid: mock. ` +
+        `Unknown news source "${name}". Valid: mock, stock-news-skill. ` +
         `To add a real source, drop a new file in src/core/data-sources/ ` +
         `that implements NewsSource and register it here.`,
       );
