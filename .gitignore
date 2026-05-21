@@ -41,3 +41,16 @@ test/fixtures/pglite-snapshot.version
 
 # Private brain reports — never check these in (per CLAUDE.md privacy rule)
 reports/network-intelligence/
+
+# Sino-StockBrain: bulk machine-generated artifacts. Mirrors gbrain.yml
+# `db_only` paths so they don't accidentally land in commits before
+# `gbrain sync` auto-manages .gitignore.
+/prices/
+/news/
+/filings/
+/earnings-calls/
+/analyst-notes/
+/institutional-flow/
+# Heat reports are machine-generated each run; playbooks/digests/ stays
+# tracked (those are analyst-edited).
+/playbooks/heat/
