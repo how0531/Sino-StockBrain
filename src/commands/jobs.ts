@@ -1224,6 +1224,11 @@ export async function registerBuiltinHandlers(worker: MinionWorker, engine: Brai
     worker.register('market-heat', marketHeatHandler);
     process.stderr.write('[minion worker] market-heat handler enabled\n');
   }
+  {
+    const { complianceFilterHandler } = await import('../core/minions/handlers/compliance-filter.ts');
+    worker.register('compliance-filter', complianceFilterHandler);
+    process.stderr.write('[minion worker] compliance-filter handler enabled\n');
+  }
 
   // ============================================================
   // v0.36+ brain-health-100 wave: 11 new handlers for autonomous
