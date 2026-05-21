@@ -69,15 +69,15 @@ Submit-Job "news-ingest" @{
   source    = "stock-news-skill"
 }
 
-# -- Stage 3: heat score --
+# -- Stage 3: build graph edges (import alone does NOT wire links) --
+Write-Host ">>> extract links"
+Invoke-Expression "$Gbrain extract links --source db"
+
+# -- Stage 4: heat score --
 Submit-Job "market-heat" @{
   brain_dir = $BrainDir
   date      = $Date
 }
-
-# -- Stage 4: ingest markdown into the brain DB --
-Write-Host ">>> sync"
-Invoke-Expression "$Gbrain sync"
 
 Write-Host ""
 Write-Host "==================================================="

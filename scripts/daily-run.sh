@@ -56,14 +56,14 @@ echo ">>> news-ingest"
 $GBRAIN jobs submit news-ingest --follow \
   --params "{\"brain_dir\":\"$BRAIN_DIR\",\"date\":\"$DATE\",\"source\":\"stock-news-skill\"}"
 
-# ── Stage 3: heat score ───────────────────────────────────────────────────
+# ── Stage 3: build graph edges (import alone does NOT wire links) ─────────
+echo ">>> extract links"
+$GBRAIN extract links --source db
+
+# ── Stage 4: heat score ───────────────────────────────────────────────────
 echo ">>> market-heat"
 $GBRAIN jobs submit market-heat --follow \
   --params "{\"brain_dir\":\"$BRAIN_DIR\",\"date\":\"$DATE\"}"
-
-# ── Stage 4: ingest markdown into the brain DB ────────────────────────────
-echo ">>> sync"
-$GBRAIN sync
 
 echo ""
 echo "═══════════════════════════════════════════════════"
