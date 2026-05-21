@@ -1,0 +1,9 @@
+# Sino-StockBrain RSS 來源清單
+# 格式：name|url（每行一個，# 開頭為註解）
+# 複製這個檔成 config/news-sources.txt 再填你的來源。
+# name 限 [a-z0-9_-]+（會用在檔名）
+#
+# 範例（路徑依實際來源調整，須遵守各站 robots.txt / TOS）：
+# cnyes|https://news.cnyes.com/rss/cat/tw_stock
+# commercial-times|https://ctee.com.tw/feed
+# yahoo-2330|https://feeds.finance.yahoo.com/rss/2.0/headline?s=2330.TW&region=TW&lang=zh-TW
