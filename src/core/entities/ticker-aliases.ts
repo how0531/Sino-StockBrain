@@ -82,7 +82,10 @@ export const TICKER_ALIASES: Record<string, TickerAlias> = (() => {
       name: m.name,
       exchange: marketToExchange(m.market),
     };
-    add(code, row); // raw ticker code (4 digits)
+    // Deliberately DO NOT register the bare numeric code as a key — 4-digit TW
+    // codes collide with years (2025=千興, 2027=大成鋼), prices (2230=泰茂) and
+    // phone digits (8299=群聯) everywhere in Chinese news. Link by NAME only; the
+    // name virtually always appears (the code usually sits in parens beside it).
     for (const surface of [m.name, m.abbr]) {
       const s = surface.trim();
       if (!s) continue;
@@ -115,7 +118,9 @@ export const TICKER_ALIASES: Record<string, TickerAlias> = (() => {
     { ticker: 'TSLA', name: 'Tesla', exchange: 'NASDAQ' },
   ];
   for (const e of curated) {
-    add(e.ticker, e);
+    // Only alpha codes (US: NVDA/AAPL/…) are safe as bare keys; numeric TW codes
+    // collide with years/prices/phones (see master-loop note above).
+    if (!/^\d+$/.test(e.ticker)) add(e.ticker, e);
     add(e.name, e);
   }
 
