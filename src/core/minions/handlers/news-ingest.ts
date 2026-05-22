@@ -102,16 +102,39 @@ export async function newsIngestHandler(
     // Aggregate stats (title + body replacements together).
     totalReplacements += wikifiedTitle.stats.total_replacements;
     totalReplacements += wikifiedBody.stats.total_replacements;
+    const matchedThisArticle = new Set<string>();
     for (const [ticker, count] of wikifiedTitle.stats.matched) {
       tickerMentions[ticker] = (tickerMentions[ticker] ?? 0) + count;
+      matchedThisArticle.add(ticker);
     }
     for (const [ticker, count] of wikifiedBody.stats.matched) {
       tickerMentions[ticker] = (tickerMentions[ticker] ?? 0) + count;
+      matchedThisArticle.add(ticker);
+    }
+
+    // The source's hint_tickers (e.g. stock-news-skill's ground-truth code
+    // tagging) are authoritative — far more reliable than fuzzy body matching,
+    // and they cover names the alias map doesn't. Turn them into BODY
+    // wikilinks so the auto-link extractor builds edges (frontmatter lists do
+    // NOT create edges), and count them toward mention stats. Skip codes the
+    // body/title wikify already linked so we don't double-count or double-link.
+    const hintSlugs: string[] = [];
+    for (const raw of article.hint_tickers ?? []) {
+      const slug = raw.trim().toLowerCase();
+      if (!slug || !/^[a-z0-9]+$/.test(slug)) continue;
+      if (matchedThisArticle.has(slug) || hintSlugs.includes(slug)) continue;
+      hintSlugs.push(slug);
+      tickerMentions[slug] = (tickerMentions[slug] ?? 0) + 1;
+    }
+    let bodyOut = wikifiedBody.text;
+    if (hintSlugs.length > 0) {
+      bodyOut +=
+        '\n\n相關個股：' + hintSlugs.map((s) => `[[tickers/${s}]]`).join(' ');
     }
 
     writeFileSync(
       filePath,
-      renderArticleMarkdown(article, wikifiedTitle.text, wikifiedBody.text, date),
+      renderArticleMarkdown(article, wikifiedTitle.text, bodyOut, date),
       'utf8',
     );
     written++;
