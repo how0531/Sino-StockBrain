@@ -1,0 +1,13834 @@
+{
+"1101": {
+"abbr": "台泥",
+"en": "TCC",
+"industry": "水泥工業",
+"market": "1",
+"name": "台泥"
+},
+"1102": {
+"abbr": "亞泥",
+"en": "ACC",
+"industry": "水泥工業",
+"market": "1",
+"name": "亞泥"
+},
+"1103": {
+"abbr": "嘉泥",
+"en": "CHC",
+"industry": "水泥工業",
+"market": "1",
+"name": "嘉泥"
+},
+"1104": {
+"abbr": "環泥",
+"en": "UCC",
+"industry": "水泥工業",
+"market": "1",
+"name": "環泥"
+},
+"1108": {
+"abbr": "幸福",
+"en": "LUCKY CEMENT",
+"industry": "水泥工業",
+"market": "1",
+"name": "幸福"
+},
+"1109": {
+"abbr": "信大",
+"en": "HsingTa",
+"industry": "水泥工業",
+"market": "1",
+"name": "信大"
+},
+"1110": {
+"abbr": "東泥",
+"en": "SE CEMENT",
+"industry": "水泥工業",
+"market": "1",
+"name": "東泥"
+},
+"1201": {
+"abbr": "味全",
+"en": "WEI CHUAN",
+"industry": "食品工業",
+"market": "1",
+"name": "味全"
+},
+"1203": {
+"abbr": "味王",
+"en": "VE WONG",
+"industry": "食品工業",
+"market": "1",
+"name": "味王"
+},
+"1210": {
+"abbr": "大成",
+"en": "GREATWALL",
+"industry": "食品工業",
+"market": "1",
+"name": "大成"
+},
+"1213": {
+"abbr": "大飲",
+"en": "OCEANIC Bev.",
+"industry": "食品工業",
+"market": "1",
+"name": "大飲"
+},
+"1215": {
+"abbr": "卜蜂",
+"en": "CPE",
+"industry": "食品工業",
+"market": "1",
+"name": "卜蜂"
+},
+"1216": {
+"abbr": "統一",
+"en": "UNI-PRESIDENT",
+"industry": "食品工業",
+"market": "1",
+"name": "統一"
+},
+"1217": {
+"abbr": "愛之味",
+"en": "AGV",
+"industry": "食品工業",
+"market": "1",
+"name": "愛之味"
+},
+"1218": {
+"abbr": "泰山",
+"en": "TAISUN",
+"industry": "食品工業",
+"market": "1",
+"name": "泰山"
+},
+"1219": {
+"abbr": "福壽",
+"en": "FWUSOW",
+"industry": "食品工業",
+"market": "1",
+"name": "福壽"
+},
+"1220": {
+"abbr": "台榮",
+"en": "TAIROUN",
+"industry": "食品工業",
+"market": "1",
+"name": "台榮"
+},
+"1225": {
+"abbr": "福懋油",
+"en": "FOPCO",
+"industry": "食品工業",
+"market": "1",
+"name": "福懋油"
+},
+"1227": {
+"abbr": "佳格",
+"en": "SFC",
+"industry": "食品工業",
+"market": "1",
+"name": "佳格"
+},
+"1229": {
+"abbr": "聯華",
+"en": "LHIHC",
+"industry": "食品工業",
+"market": "1",
+"name": "聯華"
+},
+"1231": {
+"abbr": "聯華食",
+"en": "Lian Hwa Foods",
+"industry": "食品工業",
+"market": "1",
+"name": "聯華食"
+},
+"1232": {
+"abbr": "大統益",
+"en": "TTET",
+"industry": "食品工業",
+"market": "1",
+"name": "大統益"
+},
+"1233": {
+"abbr": "天仁",
+"en": "Ten Ren",
+"industry": "食品工業",
+"market": "1",
+"name": "天仁"
+},
+"1234": {
+"abbr": "黑松",
+"en": "HEY SONG",
+"industry": "食品工業",
+"market": "1",
+"name": "黑松"
+},
+"1235": {
+"abbr": "興泰",
+"en": "ST",
+"industry": "食品工業",
+"market": "1",
+"name": "興泰"
+},
+"1236": {
+"abbr": "宏亞",
+"en": "Hunya",
+"industry": "食品工業",
+"market": "1",
+"name": "宏亞"
+},
+"1240": {
+"abbr": "茂生農經",
+"en": "MORNSUN",
+"industry": "農業科技",
+"market": "2",
+"name": "茂生農經"
+},
+"1256": {
+"abbr": "鮮活果汁-KY",
+"en": "Sunjuice",
+"industry": "食品工業",
+"market": "1",
+"name": "鮮活果汁-KY"
+},
+"1259": {
+"abbr": "安心",
+"en": "AN-SHIN",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "安心"
+},
+"1264": {
+"abbr": "德麥",
+"en": "TEHMAG",
+"industry": "食品工業",
+"market": "2",
+"name": "德麥"
+},
+"1268": {
+"abbr": "漢來美食",
+"en": "Hi-Lai Foods",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "漢來美食"
+},
+"1294": {
+"abbr": "漢田生技",
+"en": "HTB",
+"industry": "食品工業",
+"market": "2",
+"name": "漢田生技"
+},
+"1295": {
+"abbr": "生合",
+"en": "SYNBIO",
+"industry": "食品工業",
+"market": "2",
+"name": "生合"
+},
+"1301": {
+"abbr": "台塑",
+"en": "FPC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "台塑"
+},
+"1303": {
+"abbr": "南亞",
+"en": "NPC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "南亞"
+},
+"1304": {
+"abbr": "台聚",
+"en": "USI",
+"industry": "塑膠工業",
+"market": "1",
+"name": "台聚"
+},
+"1305": {
+"abbr": "華夏",
+"en": "CGPC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "華夏"
+},
+"1307": {
+"abbr": "三芳",
+"en": "SAN FANG",
+"industry": "塑膠工業",
+"market": "1",
+"name": "三芳"
+},
+"1308": {
+"abbr": "亞聚",
+"en": "APC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "亞聚"
+},
+"1309": {
+"abbr": "台達化",
+"en": "TTC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "台達化"
+},
+"1310": {
+"abbr": "台苯",
+"en": "T.S.M.C.",
+"industry": "塑膠工業",
+"market": "1",
+"name": "台苯"
+},
+"1312": {
+"abbr": "國喬",
+"en": "GPPC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "國喬"
+},
+"1313": {
+"abbr": "聯成",
+"en": "UPC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "聯成"
+},
+"1314": {
+"abbr": "中石化",
+"en": "CPDC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "中石化"
+},
+"1315": {
+"abbr": "達新",
+"en": "TAH HSIN",
+"industry": "塑膠工業",
+"market": "1",
+"name": "達新"
+},
+"1316": {
+"abbr": "上曜",
+"en": "SUN  YAD",
+"industry": "建材營建",
+"market": "1",
+"name": "上曜"
+},
+"1319": {
+"abbr": "東陽",
+"en": "TYG",
+"industry": "汽車工業",
+"market": "1",
+"name": "東陽"
+},
+"1321": {
+"abbr": "大洋",
+"en": "OPC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "大洋"
+},
+"1323": {
+"abbr": "永裕",
+"en": "YONYU",
+"industry": "塑膠工業",
+"market": "1",
+"name": "永裕"
+},
+"1324": {
+"abbr": "地球",
+"en": "GLOBE TAPE",
+"industry": "塑膠工業",
+"market": "1",
+"name": "地球"
+},
+"1325": {
+"abbr": "恆大",
+"en": "UK",
+"industry": "塑膠工業",
+"market": "1",
+"name": "恆大"
+},
+"1326": {
+"abbr": "台化",
+"en": "FCFC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "台化"
+},
+"1336": {
+"abbr": "台翰",
+"en": "TAIHAN",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "台翰"
+},
+"1337": {
+"abbr": "再生-KY",
+"en": "Asia Plastic",
+"industry": "塑膠工業",
+"market": "1",
+"name": "再生-KY"
+},
+"1338": {
+"abbr": "廣華-KY",
+"en": "Hiroca",
+"industry": "汽車工業",
+"market": "1",
+"name": "廣華-KY"
+},
+"1339": {
+"abbr": "昭輝",
+"en": "Y.C.C.",
+"industry": "汽車工業",
+"market": "1",
+"name": "昭輝"
+},
+"1340": {
+"abbr": "勝悅-KY",
+"en": "VICTORY",
+"industry": "塑膠工業",
+"market": "1",
+"name": "勝悅-KY"
+},
+"1341": {
+"abbr": "富林-KY",
+"en": "FULIN-KY",
+"industry": "塑膠工業",
+"market": "1",
+"name": "富林-KY"
+},
+"1342": {
+"abbr": "八貫",
+"en": "CCI Yilan",
+"industry": "其他",
+"market": "1",
+"name": "八貫"
+},
+"1402": {
+"abbr": "遠東新",
+"en": "FENC",
+"industry": "紡織纖維",
+"market": "1",
+"name": "遠東新"
+},
+"1409": {
+"abbr": "新纖",
+"en": "SSFC",
+"industry": "紡織纖維",
+"market": "1",
+"name": "新纖"
+},
+"1410": {
+"abbr": "南染",
+"en": "NYDF",
+"industry": "紡織纖維",
+"market": "1",
+"name": "南染"
+},
+"1413": {
+"abbr": "宏洲",
+"en": "H.C.",
+"industry": "紡織纖維",
+"market": "1",
+"name": "宏洲"
+},
+"1414": {
+"abbr": "東和",
+"en": "TUNG HO",
+"industry": "紡織纖維",
+"market": "1",
+"name": "東和"
+},
+"1416": {
+"abbr": "廣豐",
+"en": "KFIC",
+"industry": "其他",
+"market": "1",
+"name": "廣豐"
+},
+"1417": {
+"abbr": "嘉裕",
+"en": "CARNIVAL",
+"industry": "紡織纖維",
+"market": "1",
+"name": "嘉裕"
+},
+"1418": {
+"abbr": "東華",
+"en": "TongHwa",
+"industry": "紡織纖維",
+"market": "1",
+"name": "東華"
+},
+"1419": {
+"abbr": "新紡",
+"en": "SHINKO.TEXTILE",
+"industry": "紡織纖維",
+"market": "1",
+"name": "新紡"
+},
+"1423": {
+"abbr": "利華",
+"en": "REWARD WOOL",
+"industry": "紡織纖維",
+"market": "1",
+"name": "利華"
+},
+"1432": {
+"abbr": "大魯閣",
+"en": "TAROKO",
+"industry": "運動休閒",
+"market": "1",
+"name": "大魯閣"
+},
+"1434": {
+"abbr": "福懋",
+"en": "F.T.C",
+"industry": "紡織纖維",
+"market": "1",
+"name": "福懋"
+},
+"1435": {
+"abbr": "中福",
+"en": "C.F.CORP.",
+"industry": "其他",
+"market": "1",
+"name": "中福"
+},
+"1436": {
+"abbr": "華友聯",
+"en": "HUA YU LIEN",
+"industry": "建材營建",
+"market": "1",
+"name": "華友聯"
+},
+"1437": {
+"abbr": "勤益控",
+"en": "GTM",
+"industry": "其他",
+"market": "1",
+"name": "勤益控"
+},
+"1438": {
+"abbr": "三地開發",
+"en": "SanDi",
+"industry": "建材營建",
+"market": "1",
+"name": "三地開發"
+},
+"1439": {
+"abbr": "雋揚",
+"en": "ASCENT",
+"industry": "建材營建",
+"market": "1",
+"name": "雋揚"
+},
+"1440": {
+"abbr": "南紡",
+"en": "TAINAN SPINNING",
+"industry": "紡織纖維",
+"market": "1",
+"name": "南紡"
+},
+"1441": {
+"abbr": "大東",
+"en": "TAH TONG",
+"industry": "紡織纖維",
+"market": "1",
+"name": "大東"
+},
+"1442": {
+"abbr": "名軒",
+"en": "ADVANCETEK",
+"industry": "建材營建",
+"market": "1",
+"name": "名軒"
+},
+"1443": {
+"abbr": "立益物流",
+"en": "LILYTEXTILE",
+"industry": "其他",
+"market": "1",
+"name": "立益物流"
+},
+"1444": {
+"abbr": "力麗",
+"en": "LEALEA",
+"industry": "紡織纖維",
+"market": "1",
+"name": "力麗"
+},
+"1445": {
+"abbr": "大宇",
+"en": "UNIVERSAL",
+"industry": "紡織纖維",
+"market": "1",
+"name": "大宇"
+},
+"1446": {
+"abbr": "宏和",
+"en": "HONG HO",
+"industry": "紡織纖維",
+"market": "1",
+"name": "宏和"
+},
+"1447": {
+"abbr": "力鵬",
+"en": "LP",
+"industry": "紡織纖維",
+"market": "1",
+"name": "力鵬"
+},
+"1449": {
+"abbr": "佳和",
+"en": "CHIA HER",
+"industry": "紡織纖維",
+"market": "1",
+"name": "佳和"
+},
+"1451": {
+"abbr": "年興",
+"en": "NIEN HSING",
+"industry": "紡織纖維",
+"market": "1",
+"name": "年興"
+},
+"1452": {
+"abbr": "宏益",
+"en": "HONG YI",
+"industry": "紡織纖維",
+"market": "1",
+"name": "宏益"
+},
+"1453": {
+"abbr": "大將",
+"en": "TA  JIANG",
+"industry": "建材營建",
+"market": "1",
+"name": "大將"
+},
+"1454": {
+"abbr": "台富",
+"en": "TTF",
+"industry": "紡織纖維",
+"market": "1",
+"name": "台富"
+},
+"1455": {
+"abbr": "集盛",
+"en": "ZIG SHENG",
+"industry": "紡織纖維",
+"market": "1",
+"name": "集盛"
+},
+"1456": {
+"abbr": "怡華",
+"en": "I-HWA",
+"industry": "建材營建",
+"market": "1",
+"name": "怡華"
+},
+"1457": {
+"abbr": "宜進",
+"en": "YI JINN",
+"industry": "紡織纖維",
+"market": "1",
+"name": "宜進"
+},
+"1459": {
+"abbr": "聯發",
+"en": "LAN FA",
+"industry": "紡織纖維",
+"market": "1",
+"name": "聯發"
+},
+"1460": {
+"abbr": "宏遠",
+"en": "EVEREST",
+"industry": "紡織纖維",
+"market": "1",
+"name": "宏遠"
+},
+"1463": {
+"abbr": "強盛新",
+"en": "CSG",
+"industry": "紡織纖維",
+"market": "1",
+"name": "強盛新"
+},
+"1464": {
+"abbr": "得力",
+"en": "DE LICACY",
+"industry": "紡織纖維",
+"market": "1",
+"name": "得力"
+},
+"1465": {
+"abbr": "偉全",
+"en": "WISHER",
+"industry": "紡織纖維",
+"market": "1",
+"name": "偉全"
+},
+"1466": {
+"abbr": "聚隆",
+"en": "Acelon",
+"industry": "紡織纖維",
+"market": "1",
+"name": "聚隆"
+},
+"1467": {
+"abbr": "南緯",
+"en": "TEX-RAY",
+"industry": "紡織纖維",
+"market": "1",
+"name": "南緯"
+},
+"1468": {
+"abbr": "昶和",
+"en": "CHANG HO",
+"industry": "紡織纖維",
+"market": "1",
+"name": "昶和"
+},
+"1470": {
+"abbr": "大統新創",
+"en": "EVERTEX",
+"industry": "紡織纖維",
+"market": "1",
+"name": "大統新創"
+},
+"1471": {
+"abbr": "首利",
+"en": "SL",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "首利"
+},
+"1472": {
+"abbr": "三洋實業",
+"en": "TRIOCEAN",
+"industry": "建材營建",
+"market": "1",
+"name": "三洋實業"
+},
+"1473": {
+"abbr": "台南",
+"en": "TAINAN",
+"industry": "紡織纖維",
+"market": "1",
+"name": "台南"
+},
+"1474": {
+"abbr": "弘裕",
+"en": "HONMYUE",
+"industry": "紡織纖維",
+"market": "1",
+"name": "弘裕"
+},
+"1475": {
+"abbr": "業旺",
+"en": "BIG SUNSHINE",
+"industry": "紡織纖維",
+"market": "1",
+"name": "業旺"
+},
+"1476": {
+"abbr": "儒鴻",
+"en": "ECLAT",
+"industry": "紡織纖維",
+"market": "1",
+"name": "儒鴻"
+},
+"1477": {
+"abbr": "聚陽",
+"en": "Makalot",
+"industry": "紡織纖維",
+"market": "1",
+"name": "聚陽"
+},
+"1503": {
+"abbr": "士電",
+"en": "SEEC",
+"industry": "電機機械",
+"market": "1",
+"name": "士電"
+},
+"1504": {
+"abbr": "東元",
+"en": "TECO",
+"industry": "電機機械",
+"market": "1",
+"name": "東元"
+},
+"1506": {
+"abbr": "正道",
+"en": "RIGHT WAY",
+"industry": "電機機械",
+"market": "1",
+"name": "正道"
+},
+"1512": {
+"abbr": "瑞利",
+"en": "JL",
+"industry": "汽車工業",
+"market": "1",
+"name": "瑞利"
+},
+"1513": {
+"abbr": "中興電",
+"en": "CHEM",
+"industry": "電機機械",
+"market": "1",
+"name": "中興電"
+},
+"1514": {
+"abbr": "亞力",
+"en": "AEC",
+"industry": "電機機械",
+"market": "1",
+"name": "亞力"
+},
+"1515": {
+"abbr": "力山",
+"en": "REXON",
+"industry": "電機機械",
+"market": "1",
+"name": "力山"
+},
+"1516": {
+"abbr": "川飛",
+"en": "FALCON",
+"industry": "其他",
+"market": "1",
+"name": "川飛"
+},
+"1517": {
+"abbr": "利奇",
+"en": "Lee Chi",
+"industry": "電機機械",
+"market": "1",
+"name": "利奇"
+},
+"1519": {
+"abbr": "華城",
+"en": "FE",
+"industry": "電機機械",
+"market": "1",
+"name": "華城"
+},
+"1521": {
+"abbr": "大億",
+"en": "TA YIH",
+"industry": "汽車工業",
+"market": "1",
+"name": "大億"
+},
+"1522": {
+"abbr": "堤維西",
+"en": "TYC",
+"industry": "汽車工業",
+"market": "1",
+"name": "堤維西"
+},
+"1524": {
+"abbr": "耿鼎",
+"en": "GORDON",
+"industry": "汽車工業",
+"market": "1",
+"name": "耿鼎"
+},
+"1525": {
+"abbr": "江申",
+"en": "KSC",
+"industry": "汽車工業",
+"market": "1",
+"name": "江申"
+},
+"1526": {
+"abbr": "日馳",
+"en": "SUNRACE",
+"industry": "電機機械",
+"market": "1",
+"name": "日馳"
+},
+"1527": {
+"abbr": "鑽全",
+"en": "BASSO",
+"industry": "電機機械",
+"market": "1",
+"name": "鑽全"
+},
+"1528": {
+"abbr": "恩德",
+"en": "ERSON",
+"industry": "電機機械",
+"market": "1",
+"name": "恩德"
+},
+"1529": {
+"abbr": "樂事綠能",
+"en": "LUXE",
+"industry": "電機機械",
+"market": "1",
+"name": "樂事綠能"
+},
+"1530": {
+"abbr": "亞崴",
+"en": "AWEA",
+"industry": "電機機械",
+"market": "1",
+"name": "亞崴"
+},
+"1531": {
+"abbr": "高林股",
+"en": "KAULIN",
+"industry": "電機機械",
+"market": "1",
+"name": "高林股"
+},
+"1532": {
+"abbr": "勤美",
+"en": "CMP",
+"industry": "電機機械",
+"market": "1",
+"name": "勤美"
+},
+"1533": {
+"abbr": "車王電",
+"en": "MORE",
+"industry": "汽車工業",
+"market": "1",
+"name": "車王電"
+},
+"1535": {
+"abbr": "中宇",
+"en": "CEC",
+"industry": "電機機械",
+"market": "1",
+"name": "中宇"
+},
+"1536": {
+"abbr": "和大",
+"en": "HOTA",
+"industry": "汽車工業",
+"market": "1",
+"name": "和大"
+},
+"1537": {
+"abbr": "廣隆",
+"en": "KUNG LONG",
+"industry": "電機機械",
+"market": "1",
+"name": "廣隆"
+},
+"1538": {
+"abbr": "正峰",
+"en": "JF",
+"industry": "電機機械",
+"market": "1",
+"name": "正峰"
+},
+"1539": {
+"abbr": "巨庭",
+"en": "GT",
+"industry": "電機機械",
+"market": "1",
+"name": "巨庭"
+},
+"1540": {
+"abbr": "喬福",
+"en": "ROUNDTOP",
+"industry": "電機機械",
+"market": "1",
+"name": "喬福"
+},
+"1541": {
+"abbr": "錩泰",
+"en": "Chang Type",
+"industry": "電機機械",
+"market": "1",
+"name": "錩泰"
+},
+"1558": {
+"abbr": "伸興",
+"en": "ZENG HSING",
+"industry": "電機機械",
+"market": "1",
+"name": "伸興"
+},
+"1560": {
+"abbr": "中砂",
+"en": "KINIK",
+"industry": "電機機械",
+"market": "1",
+"name": "中砂"
+},
+"1563": {
+"abbr": "巧新",
+"en": "SAI",
+"industry": "汽車工業",
+"market": "1",
+"name": "巧新"
+},
+"1565": {
+"abbr": "精華",
+"en": "St.Shine",
+"industry": "生技醫療",
+"market": "2",
+"name": "精華"
+},
+"1568": {
+"abbr": "倉佑",
+"en": "T.Y.",
+"industry": "汽車工業",
+"market": "1",
+"name": "倉佑"
+},
+"1569": {
+"abbr": "濱川",
+"en": "Bin Chuan",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "濱川"
+},
+"1570": {
+"abbr": "力肯",
+"en": "De Poan",
+"industry": "電機機械",
+"market": "2",
+"name": "力肯"
+},
+"1580": {
+"abbr": "新麥",
+"en": "SINMAG",
+"industry": "電機機械",
+"market": "2",
+"name": "新麥"
+},
+"1582": {
+"abbr": "信錦",
+"en": "SYNCMOLD",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "信錦"
+},
+"1583": {
+"abbr": "程泰",
+"en": "GOODWAY",
+"industry": "電機機械",
+"market": "1",
+"name": "程泰"
+},
+"1584": {
+"abbr": "精剛",
+"en": "STC",
+"industry": "其他",
+"market": "2",
+"name": "精剛"
+},
+"1586": {
+"abbr": "和勤",
+"en": "CFTC",
+"industry": "電機機械",
+"market": "2",
+"name": "和勤"
+},
+"1587": {
+"abbr": "吉茂",
+"en": "CM",
+"industry": "汽車工業",
+"market": "1",
+"name": "吉茂"
+},
+"1589": {
+"abbr": "永冠-KY",
+"en": "YGG",
+"industry": "電機機械",
+"market": "1",
+"name": "永冠-KY"
+},
+"1590": {
+"abbr": "亞德客-KY",
+"en": "AIRTAC",
+"industry": "電機機械",
+"market": "1",
+"name": "亞德客-KY"
+},
+"1591": {
+"abbr": "駿吉-KY",
+"en": "INMAX",
+"industry": "電機機械",
+"market": "2",
+"name": "駿吉-KY"
+},
+"1593": {
+"abbr": "祺驊",
+"en": "CHI HUA",
+"industry": "運動休閒",
+"market": "2",
+"name": "祺驊"
+},
+"1595": {
+"abbr": "川寶",
+"en": "CBT",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "川寶"
+},
+"1597": {
+"abbr": "直得",
+"en": "cpc",
+"industry": "電機機械",
+"market": "1",
+"name": "直得"
+},
+"1598": {
+"abbr": "岱宇",
+"en": "Dyaco",
+"industry": "運動休閒",
+"market": "1",
+"name": "岱宇"
+},
+"1599": {
+"abbr": "宏佳騰",
+"en": "AEON",
+"industry": "電機機械",
+"market": "2",
+"name": "宏佳騰"
+},
+"1603": {
+"abbr": "華電",
+"en": "CWCO",
+"industry": "電器電纜",
+"market": "1",
+"name": "華電"
+},
+"1604": {
+"abbr": "聲寶",
+"en": "SAMPO",
+"industry": "電器電纜",
+"market": "1",
+"name": "聲寶"
+},
+"1605": {
+"abbr": "華新",
+"en": "WALSIN",
+"industry": "電器電纜",
+"market": "1",
+"name": "華新"
+},
+"1608": {
+"abbr": "華榮",
+"en": "HE",
+"industry": "電器電纜",
+"market": "1",
+"name": "華榮"
+},
+"1609": {
+"abbr": "大亞",
+"en": "TA YA",
+"industry": "電器電纜",
+"market": "1",
+"name": "大亞"
+},
+"1611": {
+"abbr": "中電",
+"en": "CE",
+"industry": "電器電纜",
+"market": "1",
+"name": "中電"
+},
+"1612": {
+"abbr": "宏泰",
+"en": "HONG TAI",
+"industry": "電器電纜",
+"market": "1",
+"name": "宏泰"
+},
+"1614": {
+"abbr": "三洋電",
+"en": "Taiwan Sanyo",
+"industry": "電器電纜",
+"market": "1",
+"name": "三洋電"
+},
+"1615": {
+"abbr": "大山",
+"en": "Dah  San",
+"industry": "電器電纜",
+"market": "1",
+"name": "大山"
+},
+"1616": {
+"abbr": "億泰",
+"en": "EVERTOP",
+"industry": "電器電纜",
+"market": "1",
+"name": "億泰"
+},
+"1617": {
+"abbr": "榮星",
+"en": "JSW",
+"industry": "電器電纜",
+"market": "1",
+"name": "榮星"
+},
+"1618": {
+"abbr": "合機",
+"en": "HK",
+"industry": "電器電纜",
+"market": "1",
+"name": "合機"
+},
+"1623": {
+"abbr": "大東電",
+"en": "TEWC",
+"industry": "電器電纜",
+"market": "1",
+"name": "大東電"
+},
+"1626": {
+"abbr": "艾美特-KY",
+"en": "AIRMATE",
+"industry": "電器電纜",
+"market": "1",
+"name": "艾美特-KY"
+},
+"1702": {
+"abbr": "南僑",
+"en": "NAMCHOW",
+"industry": "食品工業",
+"market": "1",
+"name": "南僑"
+},
+"1707": {
+"abbr": "葡萄王",
+"en": "GKB",
+"industry": "生技醫療",
+"market": "1",
+"name": "葡萄王"
+},
+"1708": {
+"abbr": "東鹼",
+"en": "SESODA",
+"industry": "化學工業",
+"market": "1",
+"name": "東鹼"
+},
+"1709": {
+"abbr": "和益",
+"en": "FUCC",
+"industry": "化學工業",
+"market": "1",
+"name": "和益"
+},
+"1710": {
+"abbr": "東聯",
+"en": "OUCC",
+"industry": "化學工業",
+"market": "1",
+"name": "東聯"
+},
+"1711": {
+"abbr": "永光",
+"en": "EVERLIGHT",
+"industry": "化學工業",
+"market": "1",
+"name": "永光"
+},
+"1712": {
+"abbr": "興農",
+"en": "SINON",
+"industry": "化學工業",
+"market": "1",
+"name": "興農"
+},
+"1713": {
+"abbr": "國化",
+"en": "CCW",
+"industry": "化學工業",
+"market": "1",
+"name": "國化"
+},
+"1714": {
+"abbr": "和桐",
+"en": "HO TUNG",
+"industry": "化學工業",
+"market": "1",
+"name": "和桐"
+},
+"1717": {
+"abbr": "長興",
+"en": "ETERNAL",
+"industry": "化學工業",
+"market": "1",
+"name": "長興"
+},
+"1718": {
+"abbr": "中纖",
+"en": "CMFC",
+"industry": "化學工業",
+"market": "1",
+"name": "中纖"
+},
+"1720": {
+"abbr": "生達",
+"en": "S.C.P.C",
+"industry": "生技醫療",
+"market": "1",
+"name": "生達"
+},
+"1721": {
+"abbr": "三晃",
+"en": "SUNKO",
+"industry": "化學工業",
+"market": "1",
+"name": "三晃"
+},
+"1722": {
+"abbr": "台肥",
+"en": "TFC",
+"industry": "化學工業",
+"market": "1",
+"name": "台肥"
+},
+"1723": {
+"abbr": "中碳",
+"en": "CSCC",
+"industry": "化學工業",
+"market": "1",
+"name": "中碳"
+},
+"1725": {
+"abbr": "元禎",
+"en": "YJE",
+"industry": "化學工業",
+"market": "1",
+"name": "元禎"
+},
+"1726": {
+"abbr": "永記",
+"en": "Y.C.P.",
+"industry": "化學工業",
+"market": "1",
+"name": "永記"
+},
+"1727": {
+"abbr": "中華化",
+"en": "CHCIW",
+"industry": "化學工業",
+"market": "1",
+"name": "中華化"
+},
+"1730": {
+"abbr": "花仙子",
+"en": "FARCENT",
+"industry": "化學工業",
+"market": "1",
+"name": "花仙子"
+},
+"1731": {
+"abbr": "美吾華",
+"en": "Maywufa",
+"industry": "生技醫療",
+"market": "1",
+"name": "美吾華"
+},
+"1732": {
+"abbr": "毛寶",
+"en": "Mao Bao",
+"industry": "化學工業",
+"market": "1",
+"name": "毛寶"
+},
+"1733": {
+"abbr": "五鼎",
+"en": "ApexBio",
+"industry": "生技醫療",
+"market": "1",
+"name": "五鼎"
+},
+"1734": {
+"abbr": "杏輝",
+"en": "SINPHAR",
+"industry": "生技醫療",
+"market": "1",
+"name": "杏輝"
+},
+"1735": {
+"abbr": "日勝化",
+"en": "EMC",
+"industry": "化學工業",
+"market": "1",
+"name": "日勝化"
+},
+"1736": {
+"abbr": "喬山",
+"en": "JHT",
+"industry": "運動休閒",
+"market": "1",
+"name": "喬山"
+},
+"1737": {
+"abbr": "臺鹽",
+"en": "Taiyen",
+"industry": "食品工業",
+"market": "1",
+"name": "臺鹽"
+},
+"1742": {
+"abbr": "台蠟",
+"en": "TWC",
+"industry": "化學工業",
+"market": "2",
+"name": "台蠟"
+},
+"1752": {
+"abbr": "南光",
+"en": "NANG KUANG",
+"industry": "生技醫療",
+"market": "1",
+"name": "南光"
+},
+"1760": {
+"abbr": "寶齡富錦",
+"en": "PBF",
+"industry": "生技醫療",
+"market": "1",
+"name": "寶齡富錦"
+},
+"1762": {
+"abbr": "中化生",
+"en": "CCSB",
+"industry": "生技醫療",
+"market": "1",
+"name": "中化生"
+},
+"1773": {
+"abbr": "勝一",
+"en": "SHINY  CHEMICAL",
+"industry": "化學工業",
+"market": "1",
+"name": "勝一"
+},
+"1776": {
+"abbr": "展宇",
+"en": "Headway",
+"industry": "化學工業",
+"market": "1",
+"name": "展宇"
+},
+"1777": {
+"abbr": "生泰",
+"en": "SYN-TECH",
+"industry": "生技醫療",
+"market": "2",
+"name": "生泰"
+},
+"1781": {
+"abbr": "合世",
+"en": "H&L",
+"industry": "生技醫療",
+"market": "2",
+"name": "合世"
+},
+"1783": {
+"abbr": "和康生",
+"en": "MBI",
+"industry": "生技醫療",
+"market": "1",
+"name": "和康生"
+},
+"1784": {
+"abbr": "訊聯",
+"en": "BIONET CORP.",
+"industry": "生技醫療",
+"market": "2",
+"name": "訊聯"
+},
+"1785": {
+"abbr": "光洋科",
+"en": "Solar",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "光洋科"
+},
+"1786": {
+"abbr": "科妍",
+"en": "SVBI",
+"industry": "生技醫療",
+"market": "1",
+"name": "科妍"
+},
+"1788": {
+"abbr": "杏昌",
+"en": "HCI",
+"industry": "生技醫療",
+"market": "2",
+"name": "杏昌"
+},
+"1789": {
+"abbr": "神隆",
+"en": "SPT",
+"industry": "生技醫療",
+"market": "1",
+"name": "神隆"
+},
+"1795": {
+"abbr": "美時",
+"en": "Lotus Pharm",
+"industry": "生技醫療",
+"market": "1",
+"name": "美時"
+},
+"1796": {
+"abbr": "金穎生技",
+"en": "GeneFerm",
+"industry": "食品工業",
+"market": "2",
+"name": "金穎生技"
+},
+"1799": {
+"abbr": "易威",
+"en": "EASYWELL",
+"industry": "生技醫療",
+"market": "2",
+"name": "易威"
+},
+"1802": {
+"abbr": "台玻",
+"en": "TGI",
+"industry": "玻璃陶瓷",
+"market": "1",
+"name": "台玻"
+},
+"1805": {
+"abbr": "寶徠",
+"en": "BLG",
+"industry": "建材營建",
+"market": "1",
+"name": "寶徠"
+},
+"1806": {
+"abbr": "冠軍",
+"en": "CHAMPION",
+"industry": "玻璃陶瓷",
+"market": "1",
+"name": "冠軍"
+},
+"1808": {
+"abbr": "潤隆",
+"en": "RUN LONG",
+"industry": "建材營建",
+"market": "1",
+"name": "潤隆"
+},
+"1809": {
+"abbr": "中釉",
+"en": "China Glaze",
+"industry": "玻璃陶瓷",
+"market": "1",
+"name": "中釉"
+},
+"1810": {
+"abbr": "和成",
+"en": "HCG",
+"industry": "玻璃陶瓷",
+"market": "1",
+"name": "和成"
+},
+"1813": {
+"abbr": "寶利徠",
+"en": "Polylite",
+"industry": "生技醫療",
+"market": "2",
+"name": "寶利徠"
+},
+"1815": {
+"abbr": "富喬",
+"en": "FFG",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "富喬"
+},
+"1817": {
+"abbr": "凱撒衛",
+"en": "SANITAR",
+"industry": "玻璃陶瓷",
+"market": "1",
+"name": "凱撒衛"
+},
+"1903": {
+"abbr": "士紙",
+"en": "Shihlin Paper",
+"industry": "造紙工業",
+"market": "1",
+"name": "士紙"
+},
+"1904": {
+"abbr": "正隆",
+"en": "Cheng Loong",
+"industry": "造紙工業",
+"market": "1",
+"name": "正隆"
+},
+"1905": {
+"abbr": "華紙",
+"en": "CHP",
+"industry": "造紙工業",
+"market": "1",
+"name": "華紙"
+},
+"1906": {
+"abbr": "寶隆",
+"en": "Baolong Intl.",
+"industry": "造紙工業",
+"market": "1",
+"name": "寶隆"
+},
+"1907": {
+"abbr": "永豐餘",
+"en": "YFY",
+"industry": "造紙工業",
+"market": "1",
+"name": "永豐餘"
+},
+"1909": {
+"abbr": "榮成",
+"en": "Longchen P&P",
+"industry": "造紙工業",
+"market": "1",
+"name": "榮成"
+},
+"2002": {
+"abbr": "中鋼",
+"en": "CSC",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "中鋼"
+},
+"2006": {
+"abbr": "東和鋼鐵",
+"en": "Tung Ho Steel",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "東和鋼鐵"
+},
+"2007": {
+"abbr": "燁興",
+"en": "YH",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "燁興"
+},
+"2008": {
+"abbr": "高興昌",
+"en": "KHC",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "高興昌"
+},
+"2009": {
+"abbr": "第一銅",
+"en": "FCC",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "第一銅"
+},
+"2010": {
+"abbr": "春源",
+"en": "CHUN YUAN STEEL",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "春源"
+},
+"2012": {
+"abbr": "春雨",
+"en": "CHUN YU",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "春雨"
+},
+"2013": {
+"abbr": "中鋼構",
+"en": "CSSC",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "中鋼構"
+},
+"2014": {
+"abbr": "中鴻",
+"en": "CHUNG HUNG",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "中鴻"
+},
+"2015": {
+"abbr": "豐興",
+"en": "FH",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "豐興"
+},
+"2017": {
+"abbr": "官田鋼",
+"en": "Quintain Steel",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "官田鋼"
+},
+"2020": {
+"abbr": "美亞",
+"en": "MAYER PIPE",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "美亞"
+},
+"2022": {
+"abbr": "聚亨",
+"en": "TYCOONS",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "聚亨"
+},
+"2023": {
+"abbr": "燁輝",
+"en": "YP",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "燁輝"
+},
+"2024": {
+"abbr": "志聯",
+"en": "CHIH LIEN",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "志聯"
+},
+"2025": {
+"abbr": "千興",
+"en": "CSSSC",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "千興"
+},
+"2027": {
+"abbr": "大成鋼",
+"en": "TC",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "大成鋼"
+},
+"2028": {
+"abbr": "威致",
+"en": "WEI CHIH",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "威致"
+},
+"2029": {
+"abbr": "盛餘",
+"en": "SYSCO",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "盛餘"
+},
+"2030": {
+"abbr": "彰源",
+"en": "FROCH",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "彰源"
+},
+"2031": {
+"abbr": "新光鋼",
+"en": "Hkssteel",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "新光鋼"
+},
+"2032": {
+"abbr": "新鋼",
+"en": "Sinkang",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "新鋼"
+},
+"2033": {
+"abbr": "佳大",
+"en": "CHIA TA",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "佳大"
+},
+"2034": {
+"abbr": "允強",
+"en": "YC",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "允強"
+},
+"2035": {
+"abbr": "唐榮公司",
+"en": "TE",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "唐榮"
+},
+"2038": {
+"abbr": "海光",
+"en": "HAIKWANG",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "海光"
+},
+"2049": {
+"abbr": "上銀",
+"en": "HIWIN",
+"industry": "電機機械",
+"market": "1",
+"name": "上銀"
+},
+"2059": {
+"abbr": "川湖",
+"en": "king slide",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "川湖"
+},
+"2061": {
+"abbr": "風青",
+"en": "FENG CHING",
+"industry": "電器電纜",
+"market": "2",
+"name": "風青"
+},
+"2062": {
+"abbr": "橋椿",
+"en": "SSM",
+"industry": "居家生活",
+"market": "1",
+"name": "橋椿"
+},
+"2063": {
+"abbr": "世鎧精密",
+"en": "SHEH KAI",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "世鎧"
+},
+"2064": {
+"abbr": "晉椿",
+"en": "CAMELLIA",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "晉椿"
+},
+"2065": {
+"abbr": "世豐",
+"en": "SF",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "世豐"
+},
+"2066": {
+"abbr": "世德",
+"en": "SUMEEKO",
+"industry": "電機機械",
+"market": "2",
+"name": "世德"
+},
+"2067": {
+"abbr": "嘉鋼",
+"en": "CYSTEEL",
+"industry": "電機機械",
+"market": "2",
+"name": "嘉鋼"
+},
+"2069": {
+"abbr": "運錩",
+"en": "YC",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "運錩"
+},
+"2070": {
+"abbr": "精湛",
+"en": "Ching Chan",
+"industry": "電機機械",
+"market": "2",
+"name": "精湛"
+},
+"2072": {
+"abbr": "世紀風電",
+"en": "CWP",
+"industry": "綠能環保",
+"market": "1",
+"name": "世紀風電"
+},
+"2073": {
+"abbr": "雄順",
+"en": "SSMC",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "雄順"
+},
+"2101": {
+"abbr": "南港",
+"en": "NK",
+"industry": "橡膠工業",
+"market": "1",
+"name": "南港"
+},
+"2102": {
+"abbr": "泰豐",
+"en": "FEDERAL CORP",
+"industry": "橡膠工業",
+"market": "1",
+"name": "泰豐"
+},
+"2103": {
+"abbr": "台橡",
+"en": "TSRC",
+"industry": "橡膠工業",
+"market": "1",
+"name": "台橡"
+},
+"2104": {
+"abbr": "國際中橡",
+"en": "CSRC",
+"industry": "橡膠工業",
+"market": "1",
+"name": "國際中橡"
+},
+"2105": {
+"abbr": "正新",
+"en": "CST",
+"industry": "橡膠工業",
+"market": "1",
+"name": "正新"
+},
+"2106": {
+"abbr": "建大",
+"en": "KENDA",
+"industry": "橡膠工業",
+"market": "1",
+"name": "建大"
+},
+"2107": {
+"abbr": "厚生",
+"en": "FRG",
+"industry": "橡膠工業",
+"market": "1",
+"name": "厚生"
+},
+"2108": {
+"abbr": "南帝",
+"en": "NANTEX",
+"industry": "橡膠工業",
+"market": "1",
+"name": "南帝"
+},
+"2109": {
+"abbr": "華豐",
+"en": "HWA FONG",
+"industry": "橡膠工業",
+"market": "1",
+"name": "華豐"
+},
+"2114": {
+"abbr": "鑫永銓",
+"en": "HYC",
+"industry": "橡膠工業",
+"market": "1",
+"name": "鑫永銓"
+},
+"2115": {
+"abbr": "六暉-KY",
+"en": "LU HAI",
+"industry": "汽車工業",
+"market": "1",
+"name": "六暉-KY"
+},
+"2201": {
+"abbr": "裕隆",
+"en": "YL",
+"industry": "汽車工業",
+"market": "1",
+"name": "裕隆"
+},
+"2204": {
+"abbr": "中華",
+"en": "CMC",
+"industry": "汽車工業",
+"market": "1",
+"name": "中華"
+},
+"2206": {
+"abbr": "三陽工業",
+"en": "SYM",
+"industry": "汽車工業",
+"market": "1",
+"name": "三陽工業"
+},
+"2207": {
+"abbr": "和泰車",
+"en": "HOTAI MOTOR",
+"industry": "汽車工業",
+"market": "1",
+"name": "和泰車"
+},
+"2208": {
+"abbr": "台船",
+"en": "CSBC",
+"industry": "航運業",
+"market": "1",
+"name": "台船"
+},
+"2211": {
+"abbr": "長榮鋼",
+"en": "EGST",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "長榮鋼"
+},
+"2221": {
+"abbr": "大甲",
+"en": "DAJA、YHMCO",
+"industry": "其他",
+"market": "2",
+"name": "大甲"
+},
+"2227": {
+"abbr": "裕日車",
+"en": "YNM",
+"industry": "汽車工業",
+"market": "1",
+"name": "裕日車"
+},
+"2228": {
+"abbr": "劍麟",
+"en": "IRF",
+"industry": "汽車工業",
+"market": "1",
+"name": "劍麟"
+},
+"2230": {
+"abbr": "泰茂",
+"en": "C.T.I.",
+"industry": "電機機械",
+"market": "2",
+"name": "泰茂"
+},
+"2231": {
+"abbr": "為升",
+"en": "CUB",
+"industry": "汽車工業",
+"market": "1",
+"name": "為升"
+},
+"2233": {
+"abbr": "宇隆",
+"en": "TURVO",
+"industry": "汽車工業",
+"market": "1",
+"name": "宇隆"
+},
+"2235": {
+"abbr": "謚源",
+"en": "I YUAN",
+"industry": "電機機械",
+"market": "2",
+"name": "謚源"
+},
+"2236": {
+"abbr": "百達-KY",
+"en": "Patec",
+"industry": "汽車工業",
+"market": "1",
+"name": "百達-KY"
+},
+"2239": {
+"abbr": "英利-KY",
+"en": "Cayman Engley",
+"industry": "汽車工業",
+"market": "1",
+"name": "英利-KY"
+},
+"2241": {
+"abbr": "艾姆勒",
+"en": "Amulaire",
+"industry": "汽車工業",
+"market": "1",
+"name": "艾姆勒"
+},
+"2243": {
+"abbr": "宏旭-KY",
+"en": "HS",
+"industry": "汽車工業",
+"market": "1",
+"name": "宏旭-KY"
+},
+"2247": {
+"abbr": "汎德永業",
+"en": "PGUM",
+"industry": "汽車工業",
+"market": "1",
+"name": "汎德永業"
+},
+"2248": {
+"abbr": "華勝-KY",
+"en": "eL",
+"industry": "汽車工業",
+"market": "1",
+"name": "華勝-KY"
+},
+"2250": {
+"abbr": "IKKA-KY",
+"en": "IKKA-KY",
+"industry": "汽車工業",
+"market": "1",
+"name": "IKKA-KY"
+},
+"2254": {
+"abbr": "巨鎧精密-創",
+"en": "COPLUS INC.",
+"industry": "汽車工業",
+"market": "7",
+"name": "巨鎧精密-創"
+},
+"2258": {
+"abbr": "鴻華先進-創",
+"en": "Foxtron Vehicle Technologies Co. Ltd.",
+"industry": "汽車工業",
+"market": "7",
+"name": "鴻華先進-創"
+},
+"2301": {
+"abbr": "光寶科",
+"en": "LTC",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "光寶科"
+},
+"2302": {
+"abbr": "麗正",
+"en": "RECTRON",
+"industry": "電子–半導體",
+"market": "1",
+"name": "麗正"
+},
+"2303": {
+"abbr": "聯電",
+"en": "UMC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "聯電"
+},
+"2305": {
+"abbr": "全友",
+"en": "MII",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "全友"
+},
+"2308": {
+"abbr": "台達電",
+"en": "DELTA",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "台達電"
+},
+"2312": {
+"abbr": "金寶",
+"en": "KINPO",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "金寶"
+},
+"2313": {
+"abbr": "華通",
+"en": "COMPEQ",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "華通"
+},
+"2314": {
+"abbr": "台揚",
+"en": "MTI",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "台揚"
+},
+"2316": {
+"abbr": "楠梓電",
+"en": "WUS",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "楠梓電"
+},
+"2317": {
+"abbr": "鴻海",
+"en": "HON HAI",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "鴻海"
+},
+"2321": {
+"abbr": "東訊",
+"en": "TECOM",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "東訊"
+},
+"2323": {
+"abbr": "中環",
+"en": "CMC",
+"industry": "電子–光電",
+"market": "1",
+"name": "中環"
+},
+"2324": {
+"abbr": "仁寶",
+"en": "Compal",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "仁寶"
+},
+"2327": {
+"abbr": "國巨*",
+"en": "YAGEO",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "國巨*"
+},
+"2328": {
+"abbr": "廣宇",
+"en": "PI",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "廣宇"
+},
+"2329": {
+"abbr": "華泰",
+"en": "OSE",
+"industry": "電子–半導體",
+"market": "1",
+"name": "華泰"
+},
+"2330": {
+"abbr": "台積電",
+"en": "TSMC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "台積電"
+},
+"2331": {
+"abbr": "精英",
+"en": "ECS",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "精英"
+},
+"2332": {
+"abbr": "友訊",
+"en": "D-LINK",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "友訊"
+},
+"2337": {
+"abbr": "旺宏",
+"en": "Macronix",
+"industry": "電子–半導體",
+"market": "1",
+"name": "旺宏"
+},
+"2338": {
+"abbr": "光罩",
+"en": "TMC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "光罩"
+},
+"2340": {
+"abbr": "台亞",
+"en": "TASC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "台亞"
+},
+"2342": {
+"abbr": "茂矽",
+"en": "MVI",
+"industry": "電子–半導體",
+"market": "1",
+"name": "茂矽"
+},
+"2344": {
+"abbr": "華邦電",
+"en": "WEC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "華邦電"
+},
+"2345": {
+"abbr": "智邦",
+"en": "ACCTON",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "智邦"
+},
+"2347": {
+"abbr": "聯強",
+"en": "Synnex",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "聯強"
+},
+"2348": {
+"abbr": "海悅",
+"en": "Hiyes",
+"industry": "其他",
+"market": "1",
+"name": "海悅"
+},
+"2349": {
+"abbr": "錸德",
+"en": "RITEK",
+"industry": "電子–光電",
+"market": "1",
+"name": "錸德"
+},
+"2351": {
+"abbr": "順德",
+"en": "SDI",
+"industry": "電子–半導體",
+"market": "1",
+"name": "順德"
+},
+"2352": {
+"abbr": "佳世達",
+"en": "Qisda",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "佳世達"
+},
+"2353": {
+"abbr": "宏碁",
+"en": "ACER",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "宏碁"
+},
+"2354": {
+"abbr": "鴻準",
+"en": "FTC",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "鴻準"
+},
+"2355": {
+"abbr": "敬鵬",
+"en": "CHIN-POON",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "敬鵬"
+},
+"2356": {
+"abbr": "英業達",
+"en": "INVENTEC",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "英業達"
+},
+"2357": {
+"abbr": "華碩",
+"en": "ASUSTEK",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "華碩"
+},
+"2359": {
+"abbr": "所羅門",
+"en": "SOLOMON",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "所羅門"
+},
+"2360": {
+"abbr": "致茂",
+"en": "CHROMA",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "致茂"
+},
+"2362": {
+"abbr": "藍天",
+"en": "CLEVO CO.",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "藍天"
+},
+"2363": {
+"abbr": "矽統",
+"en": "SiS",
+"industry": "電子–半導體",
+"market": "1",
+"name": "矽統"
+},
+"2364": {
+"abbr": "倫飛",
+"en": "Twinhead",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "倫飛"
+},
+"2365": {
+"abbr": "昆盈",
+"en": "KYE",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "昆盈"
+},
+"2367": {
+"abbr": "燿華",
+"en": "UNITECH",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "燿華"
+},
+"2368": {
+"abbr": "金像電",
+"en": "GCE",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "金像電"
+},
+"2369": {
+"abbr": "菱生",
+"en": "LPI",
+"industry": "電子–半導體",
+"market": "1",
+"name": "菱生"
+},
+"2371": {
+"abbr": "大同",
+"en": "TATUNG COMPANY",
+"industry": "電機機械",
+"market": "1",
+"name": "大同"
+},
+"2373": {
+"abbr": "震旦行",
+"en": "Aurora",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "震旦行"
+},
+"2374": {
+"abbr": "佳能",
+"en": "ABILITY",
+"industry": "電子–光電",
+"market": "1",
+"name": "佳能"
+},
+"2375": {
+"abbr": "凱美",
+"en": "KAIMEI",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "凱美"
+},
+"2376": {
+"abbr": "技嘉",
+"en": "GIGABYTE",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "技嘉"
+},
+"2377": {
+"abbr": "微星",
+"en": "MSI",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "微星"
+},
+"2379": {
+"abbr": "瑞昱",
+"en": "RT",
+"industry": "電子–半導體",
+"market": "1",
+"name": "瑞昱"
+},
+"2380": {
+"abbr": "虹光",
+"en": "AVISION",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "虹光"
+},
+"2382": {
+"abbr": "廣達",
+"en": "QCI",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "廣達"
+},
+"2383": {
+"abbr": "台光電",
+"en": "EMC",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "台光電"
+},
+"2385": {
+"abbr": "群光",
+"en": "CHICONY",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "群光"
+},
+"2387": {
+"abbr": "精元",
+"en": "SUNREX",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "精元"
+},
+"2388": {
+"abbr": "威盛",
+"en": "VIA",
+"industry": "電子–半導體",
+"market": "1",
+"name": "威盛"
+},
+"2390": {
+"abbr": "云辰",
+"en": "EVERSPRING",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "云辰"
+},
+"2392": {
+"abbr": "正崴",
+"en": "FOXLINK",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "正崴"
+},
+"2393": {
+"abbr": "億光",
+"en": "EVERLIGHT",
+"industry": "電子–光電",
+"market": "1",
+"name": "億光"
+},
+"2395": {
+"abbr": "研華",
+"en": "Advantech",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "研華"
+},
+"2397": {
+"abbr": "友通",
+"en": "DFI Inc.",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "友通"
+},
+"2399": {
+"abbr": "映泰",
+"en": "BIOSTAR",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "映泰"
+},
+"2401": {
+"abbr": "凌陽",
+"en": "SUNPLUS",
+"industry": "電子–半導體",
+"market": "1",
+"name": "凌陽"
+},
+"2402": {
+"abbr": "毅嘉",
+"en": "ICHIA",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "毅嘉"
+},
+"2404": {
+"abbr": "漢唐",
+"en": "UIS",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "漢唐"
+},
+"2405": {
+"abbr": "輔信",
+"en": "Shuttle",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "輔信"
+},
+"2406": {
+"abbr": "國碩",
+"en": "GSC",
+"industry": "電子–光電",
+"market": "1",
+"name": "國碩"
+},
+"2408": {
+"abbr": "南亞科",
+"en": "NTC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "南亞科"
+},
+"2409": {
+"abbr": "友達",
+"en": "AUO",
+"industry": "電子–光電",
+"market": "1",
+"name": "友達"
+},
+"2412": {
+"abbr": "中華電",
+"en": "CHT",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "中華電"
+},
+"2413": {
+"abbr": "環科",
+"en": "UMEC",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "環科"
+},
+"2414": {
+"abbr": "精技",
+"en": "UT",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "精技"
+},
+"2415": {
+"abbr": "錩新",
+"en": "CX TECH",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "錩新"
+},
+"2417": {
+"abbr": "圓剛",
+"en": "AVERMEDIA",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "圓剛"
+},
+"2419": {
+"abbr": "仲琦",
+"en": "H.T.",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "仲琦"
+},
+"2420": {
+"abbr": "新巨",
+"en": "ZIPPY",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "新巨"
+},
+"2421": {
+"abbr": "建準",
+"en": "SUNON",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "建準"
+},
+"2423": {
+"abbr": "固緯",
+"en": "GW",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "固緯"
+},
+"2424": {
+"abbr": "隴華",
+"en": "LUNG HWA",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "隴華"
+},
+"2425": {
+"abbr": "承啟",
+"en": "CHAINTECH",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "承啟"
+},
+"2426": {
+"abbr": "鼎元",
+"en": "TYNTEK",
+"industry": "電子–光電",
+"market": "1",
+"name": "鼎元"
+},
+"2427": {
+"abbr": "三商電",
+"en": "MDS",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "三商電"
+},
+"2428": {
+"abbr": "興勤",
+"en": "THINKING",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "興勤"
+},
+"2429": {
+"abbr": "銘旺科",
+"en": "PWT",
+"industry": "電子–光電",
+"market": "1",
+"name": "銘旺科"
+},
+"2430": {
+"abbr": "燦坤",
+"en": "TKE",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "燦坤"
+},
+"2431": {
+"abbr": "聯昌",
+"en": "LIEN CHANG",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "聯昌"
+},
+"2432": {
+"abbr": "倚天酷碁-創",
+"en": "Acer Gadget Inc.",
+"industry": "電子–電腦及週邊設備",
+"market": "7",
+"name": "倚天酷碁-創"
+},
+"2433": {
+"abbr": "互盛電",
+"en": "HUXEN",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "互盛電"
+},
+"2434": {
+"abbr": "統懋",
+"en": "MOSPEC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "統懋"
+},
+"2436": {
+"abbr": "偉詮電",
+"en": "Weltrend",
+"industry": "電子–半導體",
+"market": "1",
+"name": "偉詮電"
+},
+"2438": {
+"abbr": "翔耀",
+"en": "ENLIGHT",
+"industry": "電子–光電",
+"market": "1",
+"name": "翔耀"
+},
+"2439": {
+"abbr": "美律",
+"en": "MERRY",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "美律"
+},
+"2440": {
+"abbr": "太空梭",
+"en": "SPACE SHUTTLE",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "太空梭"
+},
+"2441": {
+"abbr": "超豐",
+"en": "GTK",
+"industry": "電子–半導體",
+"market": "1",
+"name": "超豐"
+},
+"2442": {
+"abbr": "新美齊",
+"en": "JEAN",
+"industry": "建材營建",
+"market": "1",
+"name": "新美齊"
+},
+"2444": {
+"abbr": "兆勁",
+"en": "AboCom",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "兆勁"
+},
+"2449": {
+"abbr": "京元電子",
+"en": "KYEC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "京元電子"
+},
+"2450": {
+"abbr": "神腦",
+"en": "SENAO",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "神腦"
+},
+"2451": {
+"abbr": "創見",
+"en": "Transcend",
+"industry": "電子–半導體",
+"market": "1",
+"name": "創見"
+},
+"2453": {
+"abbr": "凌群",
+"en": "SYSCOM",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "凌群"
+},
+"2454": {
+"abbr": "聯發科",
+"en": "MediaTek",
+"industry": "電子–半導體",
+"market": "1",
+"name": "聯發科"
+},
+"2455": {
+"abbr": "全新",
+"en": "VPEC",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "全新"
+},
+"2457": {
+"abbr": "飛宏",
+"en": "PHIHONG",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "飛宏"
+},
+"2458": {
+"abbr": "義隆",
+"en": "ELAN",
+"industry": "電子–半導體",
+"market": "1",
+"name": "義隆"
+},
+"2459": {
+"abbr": "敦吉",
+"en": "AUDIX",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "敦吉"
+},
+"2460": {
+"abbr": "建通",
+"en": "GEM",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "建通"
+},
+"2461": {
+"abbr": "光群雷",
+"en": "K LASER",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "光群雷"
+},
+"2462": {
+"abbr": "良得電",
+"en": "LINETEK",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "良得電"
+},
+"2464": {
+"abbr": "盟立",
+"en": "Mirle",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "盟立"
+},
+"2465": {
+"abbr": "麗臺",
+"en": "LEADTEK",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "麗臺"
+},
+"2466": {
+"abbr": "冠西電",
+"en": "COSMO",
+"industry": "電子–光電",
+"market": "1",
+"name": "冠西電"
+},
+"2467": {
+"abbr": "志聖",
+"en": "C SUN",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "志聖"
+},
+"2468": {
+"abbr": "華經",
+"en": "FIS",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "華經"
+},
+"2471": {
+"abbr": "資通",
+"en": "ARES",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "資通"
+},
+"2472": {
+"abbr": "立隆電",
+"en": "LELON",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "立隆電"
+},
+"2474": {
+"abbr": "可成",
+"en": "CATCHER",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "可成"
+},
+"2476": {
+"abbr": "鉅祥",
+"en": "GS",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "鉅祥"
+},
+"2477": {
+"abbr": "美隆電",
+"en": "MEILOON",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "美隆電"
+},
+"2478": {
+"abbr": "大毅",
+"en": "TA-I",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "大毅"
+},
+"2480": {
+"abbr": "敦陽科",
+"en": "STARK",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "敦陽科"
+},
+"2481": {
+"abbr": "強茂",
+"en": "PANJIT",
+"industry": "電子–半導體",
+"market": "1",
+"name": "強茂"
+},
+"2482": {
+"abbr": "連宇",
+"en": "UIC",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "連宇"
+},
+"2483": {
+"abbr": "百容",
+"en": "ECE",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "百容"
+},
+"2484": {
+"abbr": "希華",
+"en": "SIWARD",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "希華"
+},
+"2485": {
+"abbr": "兆赫",
+"en": "ZINWELL",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "兆赫"
+},
+"2486": {
+"abbr": "一詮",
+"en": "I-CHIUN",
+"industry": "電子–光電",
+"market": "1",
+"name": "一詮"
+},
+"2488": {
+"abbr": "漢平",
+"en": "HANPIN",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "漢平"
+},
+"2489": {
+"abbr": "瑞軒",
+"en": "AMTRAN",
+"industry": "電子–光電",
+"market": "1",
+"name": "瑞軒"
+},
+"2491": {
+"abbr": "吉祥全",
+"en": "FOCL",
+"industry": "電子–光電",
+"market": "1",
+"name": "吉祥全"
+},
+"2492": {
+"abbr": "華新科",
+"en": "WTC",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "華新科"
+},
+"2493": {
+"abbr": "揚博",
+"en": "AMPOC",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "揚博"
+},
+"2495": {
+"abbr": "普安",
+"en": "Infortrend",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "普安"
+},
+"2496": {
+"abbr": "卓越",
+"en": "SPC",
+"industry": "其他",
+"market": "1",
+"name": "卓越"
+},
+"2497": {
+"abbr": "怡利電",
+"en": "E-LEAD",
+"industry": "汽車工業",
+"market": "1",
+"name": "怡利電"
+},
+"2498": {
+"abbr": "宏達電",
+"en": "HTC",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "宏達電"
+},
+"2501": {
+"abbr": "國建",
+"en": "CATHAY RED",
+"industry": "建材營建",
+"market": "1",
+"name": "國建"
+},
+"2504": {
+"abbr": "國產",
+"en": "GBM",
+"industry": "建材營建",
+"market": "1",
+"name": "國產"
+},
+"2505": {
+"abbr": "國揚",
+"en": "ky",
+"industry": "建材營建",
+"market": "1",
+"name": "國揚"
+},
+"2506": {
+"abbr": "太設",
+"en": "PCC",
+"industry": "建材營建",
+"market": "1",
+"name": "太設"
+},
+"2509": {
+"abbr": "全坤建",
+"en": "CHAINQUI",
+"industry": "建材營建",
+"market": "1",
+"name": "全坤建"
+},
+"2511": {
+"abbr": "太子",
+"en": "PHD",
+"industry": "建材營建",
+"market": "1",
+"name": "太子"
+},
+"2514": {
+"abbr": "龍邦",
+"en": "LONG BON",
+"industry": "其他",
+"market": "1",
+"name": "龍邦"
+},
+"2515": {
+"abbr": "中工",
+"en": "BES",
+"industry": "建材營建",
+"market": "1",
+"name": "中工"
+},
+"2516": {
+"abbr": "新建",
+"en": "New Asia",
+"industry": "建材營建",
+"market": "1",
+"name": "新建"
+},
+"2520": {
+"abbr": "冠德",
+"en": "KINDOM",
+"industry": "建材營建",
+"market": "1",
+"name": "冠德"
+},
+"2524": {
+"abbr": "京城",
+"en": "KTC",
+"industry": "建材營建",
+"market": "1",
+"name": "京城"
+},
+"2527": {
+"abbr": "宏璟",
+"en": "Hung Ching",
+"industry": "建材營建",
+"market": "1",
+"name": "宏璟"
+},
+"2528": {
+"abbr": "皇普",
+"en": "CROWELL",
+"industry": "建材營建",
+"market": "1",
+"name": "皇普"
+},
+"2530": {
+"abbr": "華建",
+"en": "DELPHA",
+"industry": "建材營建",
+"market": "1",
+"name": "華建"
+},
+"2534": {
+"abbr": "宏盛",
+"en": "HSC",
+"industry": "建材營建",
+"market": "1",
+"name": "宏盛"
+},
+"2535": {
+"abbr": "達欣工",
+"en": "DA-CIN",
+"industry": "建材營建",
+"market": "1",
+"name": "達欣工"
+},
+"2536": {
+"abbr": "宏普",
+"en": "Hong Pu",
+"industry": "建材營建",
+"market": "1",
+"name": "宏普"
+},
+"2537": {
+"abbr": "聯上發",
+"en": "WE & WIN",
+"industry": "建材營建",
+"market": "1",
+"name": "聯上發"
+},
+"2538": {
+"abbr": "基泰",
+"en": "KeeTai",
+"industry": "建材營建",
+"market": "1",
+"name": "基泰"
+},
+"2539": {
+"abbr": "櫻花建",
+"en": "SAKURAD",
+"industry": "建材營建",
+"market": "1",
+"name": "櫻花建"
+},
+"2540": {
+"abbr": "愛山林",
+"en": "JSL",
+"industry": "建材營建",
+"market": "1",
+"name": "愛山林"
+},
+"2542": {
+"abbr": "興富發",
+"en": "Highwealth",
+"industry": "建材營建",
+"market": "1",
+"name": "興富發"
+},
+"2543": {
+"abbr": "皇昌",
+"en": "HWANG CHANG",
+"industry": "建材營建",
+"market": "1",
+"name": "皇昌"
+},
+"2545": {
+"abbr": "皇翔",
+"en": "HUANG HSIANG",
+"industry": "建材營建",
+"market": "1",
+"name": "皇翔"
+},
+"2546": {
+"abbr": "根基",
+"en": "KEDGE",
+"industry": "建材營建",
+"market": "1",
+"name": "根基"
+},
+"2547": {
+"abbr": "日勝生",
+"en": "RADIUM",
+"industry": "建材營建",
+"market": "1",
+"name": "日勝生"
+},
+"2548": {
+"abbr": "華固",
+"en": "HUAKU",
+"industry": "建材營建",
+"market": "1",
+"name": "華固"
+},
+"2596": {
+"abbr": "綠意",
+"en": "ReaLy",
+"industry": "建材營建",
+"market": "2",
+"name": "綠意"
+},
+"2597": {
+"abbr": "潤弘",
+"en": "REC",
+"industry": "建材營建",
+"market": "1",
+"name": "潤弘"
+},
+"2601": {
+"abbr": "益航",
+"en": "FSC",
+"industry": "貿易百貨",
+"market": "1",
+"name": "益航"
+},
+"2603": {
+"abbr": "長榮",
+"en": "EMC",
+"industry": "航運業",
+"market": "1",
+"name": "長榮"
+},
+"2605": {
+"abbr": "新興",
+"en": "SNC",
+"industry": "航運業",
+"market": "1",
+"name": "新興"
+},
+"2606": {
+"abbr": "裕民",
+"en": "U-MING",
+"industry": "航運業",
+"market": "1",
+"name": "裕民"
+},
+"2607": {
+"abbr": "榮運",
+"en": "EITC",
+"industry": "航運業",
+"market": "1",
+"name": "榮運"
+},
+"2608": {
+"abbr": "嘉里大榮",
+"en": "Kerry TJ",
+"industry": "航運業",
+"market": "1",
+"name": "嘉里大榮"
+},
+"2609": {
+"abbr": "陽明",
+"en": "YMTC",
+"industry": "航運業",
+"market": "1",
+"name": "陽明"
+},
+"2610": {
+"abbr": "華航",
+"en": "CAL",
+"industry": "航運業",
+"market": "1",
+"name": "華航"
+},
+"2611": {
+"abbr": "志信",
+"en": "TSI",
+"industry": "航運業",
+"market": "1",
+"name": "志信"
+},
+"2612": {
+"abbr": "中航",
+"en": "CMT",
+"industry": "航運業",
+"market": "1",
+"name": "中航"
+},
+"2613": {
+"abbr": "中櫃",
+"en": "CCTC",
+"industry": "航運業",
+"market": "1",
+"name": "中櫃"
+},
+"2614": {
+"abbr": "東森",
+"en": "EMIC",
+"industry": "其他",
+"market": "1",
+"name": "東森"
+},
+"2615": {
+"abbr": "萬海",
+"en": "WANHAI",
+"industry": "航運業",
+"market": "1",
+"name": "萬海"
+},
+"2616": {
+"abbr": "山隆",
+"en": "SLC",
+"industry": "油電燃氣",
+"market": "1",
+"name": "山隆"
+},
+"2617": {
+"abbr": "台航",
+"en": "TNC",
+"industry": "航運業",
+"market": "1",
+"name": "台航"
+},
+"2618": {
+"abbr": "長榮航",
+"en": "EVAAIR",
+"industry": "航運業",
+"market": "1",
+"name": "長榮航"
+},
+"2630": {
+"abbr": "亞航",
+"en": "AACL",
+"industry": "航運業",
+"market": "1",
+"name": "亞航"
+},
+"2633": {
+"abbr": "台灣高鐵",
+"en": "THSRC",
+"industry": "航運業",
+"market": "1",
+"name": "台灣高鐵"
+},
+"2634": {
+"abbr": "漢翔",
+"en": "AIDC",
+"industry": "航運業",
+"market": "1",
+"name": "漢翔"
+},
+"2636": {
+"abbr": "台驊控股",
+"en": "T3EX",
+"industry": "航運業",
+"market": "1",
+"name": "台驊控股"
+},
+"2637": {
+"abbr": "慧洋-KY",
+"en": "WISDOM",
+"industry": "航運業",
+"market": "1",
+"name": "慧洋-KY"
+},
+"2640": {
+"abbr": "大車隊",
+"en": "55688",
+"industry": "數位雲端",
+"market": "2",
+"name": "大車隊"
+},
+"2641": {
+"abbr": "正德",
+"en": "Franbo Lines",
+"industry": "航運業",
+"market": "2",
+"name": "正德"
+},
+"2642": {
+"abbr": "宅配通",
+"en": "Pelican",
+"industry": "航運業",
+"market": "1",
+"name": "宅配通"
+},
+"2643": {
+"abbr": "捷迅",
+"en": "Soonest",
+"industry": "航運業",
+"market": "2",
+"name": "捷迅"
+},
+"2645": {
+"abbr": "長榮航太",
+"en": "EGAT",
+"industry": "航運業",
+"market": "1",
+"name": "長榮航太"
+},
+"2646": {
+"abbr": "星宇航空",
+"en": "STARLUX AIR",
+"industry": "航運業",
+"market": "1",
+"name": "星宇航空"
+},
+"2701": {
+"abbr": "萬企",
+"en": "WANHWA",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "萬企"
+},
+"2702": {
+"abbr": "華園",
+"en": "HG",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "華園"
+},
+"2704": {
+"abbr": "國賓",
+"en": "AMBH",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "國賓"
+},
+"2705": {
+"abbr": "六福",
+"en": "LEOFOO",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "六福"
+},
+"2706": {
+"abbr": "第一店",
+"en": "FIRST HOTEL",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "第一店"
+},
+"2707": {
+"abbr": "晶華",
+"en": "GFRT",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "晶華"
+},
+"2712": {
+"abbr": "遠雄來",
+"en": "FGH",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "遠雄來"
+},
+"2718": {
+"abbr": "全心投控",
+"en": "Allmind",
+"industry": "建材營建",
+"market": "2",
+"name": "全心投控"
+},
+"2719": {
+"abbr": "燦星旅",
+"en": "Star Travel",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "燦星旅"
+},
+"2722": {
+"abbr": "夏都",
+"en": "Chateau",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "夏都"
+},
+"2723": {
+"abbr": "美食-KY",
+"en": "Gourmet",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "美食-KY"
+},
+"2724": {
+"abbr": "藝舍-KY",
+"en": "AAGD-KY",
+"industry": "其他",
+"market": "2",
+"name": "藝舍-KY"
+},
+"2726": {
+"abbr": "雅茗-KY",
+"en": "Yummy Town",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "雅茗-KY"
+},
+"2727": {
+"abbr": "王品",
+"en": "WOWPRIME",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "王品"
+},
+"2729": {
+"abbr": "瓦城",
+"en": "TTFB",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "瓦城"
+},
+"2731": {
+"abbr": "雄獅",
+"en": "Liontravel",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "雄獅"
+},
+"2732": {
+"abbr": "六角",
+"en": "La Kaffa",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "六角"
+},
+"2734": {
+"abbr": "易飛網",
+"en": "Ezfly",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "易飛網"
+},
+"2736": {
+"abbr": "富野",
+"en": "HOYA",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "富野"
+},
+"2739": {
+"abbr": "寒舍",
+"en": "My Humble House",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "寒舍"
+},
+"2740": {
+"abbr": "華軒",
+"en": "Hua Hsuan",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "華軒"
+},
+"2743": {
+"abbr": "山富",
+"en": "richmond",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "山富"
+},
+"2745": {
+"abbr": "五福",
+"en": "LIFE TRAVEL",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "五福"
+},
+"2748": {
+"abbr": "雲品",
+"en": "FDC",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "雲品"
+},
+"2751": {
+"abbr": "王座",
+"en": "Kingza",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "王座"
+},
+"2752": {
+"abbr": "豆府",
+"en": "TOFU",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "豆府"
+},
+"2753": {
+"abbr": "八方雲集",
+"en": "Bafang",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "八方雲集"
+},
+"2754": {
+"abbr": "亞洲藏壽司",
+"en": "KURA SUSHI ASIA",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "亞洲藏壽司"
+},
+"2755": {
+"abbr": "揚秦",
+"en": "YoungQin",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "揚秦"
+},
+"2756": {
+"abbr": "聯發國際",
+"en": "LIAN FA",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "聯發國際"
+},
+"2762": {
+"abbr": "世界健身-KY",
+"en": "World Gym",
+"industry": "運動休閒",
+"market": "1",
+"name": "世界健身-KY"
+},
+"2801": {
+"abbr": "彰銀",
+"en": "CHANG HWA BANK",
+"industry": "金融保險",
+"market": "1",
+"name": "彰銀"
+},
+"2812": {
+"abbr": "台中銀",
+"en": "T.C.C.B.",
+"industry": "金融保險",
+"market": "1",
+"name": "台中銀"
+},
+"2816": {
+"abbr": "旺旺保",
+"en": "UNION INS.",
+"industry": "金融保險",
+"market": "1",
+"name": "旺旺保"
+},
+"2820": {
+"abbr": "華票",
+"en": "CBF",
+"industry": "金融保險",
+"market": "1",
+"name": "華票"
+},
+"2832": {
+"abbr": "台產",
+"en": "TFMI",
+"industry": "金融保險",
+"market": "1",
+"name": "台產"
+},
+"2834": {
+"abbr": "臺企銀",
+"en": "TBB",
+"industry": "金融保險",
+"market": "1",
+"name": "臺企銀"
+},
+"2836": {
+"abbr": "高雄銀",
+"en": "B.O.K",
+"industry": "金融保險",
+"market": "1",
+"name": "高雄銀"
+},
+"2838": {
+"abbr": "聯邦銀",
+"en": "UBOT",
+"industry": "金融保險",
+"market": "1",
+"name": "聯邦銀"
+},
+"2845": {
+"abbr": "遠東銀",
+"en": "FEIB",
+"industry": "金融保險",
+"market": "1",
+"name": "遠東銀"
+},
+"2849": {
+"abbr": "安泰銀",
+"en": "EnTie Bank",
+"industry": "金融保險",
+"market": "1",
+"name": "安泰銀"
+},
+"2850": {
+"abbr": "新產",
+"en": "SK Insurance",
+"industry": "金融保險",
+"market": "1",
+"name": "新產"
+},
+"2851": {
+"abbr": "中再保",
+"en": "Central Re",
+"industry": "金融保險",
+"market": "1",
+"name": "中再保"
+},
+"2852": {
+"abbr": "第一保",
+"en": "FIRST INS",
+"industry": "金融保險",
+"market": "1",
+"name": "第一保"
+},
+"2855": {
+"abbr": "統一證",
+"en": "PSC",
+"industry": "金融保險",
+"market": "1",
+"name": "統一證"
+},
+"2867": {
+"abbr": "三商壽",
+"en": "Mercuries Life",
+"industry": "金融保險",
+"market": "1",
+"name": "三商壽"
+},
+"2880": {
+"abbr": "華南金",
+"en": "HNFHC",
+"industry": "金融保險",
+"market": "1",
+"name": "華南金"
+},
+"2881": {
+"abbr": "富邦金",
+"en": "Fubon Financial",
+"industry": "金融保險",
+"market": "1",
+"name": "富邦金"
+},
+"2882": {
+"abbr": "國泰金",
+"en": "CATHAY FHC",
+"industry": "金融保險",
+"market": "1",
+"name": "國泰金"
+},
+"2883": {
+"abbr": "凱基金",
+"en": "KGI Financial",
+"industry": "金融保險",
+"market": "1",
+"name": "凱基金"
+},
+"2884": {
+"abbr": "玉山金",
+"en": "E.S.F.H",
+"industry": "金融保險",
+"market": "1",
+"name": "玉山金"
+},
+"2885": {
+"abbr": "元大金",
+"en": "Yuanta Group",
+"industry": "金融保險",
+"market": "1",
+"name": "元大金"
+},
+"2886": {
+"abbr": "兆豐金",
+"en": "MEGA FHC",
+"industry": "金融保險",
+"market": "1",
+"name": "兆豐金"
+},
+"2887": {
+"abbr": "台新新光金",
+"en": "TS Holdings",
+"industry": "金融保險",
+"market": "1",
+"name": "台新新光金"
+},
+"2889": {
+"abbr": "國票金",
+"en": "IBF",
+"industry": "金融保險",
+"market": "1",
+"name": "國票金"
+},
+"2890": {
+"abbr": "永豐金",
+"en": "SINOPACHOLDINGS",
+"industry": "金融保險",
+"market": "1",
+"name": "永豐金"
+},
+"2891": {
+"abbr": "中信金",
+"en": "CTBC HOLDING",
+"industry": "金融保險",
+"market": "1",
+"name": "中信金"
+},
+"2892": {
+"abbr": "第一金",
+"en": "FFHC",
+"industry": "金融保險",
+"market": "1",
+"name": "第一金"
+},
+"2897": {
+"abbr": "王道銀行",
+"en": "O-Bank",
+"industry": "金融保險",
+"market": "1",
+"name": "王道銀行"
+},
+"2901": {
+"abbr": "欣欣",
+"en": "SHIN SHIN",
+"industry": "貿易百貨",
+"market": "1",
+"name": "欣欣"
+},
+"2903": {
+"abbr": "遠百",
+"en": "FEDS",
+"industry": "貿易百貨",
+"market": "1",
+"name": "遠百"
+},
+"2904": {
+"abbr": "匯僑",
+"en": "POCS",
+"industry": "其他",
+"market": "1",
+"name": "匯僑"
+},
+"2905": {
+"abbr": "三商",
+"en": "MERCURIES",
+"industry": "貿易百貨",
+"market": "1",
+"name": "三商"
+},
+"2906": {
+"abbr": "高林",
+"en": "Collins",
+"industry": "貿易百貨",
+"market": "1",
+"name": "高林"
+},
+"2908": {
+"abbr": "特力",
+"en": "Test Rite",
+"industry": "貿易百貨",
+"market": "1",
+"name": "特力"
+},
+"2910": {
+"abbr": "統領",
+"en": "TONLIN",
+"industry": "貿易百貨",
+"market": "1",
+"name": "統領"
+},
+"2911": {
+"abbr": "麗嬰房",
+"en": "Les enphants",
+"industry": "貿易百貨",
+"market": "1",
+"name": "麗嬰房"
+},
+"2912": {
+"abbr": "統一超",
+"en": "PCSC",
+"industry": "貿易百貨",
+"market": "1",
+"name": "統一超"
+},
+"2913": {
+"abbr": "農林",
+"en": "TTC",
+"industry": "貿易百貨",
+"market": "1",
+"name": "農林"
+},
+"2915": {
+"abbr": "潤泰全",
+"en": "RUENTEX IND.LTD",
+"industry": "貿易百貨",
+"market": "1",
+"name": "潤泰全"
+},
+"2916": {
+"abbr": "滿心",
+"en": "MUNSIN",
+"industry": "居家生活",
+"market": "2",
+"name": "滿心"
+},
+"2923": {
+"abbr": "鼎固-KY",
+"en": "Sino Horizon",
+"industry": "建材營建",
+"market": "1",
+"name": "鼎固-KY"
+},
+"2924": {
+"abbr": "宏太-KY",
+"en": "Grand Galactica",
+"industry": "居家生活",
+"market": "2",
+"name": "宏太-KY"
+},
+"2926": {
+"abbr": "誠品生活",
+"en": "Eslite Spectrum",
+"industry": "文化創意",
+"market": "2",
+"name": "誠品生活"
+},
+"2929": {
+"abbr": "淘帝-KY",
+"en": "TOPBI",
+"industry": "貿易百貨",
+"market": "1",
+"name": "淘帝-KY"
+},
+"2937": {
+"abbr": "集雅社",
+"en": "Gseven",
+"industry": "居家生活",
+"market": "2",
+"name": "集雅社"
+},
+"2939": {
+"abbr": "永邑-KY",
+"en": "Vitafoss-KY",
+"industry": "貿易百貨",
+"market": "1",
+"name": "永邑-KY"
+},
+"2941": {
+"abbr": "米斯特",
+"en": "MISTER",
+"industry": "居家生活",
+"market": "2",
+"name": "米斯特"
+},
+"2945": {
+"abbr": "三商家購",
+"en": "Simple Mart",
+"industry": "貿易百貨",
+"market": "1",
+"name": "三商家購"
+},
+"2947": {
+"abbr": "振宇五金",
+"en": "Zhen Yu",
+"industry": "居家生活",
+"market": "2",
+"name": "振宇五金"
+},
+"2948": {
+"abbr": "寶陞",
+"en": "Bausen",
+"industry": "居家生活",
+"market": "2",
+"name": "寶陞"
+},
+"2949": {
+"abbr": "欣新網",
+"en": "HHG",
+"industry": "數位雲端",
+"market": "2",
+"name": "欣新網"
+},
+"3002": {
+"abbr": "歐格",
+"en": "AHOKU",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "歐格"
+},
+"3003": {
+"abbr": "健和興",
+"en": "KST",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "健和興"
+},
+"3004": {
+"abbr": "豐達科",
+"en": "NAFCO",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "豐達科"
+},
+"3005": {
+"abbr": "神基",
+"en": "Getac",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "神基"
+},
+"3006": {
+"abbr": "晶豪科",
+"en": "ESMT",
+"industry": "電子–半導體",
+"market": "1",
+"name": "晶豪科"
+},
+"3008": {
+"abbr": "大立光",
+"en": "LARGAN",
+"industry": "電子–光電",
+"market": "1",
+"name": "大立光"
+},
+"3010": {
+"abbr": "華立",
+"en": "WAH LEE",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "華立"
+},
+"3011": {
+"abbr": "今皓",
+"en": "JH",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "今皓"
+},
+"3013": {
+"abbr": "晟銘電",
+"en": "UNEEC",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "晟銘電"
+},
+"3014": {
+"abbr": "聯陽",
+"en": "ITE",
+"industry": "電子–半導體",
+"market": "1",
+"name": "聯陽"
+},
+"3015": {
+"abbr": "全漢",
+"en": "FSP",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "全漢"
+},
+"3016": {
+"abbr": "嘉晶",
+"en": "EPi",
+"industry": "電子–半導體",
+"market": "1",
+"name": "嘉晶"
+},
+"3017": {
+"abbr": "奇鋐",
+"en": "AVC",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "奇鋐"
+},
+"3018": {
+"abbr": "隆銘綠能",
+"en": "LUNG MING",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "隆銘綠能"
+},
+"3019": {
+"abbr": "亞光",
+"en": "ASIA",
+"industry": "電子–光電",
+"market": "1",
+"name": "亞光"
+},
+"3021": {
+"abbr": "鴻名",
+"en": "WELLTEND",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "鴻名"
+},
+"3022": {
+"abbr": "威強電",
+"en": "IEI",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "威強電"
+},
+"3023": {
+"abbr": "信邦",
+"en": "SINBON",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "信邦"
+},
+"3024": {
+"abbr": "憶聲",
+"en": "ACTION",
+"industry": "電子–光電",
+"market": "1",
+"name": "憶聲"
+},
+"3025": {
+"abbr": "星通",
+"en": "LOOP",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "星通"
+},
+"3026": {
+"abbr": "禾伸堂",
+"en": "HOLY STONE",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "禾伸堂"
+},
+"3027": {
+"abbr": "盛達",
+"en": "BILLION",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "盛達"
+},
+"3028": {
+"abbr": "增你強",
+"en": "ZENITRON",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "增你強"
+},
+"3029": {
+"abbr": "零壹",
+"en": "ZERO ONE",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "零壹"
+},
+"3030": {
+"abbr": "德律",
+"en": "TRI",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "德律"
+},
+"3031": {
+"abbr": "佰鴻",
+"en": "BRIGHT",
+"industry": "電子–光電",
+"market": "1",
+"name": "佰鴻"
+},
+"3032": {
+"abbr": "偉訓",
+"en": "COMPUCASE",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "偉訓"
+},
+"3033": {
+"abbr": "威健",
+"en": "Weikeng",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "威健"
+},
+"3034": {
+"abbr": "聯詠",
+"en": "NOVATEK",
+"industry": "電子–半導體",
+"market": "1",
+"name": "聯詠"
+},
+"3035": {
+"abbr": "智原",
+"en": "Faraday",
+"industry": "電子–半導體",
+"market": "1",
+"name": "智原"
+},
+"3036": {
+"abbr": "文曄",
+"en": "WT",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "文曄"
+},
+"3037": {
+"abbr": "欣興",
+"en": "UNIMICRON",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "欣興"
+},
+"3038": {
+"abbr": "全台",
+"en": "EDT",
+"industry": "電子–光電",
+"market": "1",
+"name": "全台"
+},
+"3040": {
+"abbr": "遠見",
+"en": "G.V.",
+"industry": "其他",
+"market": "1",
+"name": "遠見"
+},
+"3041": {
+"abbr": "揚智",
+"en": "ALi",
+"industry": "電子–半導體",
+"market": "1",
+"name": "揚智"
+},
+"3042": {
+"abbr": "晶技",
+"en": "TXC",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "晶技"
+},
+"3043": {
+"abbr": "科風",
+"en": "PCM",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "科風"
+},
+"3044": {
+"abbr": "健鼎",
+"en": "Tripod",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "健鼎"
+},
+"3045": {
+"abbr": "台灣大",
+"en": "TWM",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "台灣大"
+},
+"3046": {
+"abbr": "建碁",
+"en": "AOPEN",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "建碁"
+},
+"3047": {
+"abbr": "訊舟",
+"en": "EDIMAX",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "訊舟"
+},
+"3048": {
+"abbr": "益登",
+"en": "EDOM",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "益登"
+},
+"3049": {
+"abbr": "精金",
+"en": "HannsTouch",
+"industry": "電子–光電",
+"market": "1",
+"name": "精金"
+},
+"3050": {
+"abbr": "鈺德",
+"en": "U-TECH",
+"industry": "電子–光電",
+"market": "1",
+"name": "鈺德"
+},
+"3051": {
+"abbr": "力特",
+"en": "Optimax",
+"industry": "電子–光電",
+"market": "1",
+"name": "力特"
+},
+"3052": {
+"abbr": "夆典",
+"en": "APEX",
+"industry": "建材營建",
+"market": "1",
+"name": "夆典"
+},
+"3054": {
+"abbr": "立萬利",
+"en": "LIWANLI",
+"industry": "食品工業",
+"market": "1",
+"name": "立萬利"
+},
+"3055": {
+"abbr": "蔚華科",
+"en": "Spirox Corp.",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "蔚華科"
+},
+"3056": {
+"abbr": "富華新",
+"en": "Fu Hua",
+"industry": "建材營建",
+"market": "1",
+"name": "富華新"
+},
+"3057": {
+"abbr": "喬鼎",
+"en": "Promise",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "喬鼎"
+},
+"3058": {
+"abbr": "立德",
+"en": "LEI",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "立德"
+},
+"3059": {
+"abbr": "華晶科",
+"en": "Altek",
+"industry": "電子–光電",
+"market": "1",
+"name": "華晶科"
+},
+"3060": {
+"abbr": "銘異",
+"en": "MIN AIK",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "銘異"
+},
+"3062": {
+"abbr": "建漢",
+"en": "CyberTAN",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "建漢"
+},
+"3064": {
+"abbr": "泰偉",
+"en": "Astro Corp.",
+"industry": "文化創意",
+"market": "2",
+"name": "泰偉"
+},
+"3066": {
+"abbr": "李洲",
+"en": "TAIWAN OASIS",
+"industry": "電子–光電",
+"market": "2",
+"name": "李洲"
+},
+"3067": {
+"abbr": "全域",
+"en": "PNC",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "全域"
+},
+"3071": {
+"abbr": "協禧",
+"en": "ADDA",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "協禧"
+},
+"3073": {
+"abbr": "天方能源",
+"en": "Teamphon",
+"industry": "綠能環保",
+"market": "2",
+"name": "天方能源"
+},
+"3078": {
+"abbr": "僑威",
+"en": "CWT",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "僑威"
+},
+"3081": {
+"abbr": "聯亞",
+"en": "LandMark",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "聯亞"
+},
+"3083": {
+"abbr": "網龍",
+"en": "CHINESEGAMER",
+"industry": "文化創意",
+"market": "2",
+"name": "網龍"
+},
+"3085": {
+"abbr": "新零售",
+"en": "NEWRETAIL",
+"industry": "數位雲端",
+"market": "2",
+"name": "新零售"
+},
+"3086": {
+"abbr": "華義*",
+"en": "WAYI",
+"industry": "文化創意",
+"market": "2",
+"name": "華義*"
+},
+"3088": {
+"abbr": "艾訊",
+"en": "AXIOMTEK",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "艾訊"
+},
+"3090": {
+"abbr": "日電貿",
+"en": "NDB",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "日電貿"
+},
+"3092": {
+"abbr": "鴻碩",
+"en": "HOTRON",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "鴻碩"
+},
+"3093": {
+"abbr": "港建*",
+"en": "TKK",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "港建*"
+},
+"3094": {
+"abbr": "聯傑",
+"en": "DAVICOM",
+"industry": "電子–半導體",
+"market": "1",
+"name": "聯傑"
+},
+"3095": {
+"abbr": "及成",
+"en": "CCC",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "及成"
+},
+"3105": {
+"abbr": "穩懋",
+"en": "WIN",
+"industry": "電子–半導體",
+"market": "2",
+"name": "穩懋"
+},
+"3114": {
+"abbr": "好德",
+"en": "HT",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "好德"
+},
+"3115": {
+"abbr": "富榮綱",
+"en": "TSC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "富榮綱"
+},
+"3118": {
+"abbr": "進階",
+"en": "LEVEL",
+"industry": "生技醫療",
+"market": "2",
+"name": "進階"
+},
+"3122": {
+"abbr": "笙泉",
+"en": "Megawin",
+"industry": "電子–半導體",
+"market": "2",
+"name": "笙泉"
+},
+"3128": {
+"abbr": "昇銳",
+"en": "HI SHARP",
+"industry": "電子–光電",
+"market": "2",
+"name": "昇銳"
+},
+"3130": {
+"abbr": "一零四",
+"en": "104",
+"industry": "數位雲端",
+"market": "1",
+"name": "一零四"
+},
+"3131": {
+"abbr": "弘塑",
+"en": "GPTC",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "弘塑"
+},
+"3135": {
+"abbr": "凌航",
+"en": "Goldkey Tech.",
+"industry": "電子–半導體",
+"market": "1",
+"name": "凌航"
+},
+"3138": {
+"abbr": "耀登",
+"en": "Auden",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "耀登"
+},
+"3141": {
+"abbr": "晶宏",
+"en": "UltraChip",
+"industry": "電子–半導體",
+"market": "2",
+"name": "晶宏"
+},
+"3147": {
+"abbr": "大綜",
+"en": "JETWELL",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "大綜"
+},
+"3149": {
+"abbr": "正達",
+"en": "G-TECH",
+"industry": "電子–光電",
+"market": "1",
+"name": "正達"
+},
+"3150": {
+"abbr": "鈺寶-創",
+"en": "SYNCOMM TECHNOLOGY CORP.",
+"industry": "電子–半導體",
+"market": "7",
+"name": "鈺寶-創"
+},
+"3152": {
+"abbr": "璟德",
+"en": "ACX",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "璟德"
+},
+"3158": {
+"abbr": "嘉實",
+"en": "SysJust",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "嘉實"
+},
+"3162": {
+"abbr": "精確",
+"en": "UAT",
+"industry": "電機機械",
+"market": "2",
+"name": "精確"
+},
+"3163": {
+"abbr": "波若威",
+"en": "Browave",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "波若威"
+},
+"3164": {
+"abbr": "景岳",
+"en": "GenMont",
+"industry": "生技醫療",
+"market": "1",
+"name": "景岳"
+},
+"3167": {
+"abbr": "大量",
+"en": "TA LIANG",
+"industry": "電機機械",
+"market": "1",
+"name": "大量"
+},
+"3168": {
+"abbr": "眾福科",
+"en": "DATA IMAGE",
+"industry": "電子–光電",
+"market": "1",
+"name": "眾福科"
+},
+"3169": {
+"abbr": "亞信",
+"en": "ASIX",
+"industry": "電子–半導體",
+"market": "2",
+"name": "亞信"
+},
+"3171": {
+"abbr": "炎洲流通",
+"en": "YCD",
+"industry": "居家生活",
+"market": "2",
+"name": "炎洲流通"
+},
+"3176": {
+"abbr": "基亞",
+"en": "MEDIGEN",
+"industry": "生技醫療",
+"market": "2",
+"name": "基亞"
+},
+"3178": {
+"abbr": "公準",
+"en": "GONGIN",
+"industry": "電子–半導體",
+"market": "2",
+"name": "公準"
+},
+"3188": {
+"abbr": "鑫龍騰",
+"en": "GLTD",
+"industry": "建材營建",
+"market": "2",
+"name": "鑫龍騰"
+},
+"3189": {
+"abbr": "景碩",
+"en": "KINSUS",
+"industry": "電子–半導體",
+"market": "1",
+"name": "景碩"
+},
+"3191": {
+"abbr": "雲嘉南",
+"en": "YJN",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "雲嘉南"
+},
+"3205": {
+"abbr": "佰研",
+"en": "SLS",
+"industry": "生技醫療",
+"market": "2",
+"name": "佰研"
+},
+"3206": {
+"abbr": "志豐",
+"en": "KINGSTATE",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "志豐"
+},
+"3207": {
+"abbr": "耀勝",
+"en": "YAO SHENG",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "耀勝"
+},
+"3209": {
+"abbr": "全科",
+"en": "ALLTEK",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "全科"
+},
+"3211": {
+"abbr": "順達",
+"en": "Dynapack",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "順達"
+},
+"3213": {
+"abbr": "茂訊",
+"en": "Mildef",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "茂訊"
+},
+"3217": {
+"abbr": "優群",
+"en": "ARGOSY",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "優群"
+},
+"3218": {
+"abbr": "大學光",
+"en": "UNIVERSAL",
+"industry": "生技醫療",
+"market": "2",
+"name": "大學光"
+},
+"3219": {
+"abbr": "倚強科",
+"en": "Aethertek",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "倚強科"
+},
+"3221": {
+"abbr": "台嘉碩",
+"en": "TST",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "台嘉碩"
+},
+"3224": {
+"abbr": "三顧",
+"en": "MetaTech",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "三顧"
+},
+"3226": {
+"abbr": "龍鋒",
+"en": "LFA",
+"industry": "電機機械",
+"market": "2",
+"name": "龍鋒"
+},
+"3227": {
+"abbr": "原相",
+"en": "PXI",
+"industry": "電子–半導體",
+"market": "2",
+"name": "原相"
+},
+"3228": {
+"abbr": "金麗科",
+"en": "RDC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "金麗科"
+},
+"3229": {
+"abbr": "晟鈦",
+"en": "CHEER TIME",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "晟鈦"
+},
+"3230": {
+"abbr": "錦明",
+"en": "Jiin Ming",
+"industry": "電子–光電",
+"market": "2",
+"name": "錦明"
+},
+"3231": {
+"abbr": "緯創",
+"en": "Wistron",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "緯創"
+},
+"3232": {
+"abbr": "昱捷",
+"en": "SIC",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "昱捷"
+},
+"3234": {
+"abbr": "光環",
+"en": "TrueLight",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "光環"
+},
+"3236": {
+"abbr": "千如",
+"en": "ABC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "千如"
+},
+"3252": {
+"abbr": "海灣",
+"en": "Haiwan",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "海灣"
+},
+"3257": {
+"abbr": "虹冠電",
+"en": "CHAMPION",
+"industry": "電子–半導體",
+"market": "1",
+"name": "虹冠電"
+},
+"3259": {
+"abbr": "鑫創",
+"en": "3S",
+"industry": "電子–半導體",
+"market": "2",
+"name": "鑫創"
+},
+"3260": {
+"abbr": "威剛",
+"en": "ADATA",
+"industry": "電子–半導體",
+"market": "2",
+"name": "威剛"
+},
+"3264": {
+"abbr": "欣銓",
+"en": "Ardentec",
+"industry": "電子–半導體",
+"market": "2",
+"name": "欣銓"
+},
+"3265": {
+"abbr": "台星科",
+"en": "WST",
+"industry": "電子–半導體",
+"market": "2",
+"name": "台星科"
+},
+"3266": {
+"abbr": "昇陽",
+"en": "SUNTY",
+"industry": "建材營建",
+"market": "1",
+"name": "昇陽"
+},
+"3268": {
+"abbr": "海德威",
+"en": "Higher Way",
+"industry": "電子–半導體",
+"market": "2",
+"name": "海德威"
+},
+"3272": {
+"abbr": "東碩",
+"en": "GW",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "東碩"
+},
+"3276": {
+"abbr": "宇環",
+"en": "tht",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "宇環"
+},
+"3284": {
+"abbr": "太普高",
+"en": "TOP",
+"industry": "其他",
+"market": "2",
+"name": "太普高"
+},
+"3285": {
+"abbr": "微端",
+"en": "MT",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "微端"
+},
+"3287": {
+"abbr": "廣寰科",
+"en": "Kworld",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "廣寰科"
+},
+"3288": {
+"abbr": "點晶",
+"en": "SiTI",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "點晶"
+},
+"3289": {
+"abbr": "宜特",
+"en": "IST",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "宜特"
+},
+"3290": {
+"abbr": "東浦",
+"en": "DONPON",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "東浦"
+},
+"3293": {
+"abbr": "鈊象",
+"en": "IGS",
+"industry": "文化創意",
+"market": "2",
+"name": "鈊象"
+},
+"3294": {
+"abbr": "英濟",
+"en": "Megaforce",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "英濟"
+},
+"3296": {
+"abbr": "勝德",
+"en": "POWERTECH",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "勝德"
+},
+"3297": {
+"abbr": "杭特",
+"en": "Hunt",
+"industry": "電子–光電",
+"market": "2",
+"name": "杭特"
+},
+"3303": {
+"abbr": "岱稜",
+"en": "UNIVACCO",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "岱稜"
+},
+"3305": {
+"abbr": "昇貿",
+"en": "SHENMAO",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "昇貿"
+},
+"3306": {
+"abbr": "鼎天",
+"en": "RoyalTek",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "鼎天"
+},
+"3308": {
+"abbr": "聯德",
+"en": "BESTEC",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "聯德"
+},
+"3310": {
+"abbr": "佳穎",
+"en": "CHIALIN",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "佳穎"
+},
+"3311": {
+"abbr": "閎暉",
+"en": "Silitech",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "閎暉"
+},
+"3312": {
+"abbr": "弘憶股",
+"en": "G.M.I",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "弘憶股"
+},
+"3313": {
+"abbr": "斐成",
+"en": "FCD",
+"industry": "其他",
+"market": "2",
+"name": "斐成"
+},
+"3317": {
+"abbr": "尼克森",
+"en": "NIKO-SEM",
+"industry": "電子–半導體",
+"market": "2",
+"name": "尼克森"
+},
+"3321": {
+"abbr": "同泰",
+"en": "UNIFLEX",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "同泰"
+},
+"3322": {
+"abbr": "建舜電",
+"en": "JEM",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "建舜電"
+},
+"3323": {
+"abbr": "加百裕",
+"en": "Celxpert",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "加百裕"
+},
+"3324": {
+"abbr": "雙鴻",
+"en": "AURAS",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "雙鴻"
+},
+"3325": {
+"abbr": "旭品",
+"en": "Casing",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "旭品"
+},
+"3332": {
+"abbr": "幸康",
+"en": "CINCON",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "幸康"
+},
+"3338": {
+"abbr": "泰碩",
+"en": "TAISOL",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "泰碩"
+},
+"3339": {
+"abbr": "泰谷",
+"en": "TEKCORE",
+"industry": "電子–光電",
+"market": "2",
+"name": "泰谷"
+},
+"3346": {
+"abbr": "麗清",
+"en": "Laster Tech",
+"industry": "汽車工業",
+"market": "1",
+"name": "麗清"
+},
+"3349": {
+"abbr": "寶德",
+"en": "DEXIN",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "寶德"
+},
+"3354": {
+"abbr": "律勝",
+"en": "MICROCOSM",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "律勝"
+},
+"3356": {
+"abbr": "奇偶",
+"en": "GeoVision",
+"industry": "電子–光電",
+"market": "1",
+"name": "奇偶"
+},
+"3357": {
+"abbr": "臺慶科",
+"en": "TAI-TECH",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "臺慶科"
+},
+"3360": {
+"abbr": "尚立",
+"en": "SUNNIC",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "尚立"
+},
+"3362": {
+"abbr": "先進光",
+"en": "ABILITY",
+"industry": "電子–光電",
+"market": "2",
+"name": "先進光"
+},
+"3363": {
+"abbr": "上詮",
+"en": "FOCI",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "上詮"
+},
+"3372": {
+"abbr": "典範",
+"en": "TICP",
+"industry": "電子–半導體",
+"market": "2",
+"name": "典範"
+},
+"3373": {
+"abbr": "熱映",
+"en": "Radiant",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "熱映"
+},
+"3374": {
+"abbr": "精材",
+"en": "Xintec",
+"industry": "電子–半導體",
+"market": "2",
+"name": "精材"
+},
+"3376": {
+"abbr": "新日興",
+"en": "SZS",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "新日興"
+},
+"3379": {
+"abbr": "彬台",
+"en": "TBC",
+"industry": "電機機械",
+"market": "2",
+"name": "彬台"
+},
+"3380": {
+"abbr": "明泰",
+"en": "Alpha",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "明泰"
+},
+"3388": {
+"abbr": "崇越電",
+"en": "TTC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "崇越電"
+},
+"3390": {
+"abbr": "旭軟",
+"en": "SUNFLEX",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "旭軟"
+},
+"3402": {
+"abbr": "漢科",
+"en": "WHOLETECH",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "漢科"
+},
+"3406": {
+"abbr": "玉晶光",
+"en": "GSEO",
+"industry": "電子–光電",
+"market": "1",
+"name": "玉晶光"
+},
+"3413": {
+"abbr": "京鼎",
+"en": "Fiti",
+"industry": "電子–半導體",
+"market": "1",
+"name": "京鼎"
+},
+"3416": {
+"abbr": "融程電",
+"en": "Winmate",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "融程電"
+},
+"3419": {
+"abbr": "譁裕",
+"en": "WHAYU",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "譁裕"
+},
+"3426": {
+"abbr": "台興",
+"en": "TSE",
+"industry": "電機機械",
+"market": "2",
+"name": "台興"
+},
+"3430": {
+"abbr": "奇鈦科",
+"en": "CHITEC",
+"industry": "化學工業",
+"market": "2",
+"name": "奇鈦科"
+},
+"3432": {
+"abbr": "台端",
+"en": "TAI TWUN",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "台端"
+},
+"3434": {
+"abbr": "哲固",
+"en": "ACULA",
+"industry": "電子–光電",
+"market": "2",
+"name": "哲固"
+},
+"3437": {
+"abbr": "榮創",
+"en": "AOT",
+"industry": "電子–光電",
+"market": "1",
+"name": "榮創"
+},
+"3438": {
+"abbr": "類比科",
+"en": "AAT",
+"industry": "電子–半導體",
+"market": "2",
+"name": "類比科"
+},
+"3441": {
+"abbr": "聯一光電",
+"en": "UNIQUE",
+"industry": "電子–光電",
+"market": "2",
+"name": "聯一光"
+},
+"3443": {
+"abbr": "創意",
+"en": "GUC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "創意"
+},
+"3444": {
+"abbr": "利機",
+"en": "NICHING",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "利機"
+},
+"3447": {
+"abbr": "展達",
+"en": "XAVi",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "展達"
+},
+"3450": {
+"abbr": "聯鈞",
+"en": "ELASER",
+"industry": "電子–半導體",
+"market": "1",
+"name": "聯鈞"
+},
+"3455": {
+"abbr": "由田",
+"en": "UTECHZONE",
+"industry": "電子–光電",
+"market": "2",
+"name": "由田"
+},
+"3465": {
+"abbr": "進泰電子",
+"en": "NAE",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "進泰電子"
+},
+"3466": {
+"abbr": "德晉",
+"en": "SKARDIN",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "德晉"
+},
+"3467": {
+"abbr": "台灣精材",
+"en": "Forcera",
+"industry": "電子–半導體",
+"market": "2",
+"name": "台灣精材"
+},
+"3479": {
+"abbr": "安勤",
+"en": "Avalue",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "安勤"
+},
+"3481": {
+"abbr": "群創",
+"en": "INX",
+"industry": "電子–光電",
+"market": "1",
+"name": "群創"
+},
+"3483": {
+"abbr": "力致",
+"en": "FCN",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "力致"
+},
+"3484": {
+"abbr": "崧騰",
+"en": "SOLTEAM",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "崧騰"
+},
+"3485": {
+"abbr": "敘豐",
+"en": "EF",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "敘豐"
+},
+"3489": {
+"abbr": "森寶",
+"en": "Sun Brothers",
+"industry": "建材營建",
+"market": "2",
+"name": "森寶"
+},
+"3490": {
+"abbr": "單井",
+"en": "singlewell",
+"industry": "電子–光電",
+"market": "2",
+"name": "單井"
+},
+"3491": {
+"abbr": "昇達科",
+"en": "UMT",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "昇達科"
+},
+"3492": {
+"abbr": "長盛",
+"en": "ACT",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "長盛"
+},
+"3494": {
+"abbr": "誠研",
+"en": "HiTi",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "誠研"
+},
+"3498": {
+"abbr": "陽程",
+"en": "USUN",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "陽程"
+},
+"3499": {
+"abbr": "環天科",
+"en": "GLOBALSAT",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "環天科"
+},
+"3501": {
+"abbr": "維熹",
+"en": "Well Shin",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "維熹"
+},
+"3504": {
+"abbr": "揚明光",
+"en": "Young Optics",
+"industry": "電子–光電",
+"market": "1",
+"name": "揚明光"
+},
+"3508": {
+"abbr": "位速",
+"en": "Ways",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "位速"
+},
+"3511": {
+"abbr": "矽瑪",
+"en": "SIMULA TECH INC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "矽瑪"
+},
+"3512": {
+"abbr": "皇龍",
+"en": "Huang Long",
+"industry": "建材營建",
+"market": "2",
+"name": "皇龍"
+},
+"3515": {
+"abbr": "華擎",
+"en": "ASROCK",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "華擎"
+},
+"3516": {
+"abbr": "亞帝歐",
+"en": "ADO",
+"industry": "電子–光電",
+"market": "2",
+"name": "亞帝歐"
+},
+"3518": {
+"abbr": "柏騰",
+"en": "PT TECH.",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "柏騰"
+},
+"3520": {
+"abbr": "華盈",
+"en": "JVE",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "華盈"
+},
+"3521": {
+"abbr": "台鋼建設",
+"en": "TSG Development",
+"industry": "建材營建",
+"market": "2",
+"name": "台鋼建設"
+},
+"3522": {
+"abbr": "御嵿",
+"en": "TOPLUS",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "御嵿"
+},
+"3523": {
+"abbr": "迎輝",
+"en": "EFUN",
+"industry": "電子–光電",
+"market": "2",
+"name": "迎輝"
+},
+"3526": {
+"abbr": "凡甲",
+"en": "ALLTOP",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "凡甲"
+},
+"3527": {
+"abbr": "聚積",
+"en": "MBI",
+"industry": "電子–半導體",
+"market": "2",
+"name": "聚積"
+},
+"3528": {
+"abbr": "安馳",
+"en": "ANSTEK",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "安馳"
+},
+"3529": {
+"abbr": "力旺",
+"en": "eMemory",
+"industry": "電子–半導體",
+"market": "2",
+"name": "力旺"
+},
+"3530": {
+"abbr": "晶相光",
+"en": "SOI",
+"industry": "電子–半導體",
+"market": "1",
+"name": "晶相光"
+},
+"3531": {
+"abbr": "先益",
+"en": "Shian Yih",
+"industry": "電子–光電",
+"market": "2",
+"name": "先益"
+},
+"3532": {
+"abbr": "台勝科",
+"en": "FST",
+"industry": "電子–半導體",
+"market": "1",
+"name": "台勝科"
+},
+"3533": {
+"abbr": "嘉澤",
+"en": "LOTES",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "嘉澤"
+},
+"3535": {
+"abbr": "晶彩科",
+"en": "Favite",
+"industry": "電子–光電",
+"market": "1",
+"name": "晶彩科"
+},
+"3537": {
+"abbr": "堡達",
+"en": "PODAK",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "堡達"
+},
+"3540": {
+"abbr": "曜越",
+"en": "Thermaltake",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "曜越"
+},
+"3541": {
+"abbr": "西柏",
+"en": "CYP",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "西柏"
+},
+"3543": {
+"abbr": "州巧",
+"en": "JOCHU",
+"industry": "電子–光電",
+"market": "1",
+"name": "州巧"
+},
+"3545": {
+"abbr": "敦泰",
+"en": "FocalTech",
+"industry": "電子–半導體",
+"market": "1",
+"name": "敦泰"
+},
+"3546": {
+"abbr": "宇峻",
+"en": "USERJOY",
+"industry": "文化創意",
+"market": "2",
+"name": "宇峻"
+},
+"3548": {
+"abbr": "兆利",
+"en": "JARLLY",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "兆利"
+},
+"3550": {
+"abbr": "聯穎",
+"en": "COPARTNER",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "聯穎"
+},
+"3551": {
+"abbr": "世禾",
+"en": "SHT",
+"industry": "綠能環保",
+"market": "2",
+"name": "世禾"
+},
+"3552": {
+"abbr": "同致",
+"en": "TUNG THIH",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "同致"
+},
+"3555": {
+"abbr": "博士旺",
+"en": "BaaS",
+"industry": "電子–半導體",
+"market": "2",
+"name": "博士旺"
+},
+"3556": {
+"abbr": "禾瑞亞",
+"en": "EETI",
+"industry": "電子–半導體",
+"market": "2",
+"name": "禾瑞亞"
+},
+"3557": {
+"abbr": "嘉威",
+"en": "JiaWei",
+"industry": "居家生活",
+"market": "1",
+"name": "嘉威"
+},
+"3558": {
+"abbr": "神準",
+"en": "Senao Networks",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "神準"
+},
+"3563": {
+"abbr": "牧德",
+"en": "MACHVISION",
+"industry": "電子–光電",
+"market": "1",
+"name": "牧德"
+},
+"3564": {
+"abbr": "其陽",
+"en": "AEWIN",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "其陽"
+},
+"3567": {
+"abbr": "逸昌",
+"en": "ETREND",
+"industry": "電子–半導體",
+"market": "2",
+"name": "逸昌"
+},
+"3570": {
+"abbr": "大塚",
+"en": "OITC",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "大塚"
+},
+"3576": {
+"abbr": "聯合再生",
+"en": "URE",
+"industry": "電子–光電",
+"market": "1",
+"name": "聯合再生"
+},
+"3577": {
+"abbr": "泓格",
+"en": "ICP DAS",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "泓格"
+},
+"3580": {
+"abbr": "友威科",
+"en": "UVAT",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "友威科"
+},
+"3581": {
+"abbr": "博磊",
+"en": "ZVC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "博磊"
+},
+"3583": {
+"abbr": "辛耘",
+"en": "Scientech",
+"industry": "電子–半導體",
+"market": "1",
+"name": "辛耘"
+},
+"3587": {
+"abbr": "閎康",
+"en": "MA-tek",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "閎康"
+},
+"3588": {
+"abbr": "通嘉",
+"en": "LD",
+"industry": "電子–半導體",
+"market": "1",
+"name": "通嘉"
+},
+"3591": {
+"abbr": "艾笛森",
+"en": "EDISON OPTO",
+"industry": "電子–光電",
+"market": "1",
+"name": "艾笛森"
+},
+"3592": {
+"abbr": "瑞鼎",
+"en": "Raydium",
+"industry": "電子–半導體",
+"market": "1",
+"name": "瑞鼎"
+},
+"3593": {
+"abbr": "力銘",
+"en": "Logah",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "力銘"
+},
+"3594": {
+"abbr": "磐儀",
+"en": "ARBOR",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "磐儀"
+},
+"3596": {
+"abbr": "智易",
+"en": "Arcadyan",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "智易"
+},
+"3597": {
+"abbr": "映興",
+"en": "AVI",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "映興"
+},
+"3605": {
+"abbr": "宏致",
+"en": "ACES",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "宏致"
+},
+"3607": {
+"abbr": "谷崧",
+"en": "Coxon",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "谷崧"
+},
+"3609": {
+"abbr": "三一東林",
+"en": "HEP",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "三一東林"
+},
+"3611": {
+"abbr": "鼎翰",
+"en": "TSC AUTO ID",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "鼎翰"
+},
+"3615": {
+"abbr": "安可",
+"en": "AimCore",
+"industry": "電子–光電",
+"market": "2",
+"name": "安可"
+},
+"3617": {
+"abbr": "碩天",
+"en": "CyberPower",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "碩天"
+},
+"3622": {
+"abbr": "洋華",
+"en": "YFO",
+"industry": "電子–光電",
+"market": "1",
+"name": "洋華"
+},
+"3623": {
+"abbr": "富晶通",
+"en": "TTI",
+"industry": "電子–光電",
+"market": "2",
+"name": "富晶通"
+},
+"3624": {
+"abbr": "光頡",
+"en": "VIKING",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "光頡"
+},
+"3625": {
+"abbr": "西勝",
+"en": "C-TECH",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "西勝"
+},
+"3628": {
+"abbr": "盈正",
+"en": "ABLEREX",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "盈正"
+},
+"3629": {
+"abbr": "地心引力",
+"en": "Gravitytai",
+"industry": "文化創意",
+"market": "2",
+"name": "地心引力"
+},
+"3630": {
+"abbr": "新鉅科",
+"en": "NEWMAX",
+"industry": "電子–光電",
+"market": "2",
+"name": "新鉅科"
+},
+"3631": {
+"abbr": "晟楠",
+"en": "CHERNAN",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "晟楠"
+},
+"3632": {
+"abbr": "研勤",
+"en": "PAPAGO",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "研勤"
+},
+"3645": {
+"abbr": "達邁",
+"en": "TMT",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "達邁"
+},
+"3646": {
+"abbr": "艾恩特",
+"en": "ANT",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "艾恩特"
+},
+"3652": {
+"abbr": "精聯",
+"en": "Unitech elec.",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "精聯"
+},
+"3653": {
+"abbr": "健策",
+"en": "JENTECH",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "健策"
+},
+"3661": {
+"abbr": "世芯-KY",
+"en": "Alchip",
+"industry": "電子–半導體",
+"market": "1",
+"name": "世芯-KY"
+},
+"3663": {
+"abbr": "鑫科",
+"en": "TTMC",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "鑫科"
+},
+"3664": {
+"abbr": "安瑞-KY",
+"en": "Array",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "安瑞-KY"
+},
+"3665": {
+"abbr": "貿聯-KY",
+"en": "BHI (BizLink)",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "貿聯-KY"
+},
+"3666": {
+"abbr": "光耀",
+"en": "OTI",
+"industry": "電子–光電",
+"market": "2",
+"name": "光耀"
+},
+"3669": {
+"abbr": "圓展",
+"en": "AVer",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "圓展"
+},
+"3672": {
+"abbr": "康聯訊",
+"en": "CTS",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "康聯訊"
+},
+"3673": {
+"abbr": "TPK-KY",
+"en": "TPK",
+"industry": "電子–光電",
+"market": "1",
+"name": "TPK-KY"
+},
+"3675": {
+"abbr": "德微",
+"en": "Eris Tech",
+"industry": "電子–半導體",
+"market": "2",
+"name": "德微"
+},
+"3679": {
+"abbr": "新至陞",
+"en": "Nishoku",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "新至陞"
+},
+"3680": {
+"abbr": "家登",
+"en": "Gudeng",
+"industry": "電子–半導體",
+"market": "2",
+"name": "家登"
+},
+"3684": {
+"abbr": "榮昌",
+"en": "Grand-Tek",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "榮昌"
+},
+"3685": {
+"abbr": "元創精密",
+"en": "TAC",
+"industry": "電機機械",
+"market": "2",
+"name": "元創精密"
+},
+"3686": {
+"abbr": "達能",
+"en": "Danen",
+"industry": "電子–半導體",
+"market": "1",
+"name": "達能"
+},
+"3687": {
+"abbr": "歐買尬",
+"en": "OMG",
+"industry": "數位雲端",
+"market": "2",
+"name": "歐買尬"
+},
+"3689": {
+"abbr": "湧德",
+"en": "UDE",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "湧德"
+},
+"3691": {
+"abbr": "碩禾",
+"en": "GIGASOLAR",
+"industry": "電子–光電",
+"market": "2",
+"name": "碩禾"
+},
+"3693": {
+"abbr": "營邦",
+"en": "AIC",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "營邦"
+},
+"3694": {
+"abbr": "海華",
+"en": "AzureWave",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "海華"
+},
+"3701": {
+"abbr": "大眾控",
+"en": "FICG",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "大眾控"
+},
+"3702": {
+"abbr": "大聯大",
+"en": "WPG",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "大聯大"
+},
+"3703": {
+"abbr": "欣陸",
+"en": "CHC",
+"industry": "建材營建",
+"market": "1",
+"name": "欣陸"
+},
+"3704": {
+"abbr": "合勤控",
+"en": "Zyxel Group",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "合勤控"
+},
+"3705": {
+"abbr": "永信",
+"en": "Y.S.H.",
+"industry": "生技醫療",
+"market": "1",
+"name": "永信"
+},
+"3706": {
+"abbr": "神達",
+"en": "MHC",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "神達"
+},
+"3707": {
+"abbr": "漢磊",
+"en": "EPISIL",
+"industry": "電子–半導體",
+"market": "2",
+"name": "漢磊"
+},
+"3708": {
+"abbr": "上緯投控",
+"en": "Swancor",
+"industry": "綠能環保",
+"market": "1",
+"name": "上緯投控"
+},
+"3709": {
+"abbr": "鑫聯大投控",
+"en": "Trigold",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "鑫聯大投控"
+},
+"3710": {
+"abbr": "連展投控",
+"en": "ACON Holding",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "連展投控"
+},
+"3711": {
+"abbr": "日月光投控",
+"en": "ASEH",
+"industry": "電子–半導體",
+"market": "1",
+"name": "日月光投控"
+},
+"3712": {
+"abbr": "永崴投控",
+"en": "FITH",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "永崴投控"
+},
+"3713": {
+"abbr": "新晶投控",
+"en": "HsinjingHolding",
+"industry": "綠能環保",
+"market": "2",
+"name": "新晶投控"
+},
+"3714": {
+"abbr": "富采",
+"en": "ENNOSTAR",
+"industry": "電子–光電",
+"market": "1",
+"name": "富采"
+},
+"3715": {
+"abbr": "定穎投控",
+"en": "Dynamic Holding",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "定穎投控"
+},
+"3716": {
+"abbr": "中化控股",
+"en": "Cenra Inc.",
+"industry": "生技醫療",
+"market": "1",
+"name": "中化控股"
+},
+"3717": {
+"abbr": "聯嘉投控",
+"en": "EOI Holding",
+"industry": "汽車工業",
+"market": "1",
+"name": "聯嘉投控"
+},
+"4102": {
+"abbr": "永日",
+"en": "YUNGZIP",
+"industry": "生技醫療",
+"market": "2",
+"name": "永日"
+},
+"4104": {
+"abbr": "佳醫",
+"en": "EXCELSIOR",
+"industry": "生技醫療",
+"market": "1",
+"name": "佳醫"
+},
+"4105": {
+"abbr": "東洋",
+"en": "TTY",
+"industry": "生技醫療",
+"market": "2",
+"name": "東洋"
+},
+"4106": {
+"abbr": "雃博",
+"en": "WELLELL",
+"industry": "生技醫療",
+"market": "1",
+"name": "雃博"
+},
+"4107": {
+"abbr": "邦特",
+"en": "BIOTEQUE",
+"industry": "生技醫療",
+"market": "2",
+"name": "邦特"
+},
+"4108": {
+"abbr": "懷特",
+"en": "PhytoHealth",
+"industry": "生技醫療",
+"market": "1",
+"name": "懷特"
+},
+"4109": {
+"abbr": "加捷生醫",
+"en": "Jia Jie Bio",
+"industry": "生技醫療",
+"market": "2",
+"name": "加捷生醫"
+},
+"4111": {
+"abbr": "濟生",
+"en": "CHI  SHENG",
+"industry": "生技醫療",
+"market": "2",
+"name": "濟生"
+},
+"4113": {
+"abbr": "聯上",
+"en": "WE&WIN",
+"industry": "建材營建",
+"market": "2",
+"name": "聯上"
+},
+"4114": {
+"abbr": "健喬",
+"en": "SYNMOSA",
+"industry": "生技醫療",
+"market": "2",
+"name": "健喬"
+},
+"4116": {
+"abbr": "明基醫",
+"en": "BMTC",
+"industry": "生技醫療",
+"market": "2",
+"name": "明基醫"
+},
+"4119": {
+"abbr": "旭富",
+"en": "SCI",
+"industry": "生技醫療",
+"market": "1",
+"name": "旭富"
+},
+"4120": {
+"abbr": "友華",
+"en": "OEP",
+"industry": "生技醫療",
+"market": "2",
+"name": "友華"
+},
+"4121": {
+"abbr": "優盛",
+"en": "ROSSMAX",
+"industry": "生技醫療",
+"market": "2",
+"name": "優盛"
+},
+"4123": {
+"abbr": "晟德",
+"en": "Center Lab.",
+"industry": "生技醫療",
+"market": "2",
+"name": "晟德"
+},
+"4126": {
+"abbr": "太醫",
+"en": "PAHSCO",
+"industry": "生技醫療",
+"market": "2",
+"name": "太醫"
+},
+"4127": {
+"abbr": "天良",
+"en": "TLB",
+"industry": "生技醫療",
+"market": "2",
+"name": "天良"
+},
+"4128": {
+"abbr": "中天",
+"en": "MICROBIO",
+"industry": "生技醫療",
+"market": "2",
+"name": "中天"
+},
+"4129": {
+"abbr": "聯合",
+"en": "UOC",
+"industry": "生技醫療",
+"market": "2",
+"name": "聯合"
+},
+"4130": {
+"abbr": "健亞",
+"en": "GBL",
+"industry": "生技醫療",
+"market": "2",
+"name": "健亞"
+},
+"4131": {
+"abbr": "浩泰",
+"en": "NeoCore",
+"industry": "生技醫療",
+"market": "2",
+"name": "浩泰"
+},
+"4133": {
+"abbr": "亞諾法",
+"en": "Abnova",
+"industry": "生技醫療",
+"market": "1",
+"name": "亞諾法"
+},
+"4137": {
+"abbr": "麗豐-KY",
+"en": "CHLITINA-KY",
+"industry": "生技醫療",
+"market": "1",
+"name": "麗豐-KY"
+},
+"4138": {
+"abbr": "曜亞",
+"en": "DMT",
+"industry": "生技醫療",
+"market": "2",
+"name": "曜亞"
+},
+"4139": {
+"abbr": "馬光-KY",
+"en": "KY M.K.",
+"industry": "生技醫療",
+"market": "2",
+"name": "馬光-KY"
+},
+"4142": {
+"abbr": "國光生",
+"en": "ADIM",
+"industry": "生技醫療",
+"market": "1",
+"name": "國光生"
+},
+"4147": {
+"abbr": "中裕",
+"en": "TMB",
+"industry": "生技醫療",
+"market": "2",
+"name": "中裕"
+},
+"4148": {
+"abbr": "全宇生技-KY",
+"en": "ACBT",
+"industry": "生技醫療",
+"market": "1",
+"name": "全宇生技-KY"
+},
+"4153": {
+"abbr": "鈺緯",
+"en": "DIVA Labs.",
+"industry": "生技醫療",
+"market": "2",
+"name": "鈺緯"
+},
+"4154": {
+"abbr": "樂威科-KY",
+"en": "Raku-KY",
+"industry": "其他",
+"market": "2",
+"name": "樂威科-KY"
+},
+"4155": {
+"abbr": "訊映",
+"en": "OK BIOTECH",
+"industry": "生技醫療",
+"market": "1",
+"name": "訊映"
+},
+"4157": {
+"abbr": "太景*-KY",
+"en": "TAIGEN",
+"industry": "生技醫療",
+"market": "2",
+"name": "太景*-KY"
+},
+"4160": {
+"abbr": "訊聯基因",
+"en": "GGA Corp.",
+"industry": "生技醫療",
+"market": "2",
+"name": "訊聯基因"
+},
+"4161": {
+"abbr": "聿新科",
+"en": "BIOPTIK",
+"industry": "生技醫療",
+"market": "2",
+"name": "聿新科"
+},
+"4162": {
+"abbr": "智擎",
+"en": "PEI",
+"industry": "生技醫療",
+"market": "2",
+"name": "智擎"
+},
+"4163": {
+"abbr": "鐿鈦",
+"en": "INTAI",
+"industry": "生技醫療",
+"market": "2",
+"name": "鐿鈦"
+},
+"4164": {
+"abbr": "承業醫",
+"en": "CHC",
+"industry": "生技醫療",
+"market": "1",
+"name": "承業醫"
+},
+"4166": {
+"abbr": "友霖",
+"en": "OP",
+"industry": "生技醫療",
+"market": "2",
+"name": "友霖"
+},
+"4167": {
+"abbr": "松瑞藥",
+"en": "SLC",
+"industry": "生技醫療",
+"market": "2",
+"name": "松瑞藥"
+},
+"4168": {
+"abbr": "醣聯",
+"en": "GlycoNex Inc.",
+"industry": "生技醫療",
+"market": "2",
+"name": "醣聯"
+},
+"4169": {
+"abbr": "泰宗",
+"en": "TCM",
+"industry": "生技醫療",
+"market": "1",
+"name": "泰宗"
+},
+"4171": {
+"abbr": "瑞基",
+"en": "GeneReach",
+"industry": "農業科技",
+"market": "2",
+"name": "瑞基"
+},
+"4173": {
+"abbr": "久裕",
+"en": "ARICH",
+"industry": "生技醫療",
+"market": "2",
+"name": "久裕"
+},
+"4174": {
+"abbr": "浩鼎",
+"en": "OBI",
+"industry": "生技醫療",
+"market": "2",
+"name": "浩鼎"
+},
+"4175": {
+"abbr": "杏一",
+"en": "MedFirst",
+"industry": "生技醫療",
+"market": "2",
+"name": "杏一"
+},
+"4178": {
+"abbr": "永笙-KY",
+"en": "StemCyte",
+"industry": "生技醫療",
+"market": "1",
+"name": "永笙-KY"
+},
+"4183": {
+"abbr": "福永生技",
+"en": "EPS Bio",
+"industry": "生技醫療",
+"market": "2",
+"name": "福永生技"
+},
+"4188": {
+"abbr": "安克",
+"en": "AmCad",
+"industry": "生技醫療",
+"market": "2",
+"name": "安克"
+},
+"4190": {
+"abbr": "佐登-KY",
+"en": "JDS",
+"industry": "生技醫療",
+"market": "1",
+"name": "佐登-KY"
+},
+"4192": {
+"abbr": "杏國",
+"en": "SynCore",
+"industry": "生技醫療",
+"market": "2",
+"name": "杏國"
+},
+"4195": {
+"abbr": "基米-創",
+"en": "Genomics BioSci & Tech. Co.Ltd.",
+"industry": "生技醫療",
+"market": "7",
+"name": "基米-創"
+},
+"4198": {
+"abbr": "欣大健康",
+"en": "S&S",
+"industry": "生技醫療",
+"market": "2",
+"name": "欣大健康"
+},
+"4205": {
+"abbr": "中華食",
+"en": "CHUNG HWA",
+"industry": "食品工業",
+"market": "2",
+"name": "中華食"
+},
+"4207": {
+"abbr": "環泰",
+"en": "TFC",
+"industry": "食品工業",
+"market": "2",
+"name": "環泰"
+},
+"4303": {
+"abbr": "信立",
+"en": "HSINLI",
+"industry": "塑膠工業",
+"market": "2",
+"name": "信立"
+},
+"4304": {
+"abbr": "勝昱",
+"en": "SUNVIC",
+"industry": "塑膠工業",
+"market": "2",
+"name": "勝昱"
+},
+"4305": {
+"abbr": "世坤",
+"en": "SKP",
+"industry": "塑膠工業",
+"market": "2",
+"name": "世坤"
+},
+"4306": {
+"abbr": "炎洲",
+"en": "YC",
+"industry": "塑膠工業",
+"market": "1",
+"name": "炎洲"
+},
+"4401": {
+"abbr": "東隆興",
+"en": "TLTM",
+"industry": "紡織纖維",
+"market": "2",
+"name": "東隆興"
+},
+"4402": {
+"abbr": "郡都開發",
+"en": "J.D Development",
+"industry": "紡織纖維",
+"market": "2",
+"name": "郡都開發"
+},
+"4406": {
+"abbr": "新昕纖",
+"en": "HSIN-SIN",
+"industry": "紡織纖維",
+"market": "2",
+"name": "新昕纖"
+},
+"4413": {
+"abbr": "飛寶企業",
+"en": "EST",
+"industry": "紡織纖維",
+"market": "2",
+"name": "飛寶企業"
+},
+"4414": {
+"abbr": "如興",
+"en": "ROO HSING",
+"industry": "紡織纖維",
+"market": "1",
+"name": "如興"
+},
+"4416": {
+"abbr": "三圓",
+"en": "Sumwon",
+"industry": "建材營建",
+"market": "2",
+"name": "三圓"
+},
+"4417": {
+"abbr": "金洲",
+"en": "KING CHOU",
+"industry": "紡織纖維",
+"market": "2",
+"name": "金洲"
+},
+"4419": {
+"abbr": "皇家美食",
+"en": "KH",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "皇家美食"
+},
+"4420": {
+"abbr": "光明",
+"en": "Kwang Ming",
+"industry": "紡織纖維",
+"market": "2",
+"name": "光明"
+},
+"4426": {
+"abbr": "利勤",
+"en": "LI CHENG",
+"industry": "紡織纖維",
+"market": "1",
+"name": "利勤"
+},
+"4430": {
+"abbr": "耀億",
+"en": "YAO I",
+"industry": "其他",
+"market": "2",
+"name": "耀億"
+},
+"4432": {
+"abbr": "銘旺實",
+"en": "Haksport",
+"industry": "紡織纖維",
+"market": "2",
+"name": "銘旺實"
+},
+"4433": {
+"abbr": "興采",
+"en": "Singtex",
+"industry": "紡織纖維",
+"market": "2",
+"name": "興采"
+},
+"4438": {
+"abbr": "廣越",
+"en": "QVE",
+"industry": "紡織纖維",
+"market": "1",
+"name": "廣越"
+},
+"4439": {
+"abbr": "冠星-KY",
+"en": "TST Group",
+"industry": "紡織纖維",
+"market": "1",
+"name": "冠星-KY"
+},
+"4440": {
+"abbr": "宜新實業",
+"en": "Yi Shin",
+"industry": "紡織纖維",
+"market": "1",
+"name": "宜新實業"
+},
+"4441": {
+"abbr": "振大環球",
+"en": "GGF",
+"industry": "紡織纖維",
+"market": "1",
+"name": "振大環球"
+},
+"4442": {
+"abbr": "竣邦-KY",
+"en": "J&B-KY",
+"industry": "紡織纖維",
+"market": "2",
+"name": "竣邦-KY"
+},
+"4502": {
+"abbr": "健信",
+"en": "RT",
+"industry": "電機機械",
+"market": "2",
+"name": "健信"
+},
+"4503": {
+"abbr": "金雨",
+"en": "GOLD RAIN",
+"industry": "電機機械",
+"market": "2",
+"name": "金雨"
+},
+"4506": {
+"abbr": "崇友",
+"en": "GFC",
+"industry": "電機機械",
+"market": "2",
+"name": "崇友"
+},
+"4510": {
+"abbr": "高鋒",
+"en": "KAFO",
+"industry": "電機機械",
+"market": "2",
+"name": "高鋒"
+},
+"4513": {
+"abbr": "福裕",
+"en": "FALCON",
+"industry": "電機機械",
+"market": "2",
+"name": "福裕"
+},
+"4523": {
+"abbr": "永彰",
+"en": "Everbrite",
+"industry": "電機機械",
+"market": "2",
+"name": "永彰"
+},
+"4526": {
+"abbr": "東台",
+"en": "TONGTAI",
+"industry": "電機機械",
+"market": "1",
+"name": "東台"
+},
+"4527": {
+"abbr": "方方土霖",
+"en": "KL",
+"industry": "電機機械",
+"market": "2",
+"name": "方土霖"
+},
+"4528": {
+"abbr": "江興鍛",
+"en": "CHF",
+"industry": "電機機械",
+"market": "2",
+"name": "江興鍛"
+},
+"4529": {
+"abbr": "淳紳",
+"en": "EPTECH",
+"industry": "其他",
+"market": "2",
+"name": "淳紳"
+},
+"4530": {
+"abbr": "宏易",
+"en": "Honyi",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "宏易"
+},
+"4532": {
+"abbr": "瑞智",
+"en": "RECHI",
+"industry": "電機機械",
+"market": "1",
+"name": "瑞智"
+},
+"4533": {
+"abbr": "協易機",
+"en": "SEYI",
+"industry": "電機機械",
+"market": "2",
+"name": "協易機"
+},
+"4534": {
+"abbr": "慶騰",
+"en": "trinity",
+"industry": "電機機械",
+"market": "2",
+"name": "慶騰"
+},
+"4535": {
+"abbr": "至興",
+"en": "FBT",
+"industry": "電機機械",
+"market": "2",
+"name": "至興"
+},
+"4536": {
+"abbr": "拓凱",
+"en": "TOPKEY",
+"industry": "運動休閒",
+"market": "1",
+"name": "拓凱"
+},
+"4538": {
+"abbr": "大詠城",
+"en": "WINSON",
+"industry": "電機機械",
+"market": "2",
+"name": "大詠城"
+},
+"4540": {
+"abbr": "全球傳動",
+"en": "TBI MOTION",
+"industry": "電機機械",
+"market": "1",
+"name": "全球傳動"
+},
+"4541": {
+"abbr": "晟田",
+"en": "Magnate",
+"industry": "其他",
+"market": "2",
+"name": "晟田"
+},
+"4542": {
+"abbr": "科嶠",
+"en": "ANT",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "科嶠"
+},
+"4543": {
+"abbr": "萬在",
+"en": "MAN ZAI",
+"industry": "電機機械",
+"market": "2",
+"name": "萬在"
+},
+"4545": {
+"abbr": "銘鈺",
+"en": "MAP",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "銘鈺"
+},
+"4549": {
+"abbr": "桓達",
+"en": "FineTek",
+"industry": "電機機械",
+"market": "2",
+"name": "桓達"
+},
+"4550": {
+"abbr": "長佳",
+"en": "CJME",
+"industry": "電機機械",
+"market": "2",
+"name": "長佳"
+},
+"4551": {
+"abbr": "智伸科",
+"en": "GLOBAL PMX",
+"industry": "汽車工業",
+"market": "1",
+"name": "智伸科"
+},
+"4552": {
+"abbr": "力達-KY",
+"en": "Lida",
+"industry": "電機機械",
+"market": "1",
+"name": "力達-KY"
+},
+"4554": {
+"abbr": "橙的",
+"en": "Orange",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "橙的"
+},
+"4555": {
+"abbr": "氣立",
+"en": "CHELIC",
+"industry": "電機機械",
+"market": "1",
+"name": "氣立"
+},
+"4556": {
+"abbr": "旭然",
+"en": "BSI",
+"industry": "其他",
+"market": "2",
+"name": "旭然"
+},
+"4557": {
+"abbr": "永新-KY",
+"en": "Yusin",
+"industry": "汽車工業",
+"market": "1",
+"name": "永新-KY"
+},
+"4558": {
+"abbr": "寶緯",
+"en": "Alformer",
+"industry": "電機機械",
+"market": "2",
+"name": "寶緯"
+},
+"4560": {
+"abbr": "強信-KY",
+"en": "STRONG H",
+"industry": "電機機械",
+"market": "1",
+"name": "強信-KY"
+},
+"4561": {
+"abbr": "健椿",
+"en": "Kenturn",
+"industry": "電機機械",
+"market": "2",
+"name": "健椿"
+},
+"4562": {
+"abbr": "穎漢",
+"en": "YHT",
+"industry": "電機機械",
+"market": "1",
+"name": "穎漢"
+},
+"4563": {
+"abbr": "百德",
+"en": "QUASER",
+"industry": "電機機械",
+"market": "2",
+"name": "百德"
+},
+"4564": {
+"abbr": "元翎",
+"en": "MOSA",
+"industry": "電機機械",
+"market": "1",
+"name": "元翎"
+},
+"4566": {
+"abbr": "時碩工業",
+"en": "GLOBAL TEK",
+"industry": "電機機械",
+"market": "1",
+"name": "時碩工業"
+},
+"4568": {
+"abbr": "科際精密",
+"en": "KOGE",
+"industry": "電機機械",
+"market": "2",
+"name": "科際精密"
+},
+"4569": {
+"abbr": "六方科-KY",
+"en": "Sixxon",
+"industry": "汽車工業",
+"market": "1",
+"name": "六方科-KY"
+},
+"4571": {
+"abbr": "鈞興-KY",
+"en": "KHGEARS",
+"industry": "電機機械",
+"market": "1",
+"name": "鈞興-KY"
+},
+"4572": {
+"abbr": "駐龍",
+"en": "DPI",
+"industry": "電機機械",
+"market": "1",
+"name": "駐龍"
+},
+"4576": {
+"abbr": "大銀微系統",
+"en": "HMC",
+"industry": "電機機械",
+"market": "1",
+"name": "大銀微系統"
+},
+"4577": {
+"abbr": "達航科技",
+"en": "Ofuna Tech",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "達航科技"
+},
+"4580": {
+"abbr": "捷流閥業",
+"en": "Value Valves",
+"industry": "電機機械",
+"market": "2",
+"name": "捷流閥業"
+},
+"4581": {
+"abbr": "光隆精密-KY",
+"en": "WKG",
+"industry": "汽車工業",
+"market": "1",
+"name": "光隆精密-KY"
+},
+"4582": {
+"abbr": "聚恆-創",
+"en": "HENGS TECHNOLOGY CO. LTD.",
+"industry": "綠能環保",
+"market": "7",
+"name": "聚恆-創"
+},
+"4583": {
+"abbr": "台灣精銳",
+"en": "APEXDYNA",
+"industry": "電機機械",
+"market": "1",
+"name": "台灣精銳"
+},
+"4584": {
+"abbr": "君帆",
+"en": "JUFAN",
+"industry": "電機機械",
+"market": "2",
+"name": "君帆"
+},
+"4585": {
+"abbr": "達明",
+"en": "TRI",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "達明"
+},
+"4588": {
+"abbr": "玖鼎電力",
+"en": "Arch Meter",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "玖鼎電力"
+},
+"4590": {
+"abbr": "富田-創",
+"en": "FUKUTA ELECTRIC & MACHINERY CO. LTD.",
+"industry": "電機機械",
+"market": "7",
+"name": "富田-創"
+},
+"4609": {
+"abbr": "唐鋒",
+"en": "AIRLUX",
+"industry": "居家生活",
+"market": "2",
+"name": "唐鋒"
+},
+"4702": {
+"abbr": "中美實",
+"en": "ALLIED",
+"industry": "居家生活",
+"market": "2",
+"name": "中美實"
+},
+"4706": {
+"abbr": "大恭",
+"en": "TKC",
+"industry": "化學工業",
+"market": "2",
+"name": "大恭"
+},
+"4707": {
+"abbr": "磐亞",
+"en": "PACC",
+"industry": "化學工業",
+"market": "2",
+"name": "磐亞"
+},
+"4711": {
+"abbr": "永純",
+"en": "YONG SHUN",
+"industry": "化學工業",
+"market": "2",
+"name": "永純"
+},
+"4714": {
+"abbr": "永捷",
+"en": "UB",
+"industry": "化學工業",
+"market": "2",
+"name": "永捷"
+},
+"4716": {
+"abbr": "大立",
+"en": "DAILY",
+"industry": "化學工業",
+"market": "2",
+"name": "大立"
+},
+"4720": {
+"abbr": "德淵",
+"en": "TEX YEAR",
+"industry": "化學工業",
+"market": "1",
+"name": "德淵"
+},
+"4721": {
+"abbr": "美琪瑪",
+"en": "mechema",
+"industry": "化學工業",
+"market": "2",
+"name": "美琪瑪"
+},
+"4722": {
+"abbr": "國精化",
+"en": "QPC",
+"industry": "化學工業",
+"market": "1",
+"name": "國精化"
+},
+"4726": {
+"abbr": "永昕",
+"en": "Mycenax",
+"industry": "生技醫療",
+"market": "2",
+"name": "永昕"
+},
+"4728": {
+"abbr": "雙美",
+"en": "Sunmax",
+"industry": "生技醫療",
+"market": "2",
+"name": "雙美"
+},
+"4729": {
+"abbr": "熒茂",
+"en": "MILDEX",
+"industry": "電子–光電",
+"market": "2",
+"name": "熒茂"
+},
+"4735": {
+"abbr": "豪展",
+"en": "Avita",
+"industry": "生技醫療",
+"market": "2",
+"name": "豪展"
+},
+"4736": {
+"abbr": "泰博",
+"en": "TaiDoc",
+"industry": "生技醫療",
+"market": "1",
+"name": "泰博"
+},
+"4737": {
+"abbr": "華廣",
+"en": "BIONIME",
+"industry": "生技醫療",
+"market": "1",
+"name": "華廣"
+},
+"4739": {
+"abbr": "康普",
+"en": "COREMAX",
+"industry": "化學工業",
+"market": "1",
+"name": "康普"
+},
+"4741": {
+"abbr": "泓瀚",
+"en": "Jetbest",
+"industry": "化學工業",
+"market": "2",
+"name": "泓瀚"
+},
+"4743": {
+"abbr": "合一",
+"en": "ONENESS BIOTECH",
+"industry": "生技醫療",
+"market": "2",
+"name": "合一"
+},
+"4744": {
+"abbr": "皇將",
+"en": "CVC",
+"industry": "生技醫療",
+"market": "2",
+"name": "皇將"
+},
+"4745": {
+"abbr": "合富-KY",
+"en": "CMH",
+"industry": "生技醫療",
+"market": "2",
+"name": "合富-KY"
+},
+"4746": {
+"abbr": "台耀",
+"en": "FRMSL",
+"industry": "生技醫療",
+"market": "1",
+"name": "台耀"
+},
+"4747": {
+"abbr": "強生製藥",
+"en": "JCP",
+"industry": "生技醫療",
+"market": "2",
+"name": "強生"
+},
+"4749": {
+"abbr": "新應材",
+"en": "aemc",
+"industry": "電子–半導體",
+"market": "2",
+"name": "新應材"
+},
+"4754": {
+"abbr": "國碳科",
+"en": "INCA",
+"industry": "化學工業",
+"market": "2",
+"name": "國碳科"
+},
+"4755": {
+"abbr": "三福化",
+"en": "SAN FU",
+"industry": "化學工業",
+"market": "1",
+"name": "三福化"
+},
+"4760": {
+"abbr": "勤凱科技",
+"en": "ample",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "勤凱"
+},
+"4763": {
+"abbr": "材料*-KY",
+"en": "ACE",
+"industry": "化學工業",
+"market": "1",
+"name": "材料*-KY"
+},
+"4764": {
+"abbr": "雙鍵",
+"en": "DBC",
+"industry": "化學工業",
+"market": "1",
+"name": "雙鍵"
+},
+"4766": {
+"abbr": "南寶",
+"en": "NAN PAO",
+"industry": "化學工業",
+"market": "1",
+"name": "南寶"
+},
+"4767": {
+"abbr": "誠泰科技",
+"en": "CHETAY",
+"industry": "化學工業",
+"market": "2",
+"name": "誠泰科技"
+},
+"4768": {
+"abbr": "晶呈科技",
+"en": "INGENTEC",
+"industry": "化學工業",
+"market": "2",
+"name": "晶呈科技"
+},
+"4770": {
+"abbr": "上品",
+"en": "ASC",
+"industry": "化學工業",
+"market": "1",
+"name": "上品"
+},
+"4771": {
+"abbr": "望隼",
+"en": "VF",
+"industry": "生技醫療",
+"market": "1",
+"name": "望隼"
+},
+"4772": {
+"abbr": "台特化",
+"en": "TSC",
+"industry": "化學工業",
+"market": "2",
+"name": "台特化"
+},
+"4804": {
+"abbr": "大略-KY",
+"en": "Da Lue",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "大略-KY"
+},
+"4806": {
+"abbr": "桂田文創",
+"en": "KTCCE",
+"industry": "文化創意",
+"market": "2",
+"name": "桂田文創"
+},
+"4807": {
+"abbr": "日成-KY",
+"en": "RH",
+"industry": "貿易百貨",
+"market": "1",
+"name": "日成-KY"
+},
+"4903": {
+"abbr": "聯光通",
+"en": "UFOC",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "聯光通"
+},
+"4904": {
+"abbr": "遠傳",
+"en": "Far EasTone",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "遠傳"
+},
+"4905": {
+"abbr": "台聯電",
+"en": "TAINET",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "台聯電"
+},
+"4906": {
+"abbr": "正文",
+"en": "GEMTEK",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "正文"
+},
+"4907": {
+"abbr": "富宇",
+"en": "Fu Yu  Property",
+"industry": "建材營建",
+"market": "2",
+"name": "富宇"
+},
+"4908": {
+"abbr": "前鼎",
+"en": "APAC",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "前鼎"
+},
+"4909": {
+"abbr": "新復興",
+"en": "NEE",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "新復興"
+},
+"4911": {
+"abbr": "德英",
+"en": "G&E",
+"industry": "生技醫療",
+"market": "2",
+"name": "德英"
+},
+"4912": {
+"abbr": "聯德控股-KY",
+"en": "Lemtech-KY",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "聯德控股-KY"
+},
+"4915": {
+"abbr": "致伸",
+"en": "Primax",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "致伸"
+},
+"4916": {
+"abbr": "事欣科",
+"en": "PARPRO",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "事欣科"
+},
+"4919": {
+"abbr": "新唐",
+"en": "NTC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "新唐"
+},
+"4923": {
+"abbr": "力士",
+"en": "Force Mos",
+"industry": "電子–半導體",
+"market": "2",
+"name": "力士"
+},
+"4924": {
+"abbr": "欣厚-KY",
+"en": "HTM",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "欣厚-KY"
+},
+"4927": {
+"abbr": "泰鼎-KY",
+"en": "Apex",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "泰鼎-KY"
+},
+"4930": {
+"abbr": "燦星網",
+"en": "Star  Comgistic",
+"industry": "電器電纜",
+"market": "1",
+"name": "燦星網"
+},
+"4931": {
+"abbr": "新盛力",
+"en": "STL",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "新盛力"
+},
+"4933": {
+"abbr": "友輝",
+"en": "UBRIGHT",
+"industry": "電子–光電",
+"market": "2",
+"name": "友輝"
+},
+"4934": {
+"abbr": "太極",
+"en": "Tainergy",
+"industry": "電子–光電",
+"market": "1",
+"name": "太極"
+},
+"4935": {
+"abbr": "茂林-KY",
+"en": "GLT",
+"industry": "電子–光電",
+"market": "1",
+"name": "茂林-KY"
+},
+"4938": {
+"abbr": "和碩",
+"en": "Pegatron",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "和碩"
+},
+"4939": {
+"abbr": "亞電",
+"en": "AEM",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "亞電"
+},
+"4942": {
+"abbr": "嘉彰",
+"en": "Chia Chang",
+"industry": "電子–光電",
+"market": "1",
+"name": "嘉彰"
+},
+"4943": {
+"abbr": "康控-KY",
+"en": "CONCRAFT",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "康控-KY"
+},
+"4946": {
+"abbr": "辣椒",
+"en": "Cayenne Tech",
+"industry": "文化創意",
+"market": "2",
+"name": "辣椒"
+},
+"4949": {
+"abbr": "有成精密",
+"en": "WIN WIN",
+"industry": "電子–光電",
+"market": "1",
+"name": "有成精密"
+},
+"4950": {
+"abbr": "金耘國際",
+"en": "GWIC",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "金耘國際"
+},
+"4951": {
+"abbr": "精拓科",
+"en": "Fintek",
+"industry": "電子–半導體",
+"market": "2",
+"name": "精拓科"
+},
+"4952": {
+"abbr": "凌通",
+"en": "Generalplus",
+"industry": "電子–半導體",
+"market": "1",
+"name": "凌通"
+},
+"4953": {
+"abbr": "緯軟",
+"en": "WITS",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "緯軟"
+},
+"4956": {
+"abbr": "光鋐",
+"en": "Epileds",
+"industry": "電子–光電",
+"market": "1",
+"name": "光鋐"
+},
+"4958": {
+"abbr": "臻鼎-KY",
+"en": "ZDT",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "臻鼎-KY"
+},
+"4960": {
+"abbr": "誠美材",
+"en": "CMMT",
+"industry": "電子–光電",
+"market": "1",
+"name": "誠美材"
+},
+"4961": {
+"abbr": "天鈺",
+"en": "FITIPOWER",
+"industry": "電子–半導體",
+"market": "1",
+"name": "天鈺"
+},
+"4966": {
+"abbr": "譜瑞-KY",
+"en": "Parade",
+"industry": "電子–半導體",
+"market": "2",
+"name": "譜瑞-KY"
+},
+"4967": {
+"abbr": "十銓",
+"en": "TEAM",
+"industry": "電子–半導體",
+"market": "1",
+"name": "十銓"
+},
+"4968": {
+"abbr": "立積",
+"en": "Richwave",
+"industry": "電子–半導體",
+"market": "1",
+"name": "立積"
+},
+"4971": {
+"abbr": "IET-KY",
+"en": "IET",
+"industry": "電子–半導體",
+"market": "2",
+"name": "IET-KY"
+},
+"4972": {
+"abbr": "湯石照明",
+"en": "TONS",
+"industry": "電子–光電",
+"market": "2",
+"name": "湯石照明"
+},
+"4973": {
+"abbr": "廣穎電通",
+"en": "Silicon Power",
+"industry": "電子–半導體",
+"market": "2",
+"name": "廣穎"
+},
+"4974": {
+"abbr": "亞泰",
+"en": "ATII",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "亞泰"
+},
+"4976": {
+"abbr": "佳凌",
+"en": "Calin",
+"industry": "電子–光電",
+"market": "1",
+"name": "佳凌"
+},
+"4977": {
+"abbr": "眾達-KY",
+"en": "PCL",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "眾達-KY"
+},
+"4979": {
+"abbr": "華星光",
+"en": "LuxNet",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "華星光"
+},
+"4987": {
+"abbr": "科誠",
+"en": "GODEX",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "科誠"
+},
+"4989": {
+"abbr": "榮科",
+"en": "LCYT",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "榮科"
+},
+"4991": {
+"abbr": "環宇-KY",
+"en": "GCS",
+"industry": "電子–半導體",
+"market": "2",
+"name": "環宇-KY"
+},
+"4994": {
+"abbr": "傳奇",
+"en": "X-LEGEND",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "傳奇"
+},
+"4995": {
+"abbr": "晶達",
+"en": "Litemax",
+"industry": "電子–光電",
+"market": "2",
+"name": "晶達"
+},
+"4999": {
+"abbr": "鑫禾",
+"en": "Sinher",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "鑫禾"
+},
+"5007": {
+"abbr": "三星",
+"en": "SAN SHING",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "三星"
+},
+"5009": {
+"abbr": "榮剛",
+"en": "GMTC",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "榮剛"
+},
+"5011": {
+"abbr": "久陽",
+"en": "OFCO",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "久陽"
+},
+"5013": {
+"abbr": "強新",
+"en": "NEW BEST",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "強新"
+},
+"5014": {
+"abbr": "建錩",
+"en": "CCI",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "建錩"
+},
+"5015": {
+"abbr": "華祺",
+"en": "RODEX",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "華祺"
+},
+"5016": {
+"abbr": "松和",
+"en": "Song Ho",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "松和"
+},
+"5201": {
+"abbr": "凱衛",
+"en": "KWAY",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "凱衛"
+},
+"5202": {
+"abbr": "力新",
+"en": "NewSoft",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "力新"
+},
+"5203": {
+"abbr": "訊連",
+"en": "CyberLink",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "訊連"
+},
+"5205": {
+"abbr": "中茂",
+"en": "TWGET",
+"industry": "綠能環保",
+"market": "2",
+"name": "中茂"
+},
+"5206": {
+"abbr": "坤悅",
+"en": "Kunyue",
+"industry": "建材營建",
+"market": "2",
+"name": "坤悅"
+},
+"5209": {
+"abbr": "新鼎",
+"en": "CTCI ASI",
+"industry": "其他",
+"market": "2",
+"name": "新鼎"
+},
+"5210": {
+"abbr": "寶碩",
+"en": "APEX",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "寶碩"
+},
+"5211": {
+"abbr": "蒙恬",
+"en": "Penpower",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "蒙恬"
+},
+"5212": {
+"abbr": "凌網",
+"en": "HYWEB",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "凌網"
+},
+"5213": {
+"abbr": "亞昕",
+"en": "YeaShin",
+"industry": "建材營建",
+"market": "2",
+"name": "亞昕"
+},
+"5215": {
+"abbr": "科嘉-KY",
+"en": "KO JA",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "科嘉-KY"
+},
+"5220": {
+"abbr": "萬達光電",
+"en": "HIGGSTEC",
+"industry": "電子–光電",
+"market": "2",
+"name": "萬達光電"
+},
+"5222": {
+"abbr": "全訊",
+"en": "TRANSCOM",
+"industry": "電子–半導體",
+"market": "1",
+"name": "全訊"
+},
+"5223": {
+"abbr": "安力-KY",
+"en": "Anli",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "安力-KY"
+},
+"5225": {
+"abbr": "東科-KY",
+"en": "EASTECH",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "東科-KY"
+},
+"5227": {
+"abbr": "立凱-KY",
+"en": "Aleees",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "立凱-KY"
+},
+"5228": {
+"abbr": "鈺鎧",
+"en": "MAX ECHO",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "鈺鎧"
+},
+"5230": {
+"abbr": "雷笛克光學",
+"en": "Ledlink",
+"industry": "電子–光電",
+"market": "2",
+"name": "雷笛克光學"
+},
+"5234": {
+"abbr": "達興材料",
+"en": "DAXIN",
+"industry": "電子–光電",
+"market": "1",
+"name": "達興材料"
+},
+"5236": {
+"abbr": "凌陽創新",
+"en": "Sunplusit",
+"industry": "電子–半導體",
+"market": "2",
+"name": "凌陽創新"
+},
+"5243": {
+"abbr": "乙盛-KY",
+"en": "ESON",
+"industry": "電子–光電",
+"market": "1",
+"name": "乙盛-KY"
+},
+"5244": {
+"abbr": "弘凱",
+"en": "BRIGHTEK",
+"industry": "電子–光電",
+"market": "1",
+"name": "弘凱"
+},
+"5245": {
+"abbr": "智晶",
+"en": "WSI",
+"industry": "電子–光電",
+"market": "2",
+"name": "智晶"
+},
+"5251": {
+"abbr": "天鉞電",
+"en": "JSW",
+"industry": "電子–光電",
+"market": "2",
+"name": "天鉞電"
+},
+"5258": {
+"abbr": "虹堡",
+"en": "Castles",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "虹堡"
+},
+"5263": {
+"abbr": "智崴",
+"en": "BROGENT",
+"industry": "文化創意",
+"market": "2",
+"name": "智崴"
+},
+"5269": {
+"abbr": "祥碩",
+"en": "Asmedia",
+"industry": "電子–半導體",
+"market": "1",
+"name": "祥碩"
+},
+"5272": {
+"abbr": "笙科",
+"en": "AMICCOM",
+"industry": "電子–半導體",
+"market": "2",
+"name": "笙科"
+},
+"5274": {
+"abbr": "信驊",
+"en": "ASPEED",
+"industry": "電子–半導體",
+"market": "2",
+"name": "信驊"
+},
+"5276": {
+"abbr": "達輝-KY",
+"en": "Da Hui",
+"industry": "其他",
+"market": "2",
+"name": "達輝-KY"
+},
+"5278": {
+"abbr": "尚凡*",
+"en": "Sunfun",
+"industry": "數位雲端",
+"market": "2",
+"name": "尚凡*"
+},
+"5283": {
+"abbr": "禾聯碩",
+"en": "Heran",
+"industry": "電器電纜",
+"market": "1",
+"name": "禾聯碩"
+},
+"5284": {
+"abbr": "jpp-KY",
+"en": "jpp",
+"industry": "其他",
+"market": "1",
+"name": "jpp-KY"
+},
+"5285": {
+"abbr": "界霖",
+"en": "Jih Lin",
+"industry": "電子–半導體",
+"market": "1",
+"name": "界霖"
+},
+"5287": {
+"abbr": "數字",
+"en": "ADDCN",
+"industry": "數位雲端",
+"market": "2",
+"name": "數字"
+},
+"5288": {
+"abbr": "豐祥-KY",
+"en": "Eurocharm",
+"industry": "電機機械",
+"market": "1",
+"name": "豐祥-KY"
+},
+"5289": {
+"abbr": "宜鼎",
+"en": "Innodisk",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "宜鼎"
+},
+"5291": {
+"abbr": "邑昇",
+"en": "EISO",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "邑昇"
+},
+"5292": {
+"abbr": "華懋",
+"en": "DTECH",
+"industry": "綠能環保",
+"market": "1",
+"name": "華懋"
+},
+"5299": {
+"abbr": "杰力",
+"en": "EMC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "杰力"
+},
+"5301": {
+"abbr": "寶得利",
+"en": "CJW",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "寶得利"
+},
+"5302": {
+"abbr": "太欣",
+"en": "STK",
+"industry": "電子–半導體",
+"market": "2",
+"name": "太欣"
+},
+"5306": {
+"abbr": "桂盟",
+"en": "KMC",
+"industry": "運動休閒",
+"market": "1",
+"name": "桂盟"
+},
+"5309": {
+"abbr": "系統電",
+"en": "SG",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "系統電"
+},
+"5310": {
+"abbr": "天剛",
+"en": "CGS",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "天剛"
+},
+"5312": {
+"abbr": "寶島科",
+"en": "FORMOSA",
+"industry": "生技醫療",
+"market": "2",
+"name": "寶島科"
+},
+"5314": {
+"abbr": "世紀*",
+"en": "Myson",
+"industry": "其他",
+"market": "2",
+"name": "世紀*"
+},
+"5315": {
+"abbr": "光聯",
+"en": "U.R.T.",
+"industry": "電子–光電",
+"market": "2",
+"name": "光聯"
+},
+"5321": {
+"abbr": "美而快",
+"en": "U.R.",
+"industry": "數位雲端",
+"market": "2",
+"name": "美而快"
+},
+"5324": {
+"abbr": "士開",
+"en": "SDC",
+"industry": "建材營建",
+"market": "2",
+"name": "士開"
+},
+"5328": {
+"abbr": "華容",
+"en": "HJC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "華容"
+},
+"5340": {
+"abbr": "建榮",
+"en": "BAOTEK",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "建榮"
+},
+"5344": {
+"abbr": "立衛",
+"en": "VATE",
+"industry": "電子–半導體",
+"market": "2",
+"name": "立衛"
+},
+"5345": {
+"abbr": "馥鴻",
+"en": "Fullhome",
+"industry": "其他",
+"market": "2",
+"name": "馥鴻"
+},
+"5347": {
+"abbr": "世界",
+"en": "VIS",
+"industry": "電子–半導體",
+"market": "2",
+"name": "世界"
+},
+"5348": {
+"abbr": "正能量智能",
+"en": "EMT",
+"industry": "運動休閒",
+"market": "2",
+"name": "正能量智能"
+},
+"5351": {
+"abbr": "鈺創",
+"en": "Etron",
+"industry": "電子–半導體",
+"market": "2",
+"name": "鈺創"
+},
+"5353": {
+"abbr": "台林",
+"en": "Tailyn",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "台林"
+},
+"5355": {
+"abbr": "佳總",
+"en": "PSC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "佳總"
+},
+"5356": {
+"abbr": "協益",
+"en": "SIRTEC",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "協益"
+},
+"5364": {
+"abbr": "力麗店",
+"en": "LEALEA HOTELS",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "力麗店"
+},
+"5371": {
+"abbr": "中光電",
+"en": "Coretronic",
+"industry": "電子–光電",
+"market": "2",
+"name": "中光電"
+},
+"5381": {
+"abbr": "光譜",
+"en": "SPE",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "光譜"
+},
+"5386": {
+"abbr": "青雲",
+"en": "ALBATRON",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "青雲"
+},
+"5388": {
+"abbr": "中磊",
+"en": "Sercomm",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "中磊"
+},
+"5392": {
+"abbr": "能率",
+"en": "ABICO AVY",
+"industry": "電子–光電",
+"market": "2",
+"name": "能率"
+},
+"5398": {
+"abbr": "慕康生醫",
+"en": "Mediera",
+"industry": "其他",
+"market": "2",
+"name": "慕康生醫"
+},
+"5403": {
+"abbr": "中菲",
+"en": "DDSC",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "中菲"
+},
+"5410": {
+"abbr": "國眾",
+"en": "LEO",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "國眾"
+},
+"5425": {
+"abbr": "台半",
+"en": "TSC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "台半"
+},
+"5426": {
+"abbr": "振發",
+"en": "CF",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "振發"
+},
+"5432": {
+"abbr": "新門",
+"en": "SOLOMON DATA",
+"industry": "綠能環保",
+"market": "2",
+"name": "新門"
+},
+"5434": {
+"abbr": "崇越",
+"en": "TOPCO",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "崇越"
+},
+"5438": {
+"abbr": "東友",
+"en": "TIS",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "東友"
+},
+"5439": {
+"abbr": "高技",
+"en": "FHt",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "高技"
+},
+"5443": {
+"abbr": "均豪",
+"en": "GPM",
+"industry": "電子–半導體",
+"market": "2",
+"name": "均豪"
+},
+"5450": {
+"abbr": "南良",
+"en": "NAMLIONG",
+"industry": "其他",
+"market": "2",
+"name": "南良"
+},
+"5452": {
+"abbr": "佶優",
+"en": "UNIC",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "佶優"
+},
+"5455": {
+"abbr": "昇益",
+"en": "SY",
+"industry": "建材營建",
+"market": "2",
+"name": "昇益"
+},
+"5457": {
+"abbr": "宣德",
+"en": "SPEED TECH",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "宣德"
+},
+"5460": {
+"abbr": "同協",
+"en": "MUSTANG",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "同協"
+},
+"5464": {
+"abbr": "霖宏",
+"en": "LIN HORN",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "霖宏"
+},
+"5465": {
+"abbr": "富驊",
+"en": "LFE",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "富驊"
+},
+"5468": {
+"abbr": "凱鈺",
+"en": "TMTECH",
+"industry": "電子–半導體",
+"market": "2",
+"name": "凱鈺"
+},
+"5469": {
+"abbr": "瀚宇博",
+"en": "HSB",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "瀚宇博"
+},
+"5471": {
+"abbr": "松翰",
+"en": "SONIX",
+"industry": "電子–半導體",
+"market": "1",
+"name": "松翰"
+},
+"5474": {
+"abbr": "聰泰",
+"en": "YUAN",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "聰泰"
+},
+"5475": {
+"abbr": "德宏",
+"en": "GLOTECH",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "德宏"
+},
+"5478": {
+"abbr": "智冠",
+"en": "SOFT-WORLD",
+"industry": "文化創意",
+"market": "2",
+"name": "智冠"
+},
+"5481": {
+"abbr": "新華",
+"en": "SINOTACT",
+"industry": "其他",
+"market": "2",
+"name": "新華"
+},
+"5483": {
+"abbr": "中美晶",
+"en": "SAS",
+"industry": "電子–半導體",
+"market": "2",
+"name": "中美晶"
+},
+"5484": {
+"abbr": "慧友",
+"en": "EverFocus",
+"industry": "電子–光電",
+"market": "1",
+"name": "慧友"
+},
+"5487": {
+"abbr": "通泰",
+"en": "TONTEK",
+"industry": "電子–半導體",
+"market": "2",
+"name": "通泰"
+},
+"5488": {
+"abbr": "松普",
+"en": "SP",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "松普"
+},
+"5489": {
+"abbr": "彩富",
+"en": "DYNACOLOR",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "彩富"
+},
+"5490": {
+"abbr": "同亨",
+"en": "XAC",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "同亨"
+},
+"5493": {
+"abbr": "三聯",
+"en": "Sanlien",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "三聯"
+},
+"5498": {
+"abbr": "凱崴",
+"en": "KEY WARE",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "凱崴"
+},
+"5508": {
+"abbr": "永信建",
+"en": "YCDC",
+"industry": "建材營建",
+"market": "2",
+"name": "永信建"
+},
+"5511": {
+"abbr": "德昌",
+"en": "TE  CHANG",
+"industry": "建材營建",
+"market": "2",
+"name": "德昌"
+},
+"5512": {
+"abbr": "力麒",
+"en": "RICH",
+"industry": "建材營建",
+"market": "2",
+"name": "力麒"
+},
+"5514": {
+"abbr": "三豐",
+"en": "SUN FON",
+"industry": "建材營建",
+"market": "2",
+"name": "三豐"
+},
+"5515": {
+"abbr": "建國",
+"en": "CHIEN KUO",
+"industry": "建材營建",
+"market": "1",
+"name": "建國"
+},
+"5516": {
+"abbr": "雙喜",
+"en": "SUN-SEA",
+"industry": "建材營建",
+"market": "2",
+"name": "雙喜"
+},
+"5519": {
+"abbr": "隆大",
+"en": "LD",
+"industry": "建材營建",
+"market": "1",
+"name": "隆大"
+},
+"5520": {
+"abbr": "力泰",
+"en": "Lihtai",
+"industry": "建材營建",
+"market": "2",
+"name": "力泰"
+},
+"5521": {
+"abbr": "工信",
+"en": "KSECO",
+"industry": "建材營建",
+"market": "1",
+"name": "工信"
+},
+"5522": {
+"abbr": "遠雄",
+"en": "Farglory",
+"industry": "建材營建",
+"market": "1",
+"name": "遠雄"
+},
+"5523": {
+"abbr": "豐謙",
+"en": "FONG CHIEN",
+"industry": "建材營建",
+"market": "2",
+"name": "豐謙"
+},
+"5525": {
+"abbr": "順天",
+"en": "SWEETEN",
+"industry": "建材營建",
+"market": "1",
+"name": "順天"
+},
+"5529": {
+"abbr": "鉅陞",
+"en": "MEGA",
+"industry": "建材營建",
+"market": "2",
+"name": "鉅陞"
+},
+"5530": {
+"abbr": "龍巖",
+"en": "LUNG YEN",
+"industry": "其他",
+"market": "2",
+"name": "龍巖"
+},
+"5531": {
+"abbr": "鄉林",
+"en": "Shining",
+"industry": "建材營建",
+"market": "1",
+"name": "鄉林"
+},
+"5533": {
+"abbr": "皇鼎",
+"en": "FOUNDING",
+"industry": "建材營建",
+"market": "1",
+"name": "皇鼎"
+},
+"5534": {
+"abbr": "長虹",
+"en": "CHONG HONG",
+"industry": "建材營建",
+"market": "1",
+"name": "長虹"
+},
+"5536": {
+"abbr": "聖暉*",
+"en": "ACTER",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "聖暉*"
+},
+"5538": {
+"abbr": "東明-KY",
+"en": "TONG MING",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "東明-KY"
+},
+"5543": {
+"abbr": "桓鼎-KY",
+"en": "Buima",
+"industry": "建材營建",
+"market": "2",
+"name": "桓鼎-KY"
+},
+"5546": {
+"abbr": "永固-KY",
+"en": "YGI",
+"industry": "建材營建",
+"market": "1",
+"name": "永固-KY"
+},
+"5547": {
+"abbr": "久舜",
+"en": "Jioushun",
+"industry": "建材營建",
+"market": "2",
+"name": "久舜"
+},
+"5548": {
+"abbr": "安倉",
+"en": "ANCANG",
+"industry": "建材營建",
+"market": "2",
+"name": "安倉"
+},
+"5601": {
+"abbr": "台聯櫃",
+"en": "TACT",
+"industry": "航運業",
+"market": "2",
+"name": "台聯櫃"
+},
+"5603": {
+"abbr": "陸海",
+"en": "SEA&L",
+"industry": "航運業",
+"market": "2",
+"name": "陸海"
+},
+"5604": {
+"abbr": "中連",
+"en": "CLTC",
+"industry": "其他",
+"market": "2",
+"name": "中連"
+},
+"5607": {
+"abbr": "遠雄港",
+"en": "Farglory FTZ",
+"industry": "航運業",
+"market": "1",
+"name": "遠雄港"
+},
+"5608": {
+"abbr": "四維航",
+"en": "S. W.",
+"industry": "航運業",
+"market": "1",
+"name": "四維航"
+},
+"5609": {
+"abbr": "中菲行",
+"en": "DIMERCO",
+"industry": "航運業",
+"market": "2",
+"name": "中菲行"
+},
+"5701": {
+"abbr": "劍湖山",
+"en": "JFS",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "劍湖山"
+},
+"5703": {
+"abbr": "亞都麗緻",
+"en": "Landis Taipei",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "亞都"
+},
+"5704": {
+"abbr": "老爺知",
+"en": "Chihpen Royal",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "老爺知"
+},
+"5706": {
+"abbr": "鳳凰",
+"en": "PHX TOUR",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "鳳凰"
+},
+"5864": {
+"abbr": "致和證",
+"en": "CIS",
+"industry": "金融保險",
+"market": "2",
+"name": "致和證"
+},
+"5871": {
+"abbr": "中租-KY",
+"en": "Chailease",
+"industry": "其他",
+"market": "1",
+"name": "中租-KY"
+},
+"5876": {
+"abbr": "上海商銀",
+"en": "SCSB",
+"industry": "金融保險",
+"market": "1",
+"name": "上海商銀"
+},
+"5878": {
+"abbr": "台名",
+"en": "TABC",
+"industry": "金融保險",
+"market": "2",
+"name": "台名"
+},
+"5880": {
+"abbr": "合庫金",
+"en": "TCFHC",
+"industry": "金融保險",
+"market": "1",
+"name": "合庫金"
+},
+"5902": {
+"abbr": "德記",
+"en": "Tait",
+"industry": "居家生活",
+"market": "2",
+"name": "德記"
+},
+"5903": {
+"abbr": "全家",
+"en": "FamilyMart",
+"industry": "居家生活",
+"market": "2",
+"name": "全家"
+},
+"5904": {
+"abbr": "寶雅",
+"en": "Poya",
+"industry": "居家生活",
+"market": "2",
+"name": "寶雅"
+},
+"5905": {
+"abbr": "南仁湖",
+"en": "NRL",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "南仁湖"
+},
+"5906": {
+"abbr": "台南-KY",
+"en": "TAINAN CAYMAN",
+"industry": "貿易百貨",
+"market": "1",
+"name": "台南-KY"
+},
+"5907": {
+"abbr": "大洋-KY",
+"en": "GORG",
+"industry": "貿易百貨",
+"market": "1",
+"name": "大洋-KY"
+},
+"6005": {
+"abbr": "群益證",
+"en": "CSC",
+"industry": "金融保險",
+"market": "1",
+"name": "群益證"
+},
+"6015": {
+"abbr": "宏遠證",
+"en": "HORIZON Sec.",
+"industry": "金融保險",
+"market": "2",
+"name": "宏遠證"
+},
+"6016": {
+"abbr": "康和證",
+"en": "concords",
+"industry": "金融保險",
+"market": "2",
+"name": "康和證"
+},
+"6020": {
+"abbr": "大展證",
+"en": "TACHAN",
+"industry": "金融保險",
+"market": "2",
+"name": "大展證"
+},
+"6021": {
+"abbr": "美好證",
+"en": "GOOD FINANCE",
+"industry": "金融保險",
+"market": "2",
+"name": "美好證"
+},
+"6023": {
+"abbr": "元大期貨",
+"en": "Yuanta Futures",
+"industry": "金融保險",
+"market": "2",
+"name": "元大期"
+},
+"6024": {
+"abbr": "群益期",
+"en": "CFC",
+"industry": "金融保險",
+"market": "1",
+"name": "群益期"
+},
+"6026": {
+"abbr": "福邦證",
+"en": "GFS",
+"industry": "金融保險",
+"market": "2",
+"name": "福邦證"
+},
+"6028": {
+"abbr": "公勝保經",
+"en": "GIBC",
+"industry": "金融保險",
+"market": "2",
+"name": "公勝保經"
+},
+"6101": {
+"abbr": "寬魚國際",
+"en": "KIC",
+"industry": "文化創意",
+"market": "2",
+"name": "寬魚國際"
+},
+"6103": {
+"abbr": "合邦",
+"en": "AVID",
+"industry": "電子–半導體",
+"market": "2",
+"name": "合邦"
+},
+"6104": {
+"abbr": "創惟",
+"en": "GLI",
+"industry": "電子–半導體",
+"market": "2",
+"name": "創惟"
+},
+"6108": {
+"abbr": "競國",
+"en": "APCB INC.",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "競國"
+},
+"6109": {
+"abbr": "亞元",
+"en": "AtechOEM",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "亞元"
+},
+"6111": {
+"abbr": "光聚晶電",
+"en": "SFG",
+"industry": "文化創意",
+"market": "2",
+"name": "光聚晶電"
+},
+"6112": {
+"abbr": "邁達特",
+"en": "Metaage",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "邁達特"
+},
+"6113": {
+"abbr": "亞矽",
+"en": "ASEC",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "亞矽"
+},
+"6114": {
+"abbr": "久威",
+"en": "JUIC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "久威"
+},
+"6115": {
+"abbr": "鎰勝",
+"en": "I-SHENG",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "鎰勝"
+},
+"6116": {
+"abbr": "彩晶",
+"en": "Hannstar",
+"industry": "電子–光電",
+"market": "1",
+"name": "彩晶"
+},
+"6117": {
+"abbr": "迎廣",
+"en": "IN WIN",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "迎廣"
+},
+"6118": {
+"abbr": "建達",
+"en": "Xander",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "建達"
+},
+"6120": {
+"abbr": "達運",
+"en": "DARWIN",
+"industry": "電子–光電",
+"market": "1",
+"name": "達運"
+},
+"6121": {
+"abbr": "新普",
+"en": "SMP",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "新普"
+},
+"6122": {
+"abbr": "擎邦",
+"en": "KPEC",
+"industry": "電機機械",
+"market": "2",
+"name": "擎邦"
+},
+"6123": {
+"abbr": "上奇",
+"en": "GrandTech",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "上奇"
+},
+"6124": {
+"abbr": "業強",
+"en": "YCTC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "業強"
+},
+"6125": {
+"abbr": "廣運",
+"en": "KENMEC",
+"industry": "電子–光電",
+"market": "2",
+"name": "廣運"
+},
+"6126": {
+"abbr": "信音",
+"en": "SINGATRON",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "信音"
+},
+"6127": {
+"abbr": "九豪",
+"en": "LEATEC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "九豪"
+},
+"6128": {
+"abbr": "上福",
+"en": "GPI",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "上福"
+},
+"6129": {
+"abbr": "普誠",
+"en": "PTC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "普誠"
+},
+"6130": {
+"abbr": "上亞科技",
+"en": "SHANGYA",
+"industry": "生技醫療",
+"market": "2",
+"name": "上亞科技"
+},
+"6133": {
+"abbr": "金橋",
+"en": "GBE",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "金橋"
+},
+"6134": {
+"abbr": "萬旭",
+"en": "WanShih",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "萬旭"
+},
+"6136": {
+"abbr": "富爾特",
+"en": "FTC",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "富爾特"
+},
+"6138": {
+"abbr": "茂達",
+"en": "ANPEC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "茂達"
+},
+"6139": {
+"abbr": "亞翔",
+"en": "L & K",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "亞翔"
+},
+"6140": {
+"abbr": "訊達電腦",
+"en": "DIMENSION",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "訊達"
+},
+"6141": {
+"abbr": "柏承",
+"en": "PLOTECH",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "柏承"
+},
+"6142": {
+"abbr": "友勁",
+"en": "CAMEO",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "友勁"
+},
+"6143": {
+"abbr": "振曜",
+"en": "NETRONIXINC.",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "振曜"
+},
+"6144": {
+"abbr": "得利影",
+"en": "DMT",
+"industry": "文化創意",
+"market": "2",
+"name": "得利影"
+},
+"6146": {
+"abbr": "耕興",
+"en": "SPORTON",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "耕興"
+},
+"6147": {
+"abbr": "頎邦",
+"en": "CHIPBOND",
+"industry": "電子–半導體",
+"market": "2",
+"name": "頎邦"
+},
+"6148": {
+"abbr": "驊宏資",
+"en": "AZION",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "驊宏資"
+},
+"6150": {
+"abbr": "撼訊",
+"en": "Tul",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "撼訊"
+},
+"6151": {
+"abbr": "晉倫",
+"en": "GINAR",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "晉倫"
+},
+"6152": {
+"abbr": "百一",
+"en": "PRIME",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "百一"
+},
+"6153": {
+"abbr": "嘉聯益",
+"en": "Career Tech.",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "嘉聯益"
+},
+"6154": {
+"abbr": "順發",
+"en": "Sunfar",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "順發"
+},
+"6155": {
+"abbr": "鈞寶",
+"en": "KC",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "鈞寶"
+},
+"6156": {
+"abbr": "松上",
+"en": "SONG SHANG",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "松上"
+},
+"6158": {
+"abbr": "禾昌",
+"en": "P-TWO",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "禾昌"
+},
+"6160": {
+"abbr": "欣技",
+"en": "Cipherlab",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "欣技"
+},
+"6161": {
+"abbr": "捷波",
+"en": "JETWAY",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "捷波"
+},
+"6163": {
+"abbr": "華電網",
+"en": "HWACOM",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "華電網"
+},
+"6164": {
+"abbr": "華興",
+"en": "LEDTECH",
+"industry": "電子–光電",
+"market": "1",
+"name": "華興"
+},
+"6165": {
+"abbr": "浪凡",
+"en": "Lang",
+"industry": "數位雲端",
+"market": "1",
+"name": "浪凡"
+},
+"6166": {
+"abbr": "凌華",
+"en": "ADLINK",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "凌華"
+},
+"6167": {
+"abbr": "久正",
+"en": "POWERTIP",
+"industry": "電子–光電",
+"market": "2",
+"name": "久正"
+},
+"6168": {
+"abbr": "宏齊",
+"en": "HARVATEK CORPOR",
+"industry": "電子–光電",
+"market": "1",
+"name": "宏齊"
+},
+"6169": {
+"abbr": "昱泉",
+"en": "InterServ",
+"industry": "文化創意",
+"market": "2",
+"name": "昱泉"
+},
+"6170": {
+"abbr": "統振",
+"en": "WELLDONE",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "統振"
+},
+"6171": {
+"abbr": "大城地產",
+"en": "Tacheng",
+"industry": "建材營建",
+"market": "2",
+"name": "大城地產"
+},
+"6173": {
+"abbr": "信昌電",
+"en": "P.D.C.",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "信昌電"
+},
+"6174": {
+"abbr": "安碁",
+"en": "AKER",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "安碁"
+},
+"6175": {
+"abbr": "立敦",
+"en": "LITON",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "立敦"
+},
+"6176": {
+"abbr": "瑞儀",
+"en": "ROEC",
+"industry": "電子–光電",
+"market": "1",
+"name": "瑞儀"
+},
+"6177": {
+"abbr": "達麗",
+"en": "DA-LI CO.LTD.",
+"industry": "建材營建",
+"market": "1",
+"name": "達麗"
+},
+"6179": {
+"abbr": "亞通",
+"en": "ATE ENERGY",
+"industry": "其他",
+"market": "2",
+"name": "亞通"
+},
+"6180": {
+"abbr": "橘子",
+"en": "GAMANIA",
+"industry": "文化創意",
+"market": "2",
+"name": "橘子"
+},
+"6182": {
+"abbr": "合晶",
+"en": "WAFER WORKS",
+"industry": "電子–半導體",
+"market": "2",
+"name": "合晶"
+},
+"6183": {
+"abbr": "關貿",
+"en": "TRADE-VAN",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "關貿"
+},
+"6184": {
+"abbr": "大豐電",
+"en": "Dafeng TV Ltd.",
+"industry": "其他",
+"market": "1",
+"name": "大豐電"
+},
+"6185": {
+"abbr": "幃翔",
+"en": "PLASTRON",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "幃翔"
+},
+"6186": {
+"abbr": "新潤",
+"en": "Shin Ruenn",
+"industry": "建材營建",
+"market": "2",
+"name": "新潤"
+},
+"6187": {
+"abbr": "萬潤",
+"en": "ALL RING",
+"industry": "電子–半導體",
+"market": "2",
+"name": "萬潤"
+},
+"6188": {
+"abbr": "廣明",
+"en": "QSI",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "廣明"
+},
+"6189": {
+"abbr": "豐藝",
+"en": "Promate",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "豐藝"
+},
+"6190": {
+"abbr": "萬泰科",
+"en": "WONDERFUL",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "萬泰科"
+},
+"6191": {
+"abbr": "精成科",
+"en": "GBM",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "精成科"
+},
+"6192": {
+"abbr": "巨路",
+"en": "LUMAX",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "巨路"
+},
+"6194": {
+"abbr": "育富",
+"en": "YUFO",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "育富"
+},
+"6195": {
+"abbr": "詩肯",
+"en": "SCAN-D",
+"industry": "居家生活",
+"market": "2",
+"name": "詩肯"
+},
+"6196": {
+"abbr": "帆宣",
+"en": "MIC",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "帆宣"
+},
+"6197": {
+"abbr": "佳必琪",
+"en": "JPC",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "佳必琪"
+},
+"6198": {
+"abbr": "瑞築",
+"en": "Rich Circle",
+"industry": "建材營建",
+"market": "2",
+"name": "瑞築"
+},
+"6199": {
+"abbr": "天品",
+"en": "TienPin",
+"industry": "其他",
+"market": "2",
+"name": "天品"
+},
+"6201": {
+"abbr": "亞弘電",
+"en": "YAHORNG",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "亞弘電"
+},
+"6202": {
+"abbr": "盛群",
+"en": "HOLTEK",
+"industry": "電子–半導體",
+"market": "1",
+"name": "盛群"
+},
+"6203": {
+"abbr": "海韻電",
+"en": "Sea Sonic",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "海韻電"
+},
+"6204": {
+"abbr": "艾華",
+"en": "ALPHA",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "艾華"
+},
+"6205": {
+"abbr": "詮欣",
+"en": "COXOC",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "詮欣"
+},
+"6206": {
+"abbr": "飛捷",
+"en": "FLYTECH",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "飛捷"
+},
+"6207": {
+"abbr": "雷科",
+"en": "LASERTEK",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "雷科"
+},
+"6208": {
+"abbr": "日揚",
+"en": "Htc",
+"industry": "電子–半導體",
+"market": "2",
+"name": "日揚"
+},
+"6209": {
+"abbr": "今國光",
+"en": "KINKO",
+"industry": "電子–光電",
+"market": "1",
+"name": "今國光"
+},
+"6210": {
+"abbr": "慶生",
+"en": "KINTECH",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "慶生"
+},
+"6212": {
+"abbr": "理銘",
+"en": "LI MING",
+"industry": "建材營建",
+"market": "2",
+"name": "理銘"
+},
+"6213": {
+"abbr": "聯茂",
+"en": "ITEQ",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "聯茂"
+},
+"6214": {
+"abbr": "精誠",
+"en": "SYSTEX",
+"industry": "電子–資訊服務",
+"market": "1",
+"name": "精誠"
+},
+"6215": {
+"abbr": "和椿",
+"en": "Aurotek",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "和椿"
+},
+"6216": {
+"abbr": "居易",
+"en": "DrayTek Corp.",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "居易"
+},
+"6217": {
+"abbr": "中探針",
+"en": "C.C.P.",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "中探針"
+},
+"6218": {
+"abbr": "豪勉",
+"en": "Hauman",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "豪勉"
+},
+"6219": {
+"abbr": "富旺",
+"en": "FULL WANG",
+"industry": "建材營建",
+"market": "2",
+"name": "富旺"
+},
+"6220": {
+"abbr": "岳豐",
+"en": "YFC-BONEAGLE",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "岳豐"
+},
+"6221": {
+"abbr": "晉泰",
+"en": "Genesis",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "晉泰"
+},
+"6222": {
+"abbr": "立軒",
+"en": "Li Hsuan",
+"industry": "電子–光電",
+"market": "2",
+"name": "立軒"
+},
+"6223": {
+"abbr": "旺矽",
+"en": "MPI",
+"industry": "電子–半導體",
+"market": "2",
+"name": "旺矽"
+},
+"6224": {
+"abbr": "聚鼎",
+"en": "PTTC.",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "聚鼎"
+},
+"6225": {
+"abbr": "天瀚",
+"en": "aiPlex",
+"industry": "電子–光電",
+"market": "1",
+"name": "天瀚"
+},
+"6226": {
+"abbr": "光鼎",
+"en": "Para Light",
+"industry": "電子–光電",
+"market": "1",
+"name": "光鼎"
+},
+"6227": {
+"abbr": "茂綸",
+"en": "Macnica Galaxy",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "茂綸"
+},
+"6228": {
+"abbr": "全譜",
+"en": "PIE",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "全譜"
+},
+"6229": {
+"abbr": "研通",
+"en": "V-TAC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "研通"
+},
+"6230": {
+"abbr": "尼得科超眾",
+"en": "NCCI",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "尼得科超眾"
+},
+"6231": {
+"abbr": "系微",
+"en": "Insyde",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "系微"
+},
+"6233": {
+"abbr": "旺玖",
+"en": "PROLIFIC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "旺玖"
+},
+"6234": {
+"abbr": "高僑",
+"en": "TERA AUTO",
+"industry": "電子–光電",
+"market": "2",
+"name": "高僑"
+},
+"6235": {
+"abbr": "華孚",
+"en": "Waffer",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "華孚"
+},
+"6236": {
+"abbr": "中湛",
+"en": "Neith Corp.",
+"industry": "其他",
+"market": "2",
+"name": "中湛"
+},
+"6237": {
+"abbr": "驊訊",
+"en": "CMEI",
+"industry": "電子–半導體",
+"market": "2",
+"name": "驊訊"
+},
+"6239": {
+"abbr": "力成",
+"en": "PTI",
+"industry": "電子–半導體",
+"market": "1",
+"name": "力成"
+},
+"6240": {
+"abbr": "松崗",
+"en": "Sung  Gang",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "松崗"
+},
+"6241": {
+"abbr": "鑫永洋",
+"en": "AMIGO",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "鑫永洋"
+},
+"6242": {
+"abbr": "立康",
+"en": "LI KANG",
+"industry": "生技醫療",
+"market": "2",
+"name": "立康"
+},
+"6243": {
+"abbr": "迅杰",
+"en": "ENE",
+"industry": "電子–半導體",
+"market": "1",
+"name": "迅杰"
+},
+"6244": {
+"abbr": "茂迪",
+"en": "MOTECH",
+"industry": "電子–光電",
+"market": "2",
+"name": "茂迪"
+},
+"6245": {
+"abbr": "立端",
+"en": "Lanner",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "立端"
+},
+"6246": {
+"abbr": "臺龍",
+"en": "TTFIC",
+"industry": "電子–光電",
+"market": "2",
+"name": "臺龍"
+},
+"6248": {
+"abbr": "沛波",
+"en": "TMP",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "沛波"
+},
+"6257": {
+"abbr": "矽格",
+"en": "SIGURD",
+"industry": "電子–半導體",
+"market": "1",
+"name": "矽格"
+},
+"6259": {
+"abbr": "百徽",
+"en": "BULLWILL",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "百徽"
+},
+"6261": {
+"abbr": "久元",
+"en": "YTEC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "久元"
+},
+"6263": {
+"abbr": "普萊德",
+"en": "Planet",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "普萊德"
+},
+"6264": {
+"abbr": "富裔",
+"en": "KL",
+"industry": "建材營建",
+"market": "2",
+"name": "富裔"
+},
+"6265": {
+"abbr": "方土昶",
+"en": "KCU",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "方土昶"
+},
+"6266": {
+"abbr": "泰詠",
+"en": "TOP UNION",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "泰詠"
+},
+"6269": {
+"abbr": "台郡",
+"en": "FLEXIUM",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "台郡"
+},
+"6270": {
+"abbr": "倍微",
+"en": "PCT",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "倍微"
+},
+"6271": {
+"abbr": "同欣電",
+"en": "THEIL",
+"industry": "電子–半導體",
+"market": "1",
+"name": "同欣電"
+},
+"6272": {
+"abbr": "驊陞",
+"en": "WIESON",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "驊陞"
+},
+"6274": {
+"abbr": "台燿",
+"en": "tuc",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "台燿"
+},
+"6275": {
+"abbr": "元山",
+"en": "Y.S.TECH",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "元山"
+},
+"6276": {
+"abbr": "安鈦克",
+"en": "Antec",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "安鈦克"
+},
+"6277": {
+"abbr": "宏正",
+"en": "ATEN",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "宏正"
+},
+"6278": {
+"abbr": "台表科",
+"en": "TSMT",
+"industry": "電子–光電",
+"market": "1",
+"name": "台表科"
+},
+"6279": {
+"abbr": "胡連",
+"en": "HU LANE",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "胡連"
+},
+"6281": {
+"abbr": "全國電",
+"en": "E-LIFE",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "全國電"
+},
+"6282": {
+"abbr": "康舒",
+"en": "Acbel",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "康舒"
+},
+"6283": {
+"abbr": "淳安",
+"en": "SOE",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "淳安"
+},
+"6284": {
+"abbr": "佳邦",
+"en": "INPAQ",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "佳邦"
+},
+"6285": {
+"abbr": "啟碁",
+"en": "WNC",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "啟碁"
+},
+"6290": {
+"abbr": "良維",
+"en": "LONGWELL",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "良維"
+},
+"6291": {
+"abbr": "沛亨",
+"en": "AIC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "沛亨"
+},
+"6292": {
+"abbr": "迅德",
+"en": "AXIS",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "迅德"
+},
+"6294": {
+"abbr": "智基",
+"en": "Tekom",
+"industry": "文化創意",
+"market": "2",
+"name": "智基"
+},
+"6405": {
+"abbr": "悅城",
+"en": "ONANO",
+"industry": "電子–光電",
+"market": "1",
+"name": "悅城"
+},
+"6409": {
+"abbr": "旭隼",
+"en": "VOLTRONIC",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "旭隼"
+},
+"6411": {
+"abbr": "晶焱",
+"en": "Amazing",
+"industry": "電子–半導體",
+"market": "2",
+"name": "晶焱"
+},
+"6412": {
+"abbr": "群電",
+"en": "Chicony Power",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "群電"
+},
+"6414": {
+"abbr": "樺漢",
+"en": "ENNOCONN",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "樺漢"
+},
+"6415": {
+"abbr": "矽力*-KY",
+"en": "Silergy",
+"industry": "電子–半導體",
+"market": "1",
+"name": "矽力*-KY"
+},
+"6416": {
+"abbr": "瑞祺電通",
+"en": "CASWELL",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "瑞祺電通"
+},
+"6417": {
+"abbr": "韋僑",
+"en": "SAG",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "韋僑"
+},
+"6418": {
+"abbr": "詠昇",
+"en": "Y-S ELEC.",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "詠昇"
+},
+"6419": {
+"abbr": "京晨科",
+"en": "NUUO",
+"industry": "電子–光電",
+"market": "2",
+"name": "京晨科"
+},
+"6423": {
+"abbr": "億而得",
+"en": "YMC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "億而得"
+},
+"6425": {
+"abbr": "易發",
+"en": "EFC",
+"industry": "電機機械",
+"market": "2",
+"name": "易發"
+},
+"6426": {
+"abbr": "統新",
+"en": "APOGEE",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "統新"
+},
+"6431": {
+"abbr": "光麗-KY",
+"en": "KL",
+"industry": "生技醫療",
+"market": "1",
+"name": "光麗-KY"
+},
+"6432": {
+"abbr": "今展科",
+"en": "ARLITECH",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "今展科"
+},
+"6435": {
+"abbr": "大中",
+"en": "Sinopower",
+"industry": "電子–半導體",
+"market": "2",
+"name": "大中"
+},
+"6438": {
+"abbr": "迅得",
+"en": "SAA",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "迅得"
+},
+"6441": {
+"abbr": "廣錠",
+"en": "IBS",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "廣錠"
+},
+"6442": {
+"abbr": "光聖",
+"en": "EZconn",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "光聖"
+},
+"6443": {
+"abbr": "元晶",
+"en": "TSEC",
+"industry": "電子–光電",
+"market": "1",
+"name": "元晶"
+},
+"6446": {
+"abbr": "藥華藥",
+"en": "PEC",
+"industry": "生技醫療",
+"market": "1",
+"name": "藥華藥"
+},
+"6449": {
+"abbr": "鈺邦",
+"en": "APAQ",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "鈺邦"
+},
+"6451": {
+"abbr": "訊芯-KY",
+"en": "ShunSin",
+"industry": "電子–半導體",
+"market": "1",
+"name": "訊芯-KY"
+},
+"6456": {
+"abbr": "GIS-KY",
+"en": "GIS",
+"industry": "電子–光電",
+"market": "1",
+"name": "GIS-KY"
+},
+"6461": {
+"abbr": "益得",
+"en": "Intech",
+"industry": "生技醫療",
+"market": "2",
+"name": "益得"
+},
+"6462": {
+"abbr": "神盾",
+"en": "EGIS",
+"industry": "電子–半導體",
+"market": "2",
+"name": "神盾"
+},
+"6464": {
+"abbr": "台數科",
+"en": "top MSO",
+"industry": "其他",
+"market": "1",
+"name": "台數科"
+},
+"6465": {
+"abbr": "威潤",
+"en": "ATrack",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "威潤"
+},
+"6469": {
+"abbr": "大樹",
+"en": "Great Tree",
+"industry": "生技醫療",
+"market": "2",
+"name": "大樹"
+},
+"6470": {
+"abbr": "宇智",
+"en": "U-MEDIA",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "宇智"
+},
+"6472": {
+"abbr": "保瑞",
+"en": "Bora",
+"industry": "生技醫療",
+"market": "1",
+"name": "保瑞"
+},
+"6474": {
+"abbr": "華豫寧",
+"en": "WFE",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "華豫寧"
+},
+"6477": {
+"abbr": "安集",
+"en": "Anji",
+"industry": "電子–光電",
+"market": "1",
+"name": "安集"
+},
+"6482": {
+"abbr": "弘煜科",
+"en": "FUN YOURS",
+"industry": "文化創意",
+"market": "2",
+"name": "弘煜科"
+},
+"6485": {
+"abbr": "點序",
+"en": "ASolid",
+"industry": "電子–半導體",
+"market": "2",
+"name": "點序"
+},
+"6486": {
+"abbr": "互動",
+"en": "IDT",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "互動"
+},
+"6488": {
+"abbr": "環球晶",
+"en": "GWC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "環球晶"
+},
+"6491": {
+"abbr": "晶碩",
+"en": "PEGAVISION",
+"industry": "生技醫療",
+"market": "1",
+"name": "晶碩"
+},
+"6492": {
+"abbr": "生華科",
+"en": "SH",
+"industry": "生技醫療",
+"market": "2",
+"name": "生華科"
+},
+"6494": {
+"abbr": "九齊",
+"en": "Nyquest",
+"industry": "電子–半導體",
+"market": "2",
+"name": "九齊"
+},
+"6496": {
+"abbr": "科懋",
+"en": "Excelsior",
+"industry": "生技醫療",
+"market": "2",
+"name": "科懋"
+},
+"6498": {
+"abbr": "久禾光",
+"en": "PTIC",
+"industry": "電子–光電",
+"market": "2",
+"name": "久禾光"
+},
+"6499": {
+"abbr": "益安",
+"en": "Medeon",
+"industry": "生技醫療",
+"market": "2",
+"name": "益安"
+},
+"6504": {
+"abbr": "南六",
+"en": "NAN LIU",
+"industry": "其他",
+"market": "1",
+"name": "南六"
+},
+"6505": {
+"abbr": "台塑化",
+"en": "FPCC",
+"industry": "油電燃氣",
+"market": "1",
+"name": "台塑化"
+},
+"6506": {
+"abbr": "雙邦",
+"en": "SBI",
+"industry": "紡織纖維",
+"market": "2",
+"name": "雙邦"
+},
+"6508": {
+"abbr": "惠光",
+"en": "HKC",
+"industry": "農業科技",
+"market": "2",
+"name": "惠光"
+},
+"6509": {
+"abbr": "聚和",
+"en": "HOPAX",
+"industry": "化學工業",
+"market": "2",
+"name": "聚和"
+},
+"6510": {
+"abbr": "精測",
+"en": "CHPT",
+"industry": "電子–半導體",
+"market": "2",
+"name": "精測"
+},
+"6512": {
+"abbr": "啟發電",
+"en": "GoMax",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "啟發電"
+},
+"6515": {
+"abbr": "穎崴",
+"en": "WinWay",
+"industry": "電子–半導體",
+"market": "1",
+"name": "穎崴"
+},
+"6516": {
+"abbr": "勤崴國際",
+"en": "KINGWAY",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "勤崴國際"
+},
+"6517": {
+"abbr": "保勝光學",
+"en": "BASO",
+"industry": "電子–光電",
+"market": "2",
+"name": "保勝光學"
+},
+"6523": {
+"abbr": "達爾膚",
+"en": "DR.WU",
+"industry": "生技醫療",
+"market": "2",
+"name": "達爾膚"
+},
+"6525": {
+"abbr": "捷敏-KY",
+"en": "GEM",
+"industry": "電子–半導體",
+"market": "1",
+"name": "捷敏-KY"
+},
+"6526": {
+"abbr": "達發",
+"en": "Airoha",
+"industry": "電子–半導體",
+"market": "1",
+"name": "達發"
+},
+"6527": {
+"abbr": "明達醫",
+"en": "Crystalvue",
+"industry": "生技醫療",
+"market": "2",
+"name": "明達醫"
+},
+"6530": {
+"abbr": "創威",
+"en": "Axcen",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "創威"
+},
+"6531": {
+"abbr": "愛普*",
+"en": "AP Memory",
+"industry": "電子–半導體",
+"market": "1",
+"name": "愛普*"
+},
+"6532": {
+"abbr": "瑞耘",
+"en": "CT",
+"industry": "電子–半導體",
+"market": "2",
+"name": "瑞耘"
+},
+"6533": {
+"abbr": "晶心科",
+"en": "ES",
+"industry": "電子–半導體",
+"market": "1",
+"name": "晶心科"
+},
+"6534": {
+"abbr": "正瀚-創",
+"en": "CH BIOTECH R&D CO. LTD.",
+"industry": "生技醫療",
+"market": "7",
+"name": "正瀚-創"
+},
+"6535": {
+"abbr": "順藥",
+"en": "LUMOSA",
+"industry": "生技醫療",
+"market": "2",
+"name": "順藥"
+},
+"6538": {
+"abbr": "倉和",
+"en": "Brave Screen",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "倉和"
+},
+"6541": {
+"abbr": "泰福-KY",
+"en": "Tanvex",
+"industry": "生技醫療",
+"market": "1",
+"name": "泰福-KY"
+},
+"6542": {
+"abbr": "隆中",
+"en": "GAMESPARCS",
+"industry": "文化創意",
+"market": "2",
+"name": "隆中"
+},
+"6546": {
+"abbr": "正基",
+"en": "AMPAK",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "正基"
+},
+"6547": {
+"abbr": "高端疫苗",
+"en": "MVC",
+"industry": "生技醫療",
+"market": "2",
+"name": "高端疫苗"
+},
+"6548": {
+"abbr": "長科*",
+"en": "CWTC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "長科*"
+},
+"6550": {
+"abbr": "北極星藥業-KY",
+"en": "PG",
+"industry": "生技醫療",
+"market": "1",
+"name": "北極星藥業-KY"
+},
+"6552": {
+"abbr": "易華電",
+"en": "JMC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "易華電"
+},
+"6556": {
+"abbr": "勝品",
+"en": "Topview",
+"industry": "電子–光電",
+"market": "2",
+"name": "勝品"
+},
+"6558": {
+"abbr": "興能高",
+"en": "SYNST",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "興能高"
+},
+"6560": {
+"abbr": "欣普羅",
+"en": "APPROPHO",
+"industry": "電子–光電",
+"market": "2",
+"name": "欣普羅"
+},
+"6561": {
+"abbr": "是方",
+"en": "Chief",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "是方"
+},
+"6568": {
+"abbr": "宏觀",
+"en": "Rafael Micro",
+"industry": "電子–半導體",
+"market": "2",
+"name": "宏觀"
+},
+"6569": {
+"abbr": "醫揚",
+"en": "onyx",
+"industry": "生技醫療",
+"market": "2",
+"name": "醫揚"
+},
+"6570": {
+"abbr": "維田",
+"en": "APLEX",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "維田"
+},
+"6573": {
+"abbr": "虹揚-KY",
+"en": "HY",
+"industry": "電子–半導體",
+"market": "1",
+"name": "虹揚-KY"
+},
+"6574": {
+"abbr": "霈方",
+"en": "MIKOBEAUTE",
+"industry": "生技醫療",
+"market": "2",
+"name": "霈方"
+},
+"6576": {
+"abbr": "逸達",
+"en": "Foresee",
+"industry": "生技醫療",
+"market": "2",
+"name": "逸達"
+},
+"6577": {
+"abbr": "勁豐",
+"en": "PSC",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "勁豐"
+},
+"6578": {
+"abbr": "達邦蛋白",
+"en": "DaBomb",
+"industry": "農業科技",
+"market": "2",
+"name": "達邦蛋白"
+},
+"6579": {
+"abbr": "研揚",
+"en": "AAEON",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "研揚"
+},
+"6581": {
+"abbr": "鋼聯",
+"en": "TSU",
+"industry": "綠能環保",
+"market": "1",
+"name": "鋼聯"
+},
+"6582": {
+"abbr": "申豐",
+"en": "Shin Foong",
+"industry": "橡膠工業",
+"market": "1",
+"name": "申豐"
+},
+"6584": {
+"abbr": "南俊國際",
+"en": "NAN JUEN",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "南俊國際"
+},
+"6585": {
+"abbr": "鼎基",
+"en": "DingZing",
+"industry": "其他",
+"market": "1",
+"name": "鼎基"
+},
+"6588": {
+"abbr": "東典光電",
+"en": "EOC",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "東典光電"
+},
+"6589": {
+"abbr": "台康生技",
+"en": "EirGenix",
+"industry": "生技醫療",
+"market": "1",
+"name": "台康生技"
+},
+"6590": {
+"abbr": "普鴻",
+"en": "Provision",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "普鴻"
+},
+"6591": {
+"abbr": "動力-KY",
+"en": "SUN MAX",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "動力-KY"
+},
+"6592": {
+"abbr": "和潤企業",
+"en": "HOTAI FINANCE",
+"industry": "其他",
+"market": "1",
+"name": "和潤企業"
+},
+"6593": {
+"abbr": "台灣銘板",
+"en": "TNP",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "台灣銘板"
+},
+"6596": {
+"abbr": "寬宏藝術",
+"en": "KHAM Inc.",
+"industry": "文化創意",
+"market": "2",
+"name": "寬宏藝術"
+},
+"6597": {
+"abbr": "立誠",
+"en": "ECOCERA",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "立誠"
+},
+"6598": {
+"abbr": "ABC-KY",
+"en": "Applied BioCode",
+"industry": "生技醫療",
+"market": "1",
+"name": "ABC-KY"
+},
+"6603": {
+"abbr": "富強鑫",
+"en": "FCS",
+"industry": "電機機械",
+"market": "2",
+"name": "富強鑫"
+},
+"6605": {
+"abbr": "帝寶",
+"en": "DEPO",
+"industry": "汽車工業",
+"market": "1",
+"name": "帝寶"
+},
+"6606": {
+"abbr": "建德工業",
+"en": "KENT",
+"industry": "電機機械",
+"market": "1",
+"name": "建德工業"
+},
+"6609": {
+"abbr": "瀧澤科",
+"en": "TTT",
+"industry": "電機機械",
+"market": "2",
+"name": "瀧澤科"
+},
+"6612": {
+"abbr": "奈米醫材",
+"en": "ICARES",
+"industry": "生技醫療",
+"market": "2",
+"name": "奈米醫材"
+},
+"6613": {
+"abbr": "朋億*",
+"en": "Novatech",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "朋億*"
+},
+"6614": {
+"abbr": "資拓宏宇",
+"en": "IISI",
+"industry": "數位雲端",
+"market": "1",
+"name": "資拓宏宇"
+},
+"6615": {
+"abbr": "慧智",
+"en": "SOFIVA",
+"industry": "生技醫療",
+"market": "2",
+"name": "慧智"
+},
+"6616": {
+"abbr": "特昇-KY",
+"en": "TIL",
+"industry": "居家生活",
+"market": "2",
+"name": "特昇-KY"
+},
+"6617": {
+"abbr": "共信-KY",
+"en": "Gongwin",
+"industry": "生技醫療",
+"market": "2",
+"name": "共信-KY"
+},
+"6620": {
+"abbr": "漢達",
+"en": "Handa Pharma",
+"industry": "生技醫療",
+"market": "2",
+"name": "漢達"
+},
+"6624": {
+"abbr": "萬年清",
+"en": "EC",
+"industry": "綠能環保",
+"market": "2",
+"name": "萬年清"
+},
+"6625": {
+"abbr": "必應",
+"en": "Binlive",
+"industry": "其他",
+"market": "1",
+"name": "必應"
+},
+"6629": {
+"abbr": "泰金-KY",
+"en": "TK-KY",
+"industry": "居家生活",
+"market": "2",
+"name": "泰金-KY"
+},
+"6637": {
+"abbr": "醫影",
+"en": "MIC",
+"industry": "生技醫療",
+"market": "2",
+"name": "醫影"
+},
+"6640": {
+"abbr": "均華",
+"en": "GMM",
+"industry": "電子–半導體",
+"market": "2",
+"name": "均華"
+},
+"6641": {
+"abbr": "基士德-KY",
+"en": "GSD-KY",
+"industry": "綠能環保",
+"market": "1",
+"name": "基士德-KY"
+},
+"6642": {
+"abbr": "富致",
+"en": "FUZETEC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "富致"
+},
+"6643": {
+"abbr": "M31",
+"en": "M31",
+"industry": "電子–半導體",
+"market": "2",
+"name": "M31"
+},
+"6645": {
+"abbr": "金萬林-創",
+"en": "KIM FOREST ENTERPRISE CO. LTD.",
+"industry": "生技醫療",
+"market": "7",
+"name": "金萬林-創"
+},
+"6649": {
+"abbr": "台生材",
+"en": "TWBM",
+"industry": "生技醫療",
+"market": "2",
+"name": "台生材"
+},
+"6651": {
+"abbr": "全宇昕",
+"en": "CYSTEK",
+"industry": "電子–半導體",
+"market": "2",
+"name": "全宇昕"
+},
+"6654": {
+"abbr": "天正國際",
+"en": "TZI",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "天正國際"
+},
+"6655": {
+"abbr": "科定",
+"en": "KD",
+"industry": "其他",
+"market": "1",
+"name": "科定"
+},
+"6657": {
+"abbr": "華安",
+"en": "ENERGENESIS",
+"industry": "生技醫療",
+"market": "1",
+"name": "華安"
+},
+"6658": {
+"abbr": "聯策",
+"en": "SynPower",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "聯策"
+},
+"6661": {
+"abbr": "威健生技",
+"en": "WELGENE",
+"industry": "生技醫療",
+"market": "2",
+"name": "威健生技"
+},
+"6662": {
+"abbr": "樂斯科",
+"en": "BioLASCO",
+"industry": "生技醫療",
+"market": "2",
+"name": "樂斯科"
+},
+"6664": {
+"abbr": "群翊",
+"en": "Group Up",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "群翊"
+},
+"6666": {
+"abbr": "羅麗芬-KY",
+"en": "LLF-KY",
+"industry": "生技醫療",
+"market": "1",
+"name": "羅麗芬-KY"
+},
+"6667": {
+"abbr": "信紘科",
+"en": "Trusval",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "信紘科"
+},
+"6668": {
+"abbr": "中揚光",
+"en": "Zhong Yang",
+"industry": "電子–光電",
+"market": "1",
+"name": "中揚光"
+},
+"6669": {
+"abbr": "緯穎",
+"en": "Wiwynn",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "緯穎"
+},
+"6670": {
+"abbr": "復盛應用",
+"en": "FSP",
+"industry": "運動休閒",
+"market": "1",
+"name": "復盛應用"
+},
+"6671": {
+"abbr": "三能-KY",
+"en": "San Neng-KY",
+"industry": "居家生活",
+"market": "1",
+"name": "三能-KY"
+},
+"6672": {
+"abbr": "騰輝電子-KY",
+"en": "Ventec",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "騰輝電子-KY"
+},
+"6674": {
+"abbr": "鋐寶科技",
+"en": "CBN",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "鋐寶科技"
+},
+"6679": {
+"abbr": "鈺太",
+"en": "ZILLTEK",
+"industry": "電子–半導體",
+"market": "2",
+"name": "鈺太"
+},
+"6680": {
+"abbr": "鑫創電子",
+"en": "SINTRONES",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "鑫創電子"
+},
+"6683": {
+"abbr": "雍智科技",
+"en": "KSMT",
+"industry": "電子–半導體",
+"market": "2",
+"name": "雍智科技"
+},
+"6684": {
+"abbr": "安格",
+"en": "AlgolTek",
+"industry": "電子–半導體",
+"market": "2",
+"name": "安格"
+},
+"6689": {
+"abbr": "伊雲谷",
+"en": "ECV",
+"industry": "數位雲端",
+"market": "1",
+"name": "伊雲谷"
+},
+"6690": {
+"abbr": "安碁資訊",
+"en": "ACSI",
+"industry": "數位雲端",
+"market": "2",
+"name": "安碁資訊"
+},
+"6691": {
+"abbr": "洋基工程",
+"en": "YANKEY",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "洋基工程"
+},
+"6692": {
+"abbr": "進能服",
+"en": "AES",
+"industry": "綠能環保",
+"market": "2",
+"name": "進能服"
+},
+"6693": {
+"abbr": "廣閎科",
+"en": "inergy",
+"industry": "電子–半導體",
+"market": "2",
+"name": "廣閎科"
+},
+"6695": {
+"abbr": "芯鼎",
+"en": "iCatchtek",
+"industry": "電子–半導體",
+"market": "1",
+"name": "芯鼎"
+},
+"6697": {
+"abbr": "東捷資訊",
+"en": "ITTS",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "東捷資訊"
+},
+"6698": {
+"abbr": "旭暉應材",
+"en": "FINEMAT",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "旭暉應材"
+},
+"6703": {
+"abbr": "軒郁",
+"en": "SHINY",
+"industry": "生技醫療",
+"market": "2",
+"name": "軒郁"
+},
+"6706": {
+"abbr": "惠特",
+"en": "FitTech",
+"industry": "電子–光電",
+"market": "1",
+"name": "惠特"
+},
+"6708": {
+"abbr": "天擎",
+"en": "MARS",
+"industry": "電子–半導體",
+"market": "2",
+"name": "天擎"
+},
+"6712": {
+"abbr": "長聖",
+"en": "Ever Supreme",
+"industry": "生技醫療",
+"market": "2",
+"name": "長聖"
+},
+"6715": {
+"abbr": "嘉基",
+"en": "Lintes",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "嘉基"
+},
+"6716": {
+"abbr": "應廣",
+"en": "PDK",
+"industry": "電子–半導體",
+"market": "2",
+"name": "應廣"
+},
+"6719": {
+"abbr": "力智",
+"en": "uPI",
+"industry": "電子–半導體",
+"market": "1",
+"name": "力智"
+},
+"6720": {
+"abbr": "久昌",
+"en": "MP",
+"industry": "電子–半導體",
+"market": "2",
+"name": "久昌"
+},
+"6721": {
+"abbr": "信實",
+"en": "Sincere group",
+"industry": "其他",
+"market": "2",
+"name": "信實"
+},
+"6722": {
+"abbr": "輝創",
+"en": "Whetron",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "輝創"
+},
+"6725": {
+"abbr": "矽科宏晟",
+"en": "CHCT",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "矽科宏晟"
+},
+"6727": {
+"abbr": "亞泰金屬",
+"en": "AMI",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "亞泰金屬"
+},
+"6728": {
+"abbr": "上洋",
+"en": "UP YOUNG",
+"industry": "居家生活",
+"market": "2",
+"name": "上洋"
+},
+"6730": {
+"abbr": "常廣",
+"en": "LAGIS",
+"industry": "生技醫療",
+"market": "2",
+"name": "常廣"
+},
+"6732": {
+"abbr": "昇佳電子",
+"en": "sensortek",
+"industry": "電子–半導體",
+"market": "2",
+"name": "昇佳電子"
+},
+"6733": {
+"abbr": "博晟生醫",
+"en": "BioGend",
+"industry": "生技醫療",
+"market": "2",
+"name": "博晟生醫"
+},
+"6735": {
+"abbr": "美達科技",
+"en": "AMIDA",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "美達科技"
+},
+"6739": {
+"abbr": "竹陞科技",
+"en": "GUTC",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "竹陞科技"
+},
+"6741": {
+"abbr": "91APP*-KY",
+"en": "91APP",
+"industry": "數位雲端",
+"market": "2",
+"name": "91APP*-KY"
+},
+"6742": {
+"abbr": "澤米",
+"en": "Vti",
+"industry": "電子–光電",
+"market": "1",
+"name": "澤米"
+},
+"6743": {
+"abbr": "安普新",
+"en": "AMPACS",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "安普新"
+},
+"6751": {
+"abbr": "智聯服務",
+"en": "AST",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "智聯服務"
+},
+"6752": {
+"abbr": "叡揚",
+"en": "GSS",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "叡揚"
+},
+"6753": {
+"abbr": "龍德造船",
+"en": "LUNGTEH",
+"industry": "航運業",
+"market": "1",
+"name": "龍德造船"
+},
+"6754": {
+"abbr": "匯僑設計",
+"en": "Rich Honour",
+"industry": "居家生活",
+"market": "1",
+"name": "匯僑設計"
+},
+"6756": {
+"abbr": "威鋒電子",
+"en": "VLI",
+"industry": "電子–半導體",
+"market": "1",
+"name": "威鋒電子"
+},
+"6757": {
+"abbr": "台灣虎航",
+"en": "TTW",
+"industry": "航運業",
+"market": "1",
+"name": "台灣虎航"
+},
+"6761": {
+"abbr": "穩得",
+"en": "Wendell",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "穩得"
+},
+"6762": {
+"abbr": "達亞",
+"en": "Delta Asia",
+"industry": "生技醫療",
+"market": "2",
+"name": "達亞"
+},
+"6763": {
+"abbr": "綠界科技*",
+"en": "Green World",
+"industry": "數位雲端",
+"market": "2",
+"name": "綠界科技*"
+},
+"6767": {
+"abbr": "台微醫",
+"en": "Wiltrom",
+"industry": "生技醫療",
+"market": "2",
+"name": "台微醫"
+},
+"6768": {
+"abbr": "志強-KY",
+"en": "SPG-KY",
+"industry": "運動休閒",
+"market": "1",
+"name": "志強-KY"
+},
+"6770": {
+"abbr": "力積電",
+"en": "PSMC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "力積電"
+},
+"6771": {
+"abbr": "平和環保-創",
+"en": "Ping Ho Environmental Technology Co. Ltd.",
+"industry": "綠能環保",
+"market": "7",
+"name": "平和環保-創"
+},
+"6776": {
+"abbr": "展碁國際",
+"en": "Weblink",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "展碁國際"
+},
+"6781": {
+"abbr": "AES-KY",
+"en": "AES-KY",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "AES-KY"
+},
+"6782": {
+"abbr": "視陽",
+"en": "VISCO",
+"industry": "生技醫療",
+"market": "1",
+"name": "視陽"
+},
+"6785": {
+"abbr": "昱展新藥",
+"en": "Alar",
+"industry": "生技醫療",
+"market": "2",
+"name": "昱展新藥"
+},
+"6788": {
+"abbr": "華景電",
+"en": "Brillian",
+"industry": "電子–半導體",
+"market": "2",
+"name": "華景電"
+},
+"6789": {
+"abbr": "采鈺",
+"en": "VisEra",
+"industry": "電子–半導體",
+"market": "1",
+"name": "采鈺"
+},
+"6790": {
+"abbr": "永豐實",
+"en": "YFYCPG",
+"industry": "造紙工業",
+"market": "1",
+"name": "永豐實"
+},
+"6791": {
+"abbr": "虎門科技",
+"en": "TADC",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "虎門科技"
+},
+"6792": {
+"abbr": "詠業",
+"en": "Unictron",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "詠業"
+},
+"6794": {
+"abbr": "向榮生技",
+"en": "UnicoCell",
+"industry": "生技醫療",
+"market": "1",
+"name": "向榮生技"
+},
+"6796": {
+"abbr": "晉弘",
+"en": "MiiS",
+"industry": "生技醫療",
+"market": "1",
+"name": "晉弘"
+},
+"6799": {
+"abbr": "來頡",
+"en": "M3TEK",
+"industry": "電子–半導體",
+"market": "1",
+"name": "來頡"
+},
+"6803": {
+"abbr": "崑鼎",
+"en": "ECOVE Corp.",
+"industry": "綠能環保",
+"market": "2",
+"name": "崑鼎"
+},
+"6804": {
+"abbr": "明係",
+"en": "Axman",
+"industry": "運動休閒",
+"market": "2",
+"name": "明係"
+},
+"6805": {
+"abbr": "富世達",
+"en": "Fositek",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "富世達"
+},
+"6806": {
+"abbr": "森崴能源",
+"en": "SHINFOX ENERGY",
+"industry": "綠能環保",
+"market": "1",
+"name": "森崴能源"
+},
+"6807": {
+"abbr": "峰源-KY",
+"en": "FY-KY",
+"industry": "居家生活",
+"market": "1",
+"name": "峰源-KY"
+},
+"6811": {
+"abbr": "宏碁資訊",
+"en": "AEB",
+"industry": "數位雲端",
+"market": "2",
+"name": "宏碁資訊"
+},
+"6821": {
+"abbr": "聯寶",
+"en": "LKM",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "聯寶"
+},
+"6823": {
+"abbr": "濾能",
+"en": "GreenFILTEC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "濾能"
+},
+"6829": {
+"abbr": "千附精密",
+"en": "CFPREC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "千附精密"
+},
+"6830": {
+"abbr": "汎銓",
+"en": "MSS",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "汎銓"
+},
+"6831": {
+"abbr": "邁科",
+"en": "MICROLOOPS",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "邁科"
+},
+"6834": {
+"abbr": "天二科技",
+"en": "EVEROHMS",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "天二科技"
+},
+"6835": {
+"abbr": "圓裕",
+"en": "CMI",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "圓裕"
+},
+"6838": {
+"abbr": "台新藥",
+"en": "FRMSP",
+"industry": "生技醫療",
+"market": "1",
+"name": "台新藥"
+},
+"6840": {
+"abbr": "東研信超",
+"en": "BTL",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "東研信超"
+},
+"6841": {
+"abbr": "長佳智能",
+"en": "EFAI",
+"industry": "生技醫療",
+"market": "2",
+"name": "長佳智能"
+},
+"6843": {
+"abbr": "進典",
+"en": "JDV",
+"industry": "電機機械",
+"market": "2",
+"name": "進典"
+},
+"6844": {
+"abbr": "諾貝兒",
+"en": "NORBEL",
+"industry": "生技醫療",
+"market": "2",
+"name": "諾貝兒"
+},
+"6846": {
+"abbr": "綠茵",
+"en": "GREENYN",
+"industry": "食品工業",
+"market": "2",
+"name": "綠茵"
+},
+"6854": {
+"abbr": "錼創科技-KY創",
+"en": "PlayNitride Inc.",
+"industry": "電子–半導體",
+"market": "7",
+"name": "錼創科技-KY創"
+},
+"6855": {
+"abbr": "數泓科",
+"en": "Eclatorq",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "數泓科"
+},
+"6856": {
+"abbr": "鑫傳",
+"en": "ST media",
+"industry": "文化創意",
+"market": "2",
+"name": "鑫傳"
+},
+"6859": {
+"abbr": "伯特光",
+"en": "BEST OPT",
+"industry": "電子–光電",
+"market": "2",
+"name": "伯特光"
+},
+"6861": {
+"abbr": "睿生光電",
+"en": "INCX",
+"industry": "生技醫療",
+"market": "1",
+"name": "睿生光電"
+},
+"6862": {
+"abbr": "三集瑞-KY",
+"en": "TRIO-KY",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "三集瑞-KY"
+},
+"6863": {
+"abbr": "永道-KY",
+"en": "Arizon RFID",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "永道-KY"
+},
+"6865": {
+"abbr": "偉康科技",
+"en": "WebComm",
+"industry": "數位雲端",
+"market": "2",
+"name": "偉康科技"
+},
+"6869": {
+"abbr": "雲豹能源",
+"en": "J&V Energy",
+"industry": "綠能環保",
+"market": "1",
+"name": "雲豹能源"
+},
+"6870": {
+"abbr": "騰雲",
+"en": "Turn Cloud",
+"industry": "數位雲端",
+"market": "2",
+"name": "騰雲"
+},
+"6872": {
+"abbr": "浩宇生醫",
+"en": "NaviFUS",
+"industry": "生技醫療",
+"market": "2",
+"name": "浩宇生醫"
+},
+"6873": {
+"abbr": "泓德能源",
+"en": "HDRE",
+"industry": "綠能環保",
+"market": "1",
+"name": "泓德能源"
+},
+"6874": {
+"abbr": "倍力",
+"en": "M-POWER",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "倍力"
+},
+"6875": {
+"abbr": "國邑*",
+"en": "PBI",
+"industry": "生技醫療",
+"market": "2",
+"name": "國邑*"
+},
+"6877": {
+"abbr": "鏵友益",
+"en": "HYE",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "鏵友益"
+},
+"6881": {
+"abbr": "潤德",
+"en": "RTD",
+"industry": "其他",
+"market": "2",
+"name": "潤德"
+},
+"6884": {
+"abbr": "海柏特",
+"en": "HSNC",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "海柏特"
+},
+"6885": {
+"abbr": "全福生技",
+"en": "BRIM",
+"industry": "生技醫療",
+"market": "1",
+"name": "全福生技"
+},
+"6887": {
+"abbr": "寶綠特-KY",
+"en": "BORETECH-KY",
+"industry": "綠能環保",
+"market": "1",
+"name": "寶綠特-KY"
+},
+"6890": {
+"abbr": "來億-KY",
+"en": "Lai Yih",
+"industry": "運動休閒",
+"market": "1",
+"name": "來億-KY"
+},
+"6894": {
+"abbr": "衛司特",
+"en": "WRT",
+"industry": "綠能環保",
+"market": "2",
+"name": "衛司特"
+},
+"6895": {
+"abbr": "宏碩系統",
+"en": "WPTI",
+"industry": "電子–半導體",
+"market": "2",
+"name": "宏碩系統"
+},
+"6899": {
+"abbr": "創為精密",
+"en": "AMT",
+"industry": "電子–光電",
+"market": "2",
+"name": "創為精密"
+},
+"6901": {
+"abbr": "鑽石投資",
+"en": "DIAMOND BIOFUND",
+"industry": "其他",
+"market": "1",
+"name": "鑽石投資"
+},
+"6902": {
+"abbr": "GOGOLOOK",
+"en": "Gogolook",
+"industry": "數位雲端",
+"market": "1",
+"name": "GOGOLOOK"
+},
+"6903": {
+"abbr": "巨漢",
+"en": "JH",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "巨漢"
+},
+"6904": {
+"abbr": "伯鑫",
+"en": "PROXENE",
+"industry": "其他",
+"market": "2",
+"name": "伯鑫"
+},
+"6906": {
+"abbr": "現觀科",
+"en": "Groundhog",
+"industry": "數位雲端",
+"market": "1",
+"name": "現觀科"
+},
+"6907": {
+"abbr": "雅特力-KY",
+"en": "ATK-KY",
+"industry": "電子–半導體",
+"market": "2",
+"name": "雅特力-KY"
+},
+"6908": {
+"abbr": "宏碁遊戲-創",
+"en": "Acer Gaming Inc.",
+"industry": "電子–電子通路",
+"market": "7",
+"name": "宏碁遊戲-創"
+},
+"6909": {
+"abbr": "創控",
+"en": "tCt",
+"industry": "電子–半導體",
+"market": "1",
+"name": "創控"
+},
+"6910": {
+"abbr": "德鴻",
+"en": "Grandsys",
+"industry": "數位雲端",
+"market": "2",
+"name": "德鴻"
+},
+"6913": {
+"abbr": "鴻呈",
+"en": "VSO",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "鴻呈"
+},
+"6914": {
+"abbr": "阜爾運通",
+"en": "PSS",
+"industry": "其他",
+"market": "1",
+"name": "阜爾運通"
+},
+"6916": {
+"abbr": "華凌",
+"en": "WINSTAR",
+"industry": "電子–光電",
+"market": "1",
+"name": "華凌"
+},
+"6918": {
+"abbr": "愛派司",
+"en": "A Plus Biotech",
+"industry": "生技醫療",
+"market": "1",
+"name": "愛派司"
+},
+"6919": {
+"abbr": "康霈*",
+"en": "Caliway",
+"industry": "生技醫療",
+"market": "1",
+"name": "康霈*"
+},
+"6921": {
+"abbr": "嘉雨思-創",
+"en": "LeRain Technology Co. Ltd.",
+"industry": "電子–半導體",
+"market": "7",
+"name": "嘉雨思-創"
+},
+"6922": {
+"abbr": "宸曜",
+"en": "Neousys",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "宸曜"
+},
+"6923": {
+"abbr": "中台",
+"en": "ctrt",
+"industry": "綠能環保",
+"market": "1",
+"name": "中台"
+},
+"6924": {
+"abbr": "榮惠-KY創",
+"en": "EIKEI Group (Cayman) Co. Ltd.",
+"industry": "電子–電子零組件",
+"market": "7",
+"name": "榮惠-KY創"
+},
+"6925": {
+"abbr": "意藍",
+"en": "eLand",
+"industry": "數位雲端",
+"market": "2",
+"name": "意藍"
+},
+"6928": {
+"abbr": "攸泰科技",
+"en": "UTI",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "攸泰科技"
+},
+"6929": {
+"abbr": "佑全",
+"en": "We Can",
+"industry": "生技醫療",
+"market": "2",
+"name": "佑全"
+},
+"6931": {
+"abbr": "青松健康",
+"en": "Qing Song",
+"industry": "生技醫療",
+"market": "1",
+"name": "青松健康"
+},
+"6933": {
+"abbr": "AMAX-KY",
+"en": "AMAX",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "AMAX-KY"
+},
+"6934": {
+"abbr": "心誠鎂",
+"en": "HCMED",
+"industry": "生技醫療",
+"market": "1",
+"name": "心誠鎂"
+},
+"6936": {
+"abbr": "永鴻生技",
+"en": "Vetnostrum",
+"industry": "生技醫療",
+"market": "1",
+"name": "永鴻生技"
+},
+"6937": {
+"abbr": "天虹",
+"en": "Skytech",
+"industry": "電子–半導體",
+"market": "1",
+"name": "天虹"
+},
+"6944": {
+"abbr": "兆聯實業",
+"en": "Mega Union",
+"industry": "綠能環保",
+"market": "1",
+"name": "兆聯實業"
+},
+"6949": {
+"abbr": "沛爾生醫-創",
+"en": "PELL BIO-MED TECHNOLOGY CO. LTD.",
+"industry": "生技醫療",
+"market": "7",
+"name": "沛爾生醫-創"
+},
+"6951": {
+"abbr": "青新-創",
+"en": "CHIN HSIN ENVIRON ENGINEERING CO.， LTD.",
+"industry": "綠能環保",
+"market": "7",
+"name": "青新-創"
+},
+"6952": {
+"abbr": "大武山",
+"en": "DWS",
+"industry": "其他",
+"market": "1",
+"name": "大武山"
+},
+"6953": {
+"abbr": "家碩",
+"en": "GDE",
+"industry": "電子–半導體",
+"market": "2",
+"name": "家碩"
+},
+"6955": {
+"abbr": "邦睿生技-創",
+"en": "BONRAYBIO CO. LTD.",
+"industry": "生技醫療",
+"market": "7",
+"name": "邦睿生技-創"
+},
+"6957": {
+"abbr": "裕慶-KY",
+"en": "Horizon",
+"industry": "其他",
+"market": "1",
+"name": "裕慶-KY"
+},
+"6958": {
+"abbr": "日盛台駿",
+"en": "INFINITE",
+"industry": "其他",
+"market": "1",
+"name": "日盛台駿"
+},
+"6961": {
+"abbr": "旅天下",
+"en": "Uni Travel",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "旅天下"
+},
+"6962": {
+"abbr": "奕力-KY",
+"en": "ITH-KY",
+"industry": "電子–半導體",
+"market": "1",
+"name": "奕力-KY"
+},
+"6965": {
+"abbr": "中傑-KY",
+"en": "CJ",
+"industry": "運動休閒",
+"market": "1",
+"name": "中傑-KY"
+},
+"6967": {
+"abbr": "汎瑋材料",
+"en": "TRANS-SUN",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "汎瑋材料"
+},
+"6968": {
+"abbr": "萬達寵物",
+"en": "WONDERPETS",
+"industry": "居家生活",
+"market": "2",
+"name": "萬達寵物"
+},
+"6969": {
+"abbr": "成信實業*-創",
+"en": "Transcene Co. Ltd.",
+"industry": "綠能環保",
+"market": "7",
+"name": "成信實業*-創"
+},
+"6971": {
+"abbr": "惠民實業",
+"en": "HM Env. Tech",
+"industry": "綠能環保",
+"market": "2",
+"name": "惠民實業"
+},
+"6982": {
+"abbr": "大井泵浦",
+"en": "WALRUS PUMP",
+"industry": "電機機械",
+"market": "2",
+"name": "大井泵浦"
+},
+"6988": {
+"abbr": "威力暘-創",
+"en": "WELLYSUN INC.",
+"industry": "汽車工業",
+"market": "7",
+"name": "威力暘-創"
+},
+"6994": {
+"abbr": "富威電力",
+"en": "FWP",
+"industry": "綠能環保",
+"market": "1",
+"name": "富威電力"
+},
+"6996": {
+"abbr": "力領科技",
+"en": "forcelead",
+"industry": "電子–半導體",
+"market": "2",
+"name": "力領科技"
+},
+"6997": {
+"abbr": "博弘",
+"en": "Nextlink",
+"industry": "數位雲端",
+"market": "2",
+"name": "博弘"
+},
+"7402": {
+"abbr": "邑錡",
+"en": "Brinno",
+"industry": "電子–光電",
+"market": "2",
+"name": "邑錡"
+},
+"7547": {
+"abbr": "碩網",
+"en": "INTUMIT",
+"industry": "數位雲端",
+"market": "2",
+"name": "碩網"
+},
+"7556": {
+"abbr": "意德士科技",
+"en": "YEEDEX",
+"industry": "電子–半導體",
+"market": "2",
+"name": "意德士"
+},
+"7584": {
+"abbr": "樂意",
+"en": "HAPPYTUK",
+"industry": "文化創意",
+"market": "2",
+"name": "樂意"
+},
+"7610": {
+"abbr": "聯友金屬-創",
+"en": "LIANYOU METALS CO.LTD.",
+"industry": "綠能環保",
+"market": "7",
+"name": "聯友金屬-創"
+},
+"7631": {
+"abbr": "聚賢研發-創",
+"en": "GENII IDEAS Co. Ltd.",
+"industry": "電子–其他電子",
+"market": "7",
+"name": "聚賢研發-創"
+},
+"7642": {
+"abbr": "昶瑞機電",
+"en": "Champ-Ray",
+"industry": "電機機械",
+"market": "2",
+"name": "昶瑞機電"
+},
+"7703": {
+"abbr": "銳澤",
+"en": "RAYZHER",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "銳澤"
+},
+"7704": {
+"abbr": "明遠精密",
+"en": "Finesse",
+"industry": "電子–半導體",
+"market": "2",
+"name": "明遠精密"
+},
+"7705": {
+"abbr": "三商餐飲",
+"en": "Mercuries F&B",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "三商餐飲"
+},
+"7708": {
+"abbr": "全家餐飲",
+"en": "FIG",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "全家餐飲"
+},
+"7709": {
+"abbr": "榮田",
+"en": "Honor",
+"industry": "電機機械",
+"market": "2",
+"name": "榮田"
+},
+"7711": {
+"abbr": "永擎",
+"en": "ASROCK RACK",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "永擎"
+},
+"7712": {
+"abbr": "博盛半導體",
+"en": "POTENS",
+"industry": "電子–半導體",
+"market": "2",
+"name": "博盛半導體"
+},
+"7713": {
+"abbr": "威力德生醫",
+"en": "WeLeader",
+"industry": "生技醫療",
+"market": "2",
+"name": "威力德生醫"
+},
+"7714": {
+"abbr": "創泓科技",
+"en": "UFTC",
+"industry": "數位雲端",
+"market": "2",
+"name": "創泓科技"
+},
+"7715": {
+"abbr": "裕山",
+"en": "Yuh Shan",
+"industry": "綠能環保",
+"market": "2",
+"name": "裕山"
+},
+"7716": {
+"abbr": "昱臺國際",
+"en": "ITI",
+"industry": "航運業",
+"market": "2",
+"name": "昱臺國際"
+},
+"7717": {
+"abbr": "萊德光電-KY",
+"en": "Lightel-KY",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "萊德光電-KY"
+},
+"7718": {
+"abbr": "友鋮",
+"en": "SPEC",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "友鋮"
+},
+"7721": {
+"abbr": "微程式",
+"en": "MICROPROGRAM",
+"industry": "數位雲端",
+"market": "1",
+"name": "微程式"
+},
+"7722": {
+"abbr": "LINEPAY",
+"en": "LINEPAY",
+"industry": "數位雲端",
+"market": "1",
+"name": "LINEPAY"
+},
+"7723": {
+"abbr": "築間",
+"en": "JHU JIAN",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "築間"
+},
+"7728": {
+"abbr": "光焱科技",
+"en": "Enlitech",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "光焱科技"
+},
+"7730": {
+"abbr": "暉盛-創",
+"en": "Nano Electronics and Micro System Technologie",
+"industry": "電子–半導體",
+"market": "7",
+"name": "暉盛-創"
+},
+"7732": {
+"abbr": "金興精密",
+"en": "KING SHING",
+"industry": "汽車工業",
+"market": "1",
+"name": "金興精密"
+},
+"7734": {
+"abbr": "印能科技",
+"en": "APT",
+"industry": "電子–半導體",
+"market": "2",
+"name": "印能科技"
+},
+"7736": {
+"abbr": "虎山",
+"en": "HUSHAN",
+"industry": "汽車工業",
+"market": "1",
+"name": "虎山"
+},
+"7738": {
+"abbr": "東聯互動",
+"en": "EUI",
+"industry": "數位雲端",
+"market": "2",
+"name": "東聯互動"
+},
+"7740": {
+"abbr": "熙特爾-創",
+"en": "SEETEL NEW ENERGY Co. LTD.",
+"industry": "綠能環保",
+"market": "7",
+"name": "熙特爾-創"
+},
+"7743": {
+"abbr": "金利食安",
+"en": "KFS",
+"industry": "食品工業",
+"market": "2",
+"name": "金利食安"
+},
+"7744": {
+"abbr": "崴寶",
+"en": "WB",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "崴寶"
+},
+"7747": {
+"abbr": "昕奇雲端",
+"en": "GCS",
+"industry": "數位雲端",
+"market": "2",
+"name": "昕奇雲端"
+},
+"7749": {
+"abbr": "意騰-KY",
+"en": "iGo-KY",
+"industry": "電子–半導體",
+"market": "1",
+"name": "意騰-KY"
+},
+"7750": {
+"abbr": "新代",
+"en": "Syntec",
+"industry": "電機機械",
+"market": "1",
+"name": "新代"
+},
+"7751": {
+"abbr": "竑騰",
+"en": "HORNG TERNG",
+"industry": "電子–半導體",
+"market": "2",
+"name": "竑騰"
+},
+"7753": {
+"abbr": "星亞",
+"en": "SAVC",
+"industry": "電子–光電",
+"market": "2",
+"name": "星亞"
+},
+"7757": {
+"abbr": "金色三麥",
+"en": "Lebledor",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "金色三麥"
+},
+"7760": {
+"abbr": "享溫馨",
+"en": "ENJOY",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "享溫馨"
+},
+"7765": {
+"abbr": "中華資安",
+"en": "CHT Security",
+"industry": "數位雲端",
+"market": "1",
+"name": "中華資安"
+},
+"7767": {
+"abbr": "仁大資訊",
+"en": "HPI",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "仁大資訊"
+},
+"7768": {
+"abbr": "頌勝科技",
+"en": "PVI",
+"industry": "電子–半導體",
+"market": "1",
+"name": "頌勝科技"
+},
+"7769": {
+"abbr": "鴻勁",
+"en": "HON",
+"industry": "電子–半導體",
+"market": "1",
+"name": "鴻勁"
+},
+"7770": {
+"abbr": "君曜",
+"en": "ZEITEC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "君曜"
+},
+"7772": {
+"abbr": "耀穎",
+"en": "MOE",
+"industry": "電子–半導體",
+"market": "2",
+"name": "耀穎"
+},
+"7777": {
+"abbr": "能率亞洲",
+"en": "ABICO ASIA",
+"industry": "其他",
+"market": "2",
+"name": "能率亞洲"
+},
+"7780": {
+"abbr": "大研生醫*",
+"en": "DAIKEN",
+"industry": "食品工業",
+"market": "1",
+"name": "大研生醫*"
+},
+"7782": {
+"abbr": "光速火箭",
+"en": "SPEEDING ROCKET",
+"industry": "居家生活",
+"market": "2",
+"name": "光速火箭"
+},
+"7786": {
+"abbr": "東方風能",
+"en": "DFO",
+"industry": "綠能環保",
+"market": "1",
+"name": "東方風能"
+},
+"7788": {
+"abbr": "松川精密",
+"en": "SONG CHUAN",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "松川精密"
+},
+"7791": {
+"abbr": "皇家可口",
+"en": "LUCKY ROYAL",
+"industry": "食品工業",
+"market": "1",
+"name": "皇家可口"
+},
+"7792": {
+"abbr": "安葆",
+"en": "AM-POWER",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "安葆"
+},
+"7794": {
+"abbr": "宏碁智新",
+"en": "API",
+"industry": "居家生活",
+"market": "2",
+"name": "宏碁智新"
+},
+"7795": {
+"abbr": "長廣",
+"en": "EPM",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "長廣"
+},
+"7799": {
+"abbr": "禾榮科",
+"en": "HNMC",
+"industry": "生技醫療",
+"market": "1",
+"name": "禾榮科"
+},
+"7803": {
+"abbr": "雲象科技-創",
+"en": "aetherAI Co. Ltd.",
+"industry": "生技醫療",
+"market": "7",
+"name": "雲象科技-創"
+},
+"7805": {
+"abbr": "威聯通",
+"en": "QNAP",
+"industry": "數位雲端",
+"market": "2",
+"name": "威聯通"
+},
+"7810": {
+"abbr": "捷創科技",
+"en": "JTRON",
+"industry": "電子–半導體",
+"market": "2",
+"name": "捷創科技"
+},
+"7811": {
+"abbr": "民盛",
+"en": "Minson",
+"industry": "運動休閒",
+"market": "2",
+"name": "民盛"
+},
+"7818": {
+"abbr": "溢泰實業",
+"en": "KEMFLO",
+"industry": "綠能環保",
+"market": "1",
+"name": "溢泰實業"
+},
+"7820": {
+"abbr": "立盈",
+"en": "Liying EPTech",
+"industry": "綠能環保",
+"market": "2",
+"name": "立盈"
+},
+"7821": {
+"abbr": "神數",
+"en": "MDT",
+"industry": "汽車工業",
+"market": "1",
+"name": "神數"
+},
+"7822": {
+"abbr": "倍利科",
+"en": "V5 TECHNOLOGIES",
+"industry": "電子–半導體",
+"market": "1",
+"name": "倍利科"
+},
+"7823": {
+"abbr": "奧義賽博-KY創",
+"en": "CyCraft Technology Corporation",
+"industry": "數位雲端",
+"market": "7",
+"name": "奧義賽博-KY創"
+},
+"7828": {
+"abbr": "創新服務",
+"en": "INNOSTAR",
+"industry": "電子–半導體",
+"market": "2",
+"name": "創新服務"
+},
+"7842": {
+"abbr": "天能綠電",
+"en": "GREENET",
+"industry": "綠能環保",
+"market": "2",
+"name": "天能綠電"
+},
+"8011": {
+"abbr": "台通",
+"en": "TTCC",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "台通"
+},
+"8016": {
+"abbr": "矽創",
+"en": "Sitronix",
+"industry": "電子–半導體",
+"market": "1",
+"name": "矽創"
+},
+"8021": {
+"abbr": "尖點",
+"en": "Topoint",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "尖點"
+},
+"8024": {
+"abbr": "佑華",
+"en": "Alpha",
+"industry": "電子–半導體",
+"market": "2",
+"name": "佑華"
+},
+"8027": {
+"abbr": "鈦昇",
+"en": "E&R",
+"industry": "電機機械",
+"market": "2",
+"name": "鈦昇"
+},
+"8028": {
+"abbr": "昇陽半導體",
+"en": "PSI",
+"industry": "電子–半導體",
+"market": "1",
+"name": "昇陽半導體"
+},
+"8032": {
+"abbr": "光菱",
+"en": "KORYO",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "光菱"
+},
+"8033": {
+"abbr": "雷虎",
+"en": "TT",
+"industry": "其他",
+"market": "1",
+"name": "雷虎"
+},
+"8034": {
+"abbr": "榮群",
+"en": "OPNET",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "榮群"
+},
+"8038": {
+"abbr": "長園科",
+"en": "CAEC",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "長園科"
+},
+"8039": {
+"abbr": "台虹",
+"en": "TAIFLEX",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "台虹"
+},
+"8040": {
+"abbr": "九暘",
+"en": "IC+",
+"industry": "電子–半導體",
+"market": "2",
+"name": "九暘"
+},
+"8042": {
+"abbr": "金山電",
+"en": "CHINSAN",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "金山電"
+},
+"8043": {
+"abbr": "蜜望實",
+"en": "3H",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "蜜望實"
+},
+"8044": {
+"abbr": "網家",
+"en": "PChome online",
+"industry": "數位雲端",
+"market": "2",
+"name": "網家"
+},
+"8045": {
+"abbr": "達運光電",
+"en": "TWOWAY",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "達運光電"
+},
+"8046": {
+"abbr": "南電",
+"en": "N.P.C",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "南電"
+},
+"8047": {
+"abbr": "星雲",
+"en": "GCC",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "星雲"
+},
+"8048": {
+"abbr": "德勝",
+"en": "RUBYTECH",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "德勝"
+},
+"8049": {
+"abbr": "晶采",
+"en": "AMPIRE",
+"industry": "電子–光電",
+"market": "2",
+"name": "晶采"
+},
+"8050": {
+"abbr": "廣積",
+"en": "IBASE",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "廣積"
+},
+"8054": {
+"abbr": "安國",
+"en": "Alcor Micro",
+"industry": "電子–半導體",
+"market": "2",
+"name": "安國"
+},
+"8059": {
+"abbr": "凱碩",
+"en": "CTI",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "凱碩"
+},
+"8064": {
+"abbr": "東捷",
+"en": "CONTREL",
+"industry": "電子–光電",
+"market": "2",
+"name": "東捷"
+},
+"8066": {
+"abbr": "來思達",
+"en": "LIFESTYLE",
+"industry": "居家生活",
+"market": "2",
+"name": "來思達"
+},
+"8067": {
+"abbr": "志旭",
+"en": "Gish INT",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "志旭"
+},
+"8068": {
+"abbr": "全達",
+"en": "Chander",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "全達"
+},
+"8069": {
+"abbr": "元太",
+"en": "EIH",
+"industry": "電子–光電",
+"market": "2",
+"name": "元太"
+},
+"8070": {
+"abbr": "長華*",
+"en": "CHANG WAH",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "長華*"
+},
+"8071": {
+"abbr": "能率網通",
+"en": "ABICO",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "能率網通"
+},
+"8072": {
+"abbr": "陞泰",
+"en": "AV TECH",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "陞泰"
+},
+"8074": {
+"abbr": "鉅橡",
+"en": "AURONA",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "鉅橡"
+},
+"8076": {
+"abbr": "伍豐",
+"en": "FIRICH",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "伍豐"
+},
+"8077": {
+"abbr": "洛碁",
+"en": "GWH",
+"industry": "觀光餐旅",
+"market": "2",
+"name": "洛碁"
+},
+"8080": {
+"abbr": "泰霖",
+"en": "TerraLink",
+"industry": "建材營建",
+"market": "2",
+"name": "泰霖"
+},
+"8081": {
+"abbr": "致新",
+"en": "GMT",
+"industry": "電子–半導體",
+"market": "1",
+"name": "致新"
+},
+"8083": {
+"abbr": "瑞穎",
+"en": "TIC",
+"industry": "電機機械",
+"market": "2",
+"name": "瑞穎"
+},
+"8084": {
+"abbr": "巨虹",
+"en": "CHIP HOPE",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "巨虹"
+},
+"8085": {
+"abbr": "福華",
+"en": "FD",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "福華"
+},
+"8086": {
+"abbr": "宏捷科",
+"en": "AWSC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "宏捷科"
+},
+"8087": {
+"abbr": "麗升能源",
+"en": "LEADSUN",
+"industry": "綠能環保",
+"market": "2",
+"name": "麗升能源"
+},
+"8088": {
+"abbr": "品安",
+"en": "PANRAM",
+"industry": "電子–半導體",
+"market": "2",
+"name": "品安"
+},
+"8089": {
+"abbr": "康全電訊",
+"en": "Comtrend",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "康全電訊"
+},
+"8091": {
+"abbr": "翔名",
+"en": "FB",
+"industry": "電子–半導體",
+"market": "2",
+"name": "翔名"
+},
+"8092": {
+"abbr": "建暐",
+"en": "CWPT",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "建暐"
+},
+"8093": {
+"abbr": "保銳",
+"en": "ENERMAX",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "保銳"
+},
+"8096": {
+"abbr": "擎亞",
+"en": "CoAsia",
+"industry": "電子–電子通路",
+"market": "2",
+"name": "擎亞"
+},
+"8097": {
+"abbr": "常珵",
+"en": "ATW",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "常珵"
+},
+"8099": {
+"abbr": "大世科",
+"en": "TSTI",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "大世科"
+},
+"8101": {
+"abbr": "華冠",
+"en": "Arima Comm.",
+"industry": "電子–通信網路",
+"market": "1",
+"name": "華冠"
+},
+"8102": {
+"abbr": "傑霖科技",
+"en": "JEILIN",
+"industry": "電子–半導體",
+"market": "2",
+"name": "傑霖科技"
+},
+"8103": {
+"abbr": "瀚荃",
+"en": "CviLux",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "瀚荃"
+},
+"8104": {
+"abbr": "錸寶",
+"en": "RiTdisplay",
+"industry": "電子–光電",
+"market": "1",
+"name": "錸寶"
+},
+"8105": {
+"abbr": "凌巨",
+"en": "GiantPlus",
+"industry": "電子–光電",
+"market": "1",
+"name": "凌巨"
+},
+"8107": {
+"abbr": "大億金茂",
+"en": "KENMOS",
+"industry": "電機機械",
+"market": "2",
+"name": "大億金茂"
+},
+"8109": {
+"abbr": "博大",
+"en": "P-DUKE",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "博大"
+},
+"8110": {
+"abbr": "華東",
+"en": "WALTON",
+"industry": "電子–半導體",
+"market": "1",
+"name": "華東"
+},
+"8111": {
+"abbr": "立碁",
+"en": "LIGITEK",
+"industry": "電子–光電",
+"market": "2",
+"name": "立碁"
+},
+"8112": {
+"abbr": "至上",
+"en": "Supreme",
+"industry": "電子–電子通路",
+"market": "1",
+"name": "至上"
+},
+"8114": {
+"abbr": "振樺電",
+"en": "POSIFLEX",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "振樺電"
+},
+"8121": {
+"abbr": "越峰",
+"en": "ACME",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "越峰"
+},
+"8131": {
+"abbr": "福懋科",
+"en": "FATC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "福懋科"
+},
+"8147": {
+"abbr": "正淩",
+"en": "NEXTRON",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "正淩"
+},
+"8150": {
+"abbr": "南茂",
+"en": "ChipMOS",
+"industry": "電子–半導體",
+"market": "1",
+"name": "南茂"
+},
+"8155": {
+"abbr": "博智",
+"en": "ACCL",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "博智"
+},
+"8162": {
+"abbr": "微矽電子-創",
+"en": "MICRO SILICON ELECTRONICS CO. LTD.",
+"industry": "電子–半導體",
+"market": "7",
+"name": "微矽電子-創"
+},
+"8163": {
+"abbr": "達方",
+"en": "DARFON",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "達方"
+},
+"8171": {
+"abbr": "天宇",
+"en": "Formosa",
+"industry": "綠能環保",
+"market": "2",
+"name": "天宇"
+},
+"8176": {
+"abbr": "智捷",
+"en": "ZCOM",
+"industry": "電子–通信網路",
+"market": "2",
+"name": "智捷"
+},
+"8182": {
+"abbr": "加高",
+"en": "HELE",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "加高"
+},
+"8183": {
+"abbr": "精星",
+"en": "ITC",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "精星"
+},
+"8201": {
+"abbr": "無敵",
+"en": "BESTA",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "無敵"
+},
+"8210": {
+"abbr": "勤誠",
+"en": "CHENBRO",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "勤誠"
+},
+"8213": {
+"abbr": "志超",
+"en": "tpt",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "志超"
+},
+"8215": {
+"abbr": "明基材",
+"en": "BMC",
+"industry": "電子–光電",
+"market": "1",
+"name": "明基材"
+},
+"8222": {
+"abbr": "寶一",
+"en": "Aero Win",
+"industry": "電機機械",
+"market": "1",
+"name": "寶一"
+},
+"8227": {
+"abbr": "巨有科技",
+"en": "PGC",
+"industry": "電子–半導體",
+"market": "2",
+"name": "巨有科技"
+},
+"8234": {
+"abbr": "新漢",
+"en": "NEXCOM",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "新漢"
+},
+"8240": {
+"abbr": "華宏",
+"en": "WAH HONG",
+"industry": "電子–光電",
+"market": "2",
+"name": "華宏"
+},
+"8249": {
+"abbr": "菱光",
+"en": "CSI",
+"industry": "電子–電子零組件",
+"market": "1",
+"name": "菱光"
+},
+"8255": {
+"abbr": "朋程",
+"en": "ATC",
+"industry": "電機機械",
+"market": "2",
+"name": "朋程"
+},
+"8261": {
+"abbr": "富鼎",
+"en": "APEC",
+"industry": "電子–半導體",
+"market": "1",
+"name": "富鼎"
+},
+"8271": {
+"abbr": "宇瞻",
+"en": "Apacer",
+"industry": "電子–半導體",
+"market": "1",
+"name": "宇瞻"
+},
+"8272": {
+"abbr": "全景軟體",
+"en": "Changing",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "全景軟體"
+},
+"8277": {
+"abbr": "商丞",
+"en": "UNIFOSA",
+"industry": "電子–半導體",
+"market": "2",
+"name": "商丞"
+},
+"8279": {
+"abbr": "生展",
+"en": "SYNGEN",
+"industry": "生技醫療",
+"market": "2",
+"name": "生展"
+},
+"8284": {
+"abbr": "三竹",
+"en": "MITAKE",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "三竹"
+},
+"8289": {
+"abbr": "泰藝",
+"en": "Taitien",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "泰藝"
+},
+"8291": {
+"abbr": "尚茂",
+"en": "SMT",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "尚茂"
+},
+"8299": {
+"abbr": "群聯",
+"en": "Phison",
+"industry": "電子–半導體",
+"market": "2",
+"name": "群聯"
+},
+"8341": {
+"abbr": "日友",
+"en": "SF",
+"industry": "綠能環保",
+"market": "1",
+"name": "日友"
+},
+"8342": {
+"abbr": "益張",
+"en": "I  JANG",
+"industry": "其他",
+"market": "2",
+"name": "益張"
+},
+"8349": {
+"abbr": "恒耀國際",
+"en": "QST",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "恒耀"
+},
+"8354": {
+"abbr": "冠好",
+"en": "KH",
+"industry": "其他",
+"market": "2",
+"name": "冠好"
+},
+"8358": {
+"abbr": "金居",
+"en": "CO-TECH",
+"industry": "電子–電子零組件",
+"market": "2",
+"name": "金居"
+},
+"8367": {
+"abbr": "建新國際",
+"en": "CS",
+"industry": "航運業",
+"market": "1",
+"name": "建新國際"
+},
+"8374": {
+"abbr": "羅昇",
+"en": "ACE PILLAR",
+"industry": "電機機械",
+"market": "1",
+"name": "羅昇"
+},
+"8383": {
+"abbr": "千附",
+"en": "ChenFull",
+"industry": "電子–半導體",
+"market": "2",
+"name": "千附"
+},
+"8390": {
+"abbr": "金益鼎",
+"en": "JYD",
+"industry": "綠能環保",
+"market": "2",
+"name": "金益鼎"
+},
+"8401": {
+"abbr": "白紗科",
+"en": "BAI SHA",
+"industry": "其他",
+"market": "2",
+"name": "白紗科"
+},
+"8403": {
+"abbr": "盛弘",
+"en": "SHAREHOPE",
+"industry": "生技醫療",
+"market": "2",
+"name": "盛弘"
+},
+"8404": {
+"abbr": "百和興業-KY",
+"en": "PAIHO  SHIH",
+"industry": "其他",
+"market": "1",
+"name": "百和興業-KY"
+},
+"8409": {
+"abbr": "商之器",
+"en": "EBM",
+"industry": "生技醫療",
+"market": "2",
+"name": "商之器"
+},
+"8410": {
+"abbr": "森田",
+"en": "Sen Tien",
+"industry": "電子–電腦及週邊設備",
+"market": "2",
+"name": "森田"
+},
+"8411": {
+"abbr": "福貞-KY",
+"en": "KINGCAN",
+"industry": "其他",
+"market": "1",
+"name": "福貞-KY"
+},
+"8415": {
+"abbr": "大國鋼",
+"en": "Brighton-Best",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "大國鋼"
+},
+"8416": {
+"abbr": "實威",
+"en": "SWTC",
+"industry": "電子–資訊服務",
+"market": "2",
+"name": "實威"
+},
+"8421": {
+"abbr": "旭源",
+"en": "XYP",
+"industry": "其他",
+"market": "2",
+"name": "旭源"
+},
+"8422": {
+"abbr": "可寧衛*",
+"en": "Cleanaway",
+"industry": "綠能環保",
+"market": "1",
+"name": "可寧衛*"
+},
+"8423": {
+"abbr": "保綠-KY",
+"en": "Polygreen",
+"industry": "綠能環保",
+"market": "2",
+"name": "保綠-KY"
+},
+"8424": {
+"abbr": "惠普",
+"en": "WELLPOOL",
+"industry": "建材營建",
+"market": "2",
+"name": "惠普"
+},
+"8426": {
+"abbr": "紅木-KY",
+"en": "Redwood",
+"industry": "其他",
+"market": "2",
+"name": "紅木-KY"
+},
+"8429": {
+"abbr": "金麗-KY",
+"en": "Jinli",
+"industry": "貿易百貨",
+"market": "1",
+"name": "金麗-KY"
+},
+"8431": {
+"abbr": "匯鑽科",
+"en": "SPT",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "匯鑽科"
+},
+"8432": {
+"abbr": "東生華",
+"en": "TSH",
+"industry": "生技醫療",
+"market": "2",
+"name": "東生華"
+},
+"8433": {
+"abbr": "弘帆",
+"en": "BON FAME",
+"industry": "居家生活",
+"market": "2",
+"name": "弘帆"
+},
+"8435": {
+"abbr": "鉅邁",
+"en": "Zimmite",
+"industry": "其他",
+"market": "2",
+"name": "鉅邁"
+},
+"8436": {
+"abbr": "大江",
+"en": "TCI",
+"industry": "生技醫療",
+"market": "2",
+"name": "大江"
+},
+"8437": {
+"abbr": "大地-KY",
+"en": "Dadi",
+"industry": "其他",
+"market": "2",
+"name": "大地-KY"
+},
+"8438": {
+"abbr": "昶昕",
+"en": "AMIA",
+"industry": "綠能環保",
+"market": "1",
+"name": "昶昕"
+},
+"8440": {
+"abbr": "綠電",
+"en": "E＆E",
+"industry": "綠能環保",
+"market": "2",
+"name": "綠電"
+},
+"8442": {
+"abbr": "威宏-KY",
+"en": "WW",
+"industry": "其他",
+"market": "1",
+"name": "威宏-KY"
+},
+"8443": {
+"abbr": "阿瘦",
+"en": "ASO",
+"industry": "貿易百貨",
+"market": "1",
+"name": "阿瘦"
+},
+"8444": {
+"abbr": "綠河-KY",
+"en": "Green River",
+"industry": "其他",
+"market": "2",
+"name": "綠河-KY"
+},
+"8446": {
+"abbr": "華研",
+"en": "HIM Music",
+"industry": "文化創意",
+"market": "2",
+"name": "華研"
+},
+"8450": {
+"abbr": "霹靂",
+"en": "PILI",
+"industry": "文化創意",
+"market": "2",
+"name": "霹靂"
+},
+"8454": {
+"abbr": "富邦媒",
+"en": "momo",
+"industry": "數位雲端",
+"market": "1",
+"name": "富邦媒"
+},
+"8455": {
+"abbr": "大拓-KY",
+"en": "Daito ME",
+"industry": "電子–其他電子",
+"market": "2",
+"name": "大拓-KY"
+},
+"8462": {
+"abbr": "柏文",
+"en": "Power Wind",
+"industry": "運動休閒",
+"market": "1",
+"name": "柏文"
+},
+"8463": {
+"abbr": "潤泰材",
+"en": "RTM",
+"industry": "其他",
+"market": "1",
+"name": "潤泰材"
+},
+"8464": {
+"abbr": "億豐",
+"en": "Nien Made",
+"industry": "居家生活",
+"market": "1",
+"name": "億豐"
+},
+"8466": {
+"abbr": "美吉吉-KY",
+"en": "M.J.",
+"industry": "其他",
+"market": "1",
+"name": "美吉吉-KY"
+},
+"8467": {
+"abbr": "波力-KY",
+"en": "BONNY",
+"industry": "運動休閒",
+"market": "1",
+"name": "波力-KY"
+},
+"8472": {
+"abbr": "夠麻吉",
+"en": "GOMAJI",
+"industry": "數位雲端",
+"market": "2",
+"name": "夠麻吉"
+},
+"8473": {
+"abbr": "山林水",
+"en": "FOREST WATER",
+"industry": "綠能環保",
+"market": "1",
+"name": "山林水"
+},
+"8476": {
+"abbr": "台境*",
+"en": "TESC",
+"industry": "綠能環保",
+"market": "1",
+"name": "台境*"
+},
+"8477": {
+"abbr": "創業家",
+"en": "XXTECHEC",
+"industry": "數位雲端",
+"market": "2",
+"name": "創業家"
+},
+"8478": {
+"abbr": "東哥遊艇",
+"en": "Ocean Alexander",
+"industry": "運動休閒",
+"market": "1",
+"name": "東哥遊艇"
+},
+"8481": {
+"abbr": "政伸",
+"en": "Transart",
+"industry": "其他",
+"market": "1",
+"name": "政伸"
+},
+"8482": {
+"abbr": "商億-KY",
+"en": "Shane Global",
+"industry": "居家生活",
+"market": "1",
+"name": "商億-KY"
+},
+"8487": {
+"abbr": "愛爾達-創",
+"en": "ELTA  Technology  Co.Ltd.",
+"industry": "數位雲端",
+"market": "7",
+"name": "愛爾達-創"
+},
+"8488": {
+"abbr": "吉源-KY",
+"en": "JYPKG",
+"industry": "其他",
+"market": "1",
+"name": "吉源-KY"
+},
+"8489": {
+"abbr": "三貝德",
+"en": "Samebest",
+"industry": "其他",
+"market": "2",
+"name": "三貝德"
+},
+"8499": {
+"abbr": "鼎炫-KY",
+"en": "TOP BRIGHT",
+"industry": "電子–其他電子",
+"market": "1",
+"name": "鼎炫-KY"
+},
+"8905": {
+"abbr": "裕國",
+"en": "ECS",
+"industry": "其他",
+"market": "2",
+"name": "裕國"
+},
+"8906": {
+"abbr": "花王",
+"en": "Forward",
+"industry": "其他",
+"market": "2",
+"name": "花王"
+},
+"8908": {
+"abbr": "欣雄",
+"en": "SHIN HSIUNG",
+"industry": "油電燃氣",
+"market": "2",
+"name": "欣雄"
+},
+"8916": {
+"abbr": "光隆",
+"en": "KLF",
+"industry": "其他",
+"market": "2",
+"name": "光隆"
+},
+"8917": {
+"abbr": "欣泰",
+"en": "HTGas",
+"industry": "油電燃氣",
+"market": "2",
+"name": "欣泰"
+},
+"8921": {
+"abbr": "沈氏",
+"en": "SHEN'S ART",
+"industry": "其他",
+"market": "2",
+"name": "沈氏"
+},
+"8923": {
+"abbr": "時報",
+"en": "C.T.Publishing",
+"industry": "文化創意",
+"market": "2",
+"name": "時報"
+},
+"8924": {
+"abbr": "大田",
+"en": "O-TA",
+"industry": "運動休閒",
+"market": "2",
+"name": "大田"
+},
+"8926": {
+"abbr": "台汽電",
+"en": "TCC",
+"industry": "油電燃氣",
+"market": "1",
+"name": "台汽電"
+},
+"8927": {
+"abbr": "北基",
+"en": "Pei Chi",
+"industry": "油電燃氣",
+"market": "2",
+"name": "北基"
+},
+"8928": {
+"abbr": "鉅明",
+"en": "DYNAMIC",
+"industry": "運動休閒",
+"market": "2",
+"name": "鉅明"
+},
+"8929": {
+"abbr": "富堡",
+"en": "FBIC",
+"industry": "其他",
+"market": "2",
+"name": "富堡"
+},
+"8930": {
+"abbr": "青鋼",
+"en": "CKM",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "青鋼"
+},
+"8931": {
+"abbr": "大汽電",
+"en": "TYC",
+"industry": "油電燃氣",
+"market": "2",
+"name": "大汽電"
+},
+"8932": {
+"abbr": "智通*",
+"en": "Wiselink",
+"industry": "其他",
+"market": "2",
+"name": "智通*"
+},
+"8933": {
+"abbr": "愛地雅",
+"en": "IDEAL",
+"industry": "運動休閒",
+"market": "2",
+"name": "愛地雅"
+},
+"8935": {
+"abbr": "邦泰",
+"en": "PONTEX",
+"industry": "其他",
+"market": "2",
+"name": "邦泰"
+},
+"8936": {
+"abbr": "國統",
+"en": "KTI",
+"industry": "其他",
+"market": "2",
+"name": "國統"
+},
+"8937": {
+"abbr": "合騏*",
+"en": "HER CHEE",
+"industry": "其他",
+"market": "2",
+"name": "合騏*"
+},
+"8938": {
+"abbr": "明安",
+"en": "ADVANCED  GROUP",
+"industry": "運動休閒",
+"market": "2",
+"name": "明安"
+},
+"8940": {
+"abbr": "新天地",
+"en": "New Palace",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "新天地"
+},
+"8941": {
+"abbr": "關中",
+"en": "GR HALL",
+"industry": "居家生活",
+"market": "2",
+"name": "關中"
+},
+"8942": {
+"abbr": "森鉅",
+"en": "Xxentria",
+"industry": "其他",
+"market": "2",
+"name": "森鉅"
+},
+"8996": {
+"abbr": "高力",
+"en": "KAORI",
+"industry": "電機機械",
+"market": "1",
+"name": "高力"
+},
+"9103": {
+"abbr": "美德醫療-DR",
+"en": "MEDTECS",
+"industry": "存託憑證",
+"market": "1",
+"name": "美德醫療-DR"
+},
+"910322": {
+"abbr": "康師傅-DR",
+"en": "Tingyi",
+"industry": "存託憑證",
+"market": "1",
+"name": "康師傅-DR"
+},
+"9105": {
+"abbr": "泰金寶-DR",
+"en": "CCET",
+"industry": "存託憑證",
+"market": "1",
+"name": "泰金寶-DR"
+},
+"910861": {
+"abbr": "神州-DR",
+"en": "DCH",
+"industry": "存託憑證",
+"market": "1",
+"name": "神州-DR"
+},
+"9110": {
+"abbr": "越南控-DR",
+"en": "VMEP Holdings",
+"industry": "存託憑證",
+"market": "1",
+"name": "越南控-DR"
+},
+"911608": {
+"abbr": "明輝-DR",
+"en": "BH Global",
+"industry": "存託憑證",
+"market": "1",
+"name": "明輝-DR"
+},
+"911622": {
+"abbr": "泰聚亨-DR",
+"en": "TYCN",
+"industry": "存託憑證",
+"market": "1",
+"name": "泰聚亨-DR"
+},
+"911868": {
+"abbr": "同方友友-DR",
+"en": "Neo-Neon",
+"industry": "存託憑證",
+"market": "1",
+"name": "同方友友-DR"
+},
+"912000": {
+"abbr": "晨訊科-DR",
+"en": "SIM TECH",
+"industry": "存託憑證",
+"market": "1",
+"name": "晨訊科-DR"
+},
+"9136": {
+"abbr": "巨騰-DR",
+"en": "Ju Teng",
+"industry": "存託憑證",
+"market": "1",
+"name": "巨騰-DR"
+},
+"9802": {
+"abbr": "鈺齊-KY",
+"en": "Fulgent Sun",
+"industry": "運動休閒",
+"market": "1",
+"name": "鈺齊-KY"
+},
+"9902": {
+"abbr": "台火",
+"en": "TIDEHOLD",
+"industry": "其他",
+"market": "1",
+"name": "台火"
+},
+"9904": {
+"abbr": "寶成",
+"en": "PCC",
+"industry": "運動休閒",
+"market": "1",
+"name": "寶成"
+},
+"9905": {
+"abbr": "大華",
+"en": "GCM",
+"industry": "其他",
+"market": "1",
+"name": "大華"
+},
+"9906": {
+"abbr": "欣巴巴",
+"en": "HSIN BA BA",
+"industry": "建材營建",
+"market": "1",
+"name": "欣巴巴"
+},
+"9907": {
+"abbr": "統一實",
+"en": "TON YI",
+"industry": "其他",
+"market": "1",
+"name": "統一實"
+},
+"9908": {
+"abbr": "大台北",
+"en": "GTG",
+"industry": "油電燃氣",
+"market": "1",
+"name": "大台北"
+},
+"9910": {
+"abbr": "豐泰",
+"en": "FT",
+"industry": "運動休閒",
+"market": "1",
+"name": "豐泰"
+},
+"9911": {
+"abbr": "櫻花",
+"en": "TAIWAN SAKURA",
+"industry": "居家生活",
+"market": "1",
+"name": "櫻花"
+},
+"9912": {
+"abbr": "偉聯",
+"en": "AIC",
+"industry": "電子–電腦及週邊設備",
+"market": "1",
+"name": "偉聯"
+},
+"9914": {
+"abbr": "美利達",
+"en": "MIC",
+"industry": "運動休閒",
+"market": "1",
+"name": "美利達"
+},
+"9917": {
+"abbr": "中保科",
+"en": "TAIWAN SECOM",
+"industry": "其他",
+"market": "1",
+"name": "中保科"
+},
+"9918": {
+"abbr": "欣天然",
+"en": "S.S.N.G",
+"industry": "油電燃氣",
+"market": "1",
+"name": "欣天然"
+},
+"9919": {
+"abbr": "康那香",
+"en": "KNH",
+"industry": "其他",
+"market": "1",
+"name": "康那香"
+},
+"9921": {
+"abbr": "巨大",
+"en": "GIANT",
+"industry": "運動休閒",
+"market": "1",
+"name": "巨大"
+},
+"9924": {
+"abbr": "福興",
+"en": "TAIWAN FU HSING",
+"industry": "居家生活",
+"market": "1",
+"name": "福興"
+},
+"9925": {
+"abbr": "新保",
+"en": "SKS",
+"industry": "其他",
+"market": "1",
+"name": "新保"
+},
+"9926": {
+"abbr": "新海",
+"en": "S.H.",
+"industry": "油電燃氣",
+"market": "1",
+"name": "新海"
+},
+"9927": {
+"abbr": "泰銘",
+"en": "TMI",
+"industry": "其他",
+"market": "1",
+"name": "泰銘"
+},
+"9928": {
+"abbr": "中視",
+"en": "CTV",
+"industry": "其他",
+"market": "1",
+"name": "中視"
+},
+"9929": {
+"abbr": "秋雨",
+"en": "CHOICE",
+"industry": "其他",
+"market": "1",
+"name": "秋雨"
+},
+"9930": {
+"abbr": "中聯資源",
+"en": "CHC",
+"industry": "綠能環保",
+"market": "1",
+"name": "中聯資源"
+},
+"9931": {
+"abbr": "欣高",
+"en": "HSIN KAO",
+"industry": "油電燃氣",
+"market": "1",
+"name": "欣高"
+},
+"9933": {
+"abbr": "中鼎",
+"en": "CTCI",
+"industry": "其他",
+"market": "1",
+"name": "中鼎"
+},
+"9934": {
+"abbr": "成霖",
+"en": "GUIC",
+"industry": "居家生活",
+"market": "1",
+"name": "成霖"
+},
+"9935": {
+"abbr": "慶豐富",
+"en": "CF",
+"industry": "居家生活",
+"market": "1",
+"name": "慶豐富"
+},
+"9937": {
+"abbr": "全國",
+"en": "NPC",
+"industry": "油電燃氣",
+"market": "1",
+"name": "全國"
+},
+"9938": {
+"abbr": "百和",
+"en": "TAIWAN PAIHO",
+"industry": "其他",
+"market": "1",
+"name": "百和"
+},
+"9939": {
+"abbr": "宏全",
+"en": "HON CHUAN",
+"industry": "其他",
+"market": "1",
+"name": "宏全"
+},
+"9940": {
+"abbr": "信義",
+"en": "Sinyi",
+"industry": "其他",
+"market": "1",
+"name": "信義"
+},
+"9941": {
+"abbr": "裕融",
+"en": "TAC",
+"industry": "其他",
+"market": "1",
+"name": "裕融"
+},
+"9942": {
+"abbr": "茂順",
+"en": "MAO SHUN",
+"industry": "其他",
+"market": "1",
+"name": "茂順"
+},
+"9943": {
+"abbr": "好樂迪",
+"en": "HOLIDAY",
+"industry": "觀光餐旅",
+"market": "1",
+"name": "好樂迪"
+},
+"9944": {
+"abbr": "新麗",
+"en": "Shinih",
+"industry": "其他",
+"market": "1",
+"name": "新麗"
+},
+"9945": {
+"abbr": "潤泰新",
+"en": "RUENTEX DEVELOP",
+"industry": "其他",
+"market": "1",
+"name": "潤泰新"
+},
+"9946": {
+"abbr": "三發地產",
+"en": "SANFAR",
+"industry": "建材營建",
+"market": "1",
+"name": "三發地產"
+},
+"9949": {
+"abbr": "琉園",
+"en": "TITTOT",
+"industry": "文化創意",
+"market": "2",
+"name": "琉園"
+},
+"9950": {
+"abbr": "萬國通",
+"en": "EMINENT",
+"industry": "塑膠工業",
+"market": "2",
+"name": "萬國通"
+},
+"9951": {
+"abbr": "皇田",
+"en": "MACAUTO",
+"industry": "電機機械",
+"market": "2",
+"name": "皇田"
+},
+"9955": {
+"abbr": "佳龍",
+"en": "SDTI",
+"industry": "綠能環保",
+"market": "1",
+"name": "佳龍"
+},
+"9958": {
+"abbr": "世紀鋼",
+"en": "CIS",
+"industry": "鋼鐵工業",
+"market": "1",
+"name": "世紀鋼"
+},
+"9960": {
+"abbr": "邁達康",
+"en": "DACOME",
+"industry": "運動休閒",
+"market": "2",
+"name": "邁達康"
+},
+"9962": {
+"abbr": "有益",
+"en": "YYS",
+"industry": "鋼鐵工業",
+"market": "2",
+"name": "有益"
+}
+}
