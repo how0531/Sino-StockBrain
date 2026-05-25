@@ -97,9 +97,13 @@ export async function resolveStockDataSource(
       const mod = await import('./twse-openapi-stock-data.ts');
       return new mod.TwseOpenApiStockDataSource();
     }
+    case 'metabase': {
+      const mod = await import('./metabase-stock-data.ts');
+      return new mod.MetabaseStockDataSource();
+    }
     default:
       throw new Error(
-        `Unknown stock data source "${name}". Valid: mock, twse-openapi. ` +
+        `Unknown stock data source "${name}". Valid: mock, twse-openapi, metabase. ` +
         `To add a custom source, drop a new file in src/core/data-sources/ ` +
         `that implements StockDataSource and register it here.`,
       );

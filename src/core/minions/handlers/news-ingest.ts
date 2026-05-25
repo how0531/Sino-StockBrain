@@ -296,11 +296,14 @@ function renderSummary(
     .sort((a, b) => b[1] - a[1])
     .slice(0, 20);
 
-  // Plain text, NOT [[tickers/...]]: the summary lists the day's top-20 by
-  // construction, so wikilinking them would connect 20 unrelated stocks into a
-  // spurious clique. The digest stays human-readable; it creates no edges.
+  // Bare code only — NOT [[tickers/X]] AND NOT bare "tickers/X". gbrain's link
+  // extractor matches a bare "tickers/X" path too (not just [[wikilinks]]), so
+  // the prior plain-text form STILL cliqued the day's top-20 through the
+  // _summary node. Dropping the "tickers/" prefix makes the digest readable but
+  // truly edge-free. "Hot today" is carried by each ticker's own mention count,
+  // not a 20-node summary clique. (Do NOT re-add the prefix.)
   const mentionLines = ranked
-    .map(([t, n]) => `- tickers/${t} — 提及 ${n} 次`)
+    .map(([t, n]) => `- ${t} — 提及 ${n} 次`)
     .join('\n');
 
   const articleLines = articles
