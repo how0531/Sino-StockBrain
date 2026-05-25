@@ -28,7 +28,11 @@ import {
 } from '../../compliance/llm-judge.ts';
 import { aggregateVerdict } from '../../compliance/aggregate.ts';
 import { logComplianceVerdict } from '../../compliance/audit.ts';
-import type { ComplianceVerdict, Violation } from '../../compliance/rubric.ts';
+import {
+  REQUIRED_DISCLAIMER_HINTS,
+  type ComplianceVerdict,
+  type Violation,
+} from '../../compliance/rubric.ts';
 
 export interface ComplianceFilterParams {
   brain_dir: string;
@@ -185,7 +189,21 @@ async function resolveChatFn(model?: string): Promise<JudgeChatFn | undefined> {
 // output renderers
 // ===========================================================================
 
-function renderApprovedDigest(
+/** Markers that identify the daily-market-digest template's internal-only note
+ *  (the "內部分析師用 / 發給客戶前必須經 compliance filter" blockquote right
+ *  under the `# 市場日報` H1). This is analyst-workflow plumbing and must never
+ *  reach a client-facing document. */
+const INTERNAL_NOTE_MARKERS: RegExp[] = [
+  /內部分析師用/,
+  /發給客戶前必須經\s*compliance/i,
+];
+
+/** Investor disclaimer guaranteed on approved client-prep output. Phrased to
+ *  match `REQUIRED_DISCLAIMER_HINTS` so the rendered doc still satisfies the
+ *  rubric's disclaimer requirement after the internal note is stripped. */
+const CLIENT_DISCLAIMER = '本文為內部分析資訊參考，不構成任何投資買賣建議。';
+
+export function renderApprovedDigest(
   digestText: string,
   verdict: ComplianceVerdict,
   date: string,
@@ -206,9 +224,58 @@ compliance_digest_hash: ${verdict.digest_hash}
      for client-facing distribution. -->
 
 `;
-  // Strip the original frontmatter (we replace with the approved one).
+  // Strip the original frontmatter (replaced by the approved banner above) and
+  // the internal-only analyst note (must never reach a client-facing document).
   const stripped = digestText.replace(/^---\n[\s\S]*?\n---\n/, '');
-  return banner + stripped;
+  return banner + stripInternalNote(stripped);
+}
+
+/**
+ * Remove the digest template's internal-only note from a client-facing body.
+ *
+ * The daily-market-digest template seeds a leading blockquote that tells the
+ * INTERNAL analyst "發給客戶前必須經 compliance filter" — workflow plumbing the
+ * client should never see. We drop the internal-note line(s) from that leading
+ * blockquote and guarantee an investor disclaimer survives in their place.
+ *
+ * Only the intro blockquote (before the first `##` section) is touched, and
+ * only when it actually carries an internal marker — an already-clean body is
+ * returned unchanged. A wrapped two-line internal note leaves no disclaimer
+ * behind, so the canonical one is injected.
+ */
+export function stripInternalNote(body: string): string {
+  const lines = body.split('\n');
+
+  // Locate the leading blockquote: the first run of consecutive `>` lines that
+  // appears before the first `##` section heading.
+  let start = -1;
+  let end = -1; // exclusive
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]!;
+    if (line.startsWith('## ')) break;
+    if (line.startsWith('>')) {
+      if (start === -1) start = i;
+      end = i + 1;
+    } else if (start !== -1) {
+      break;
+    }
+  }
+  if (start === -1) return body;
+
+  const block = lines.slice(start, end);
+  const hasInternalNote = block.some((l) =>
+    INTERNAL_NOTE_MARKERS.some((re) => re.test(l)),
+  );
+  if (!hasInternalNote) return body;
+
+  // Keep only blockquote lines that ARE the investor disclaimer; this drops the
+  // internal-note line and any wrapped continuation of it.
+  const kept = block.filter((l) =>
+    REQUIRED_DISCLAIMER_HINTS.some((re) => re.test(l)),
+  );
+  if (kept.length === 0) kept.push(`> ${CLIENT_DISCLAIMER}`);
+
+  return [...lines.slice(0, start), ...kept, ...lines.slice(end)].join('\n');
 }
 
 function renderViolationsReport(

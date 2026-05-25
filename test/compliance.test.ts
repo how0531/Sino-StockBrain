@@ -12,7 +12,15 @@ import { test, expect, describe } from 'bun:test';
 import { runDeterministicPass } from '../src/core/compliance/deterministic-pass.ts';
 import { parseJudgeOutput, runLlmJudge } from '../src/core/compliance/llm-judge.ts';
 import { aggregateVerdict } from '../src/core/compliance/aggregate.ts';
-import type { Violation } from '../src/core/compliance/rubric.ts';
+import {
+  renderApprovedDigest,
+  stripInternalNote,
+} from '../src/core/minions/handlers/compliance-filter.ts';
+import {
+  REQUIRED_DISCLAIMER_HINTS,
+  type ComplianceVerdict,
+  type Violation,
+} from '../src/core/compliance/rubric.ts';
 
 // ===========================================================================
 // runDeterministicPass
@@ -367,5 +375,138 @@ describe('aggregateVerdict', () => {
     const v = aggregateVerdict({ layer1, layer2, digestHash: 'h' });
     expect(v.layer1_violations).toBe(2);
     expect(v.layer2_violations).toBe(1);
+  });
+});
+
+// ===========================================================================
+// renderApprovedDigest — client-prep output must not leak the internal note
+// ===========================================================================
+
+describe('renderApprovedDigest', () => {
+  const passVerdict: ComplianceVerdict = {
+    verdict: 'pass',
+    violations: [],
+    layer1_violations: 0,
+    layer2_violations: 0,
+    llm_available: false,
+    digest_hash: 'd0314a24b1db917c',
+  };
+
+  // Mirrors the real digest shape: the daily-market-digest template seeds an
+  // internal-only note, and the analyst output also carries an investor
+  // disclaimer line right after it.
+  const digest = `---
+type: market_digest
+slug: playbooks/digests/2026-05-22
+date: 2026-05-22
+audience: internal_analyst
+status: draft
+---
+
+# 市場日報 — 2026-05-22
+
+> 內部分析師用。發給客戶前必須經 compliance filter。本文僅描述事實與背景，不含個股操作建議。
+> 本文為內部分析資訊參考，不構成任何投資買賣建議。
+
+## 大盤背景
+
+當日台股大漲 899 點、收 42,267 點。
+`;
+
+  test('strips the internal note from approved client-prep output', () => {
+    const out = renderApprovedDigest(digest, passVerdict, '2026-05-22');
+    expect(out).not.toContain('內部分析師用');
+    expect(out).not.toContain('發給客戶前必須經');
+    expect(out).not.toContain('compliance filter');
+  });
+
+  test('keeps the investor disclaimer', () => {
+    const out = renderApprovedDigest(digest, passVerdict, '2026-05-22');
+    expect(out).toContain('本文為內部分析資訊參考，不構成任何投資買賣建議。');
+    expect(REQUIRED_DISCLAIMER_HINTS.some((re) => re.test(out))).toBe(true);
+  });
+
+  test('replaces the draft frontmatter with the approved banner', () => {
+    const out = renderApprovedDigest(digest, passVerdict, '2026-05-22');
+    expect(out).toContain('type: client_prep_digest');
+    expect(out).toContain('status: approved');
+    expect(out).toContain('compliance_verdict: pass');
+    // Original internal-audience frontmatter must not survive.
+    expect(out).not.toContain('audience: internal_analyst');
+    expect(out).not.toContain('status: draft');
+  });
+
+  test('preserves the digest body below the note', () => {
+    const out = renderApprovedDigest(digest, passVerdict, '2026-05-22');
+    expect(out).toContain('## 大盤背景');
+    expect(out).toContain('當日台股大漲 899 點');
+  });
+});
+
+// ===========================================================================
+// stripInternalNote — edge cases
+// ===========================================================================
+
+describe('stripInternalNote', () => {
+  test('drops the internal note line, keeps the disclaimer (one-line note)', () => {
+    const body = `# 市場日報 — 2026-05-22
+
+> 內部分析師用。發給客戶前必須經 compliance filter。本文僅描述事實與背景，不含個股操作建議。
+> 本文為內部分析資訊參考，不構成任何投資買賣建議。
+
+## 大盤背景
+`;
+    const out = stripInternalNote(body);
+    expect(out).not.toContain('內部分析師用');
+    expect(out).not.toContain('發給客戶前必須經');
+    expect(out).toContain('本文為內部分析資訊參考，不構成任何投資買賣建議。');
+    // Exactly one blockquote line should remain in the intro.
+    expect(out.split('\n').filter((l) => l.startsWith('>'))).toHaveLength(1);
+  });
+
+  test('injects a disclaimer when a wrapped two-line note leaves none', () => {
+    const body = `# 市場日報 — 2026-05-22
+
+> 內部分析師用。發給客戶前必須經 compliance filter。本文僅描述事實與背景，
+> 不含個股操作建議。
+
+## 大盤背景
+`;
+    const out = stripInternalNote(body);
+    expect(out).not.toContain('內部分析師用');
+    expect(out).not.toContain('不含個股操作建議');
+    expect(out).toContain(`> 本文為內部分析資訊參考，不構成任何投資買賣建議。`);
+  });
+
+  test('injects a disclaimer when only the internal note is present', () => {
+    const body = `# 市場日報 — 2026-05-22
+
+> 內部分析師用。發給客戶前必須經 compliance filter。本文僅描述事實與背景，不含個股操作建議。
+
+## 大盤背景
+`;
+    const out = stripInternalNote(body);
+    expect(out).not.toContain('內部分析師用');
+    expect(REQUIRED_DISCLAIMER_HINTS.some((re) => re.test(out))).toBe(true);
+  });
+
+  test('leaves an already-clean body untouched (no internal markers)', () => {
+    const body = `# 市場日報 — 2026-05-22
+
+> 本文為內部分析資訊參考，不構成任何投資買賣建議。
+
+## 大盤背景
+`;
+    expect(stripInternalNote(body)).toBe(body);
+  });
+
+  test('returns body unchanged when there is no intro blockquote', () => {
+    const body = `# 市場日報 — 2026-05-22
+
+## 大盤背景
+
+當日台股大漲 899 點。
+`;
+    expect(stripInternalNote(body)).toBe(body);
   });
 });
