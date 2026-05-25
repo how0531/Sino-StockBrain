@@ -43,6 +43,8 @@ import {
 /** Volume history lookback (calendar days). Real trading-day count is less;
  *  the handler walks back day-by-day until it has up to this many points. */
 const VOLUME_HISTORY_DAYS = 30;
+/** Flow history lookback for the institutional consecutive-buy/sell streak bonus. */
+const FLOW_HISTORY_DAYS = 30;
 
 export interface MarketHeatParams {
   brain_dir: string;
@@ -110,6 +112,11 @@ export async function marketHeatHandler(
 
   // Build per-ticker volume history by walking previous days' price dirs.
   const history = buildVolumeHistory(params.brain_dir, date, todayPrices, ctx);
+  // Build per-ticker net_intensity history (institutional streak bonus) by
+  // walking previous days' flow dirs. Skipped when flow is unavailable today.
+  const flowHistory = signalsAvailable.institutional_flow
+    ? buildFlowHistory(params.brain_dir, date, todayPrices.keys(), ctx)
+    : new Map<string, number[]>();
 
   // Liquidity floor: skip thinly-traded names. An illiquid small-cap whose 外資
   // net is a large fraction of a tiny day-volume otherwise pins the
@@ -127,6 +134,7 @@ export async function marketHeatHandler(
       change_pct: priceSnapshot.change_pct,
       volume: priceSnapshot.volume,
       net_intensity: todayFlow.get(ticker),
+      net_intensity_history: flowHistory.get(ticker) ?? [],
       mention_count: newsMentions.get(ticker),
       volume_history: history.get(ticker) ?? [],
     };
@@ -252,6 +260,37 @@ function buildVolumeHistory(
   return out;
 }
 
+/** Walk previous `FLOW_HISTORY_DAYS` calendar days collecting each ticker's
+ *  prior net_intensity (newest-first) for the institutional streak bonus.
+ *  Mirrors buildVolumeHistory but reads institutional-flow snapshots. Missing
+ *  days are skipped (the streak connects across gaps); a real net=0 day breaks
+ *  it via Math.sign in flowStreak. */
+function buildFlowHistory(
+  brainDir: string,
+  todayDate: string,
+  tickers: Iterable<string>,
+  ctx: MinionJobContext,
+): Map<string, number[]> {
+  const out = new Map<string, number[]>();
+  for (const ticker of tickers) out.set(ticker, []);
+
+  const todayDt = new Date(todayDate + 'T08:00:00+08:00');
+  for (let i = 1; i <= FLOW_HISTORY_DAYS; i++) {
+    if (ctx.signal.aborted) break;
+    const d = new Date(todayDt);
+    d.setUTCDate(d.getUTCDate() - i);
+    const ds = `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}-${String(d.getUTCDate()).padStart(2, '0')}`;
+    const dir = join(brainDir, 'institutional-flow', 'twse', ds);
+    if (!existsSync(dir)) continue;
+    const prior = readFlowSnapshots(dir);
+    for (const [ticker, list] of out) {
+      const ni = prior.get(ticker);
+      if (ni !== undefined && Number.isFinite(ni)) list.push(ni);
+    }
+  }
+  return out;
+}
+
 // ===========================================================================
 // minimal frontmatter parser
 // ---------------------------------------------------------------------------
@@ -347,7 +386,7 @@ ${bottom10.length > 0 ? `## Bottom 10 (signal-quiet)\n\n${bottom10.map((r, i) =>
 
 ## Methodology Notes
 
-- **法人籌碼信號** = tanh(|net_intensity| × 10)，5% 強度 ≈ 46 分，10% ≈ 76 分
+- **法人籌碼信號** = 量級 + 持續性。量級 = |淨額|/(|淨額|+0.12)（12% 半飽和，不再 25% 就頂到 100）；持續性 = 連續同向買賣超每多 1 日 +6 分，上限 +30 分。淨額 = 外資+投信（自營排除）
 - **量價異常信號** = tanh(|z-score| / 2)，2σ ≈ 96 分。歷史資料 <10 日時降階用 ratio
 - **新聞密度信號** = min(mentions / 5, 1)，當日 5 次提及打滿分
 - 三個信號獨立 [0,1]，缺資料的訊號貢獻 0，不影響其他訊號

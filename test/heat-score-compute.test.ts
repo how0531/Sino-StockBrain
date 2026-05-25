@@ -79,7 +79,7 @@ describe('scoreVolumeAnomaly', () => {
 // scoreInstitutionalFlow
 // ===========================================================================
 
-describe('scoreInstitutionalFlow', () => {
+describe('scoreInstitutionalFlow (de-saturated magnitude + streak bonus)', () => {
   test('undefined returns 0', () => {
     expect(scoreInstitutionalFlow(undefined)).toBe(0);
   });
@@ -94,14 +94,14 @@ describe('scoreInstitutionalFlow', () => {
     expect(scoreInstitutionalFlow(Number.NEGATIVE_INFINITY)).toBe(0);
   });
 
-  test('5% net intensity ≈ 0.46 (documented anchor)', () => {
-    // tanh(0.5) ≈ 0.4621
-    expect(scoreInstitutionalFlow(0.05)).toBeCloseTo(0.4621, 2);
+  test('magnitude half-saturates at 12% (no history → magnitude only)', () => {
+    // 0.12 / (0.12 + 0.12) = 0.5
+    expect(scoreInstitutionalFlow(0.12)).toBeCloseTo(0.5, 4);
   });
 
-  test('10% net intensity ≈ 0.76 (documented anchor)', () => {
-    // tanh(1.0) ≈ 0.7616
-    expect(scoreInstitutionalFlow(0.1)).toBeCloseTo(0.7616, 2);
+  test('5% → ~0.294, 10% → ~0.455 (magnitude only)', () => {
+    expect(scoreInstitutionalFlow(0.05)).toBeCloseTo(0.05 / 0.17, 4);
+    expect(scoreInstitutionalFlow(0.1)).toBeCloseTo(0.1 / 0.22, 4);
   });
 
   test('negative intensity treated same as positive (abs value)', () => {
@@ -109,13 +109,40 @@ describe('scoreInstitutionalFlow', () => {
     expect(scoreInstitutionalFlow(-0.2)).toBe(scoreInstitutionalFlow(0.2));
   });
 
-  test('high intensity saturates close to 1', () => {
-    expect(scoreInstitutionalFlow(0.5)).toBeGreaterThan(0.99);
-    expect(scoreInstitutionalFlow(1.0)).toBeGreaterThan(0.999);
+  test('does NOT saturate near 1 without a streak (de-saturation fix)', () => {
+    // old tanh(×10) returned >0.99 here; hyperbolic stays well below 1.
+    expect(scoreInstitutionalFlow(0.5)).toBeCloseTo(0.5 / 0.62, 4); // ≈0.806
+    expect(scoreInstitutionalFlow(0.5)).toBeLessThan(0.85);
+    expect(scoreInstitutionalFlow(1.0)).toBeLessThan(0.9);
+  });
+
+  test('magnitude is monotonic across the dense 30-50% band', () => {
+    const a = scoreInstitutionalFlow(0.3);
+    const b = scoreInstitutionalFlow(0.4);
+    const c = scoreInstitutionalFlow(0.48);
+    expect(b).toBeGreaterThan(a);
+    expect(c).toBeGreaterThan(b); // old formula pegged all three at ~1.0
+  });
+
+  test('streak bonus: 5 consecutive same-direction days add +0.24', () => {
+    const oneDay = scoreInstitutionalFlow(0.1, []); // streak 1, no bonus
+    const fiveDay = scoreInstitutionalFlow(0.1, [0.08, 0.06, 0.05, 0.04]); // streak 5
+    expect(fiveDay).toBeGreaterThan(oneDay);
+    expect(fiveDay).toBeCloseTo(0.1 / 0.22 + 0.24, 4); // +0.06 × 4
+  });
+
+  test('streak bonus caps at +0.30 (5 extra days)', () => {
+    const many = new Array(20).fill(0.1); // huge streak
+    expect(scoreInstitutionalFlow(0.1, many)).toBeCloseTo(0.1 / 0.22 + 0.3, 4);
+  });
+
+  test('opposite-sign prior day breaks the streak (magnitude only)', () => {
+    // today +, yesterday − → streak 1, no bonus
+    expect(scoreInstitutionalFlow(0.1, [-0.05, 0.08])).toBeCloseTo(0.1 / 0.22, 4);
   });
 
   test('signal is bounded at [0, 1]', () => {
-    expect(scoreInstitutionalFlow(10)).toBeLessThanOrEqual(1);
+    expect(scoreInstitutionalFlow(10, new Array(30).fill(10))).toBeLessThanOrEqual(1);
   });
 });
 
@@ -171,9 +198,11 @@ describe('computeHeatScore', () => {
   test('only institutional signal scales by w_inst weight', () => {
     const out = computeHeatScore({
       ticker: 'TEST', close: 100, change_pct: 0, volume: 0,
-      net_intensity: 0.5, // saturates ~1
+      net_intensity: 0.5,
+      // long same-direction streak: magnitude 0.806 + bonus 0.30 → clamp 1.0
+      net_intensity_history: [0.5, 0.5, 0.5, 0.5, 0.5],
     });
-    // heat ≈ 0.45 × 0.9999 ≈ 0.45
+    // heat ≈ 0.45 × 1.0 ≈ 0.45
     expect(out.heat_score).toBeCloseTo(DEFAULT_WEIGHTS.institutional_flow, 2);
   });
 
@@ -190,7 +219,8 @@ describe('computeHeatScore', () => {
       institutional_flow: 1.0, volume_anomaly: 0, news_density: 0,
     };
     const out = computeHeatScore(
-      { ticker: 'TEST', close: 100, change_pct: 0, volume: 0, net_intensity: 0.5 },
+      { ticker: 'TEST', close: 100, change_pct: 0, volume: 0, net_intensity: 0.5,
+        net_intensity_history: [0.5, 0.5, 0.5, 0.5, 0.5] },
       w,
     );
     expect(out.heat_score).toBeGreaterThan(0.99);
@@ -293,7 +323,7 @@ describe('rankByHeat', () => {
       signals: { volume_anomaly: 0.5, institutional_flow: 0.5, news_density: 0.5 },
       contributing: {
         volume_z_score: 0, volume_ratio_vs_median: 1,
-        net_intensity_abs: 0, mention_count: 0,
+        net_intensity_abs: 0, flow_streak_days: 0, mention_count: 0,
       },
       rationale: '',
     }));
@@ -303,8 +333,8 @@ describe('rankByHeat', () => {
 
   test('does not mutate input array', () => {
     const items: HeatScoreOutput[] = [
-      { ticker: 'B', heat_score: 0.5, signals: { volume_anomaly: 0, institutional_flow: 0, news_density: 0 }, contributing: { volume_z_score: 0, volume_ratio_vs_median: 1, net_intensity_abs: 0, mention_count: 0 }, rationale: '' },
-      { ticker: 'A', heat_score: 0.9, signals: { volume_anomaly: 0, institutional_flow: 0, news_density: 0 }, contributing: { volume_z_score: 0, volume_ratio_vs_median: 1, net_intensity_abs: 0, mention_count: 0 }, rationale: '' },
+      { ticker: 'B', heat_score: 0.5, signals: { volume_anomaly: 0, institutional_flow: 0, news_density: 0 }, contributing: { volume_z_score: 0, volume_ratio_vs_median: 1, net_intensity_abs: 0, flow_streak_days: 0, mention_count: 0 }, rationale: '' },
+      { ticker: 'A', heat_score: 0.9, signals: { volume_anomaly: 0, institutional_flow: 0, news_density: 0 }, contributing: { volume_z_score: 0, volume_ratio_vs_median: 1, net_intensity_abs: 0, flow_streak_days: 0, mention_count: 0 }, rationale: '' },
     ];
     const before = items.map((i) => i.ticker);
     rankByHeat(items);
@@ -319,7 +349,7 @@ describe('rankByHeat', () => {
     const one: HeatScoreOutput = {
       ticker: 'X', heat_score: 0.3,
       signals: { volume_anomaly: 0, institutional_flow: 0, news_density: 0 },
-      contributing: { volume_z_score: 0, volume_ratio_vs_median: 1, net_intensity_abs: 0, mention_count: 0 },
+      contributing: { volume_z_score: 0, volume_ratio_vs_median: 1, net_intensity_abs: 0, flow_streak_days: 0, mention_count: 0 },
       rationale: '',
     };
     expect(rankByHeat([one])).toEqual([one]);

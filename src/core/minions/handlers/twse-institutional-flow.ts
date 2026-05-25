@@ -1,16 +1,18 @@
 /**
  * `twse-institutional-flow` job handler.
  *
- * Pulls daily 三大法人 (外資 / 投信 / 自營商) net buy/sell for every TWSE
+ * Pulls daily 法人 (外資 + 投信) net buy/sell for every TWSE
  * watchlist ticker through the `StockDataSource` adapter, writes one
  * markdown snapshot per ticker under
  * `<brain_dir>/institutional-flow/twse/<YYYY-MM-DD>/<code>.md` plus a
  * `_summary.md` ranking the top inflow/outflow targets.
  *
  * Why this matters: institutional flow is the user's #1 heat signal. Foreign
- * buy-sell tends to lead price moves by 1-3 days; trust flow signals
- * mid-frequency rotation; dealer flow is mostly liquidity-provision noise
- * (but spikes can mean hedging activity around option/warrant expiries).
+ * buy-sell tends to lead price moves by 1-3 days; trust (投信) flow signals
+ * mid-frequency rotation. 自營 (dealer) is EXCLUDED — mostly hedging /
+ * market-making noise. 投信 here is ALL-投信 (incl. passive ETF 申購買回); the
+ * snapshot body flags that 權值股 / ETF-component numbers are index-rebalance-
+ * driven, not manager conviction. total_net = 外資 + 投信.
  *
  * Mock vs real: defaults to `source=mock` until the customer's ticker DB
  * lands. Mock data is correlated with the matching daily-quotes output for
@@ -169,12 +171,13 @@ total_net: ${flow.total_net}
 net_intensity: ${flow.net_intensity ?? 0}
 ---
 
-# ${flow.name} (${flow.ticker}) — 三大法人 ${flow.date}
+# ${flow.name} (${flow.ticker}) — 法人買賣超 ${flow.date}
 
 - 外資及陸資：${fmtNet(flow.foreign_net)} 股
 - 投信：${fmtNet(flow.trust_net)} 股
-- 自營商：${fmtNet(flow.dealer_net)} 股
-- 合計：${fmtNet(flow.total_net)} 股 (強度 ${((flow.net_intensity ?? 0) * 100).toFixed(2)}% of vol)
+- 合計（外資＋投信）：${fmtNet(flow.total_net)} 股 (強度 ${((flow.net_intensity ?? 0) * 100).toFixed(2)}% of vol)
+
+> 註：自營商已排除（避險／造市雜訊）。投信為全投信，含 ETF 申購買回等被動流；金融股／ETF 成分股的投信數字主要反映指數再平衡，解讀權值股需留意。
 
 關聯：[[tickers/${flow.ticker}]]、[[prices/twse/${flow.date}/${flow.ticker}]]
 `;
@@ -191,7 +194,7 @@ function renderSummary(
   const topOutflow = sorted.slice(-10).reverse();
 
   const fmtRow = (r: InstitutionalFlow): string =>
-    `- [[tickers/${r.ticker}]] ${r.name} — 合計 ${fmtNet(r.total_net)} 股（外資 ${fmtNet(r.foreign_net)}, 投信 ${fmtNet(r.trust_net)}, 自營 ${fmtNet(r.dealer_net)}）`;
+    `- [[tickers/${r.ticker}]] ${r.name} — 合計（外資＋投信）${fmtNet(r.total_net)} 股（外資 ${fmtNet(r.foreign_net)}, 投信 ${fmtNet(r.trust_net)}）`;
 
   const writtenLinks = written.map(fmtRow).join('\n');
 
@@ -203,7 +206,7 @@ market: TWSE
 source: ${sourceName}
 ---
 
-# TWSE ${date} 三大法人 Summary
+# TWSE ${date} 法人買賣超 Summary（外資＋投信，自營排除）
 
 - 總筆數：${all.length}
 - 寫入 watchlist 筆數：${written.length}

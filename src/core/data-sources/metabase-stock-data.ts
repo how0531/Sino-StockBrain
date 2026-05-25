@@ -13,10 +13,20 @@
  * the handler. Metabase is plain HTTP on the internal IP (128.110.x), so there
  * is no TLS-interception dance — bun fetch works directly.
  *
- * v1 scope: 外資 only (the dominant TW institutional signal). 投信 net
- * (cmoney."日投信明細與排行") and 自營 net are a documented follow-up — they
- * fill trust_net / dealer_net, which are 0 for now. Market must be TWSE/TPEX;
- * NASDAQ/NYSE return empty because this DB is TW-only.
+ * 法人 = 外資 + 投信. 自營 (dealer) is deliberately EXCLUDED — it's mostly
+ * hedging / market-making noise. total_net = foreign + trust; dealer_net is
+ * always 0; net_intensity = total_net / volume.
+ *
+ * 投信 caveat: cmoney."日投信明細與排行" 投信買賣超 is ALL-投信 (active selection
+ * + passive ETF 申購買回). For 金融股 / 0050 / ETF components the number is
+ * dominated by index rebalancing, not manager conviction (tell: 投信買均價 ==
+ * 投信賣均價). The data itself is CORRECT — 張 × 均價 reconciles to 金額 to the
+ * cent — just interpret 權值股 with care. The flow snapshot body carries this
+ * caveat so downstream readers see it.
+ *
+ * No 4-way JOIN (ClickHouse times out on the full universe): 外資+收盤 is the
+ * base query, 投信 is a cheap single-table date-filtered query merged in JS by
+ * 股票代號. Market must be TWSE/TPEX; NASDAQ/NYSE return empty (TW-only DB).
  *
  * Swap target named in stock-data.ts since the project started ("customer-db").
  */
@@ -128,32 +138,48 @@ export class MetabaseStockDataSource implements StockDataSource {
 
   async getInstitutionalFlow(market: Market, date: string): Promise<InstitutionalFlow[]> {
     if (market !== 'TWSE' && market !== 'TPEX') return [];
-    // JOIN the price table for 成交量(股) so we can compute net_intensity
-    // (net shares / day volume) — the signal the heat-score institutional
-    // component actually uses. 外資買賣超 is in 張 (lots); ×1000 → shares, to
-    // match volume's unit AND the InstitutionalFlow contract ("net ... shares").
-    const sql =
+    // Base query: 外資買賣超 (張) + 成交量(股) for net_intensity. The 外資 table
+    // is near-universe so we drive the row set from it and LEFT JOIN price for
+    // vol. 外資買賣超 is in 張 (lots); ×1000 → shares, to match volume's unit
+    // AND the InstitutionalFlow contract ("net ... shares").
+    const foreignSql =
       'SELECT f."股票代號" AS code, f."股票名稱" AS nm, f."外資買賣超" AS net_lots, ' +
       'p."成交量(股)" AS vol ' +
       'FROM cmoney."日外資持股與排行" AS f ' +
       'LEFT JOIN cmoney."日收盤表排行" AS p ' +
       '  ON f."股票代號" = p."股票代號" AND toDate(f."日期") = toDate(p."日期") ' +
       `WHERE toDate(f."日期") = '${date}' AND match(f."股票代號", '^[0-9]{4}$')`;
-    const { cols, rows } = await this.query(sql);
-    const at = (n: string) => cols.indexOf(n);
+    // 投信 net (張) — single-table, date-filtered, cheap. Merged in JS by
+    // 股票代號 to avoid a heavy ClickHouse JOIN. 自營 deliberately not queried.
+    const trustSql =
+      'SELECT "股票代號" AS code, "投信買賣超" AS net_lots ' +
+      'FROM cmoney."日投信明細與排行" ' +
+      `WHERE toDate("日期") = '${date}' AND match("股票代號", '^[0-9]{4}$')`;
+
+    const [foreignRes, trustRes] = await Promise.all([
+      this.query(foreignSql),
+      this.query(trustSql),
+    ]);
+
+    const trustByCode = lotsToSharesMap(trustRes);
+
+    const at = (n: string) => foreignRes.cols.indexOf(n);
     const flows: InstitutionalFlow[] = [];
-    for (const r of rows) {
-      const netShares = num(r[at('net_lots')]) * 1000; // 張 → 股
+    for (const r of foreignRes.rows) {
+      const code = String(r[at('code')]);
+      const foreignShares = Math.round(num(r[at('net_lots')]) * 1000); // 張 → 股
+      const trustShares = trustByCode.get(code) ?? 0;
+      const totalShares = foreignShares + trustShares; // 自營 excluded by design
       const vol = num(r[at('vol')]);
       flows.push({
-        ticker: String(r[at('code')]),
+        ticker: code,
         name: String(r[at('nm')]),
         date,
-        foreign_net: netShares,
-        trust_net: 0, // v1: 投信 net not wired yet (cmoney."日投信明細與排行")
-        dealer_net: 0, // v1: 自營 net not wired yet
-        total_net: netShares,
-        net_intensity: vol > 0 ? netShares / vol : 0, // signed: net 股 / 成交股數
+        foreign_net: foreignShares,
+        trust_net: trustShares,
+        dealer_net: 0, // 自營 excluded: hedging / market-making noise
+        total_net: totalShares,
+        net_intensity: vol > 0 ? totalShares / vol : 0, // signed: (外資+投信) net 股 / 成交股數
       });
     }
     return flows;
@@ -165,4 +191,16 @@ function num(v: unknown): number {
   if (typeof v === 'number') return Number.isFinite(v) ? v : 0;
   const n = parseFloat(String(v));
   return Number.isFinite(n) ? n : 0;
+}
+
+/** Build 股票代號 → net shares map from a (code, net_lots) result, converting
+ *  張 → 股 (×1000). Used to merge 投信 / 自營 net into the 外資-driven base. */
+function lotsToSharesMap(res: { cols: string[]; rows: unknown[][] }): Map<string, number> {
+  const codeIdx = res.cols.indexOf('code');
+  const lotsIdx = res.cols.indexOf('net_lots');
+  const m = new Map<string, number>();
+  for (const r of res.rows) {
+    m.set(String(r[codeIdx]), Math.round(num(r[lotsIdx]) * 1000));
+  }
+  return m;
 }
