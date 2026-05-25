@@ -96,45 +96,64 @@ export async function newsIngestHandler(
     const filePath = join(outputDir, `${slug}.md`);
     if (existsSync(filePath)) continue;
 
+    // Strip the 投顧 / disclaimer / APP-ad tail before wikify so broker
+    // self-mentions (永豐金證券, 凱基投顧…) and "免責聲明" boilerplate names
+    // don't mint ticker edges.
+    const cleanBody = stripDisclaimerTail(article.body);
     const wikifiedTitle = wikify(article.title);
-    const wikifiedBody = wikify(article.body);
+    const wikifiedBody = wikify(cleanBody);
 
-    // Aggregate stats (title + body replacements together).
-    totalReplacements += wikifiedTitle.stats.total_replacements;
-    totalReplacements += wikifiedBody.stats.total_replacements;
-    const matchedThisArticle = new Set<string>();
-    for (const [ticker, count] of wikifiedTitle.stats.matched) {
-      tickerMentions[ticker] = (tickerMentions[ticker] ?? 0) + count;
-      matchedThisArticle.add(ticker);
-    }
-    for (const [ticker, count] of wikifiedBody.stats.matched) {
-      tickerMentions[ticker] = (tickerMentions[ticker] ?? 0) + count;
-      matchedThisArticle.add(ticker);
-    }
-
-    // The source's hint_tickers (e.g. stock-news-skill's ground-truth code
-    // tagging) are authoritative — far more reliable than fuzzy body matching,
-    // and they cover names the alias map doesn't. Turn them into BODY
-    // wikilinks so the auto-link extractor builds edges (frontmatter lists do
-    // NOT create edges), and count them toward mention stats. Skip codes the
-    // body/title wikify already linked so we don't double-count or double-link.
+    // Distinct tickers this article touches (title + body wikify ∪ hint codes).
+    const distinct = new Set<string>();
+    for (const [t] of wikifiedTitle.stats.matched) distinct.add(t);
+    for (const [t] of wikifiedBody.stats.matched) distinct.add(t);
     const hintSlugs: string[] = [];
     for (const raw of article.hint_tickers ?? []) {
-      const slug = raw.trim().toLowerCase();
-      if (!slug || !/^[a-z0-9]+$/.test(slug)) continue;
-      if (matchedThisArticle.has(slug) || hintSlugs.includes(slug)) continue;
-      hintSlugs.push(slug);
-      tickerMentions[slug] = (tickerMentions[slug] ?? 0) + 1;
+      const s = raw.trim().toLowerCase();
+      if (!s || !/^[a-z0-9]+$/.test(s)) continue;
+      if (!hintSlugs.includes(s)) hintSlugs.push(s);
+      distinct.add(s);
     }
-    let bodyOut = wikifiedBody.text;
-    if (hintSlugs.length > 0) {
-      bodyOut +=
-        '\n\n相關個股：' + hintSlugs.map((s) => `[[tickers/${s}]]`).join(' ');
+
+    // Fan-out cap: a list / market-summary / multi-stock tout ("今日漲停50檔",
+    // "三大法人買超TOP", "投顧精選30檔") co-mentions many unrelated stocks — that
+    // co-mention is NOT a relationship signal. Write the page plain (no
+    // wikilinks → no edges) and skip its mention stats (so news-density heat
+    // isn't pumped by listicles). The page stays searchable; it just doesn't
+    // pollute the graph with spurious adjacency.
+    const isBroad = distinct.size > FANOUT_CAP;
+
+    let titleOut: string;
+    let bodyOut: string;
+    if (isBroad) {
+      titleOut = article.title;
+      bodyOut = cleanBody;
+    } else {
+      totalReplacements += wikifiedTitle.stats.total_replacements;
+      totalReplacements += wikifiedBody.stats.total_replacements;
+      const matched = new Set<string>();
+      for (const [t, c] of wikifiedTitle.stats.matched) {
+        tickerMentions[t] = (tickerMentions[t] ?? 0) + c;
+        matched.add(t);
+      }
+      for (const [t, c] of wikifiedBody.stats.matched) {
+        tickerMentions[t] = (tickerMentions[t] ?? 0) + c;
+        matched.add(t);
+      }
+      // hint_tickers (#3): author-tagged codes the alias map may have missed.
+      const hintAdd = hintSlugs.filter((s) => !matched.has(s));
+      for (const s of hintAdd) tickerMentions[s] = (tickerMentions[s] ?? 0) + 1;
+      titleOut = wikifiedTitle.text;
+      bodyOut =
+        wikifiedBody.text +
+        (hintAdd.length > 0
+          ? '\n\n相關個股：' + hintAdd.map((s) => `[[tickers/${s}]]`).join(' ')
+          : '');
     }
 
     writeFileSync(
       filePath,
-      renderArticleMarkdown(article, wikifiedTitle.text, bodyOut, date),
+      renderArticleMarkdown(article, titleOut, bodyOut, date, isBroad),
       'utf8',
     );
     written++;
@@ -211,11 +230,42 @@ function articleSlug(article: NewsArticle): string {
   return article.id.replace(/[^a-zA-Z0-9_-]/g, '-');
 }
 
+/** Above this many distinct tickers, an article is a list / market-summary /
+ *  multi-stock tout: written plain (no edges). Focused news names a handful. */
+const FANOUT_CAP = 8;
+
+/** Markers that open a 投顧 / disclaimer / APP-ad tail. Everything from the
+ *  earliest match to end-of-body is dropped before wikify, so broker
+ *  self-mentions and boilerplate names don't mint ticker edges. */
+const DISCLAIMER_MARKERS: RegExp[] = [
+  /免責聲明/,
+  /※\s*免責/,
+  /文章來源[：:]/,
+  /本公司所推薦/,
+  /投資人(應|請|須)(自行|獨立)/,
+  /以往(之|的)?績效/,
+  /自負(盈虧|投資?風險)/,
+  /不(構成|代表)(任何)?(投資)?建議/,
+  /立即(填表|下載|體驗|加入)/,
+  /分析師\s*APP/,
+  /錢進熱線/,
+];
+
+function stripDisclaimerTail(body: string): string {
+  let cut = body.length;
+  for (const re of DISCLAIMER_MARKERS) {
+    const m = re.exec(body);
+    if (m && m.index < cut) cut = m.index;
+  }
+  return cut < body.length ? body.slice(0, cut).trimEnd() : body;
+}
+
 function renderArticleMarkdown(
   article: NewsArticle,
-  wikifiedTitle: string,
-  wikifiedBody: string,
+  titleOut: string,
+  bodyOut: string,
   date: string,
+  isBroad: boolean,
 ): string {
   return `---
 type: news_article
@@ -226,11 +276,12 @@ published_at: ${article.published_at}
 url: ${article.url ?? ''}
 hint_tickers: ${formatYamlList(article.hint_tickers)}
 hint_themes: ${formatYamlList(article.hint_themes)}
+broad_listing: ${isBroad}
 ---
 
-# ${wikifiedTitle}
+# ${titleOut}
 
-${wikifiedBody}
+${bodyOut}
 `;
 }
 
@@ -245,8 +296,11 @@ function renderSummary(
     .sort((a, b) => b[1] - a[1])
     .slice(0, 20);
 
+  // Plain text, NOT [[tickers/...]]: the summary lists the day's top-20 by
+  // construction, so wikilinking them would connect 20 unrelated stocks into a
+  // spurious clique. The digest stays human-readable; it creates no edges.
   const mentionLines = ranked
-    .map(([t, n]) => `- [[tickers/${t}]] — 提及 ${n} 次`)
+    .map(([t, n]) => `- tickers/${t} — 提及 ${n} 次`)
     .join('\n');
 
   const articleLines = articles

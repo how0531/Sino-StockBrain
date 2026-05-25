@@ -50,14 +50,17 @@ interface TickerMasterRow {
 
 const TICKER_MASTER = tickerMasterRaw as Record<string, TickerMasterRow>;
 
-/** 2-char CJK names that double as common words/idioms. Dropped from the
- *  auto-wikify key set to avoid false ticker edges. Curatable — add offenders
- *  as they surface. Only affects MASTER-derived names; curated rows below are
- *  never filtered. */
-const AMBIGUOUS_SHORT_NAMES: ReadonlySet<string> = new Set([
-  '統一', '大同', '中華', '第一', '台灣', '中國', '國際', '全國',
-  '中央', '國產', '上海', '大成', '中興', '國票', '大眾', '世界',
-  '全球', '國家', '第二', '中信', '台北', '南港', '大將', '國防',
+/** 2-char CJK names are an ALLOW-list, not a block-list: most 2-char stock
+ *  names are substrings of common words (高技 ⊂ 高技術, 創意 = "creativity",
+ *  統一/大同/中華 = everyday words), so auto-linking every 2-char master name
+ *  mints garbage edges. Only the distinctive high-cap 2-char names below
+ *  auto-wikify from free text; every other 2-char name links ONLY when the
+ *  source tags it by code (hint_tickers / #3). Curated rows below are never
+ *  filtered. Extend as real misses surface — bias toward precision. */
+const SAFE_SHORT_NAMES: ReadonlySet<string> = new Set([
+  '鴻海', '國巨', '台塑', '南亞', '台化', '台泥', '亞泥', '中鋼',
+  '仁寶', '友達', '華航', '長榮', '陽明', '智邦', '旺宏', '欣興',
+  '群創', '矽品', '可成', '智原', '緯創',
 ]);
 
 /** cmoney 上市上櫃 code -> gbrain exchange label. 1=上市, 2=上櫃. */
@@ -89,8 +92,8 @@ export const TICKER_ALIASES: Record<string, TickerAlias> = (() => {
     for (const surface of [m.name, m.abbr]) {
       const s = surface.trim();
       if (!s) continue;
-      // Short-name guard: skip ambiguous 2-char common words.
-      if (s.length === 2 && AMBIGUOUS_SHORT_NAMES.has(s)) continue;
+      // Short-name guard: a 2-char name auto-links only if allow-listed.
+      if (s.length === 2 && !SAFE_SHORT_NAMES.has(s)) continue;
       add(s, row);
     }
   }
