@@ -128,23 +128,32 @@ export class MetabaseStockDataSource implements StockDataSource {
 
   async getInstitutionalFlow(market: Market, date: string): Promise<InstitutionalFlow[]> {
     if (market !== 'TWSE' && market !== 'TPEX') return [];
+    // JOIN the price table for 成交量(股) so we can compute net_intensity
+    // (net shares / day volume) — the signal the heat-score institutional
+    // component actually uses. 外資買賣超 is in 張 (lots); ×1000 → shares, to
+    // match volume's unit AND the InstitutionalFlow contract ("net ... shares").
     const sql =
-      'SELECT "股票代號","股票名稱","外資買賣超" ' +
-      'FROM cmoney."日外資持股與排行" ' +
-      `WHERE toDate("日期") = '${date}' AND match("股票代號", '^[0-9]{4}$')`;
+      'SELECT f."股票代號" AS code, f."股票名稱" AS nm, f."外資買賣超" AS net_lots, ' +
+      'p."成交量(股)" AS vol ' +
+      'FROM cmoney."日外資持股與排行" AS f ' +
+      'LEFT JOIN cmoney."日收盤表排行" AS p ' +
+      '  ON f."股票代號" = p."股票代號" AND toDate(f."日期") = toDate(p."日期") ' +
+      `WHERE toDate(f."日期") = '${date}' AND match(f."股票代號", '^[0-9]{4}$')`;
     const { cols, rows } = await this.query(sql);
     const at = (n: string) => cols.indexOf(n);
     const flows: InstitutionalFlow[] = [];
     for (const r of rows) {
-      const foreign = num(r[at('外資買賣超')]); // net lots (張), +buy / -sell
+      const netShares = num(r[at('net_lots')]) * 1000; // 張 → 股
+      const vol = num(r[at('vol')]);
       flows.push({
-        ticker: String(r[at('股票代號')]),
-        name: String(r[at('股票名稱')]),
+        ticker: String(r[at('code')]),
+        name: String(r[at('nm')]),
         date,
-        foreign_net: foreign,
+        foreign_net: netShares,
         trust_net: 0, // v1: 投信 net not wired yet (cmoney."日投信明細與排行")
         dealer_net: 0, // v1: 自營 net not wired yet
-        total_net: foreign,
+        total_net: netShares,
+        net_intensity: vol > 0 ? netShares / vol : 0, // signed: net 股 / 成交股數
       });
     }
     return flows;

@@ -111,9 +111,16 @@ export async function marketHeatHandler(
   // Build per-ticker volume history by walking previous days' price dirs.
   const history = buildVolumeHistory(params.brain_dir, date, todayPrices, ctx);
 
+  // Liquidity floor: skip thinly-traded names. An illiquid small-cap whose 外資
+  // net is a large fraction of a tiny day-volume otherwise pins the
+  // institutional component at 100 and crowds the board with names no desk
+  // watches. NT$100M (1億) daily turnover ≈ the liquid universe. Tunable; a
+  // future calibration pass can lift it into config.
+  const LIQUIDITY_FLOOR_TWD = 100_000_000;
   const scored: HeatScoreOutput[] = [];
   for (const [ticker, priceSnapshot] of todayPrices) {
     if (ctx.signal.aborted) throw new Error('aborted');
+    if (priceSnapshot.close * priceSnapshot.volume < LIQUIDITY_FLOOR_TWD) continue;
     const inputs: DailyHeatInputs = {
       ticker,
       close: priceSnapshot.close,
@@ -202,7 +209,11 @@ function readFlowSnapshots(dir: string): Map<string, number> {
 function readNewsMentions(summaryPath: string): Map<string, number> {
   const out = new Map<string, number>();
   const raw = readFileSync(summaryPath, 'utf8');
-  const re = /\[\[tickers\/([A-Za-z0-9]+)\]\]\s*—\s*提及\s*(\d+)\s*次/g;
+  // Tolerant of every _summary format the news-ingest writer has shipped:
+  // `[[tickers/X]]`, bare `tickers/X`, and bare code `X` (the edge-free form).
+  // The "— 提及 N 次" suffix is what disambiguates a mention line from an
+  // article line, so the leading code shape can stay loose.
+  const re = /^-\s*(?:\[\[)?(?:tickers\/)?([A-Za-z0-9]+)(?:\]\])?\s*—\s*提及\s*(\d+)\s*次/gm;
   let m: RegExpExecArray | null;
   while ((m = re.exec(raw)) !== null) {
     const ticker = m[1]!;
