@@ -1,20 +1,30 @@
 #!/usr/bin/env bun
 /**
  * gen-ticker-pages.ts — ④ "last mile". Auto-generate a lightweight ticker node
- * for every listed stock in ticker-master.json that doesn't already have a page
- * (hand-curated watchlist pages are protected by skip-if-exists). Once every
- * stock is a node, BOTH edge classes resolve: news→個股 (from the market-wide
- * alias map) AND 族群→個股 (Layer B theme pages). The graph jumps from 16 stocks
- * to the whole market.
+ * for every listed stock in ticker-master.json. Once every stock is a node,
+ * BOTH edge classes resolve: news→個股 (market-wide alias map) AND 族群→個股
+ * (the theme pages). The graph spans the whole market.
  *
- * Each page carries 產業 + 所屬族群 ([[themes/...]]) so membership is
- * bidirectional. 題材 slugs mirror gen-concept-themes.ts; the two seed-owned tags
- * (被動元件 / CoWoS-L) map to the hand seed slugs (passive-components / cowos).
+ * 族群 linking (P2a — full concept lattice):
+ *   Each ticker lists EVERY concept group it belongs to that has a theme page
+ *   on disk, as `[[themes/<slug>]]`. We mirror the theme pages by existence —
+ *   a code links to a group iff `themes/<slug>.md` exists (so gen-concept-themes
+ *   must run FIRST). This auto-includes the seed slugs (被動元件→passive-components,
+ *   CoWoS-L→cowos) and any sub-4-member hot theme that was hand/seed-created,
+ *   without re-deriving the [4,80] selection here. Multi-group stocks (e.g. 國巨
+ *   in MLCC/濾波器/蘋果/被動元件/電容器/電感器/電阻器) bridge neighbourhoods —
+ *   that's the "weak chain" topology.
  *
- * Re-run after refreshing the data files:
- *   bun run scripts/gen-ticker-pages.ts [<brain_dir>]
+ * Idempotency:
+ *   - generated stubs (`generated: true`) are OVERWRITTEN so a re-run refreshes
+ *     their 族群 list after the theme set grows.
+ *   - hand-curated pages (no `generated: true`) are SKIPPED — never clobbered.
+ *
+ * Re-run after refreshing data files / regenerating themes:
+ *   bun run scripts/gen-concept-themes.ts [<brain_dir>]   # themes first
+ *   bun run scripts/gen-ticker-pages.ts   [<brain_dir>]   # then tickers
  */
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
 const BRAIN_DIR = process.argv[2] || 'E:\\SinoBrain-data';
@@ -26,32 +36,28 @@ interface Row { name: string; abbr: string; en: string; market: string; industry
 const groups: ConceptGroup[] = JSON.parse(readFileSync(join(ENTITIES, 'concept-groups.json'), 'utf8'));
 const master: Record<string, Row> = JSON.parse(readFileSync(join(ENTITIES, 'ticker-master.json'), 'utf8'));
 
-// --- mirror gen-concept-themes.ts selection so 族群 links resolve to real pages ---
-const THEME_KEYWORDS = ['CoWoS', '矽光子', 'CPO', 'HBM', 'ABF', '載板', '先進封裝', '重電', '散熱', '液冷', '低軌', '衛星', '機器人', '被動元件', '連接器', '矽智財', '碳化矽', '氮化鎵', '軍工', '無人機', '伺服器', '玻璃基板', 'Mini LED', 'Micro LED', '光通訊', '矽晶圓', '減重', '矽光', '第三代半導體', 'AI 伺服器', '矽晶'];
-const EXCLUDE_TAGS = new Set(['觸控面板-衛星定位系統', '通信網路-主/被動元件', '記憶體產業', '記憶體設備產業', '記憶體模組']);
-const SEED_SKIP = new Set(['被動元件', 'CoWoS-L']);
+// Tags a hand-curated seed theme owns — map to the seed slug, not slugifyTag.
 const SEED_MAP: Record<string, string> = { 被動元件: 'passive-components', 'CoWoS-L': 'cowos' };
-const MIN = 2;
-const MAX = 80;
 
 function slugifyTag(tag: string): string {
   return tag.trim().toLowerCase().replace(/[\s/]+/g, '-').replace(/[^a-z0-9一-鿿-]/g, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
 }
-function isGenTheme(g: ConceptGroup): boolean {
-  const t = g.tag.trim();
-  if (EXCLUDE_TAGS.has(t) || SEED_SKIP.has(t)) return false;
-  if (g.codes.length < MIN || g.codes.length > MAX) return false;
-  return THEME_KEYWORDS.some((k) => t.includes(k));
-}
 
-// code -> resolvable {slug, tag}[] (25 generated themes + 2 seed-mapped)
+// Theme pages that actually exist on disk (gen-concept-themes.ts ran first).
+// A ticker only links to a 族群 whose page exists, so no dangling links.
+const themesDir = join(BRAIN_DIR, 'themes');
+const existingThemeSlugs = new Set<string>(
+  existsSync(themesDir)
+    ? readdirSync(themesDir).filter((f) => f.endsWith('.md')).map((f) => f.slice(0, -3))
+    : [],
+);
+
+// code -> resolvable {slug, tag}[] for every group whose theme page exists.
 const code2themes = new Map<string, { slug: string; tag: string }[]>();
 for (const g of groups) {
   const tag = g.tag.trim();
-  let slug: string | null = null;
-  if (SEED_MAP[tag]) slug = SEED_MAP[tag];
-  else if (isGenTheme(g)) slug = slugifyTag(tag);
-  if (!slug) continue;
+  const slug = SEED_MAP[tag] ?? slugifyTag(tag);
+  if (!slug || !existingThemeSlugs.has(slug)) continue;
   for (const code of g.codes) {
     const arr = code2themes.get(code) ?? [];
     arr.push({ slug, tag });
@@ -91,21 +97,37 @@ generated: true
 `;
 }
 
+/** Is this an auto-generated stub (safe to overwrite) vs a hand-curated page? */
+function isGeneratedStub(raw: string): boolean {
+  const fm = raw.match(/^---\n([\s\S]*?)\n---\n/);
+  return !!fm && /^generated:\s*true\b/m.test(fm[1]!);
+}
+
 function main() {
   const dir = join(BRAIN_DIR, 'tickers');
   mkdirSync(dir, { recursive: true });
-  let written = 0;
-  let skipped = 0;
+  let created = 0;
+  let refreshed = 0;
+  let skippedHand = 0;
   for (const [code, m] of Object.entries(master)) {
     const path = join(dir, `${code}.md`);
     if (existsSync(path)) {
-      skipped++;
+      if (!isGeneratedStub(readFileSync(path, 'utf8'))) {
+        skippedHand++; // hand-curated — never clobber
+        continue;
+      }
+      writeFileSync(path, renderPage(code, m), 'utf8');
+      refreshed++;
       continue;
     }
     writeFileSync(path, renderPage(code, m), 'utf8');
-    written++;
+    created++;
   }
-  console.log(`ticker pages written: ${written}, skipped (exists): ${skipped}`);
+  const linked = [...code2themes.keys()].filter((c) => master[c]).length;
+  console.log(
+    `ticker pages — created: ${created}, refreshed: ${refreshed}, skipped (hand-curated): ${skippedHand}`,
+  );
+  console.log(`theme pages on disk: ${existingThemeSlugs.size}; stocks with >=1 族群 link: ${linked}`);
 }
 
 main();

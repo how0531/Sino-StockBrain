@@ -5,11 +5,15 @@
  * lightweight `themes/<slug>.md` membership pages, so `gbrain extract links`
  * builds 個股 <-> 族群 edges. The graph then knows "誰跟誰同一掛".
  *
- * Selection (題材, not industry bucket):
- *   - tag contains a 題材 keyword (THEME_KEYWORDS), AND
- *   - not in EXCLUDE_TAGS (noisy sub-buckets), AND
- *   - member count within [MIN_MEMBERS, MAX_MEMBERS] (the ceiling drops any
- *     broad industry bucket that sneaks past the keyword filter).
+ * Selection (全部概念族群, not broad industry buckets):
+ *   - member count within [MIN_MEMBERS, MAX_MEMBERS]. The floor (4) drops
+ *     fragmentary 2-3 stock sub-tags; the ceiling (80) drops the ~11 broad
+ *     GICS-style industry buckets (通信網路 107, 光電 106, 機械 106, …).
+ *   - not in EXCLUDE_TAGS (noisy mislabelled tags), and not SEED_SKIP (owned
+ *     by a hand-curated seed theme).
+ *   NO 題材-keyword gate (removed): every statementdog concept group in range
+ *   becomes a page, so the 個股↔族群 graph is comprehensive (~330 themes) — the
+ *   user wants the full concept lattice, not just the hot themes.
  *
  * Safety:
  *   - skip-if-exists: never clobber hand-curated seed themes
@@ -36,15 +40,7 @@ const master: Record<string, TickerMasterRow> = JSON.parse(
   readFileSync(join(ENTITIES, 'ticker-master.json'), 'utf8'),
 );
 
-/** 題材 keywords — a tag qualifies if it contains any of these. Curatable. */
-const THEME_KEYWORDS = [
-  'CoWoS', '矽光子', 'CPO', 'HBM', 'ABF', '載板', '先進封裝', '重電', '散熱',
-  '液冷', '低軌', '衛星', '機器人', '被動元件', '連接器', '矽智財', '碳化矽',
-  '氮化鎵', '軍工', '無人機', '伺服器', '玻璃基板', 'Mini LED', 'Micro LED',
-  '光通訊', '矽晶圓', '減重', '矽光', '第三代半導體', 'AI 伺服器', '矽晶',
-];
-
-/** Noisy sub-buckets / mislabelled tags to skip even if keyword-matched. */
+/** Noisy / mislabelled tags to skip. */
 const EXCLUDE_TAGS = new Set<string>([
   '觸控面板-衛星定位系統', '通信網路-主/被動元件', '記憶體產業',
   '記憶體設備產業', '記憶體模組',
@@ -53,8 +49,8 @@ const EXCLUDE_TAGS = new Set<string>([
 /** Tags a hand-curated seed theme already owns — skip to avoid duplicate pages. */
 const SEED_SKIP = new Set<string>(['被動元件', 'CoWoS-L']);
 
-const MIN_MEMBERS = 2;
-const MAX_MEMBERS = 80; // ceiling: drop broad industry buckets (100+).
+const MIN_MEMBERS = 4;  // floor: drop fragmentary 2-3 stock sub-tags
+const MAX_MEMBERS = 80; // ceiling: drop the ~11 broad GICS industry buckets (>80)
 
 function slugifyTag(tag: string): string {
   return tag
@@ -69,8 +65,7 @@ function slugifyTag(tag: string): string {
 function isTheme(g: ConceptGroup): boolean {
   const tag = g.tag.trim();
   if (EXCLUDE_TAGS.has(tag) || SEED_SKIP.has(tag)) return false;
-  if (g.codes.length < MIN_MEMBERS || g.codes.length > MAX_MEMBERS) return false;
-  return THEME_KEYWORDS.some((k) => tag.includes(k));
+  return g.codes.length >= MIN_MEMBERS && g.codes.length <= MAX_MEMBERS;
 }
 
 function renderPage(g: ConceptGroup, slug: string): string {
