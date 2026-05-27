@@ -213,7 +213,94 @@ Claude 自動查你的大腦回答。
 
 ---
 
-## 七、關鍵檔案地圖
+## 七、分層細節（模組 ↔ 檔案）
+
+每層的職責、實作位置、寫入產物：
+
+### ① 輸入層 — 資料源適配
+
+`src/core/data-sources/` — 介面 + 多實作，下游真實 DB 換廠商不動 handler。
+
+- `stock-data.ts` (StockDataSource 介面)：mock / twse-openapi / **metabase**(公司 ClickHouse 量價、外資、月營收) / 未來客戶 DB
+- `news-data.ts` (NewsSource 介面)：mock / rss-parse / stock-news-skill-news-data
+- bridge：`scripts/news-from-skill.ts` — 本機 skill JSON → SinoBrain schema-v1
+
+### ② 抓取層 — Pipeline Handler
+
+`src/core/minions/handlers/`：每個 handler = 一個 cron / `jobs submit` 可觸發的步驟。
+
+| Handler | 寫入 |
+|---|---|
+| `rss-news-fetch` | `news-raw/` |
+| `twse-daily-quotes` | `prices/twse/` |
+| `twse-institutional-flow` | `institutional-flow/twse/` |
+| **`fundamentals-revenue`**（剛上線） | `fundamentals/revenue/` |
+| `news-ingest` | `news/<date>/*.md`（wikify） |
+| `market-heat` | `playbooks/heat/<date>.md` |
+| `compliance-filter` | `client-prep/` 或 `playbooks/violations/` |
+
+### ③ 入庫層 — Wikify + Entity Resolution
+
+`src/core/entities/`：文字 → 圖譜的關鍵把關點。
+
+- `ticker-aliases.ts` — 3980 個 alias key + `SAFE_SHORT_NAMES` allow-list + nested-link PUA-token 護欄
+- `ticker-master.json` — 1976 檔上市櫃 master（由 `gen-stock-master.py` 從 metabase 產出）
+- `concept-groups.json` — 520 個 statementdog 概念群（題材／產業）
+- 額外護欄（住在 `news-ingest.ts`）：FANOUT_CAP=8（>8 檔不 wikify）、disclaimer tail strip
+
+### ④ 圖譜層 — GBrain Engine（上游給的）
+
+`gbrain import` 載頁 → `gbrain extract links --source db` **建邊** → PGLite `~/.gbrain/brain.pglite`。
+**`extract` 只加邊不刪邊**，改 wikify 規則必須砍 DB 重生。
+fork 只改一行：`src/core/link-extraction.ts` 的 `DIR_PATTERN`，把 tickers/sectors/themes 納入掃描。
+
+### ⑤ 內容層 — `E:\SinoBrain-data`
+
+跟程式碼**分開**的目錄；`gbrain.yml` 區分 db_tracked（進 git）vs db_only（不進 git，DB 可還原）。
+
+- **db_tracked**（人策展）：`tickers/`（1982）、`themes/`（339）、`sectors/`（3）、`playbooks/`、`client-prep/`
+- **db_only**（機器生）：`prices/`、`institutional-flow/`、`fundamentals/`、`news-raw/`、`news/`
+- 配置：`gbrain.yml`、`ops/`（emerging-themes.jsonl、themes-inventory.xlsx）
+
+### ⑥ 訊號層 — 純計算
+
+- `src/core/heat-score/compute.ts` — net_intensity（外資+投信買超 / 成交額）+ 連買 streak + 量縮量增 + 新聞密度
+- `src/core/compliance/` — Layer-1 regex (`deterministic-pass.ts`) + Layer-2 LLM judge (`llm-judge.ts`) + `rubric.ts` + `aggregate.ts` + `audit.ts`
+
+### ⑦ 產出層 — Skills（LLM-driven）
+
+`skills/` 目錄是 GBrain 自帶很多，SinoBrain 自家兩個：
+
+- `skills/daily-market-digest/` — 跑在 heat → digest 中間，寫人話日報
+- `skills/stock-news-skill/` — JSON 合約文件（實際 Python skill 在 `~/.claude/skills/stock-news-skill/`）
+
+### ⑧ 推送層 — Delivery
+
+- `client-prep/` ＝合規通過、可對外的內容池
+- `gbrain serve` — MCP server 給 Claude Desktop 直接用
+- 未來：機構 HTTP+OAuth endpoint（per-customer source 隔離）、散戶 LINE bot
+
+### ⑨ 工具層 — Generators & Scripts
+
+`scripts/`（剔除上游 GBrain 通用的，自家加的這幾支）：
+
+- `gen-stock-master.py` — metabase → `ticker-master.json`
+- `gen-concept-themes.ts` — `concept-groups.json` → 339 族群頁
+- `gen-ticker-pages.ts` — master + concepts → 1966 ticker stub
+- `reimport-graph-pages.ts` — 只重灌圖譜目錄（避開 43k 個 db_only 檔）
+- `theme-overlap.py` / `export-themes-inventory.py` — 族群重疊偵測 + Excel inventory
+- `news-from-skill.ts` — skill JSON → schema-v1 bridge
+- `daily-run.ps1` / `daily-run.sh` — 每日一鍵
+
+### ⑩ 配置層
+
+- `recipes/*.md` — 每個 handler 的使用說明（Claude 也讀）
+- `gbrain.yml` — storage 分區（db_tracked vs db_only）
+- `.env` — `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` / `METABASE_*`
+
+---
+
+## 八、關鍵檔案地圖
 
 | 路徑 | 作用 |
 |---|---|
