@@ -1220,6 +1220,11 @@ export async function registerBuiltinHandlers(worker: MinionWorker, engine: Brai
     process.stderr.write('[minion worker] fundamentals-revenue handler enabled\n');
   }
   {
+    const { fundamentalsEPSHandler } = await import('../core/minions/handlers/fundamentals-eps.ts');
+    worker.register('fundamentals-eps', fundamentalsEPSHandler);
+    process.stderr.write('[minion worker] fundamentals-eps handler enabled\n');
+  }
+  {
     const { newsIngestHandler } = await import('../core/minions/handlers/news-ingest.ts');
     worker.register('news-ingest', newsIngestHandler);
     process.stderr.write('[minion worker] news-ingest handler enabled\n');

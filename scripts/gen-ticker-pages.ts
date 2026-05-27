@@ -52,6 +52,21 @@ interface MonthlyRevenue {
   announce_date: string;    // YYYY-MM-DD
 }
 
+interface ConsensusEPS {
+  ticker: string;
+  year_month: string;
+  ttm_eps: number | null;
+  current_year_eps: number | null;
+  next_year_eps: number | null;
+  current_year_growth_pct: number | null;
+  next_year_growth_pct: number | null;
+  analyst_count: number | null;
+  analyst_count_next: number | null;
+  pe_low: number | null;
+  pe_high: number | null;
+  updated_date: string;
+}
+
 const groups: ConceptGroup[] = JSON.parse(readFileSync(join(ENTITIES, 'concept-groups.json'), 'utf8'));
 const master: Record<string, Row> = JSON.parse(readFileSync(join(ENTITIES, 'ticker-master.json'), 'utf8'));
 const PROFILES_PATH = join(ENTITIES, 'ticker-profiles.json');
@@ -59,10 +74,10 @@ const profiles: Record<string, Profile> = existsSync(PROFILES_PATH)
   ? JSON.parse(readFileSync(PROFILES_PATH, 'utf8'))
   : {};
 
-/** Latest fundamentals/revenue/<YYYY-MM>/_index.json, optional. The handler
- *  writes this alongside _summary.md on every run. Missing → 財務脈動 段 skipped. */
-function loadLatestRevenue(): { ymDir: string; byTicker: Record<string, MonthlyRevenue> } | null {
-  const dir = join(BRAIN_DIR, 'fundamentals', 'revenue');
+/** Latest fundamentals/<kind>/<YYYY-MM>/_index.json, optional. The handlers
+ *  write this alongside _summary.md on every run. Missing → section skipped. */
+function loadLatestIndex<T>(kind: 'revenue' | 'eps'): { ymDir: string; byTicker: Record<string, T> } | null {
+  const dir = join(BRAIN_DIR, 'fundamentals', kind);
   if (!existsSync(dir)) return null;
   const months = readdirSync(dir).filter((f) => /^\d{4}-\d{2}$/.test(f)).sort();
   if (!months.length) return null;
@@ -72,7 +87,8 @@ function loadLatestRevenue(): { ymDir: string; byTicker: Record<string, MonthlyR
   const data = JSON.parse(readFileSync(indexPath, 'utf8'));
   return { ymDir, byTicker: data.by_ticker ?? {} };
 }
-const latestRevenue = loadLatestRevenue();
+const latestRevenue = loadLatestIndex<MonthlyRevenue>('revenue');
+const latestEPS = loadLatestIndex<ConsensusEPS>('eps');
 
 // Tags a hand-curated seed theme owns — map to the seed slug, not slugifyTag.
 const SEED_MAP: Record<string, string> = { 被動元件: 'passive-components', 'CoWoS-L': 'cowos' };
@@ -215,19 +231,48 @@ function renderPage(code: string, m: Row): string {
     sections.push(`\n## 主要業務\n\n${businessParts.join('\n')}`);
   }
 
-  // 財務脈動 — only when the ticker reported in the latest available month.
-  // Bold YoY (the most-watched signal); MoM in parens; YTD + TTM on one line.
+  // 財務脈動 — combines monthly revenue + analyst-consensus EPS in one section.
+  // Both are monthly snapshots but different cadences (公告 ~10th vs analyst
+  // refresh), so the header lists both timestamps. Bold the headline numbers
+  // (current-month YoY for revenue, next-year forecast for EPS).
   const rev = latestRevenue?.byTicker[code];
-  if (rev && latestRevenue) {
-    const yi = fmtRevYi(rev.revenue);
-    const yoy = fmtPctSigned(rev.yoy_pct);
-    const mom = fmtPctSigned(rev.mom_pct);
-    const cum = fmtPctSigned(rev.cum_yoy_pct);
-    const ttm = fmtPctSigned(rev.ttm_yoy_pct);
-    const lines = [`> 月營收 ${latestRevenue.ymDir}（公告日 ${rev.announce_date}）`, ''];
-    if (yi) lines.push(`- 單月 ${yi}　YoY **${yoy}**　MoM ${mom}`);
-    if (cum || ttm) lines.push(`- 累計(YTD) YoY ${cum || '—'}　·　近 12 月(TTM) YoY ${ttm || '—'}`);
-    lines.push('', `詳見 [[fundamentals/revenue/${latestRevenue.ymDir}/${code}]]`);
+  const e = latestEPS?.byTicker[code];
+  if (rev || e) {
+    const lines: string[] = [];
+    const stamps: string[] = [];
+    if (rev && latestRevenue) stamps.push(`月營收 ${latestRevenue.ymDir}（公告 ${rev.announce_date}）`);
+    if (e && latestEPS) stamps.push(`機構 EPS 預估 ${latestEPS.ymDir}（更新 ${e.updated_date}）`);
+    lines.push(`> ${stamps.join('　·　')}`, '');
+
+    if (rev && latestRevenue) {
+      lines.push('**營收**');
+      const yi = fmtRevYi(rev.revenue);
+      if (yi) lines.push(`- 單月 ${yi}　YoY **${fmtPctSigned(rev.yoy_pct)}**　MoM ${fmtPctSigned(rev.mom_pct)}`);
+      lines.push(`- 累計(YTD) YoY ${fmtPctSigned(rev.cum_yoy_pct) || '—'}　·　近 12 月(TTM) YoY ${fmtPctSigned(rev.ttm_yoy_pct) || '—'}`);
+      lines.push('');
+    }
+    if (e && latestEPS) {
+      lines.push('**EPS（機構預估，括弧內為覆蓋家數）**');
+      const ttm = e.ttm_eps != null ? `${e.ttm_eps.toFixed(2)} 元` : '—';
+      const cy = e.current_year_eps != null ? `${e.current_year_eps.toFixed(2)} 元` : '—';
+      const ny = e.next_year_eps != null ? `${e.next_year_eps.toFixed(2)} 元` : '—';
+      const cyg = e.current_year_growth_pct != null ? fmtPctSigned(e.current_year_growth_pct) : '';
+      const nyg = e.next_year_growth_pct != null ? fmtPctSigned(e.next_year_growth_pct) : '';
+      const ac = e.analyst_count ?? 0;
+      const acN = e.analyst_count_next ?? 0;
+      lines.push(`- 近 4 季 EPS（實際）：${ttm}　·　今年機構估：${cy}${cyg ? `（${cyg}，${ac} 家）` : ''}`);
+      lines.push(`- **明年機構估：${ny}**${nyg ? `（${nyg}，${acN} 家）` : ''}`);
+      if (e.pe_low != null && e.pe_high != null) {
+        lines.push(`- 本益比區間：${e.pe_low.toFixed(1)}x – ${e.pe_high.toFixed(1)}x`);
+      }
+      lines.push('');
+    }
+
+    const refs: string[] = [];
+    if (rev && latestRevenue) refs.push(`[[fundamentals/revenue/${latestRevenue.ymDir}/${code}]]`);
+    if (e && latestEPS) refs.push(`[[fundamentals/eps/${latestEPS.ymDir}/${code}]]`);
+    if (refs.length) lines.push(`詳見 ${refs.join('、')}`);
+
     sections.push(`\n## 財務脈動\n\n${lines.join('\n')}`);
   }
 

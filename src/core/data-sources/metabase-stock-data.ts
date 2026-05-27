@@ -36,6 +36,7 @@ import type {
   DailyQuote,
   InstitutionalFlow,
   MonthlyRevenue,
+  ConsensusEPS,
   Market,
 } from './stock-data.ts';
 
@@ -229,6 +230,51 @@ export class MetabaseStockDataSource implements StockDataSource {
     }
     return out;
   }
+
+  async getConsensusEPS(market: Market, yearMonth?: string): Promise<ConsensusEPS[]> {
+    if (market !== 'TWSE' && market !== 'TPEX') return [];
+    const T = 'cmoney."月機構預估盈餘與EPS"';
+    let ym = yearMonth;
+    if (!ym) {
+      const r = await this.query(`SELECT max("年月") AS ym FROM ${T}`);
+      ym = r.rows.length && r.rows[0]![0] != null ? String(r.rows[0]![0]) : '';
+      if (!ym) return [];
+    }
+    if (!/^\d{6}$/.test(ym)) throw new Error(`getConsensusEPS: bad year_month "${ym}" (want YYYYMM)`);
+    const sql =
+      'SELECT "股票代號" AS code, "股票名稱" AS nm, "年月" AS ym, ' +
+      '"累計近四季EPS" AS ttm, "機構估稅後EPS(元)" AS cy, "明年機構估稅後EPS" AS ny, ' +
+      '"預估年稅後EPS成長(%)" AS cy_g, "預測機構數" AS ac, "明年預測機構數" AS ac_n, ' +
+      '"最高本益比" AS pe_h, "最低本益比" AS pe_l, toString("更新日") AS upd ' +
+      `FROM ${T} ` +
+      `WHERE "年月" = '${ym}' AND match("股票代號", '^[0-9]{4}$')`;
+    const { cols, rows } = await this.query(sql);
+    const at = (n: string) => cols.indexOf(n);
+    const out: ConsensusEPS[] = [];
+    for (const r of rows) {
+      const cy = numOrNull(r[at('cy')]);
+      const ny = numOrNull(r[at('ny')]);
+      // Headline metric: next-year growth vs current-year. Null when either
+      // side missing or current_year <= 0 (loss-makers skew the ratio).
+      const nyg = cy != null && ny != null && cy > 0 ? ((ny - cy) / cy) * 100 : null;
+      out.push({
+        ticker: String(r[at('code')]),
+        name: String(r[at('nm')]),
+        year_month: String(r[at('ym')]),
+        ttm_eps: numOrNull(r[at('ttm')]),
+        current_year_eps: cy,
+        next_year_eps: ny,
+        current_year_growth_pct: numOrNull(r[at('cy_g')]),
+        next_year_growth_pct: nyg,
+        analyst_count: numOrNull(r[at('ac')]),
+        analyst_count_next: numOrNull(r[at('ac_n')]),
+        pe_high: numOrNull(r[at('pe_h')]),
+        pe_low: numOrNull(r[at('pe_l')]),
+        updated_date: String(r[at('upd')]).slice(0, 10),
+      });
+    }
+    return out;
+  }
 }
 
 /** Parse a Metabase cell to number; NaN / null / "NaN" → 0. */
@@ -236,6 +282,18 @@ function num(v: unknown): number {
   if (typeof v === 'number') return Number.isFinite(v) ? v : 0;
   const n = parseFloat(String(v));
   return Number.isFinite(n) ? n : 0;
+}
+
+/** Same as `num`, but distinguishes missing data from a real zero by returning
+ *  null. Use for fields where 0 has analytical meaning (EPS estimates: a real
+ *  0 EPS is a different signal from "no analyst covers"). */
+function numOrNull(v: unknown): number | null {
+  if (v == null) return null;
+  if (typeof v === 'number') return Number.isFinite(v) ? v : null;
+  const s = String(v).trim();
+  if (!s || s.toLowerCase() === 'nan') return null;
+  const n = parseFloat(s);
+  return Number.isFinite(n) ? n : null;
 }
 
 /** Build 股票代號 → net shares map from a (code, net_lots) result, converting

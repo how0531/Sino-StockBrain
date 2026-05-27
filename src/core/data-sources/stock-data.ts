@@ -79,6 +79,39 @@ export interface MonthlyRevenue {
   announce_date: string;
 }
 
+/** Analyst-consensus EPS snapshot — monthly rollup of broker estimates.
+ *  Source: cmoney."月機構預估盈餘與EPS". Carries TTM actual, current-year
+ *  consensus, AND next-year consensus (the headline number for chatbot:
+ *  "明年預估 EPS"). Coverage fields (analyst counts) gate confidence —
+ *  a 1-broker estimate is not a "consensus". */
+export interface ConsensusEPS {
+  ticker: string;
+  name: string;
+  /** Snapshot month, 'YYYYMM'. */
+  year_month: string;
+  /** 累計近四季 EPS — trailing-twelve-month actual, the anchor vs forecast. */
+  ttm_eps: number | null;
+  /** 機構估稅後 EPS — current-year consensus. */
+  current_year_eps: number | null;
+  /** 明年機構估稅後 EPS — NEXT-year consensus (the headline metric). */
+  next_year_eps: number | null;
+  /** 預估年稅後 EPS 成長(%) — current-year growth implied by consensus. */
+  current_year_growth_pct: number | null;
+  /** Computed: (next_year_eps - current_year_eps) / current_year_eps * 100.
+   *  The chatbot's headline "明年成長 Top N" metric. Null when either side
+   *  is missing or current_year_eps <= 0. */
+  next_year_growth_pct: number | null;
+  /** 預測機構數 — analyst count for current-year estimate (coverage). */
+  analyst_count: number | null;
+  /** 明年預測機構數 — analyst count for next-year estimate. */
+  analyst_count_next: number | null;
+  /** 最高/最低本益比 — PE range implied by consensus. */
+  pe_high: number | null;
+  pe_low: number | null;
+  /** 更新日 'YYYY-MM-DD' — freshness anchor (newest broker update). */
+  updated_date: string;
+}
+
 export interface MarketSnapshot {
   market: Market;
   date: string;
@@ -110,6 +143,11 @@ export interface StockDataSource {
    *  metabase source implements it (mock / twse-openapi don't). `yearMonth` is
    *  'YYYYMM'; omit to let the source resolve the latest available month. */
   getMonthlyRevenue?(market: Market, yearMonth?: string): Promise<MonthlyRevenue[]>;
+
+  /** Analyst-consensus EPS snapshot (current-year + next-year forecast + TTM
+   *  actual). OPTIONAL — metabase only. `yearMonth` ('YYYYMM') matches the
+   *  cmoney snapshot month; omit for latest. */
+  getConsensusEPS?(market: Market, yearMonth?: string): Promise<ConsensusEPS[]>;
 }
 
 export interface ResolveOpts {
