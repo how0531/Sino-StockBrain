@@ -1230,6 +1230,11 @@ export async function registerBuiltinHandlers(worker: MinionWorker, engine: Brai
     process.stderr.write('[minion worker] movers-detect handler enabled\n');
   }
   {
+    const { attributionGatherHandler } = await import('../core/minions/handlers/attribution-gather.ts');
+    worker.register('attribution-gather', attributionGatherHandler);
+    process.stderr.write('[minion worker] attribution-gather handler enabled\n');
+  }
+  {
     const { newsIngestHandler } = await import('../core/minions/handlers/news-ingest.ts');
     worker.register('news-ingest', newsIngestHandler);
     process.stderr.write('[minion worker] news-ingest handler enabled\n');
