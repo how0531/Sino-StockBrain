@@ -15,6 +15,7 @@ storage:
     - themes/                    # 主題（AI 算力、CoWoS、低軌衛星、車用電子）
     - playbooks/                 # 分析師的研究筆記、每日日報草稿
     - client-prep/               # 合規預檢通過、可對外推送的內容池
+    - research-reports/          # 你/分析師寫的研究報告原始檔（ingest-research.ts 寫入）
 
   # Directories persisted via the brain database only — bulk machine-generated
   # content. .gitignored automatically by `gbrain sync`. Restorable from the DB
