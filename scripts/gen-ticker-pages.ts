@@ -40,12 +40,39 @@ interface Profile {
   website?: string; isin?: string;
 }
 
+interface MonthlyRevenue {
+  ticker: string;
+  year_month: string;       // YYYYMM
+  revenue: number;          // 元
+  yoy_pct: number;
+  mom_pct: number;
+  cum_yoy_pct: number;
+  ttm_yoy_pct: number;
+  three_month_yoy_pct: number;
+  announce_date: string;    // YYYY-MM-DD
+}
+
 const groups: ConceptGroup[] = JSON.parse(readFileSync(join(ENTITIES, 'concept-groups.json'), 'utf8'));
 const master: Record<string, Row> = JSON.parse(readFileSync(join(ENTITIES, 'ticker-master.json'), 'utf8'));
 const PROFILES_PATH = join(ENTITIES, 'ticker-profiles.json');
 const profiles: Record<string, Profile> = existsSync(PROFILES_PATH)
   ? JSON.parse(readFileSync(PROFILES_PATH, 'utf8'))
   : {};
+
+/** Latest fundamentals/revenue/<YYYY-MM>/_index.json, optional. The handler
+ *  writes this alongside _summary.md on every run. Missing → 財務脈動 段 skipped. */
+function loadLatestRevenue(): { ymDir: string; byTicker: Record<string, MonthlyRevenue> } | null {
+  const dir = join(BRAIN_DIR, 'fundamentals', 'revenue');
+  if (!existsSync(dir)) return null;
+  const months = readdirSync(dir).filter((f) => /^\d{4}-\d{2}$/.test(f)).sort();
+  if (!months.length) return null;
+  const ymDir = months[months.length - 1]!;
+  const indexPath = join(dir, ymDir, '_index.json');
+  if (!existsSync(indexPath)) return null;
+  const data = JSON.parse(readFileSync(indexPath, 'utf8'));
+  return { ymDir, byTicker: data.by_ticker ?? {} };
+}
+const latestRevenue = loadLatestRevenue();
 
 // Tags a hand-curated seed theme owns — map to the seed slug, not slugifyTag.
 const SEED_MAP: Record<string, string> = { 被動元件: 'passive-components', 'CoWoS-L': 'cowos' };
@@ -96,6 +123,21 @@ function fmtCapital(million?: number): string {
 function fmtPct(p?: number): string {
   if (p === undefined || p === null || Number.isNaN(p)) return '';
   return `${Math.round(p)}%`;
+}
+
+/** 元 → 億 (NT$ X 億). Compact: rounds to whole 億 above 100, 1dp below. */
+function fmtRevYi(yuan?: number): string {
+  if (!yuan || yuan <= 0) return '';
+  const yi = yuan / 1e8;
+  if (yi >= 100) return `NT$ ${Math.round(yi).toLocaleString('en')} 億`;
+  return `NT$ ${yi.toFixed(1)} 億`;
+}
+
+/** Signed pct with 1dp ("+17.5%" / "-1.1%"); empty when missing/NaN. */
+function fmtPctSigned(p?: number): string {
+  if (p === undefined || p === null || Number.isNaN(p)) return '';
+  const s = p > 0 ? '+' : '';
+  return `${s}${p.toFixed(1)}%`;
 }
 
 /** Frontmatter lines that exist only when the profile has data — keeps the
@@ -172,6 +214,23 @@ function renderPage(code: string, m: Row): string {
   if (businessParts.length) {
     sections.push(`\n## 主要業務\n\n${businessParts.join('\n')}`);
   }
+
+  // 財務脈動 — only when the ticker reported in the latest available month.
+  // Bold YoY (the most-watched signal); MoM in parens; YTD + TTM on one line.
+  const rev = latestRevenue?.byTicker[code];
+  if (rev && latestRevenue) {
+    const yi = fmtRevYi(rev.revenue);
+    const yoy = fmtPctSigned(rev.yoy_pct);
+    const mom = fmtPctSigned(rev.mom_pct);
+    const cum = fmtPctSigned(rev.cum_yoy_pct);
+    const ttm = fmtPctSigned(rev.ttm_yoy_pct);
+    const lines = [`> 月營收 ${latestRevenue.ymDir}（公告日 ${rev.announce_date}）`, ''];
+    if (yi) lines.push(`- 單月 ${yi}　YoY **${yoy}**　MoM ${mom}`);
+    if (cum || ttm) lines.push(`- 累計(YTD) YoY ${cum || '—'}　·　近 12 月(TTM) YoY ${ttm || '—'}`);
+    lines.push('', `詳見 [[fundamentals/revenue/${latestRevenue.ymDir}/${code}]]`);
+    sections.push(`\n## 財務脈動\n\n${lines.join('\n')}`);
+  }
+
   sections.push(`\n## 所屬族群\n\n${themeLine}`);
   sections.push(
     `\n## 觀察點 Catalysts\n\n` +

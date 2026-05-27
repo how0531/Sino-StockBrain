@@ -49,6 +49,36 @@ export interface InstitutionalFlow {
   net_intensity?: number;
 }
 
+/** Monthly revenue (月營收) — the highest-signal monthly fundamental. Cadence
+ *  differs from price/flow (published ~10th of the following month), so every
+ *  consumer must read `year_month` + `announce_date` rather than assume it
+ *  matches a trading date. Revenue figures in 元 (source 千 column ×1000);
+ *  percent fields are signed. */
+export interface MonthlyRevenue {
+  ticker: string;
+  name: string;
+  /** Reporting month, 'YYYYMM' (e.g. '202604'). */
+  year_month: string;
+  /** 單月合併營收 (元). */
+  revenue: number;
+  /** 單月合併營收年成長(%). */
+  yoy_pct: number;
+  /** 單月合併營收月變動(%). */
+  mom_pct: number;
+  /** 累計合併營收 (元, YTD). */
+  cum_revenue: number;
+  /** 累計合併營收成長(%) YoY. */
+  cum_yoy_pct: number;
+  /** 近12月累計合併營收 (元, TTM). */
+  ttm_revenue: number;
+  /** 近12月營收合併成長(%). */
+  ttm_yoy_pct: number;
+  /** 近三月合併營收年成長(%). */
+  three_month_yoy_pct: number;
+  /** 公告日 'YYYY-MM-DD' — the freshness anchor. */
+  announce_date: string;
+}
+
 export interface MarketSnapshot {
   market: Market;
   date: string;
@@ -75,6 +105,11 @@ export interface StockDataSource {
    *  Some implementations (mock) generate this alongside the daily snapshot;
    *  others (TWSE Open API) may make a separate HTTP call. */
   getInstitutionalFlow(market: Market, date: string): Promise<InstitutionalFlow[]>;
+
+  /** Latest monthly revenue (月營收) per ticker. OPTIONAL capability — only the
+   *  metabase source implements it (mock / twse-openapi don't). `yearMonth` is
+   *  'YYYYMM'; omit to let the source resolve the latest available month. */
+  getMonthlyRevenue?(market: Market, yearMonth?: string): Promise<MonthlyRevenue[]>;
 }
 
 export interface ResolveOpts {

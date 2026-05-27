@@ -35,6 +35,7 @@ import type {
   MarketSnapshot,
   DailyQuote,
   InstitutionalFlow,
+  MonthlyRevenue,
   Market,
 } from './stock-data.ts';
 
@@ -183,6 +184,50 @@ export class MetabaseStockDataSource implements StockDataSource {
       });
     }
     return flows;
+  }
+
+  async getMonthlyRevenue(market: Market, yearMonth?: string): Promise<MonthlyRevenue[]> {
+    if (market !== 'TWSE' && market !== 'TPEX') return [];
+    const T = 'cmoney."月營收(成長與達成率)"';
+    // Resolve the latest available 年月 unless the caller pinned one. 月營收
+    // lags the trading calendar (published ~10th of the following month), so
+    // "latest" is the only safe default — never assume it matches a price date.
+    let ym = yearMonth;
+    if (!ym) {
+      const r = await this.query(`SELECT max("年月") AS ym FROM ${T}`);
+      ym = r.rows.length && r.rows[0]![0] != null ? String(r.rows[0]![0]) : '';
+      if (!ym) return [];
+    }
+    if (!/^\d{6}$/.test(ym)) throw new Error(`getMonthlyRevenue: bad year_month "${ym}" (want YYYYMM)`);
+    const sql =
+      'SELECT "股票代號" AS code, "股票名稱" AS nm, "年月" AS ym, ' +
+      '"單月合併營收(千)" AS rev, "單月合併營收年成長(%)" AS yoy, ' +
+      '"單月合併營收月變動(%)" AS mom, "累計合併營收(千)" AS cum, ' +
+      '"累計合併營收成長(%)" AS cum_yoy, "近12月累計合併營收(千)" AS ttm, ' +
+      '"近12月營收合併成長(%)" AS ttm_yoy, "近三月合併營收年成長(%)" AS q_yoy, ' +
+      'toString("公告日") AS ann ' +
+      `FROM ${T} ` +
+      `WHERE "年月" = '${ym}' AND match("股票代號", '^[0-9]{4}$')`;
+    const { cols, rows } = await this.query(sql);
+    const at = (n: string) => cols.indexOf(n);
+    const out: MonthlyRevenue[] = [];
+    for (const r of rows) {
+      out.push({
+        ticker: String(r[at('code')]),
+        name: String(r[at('nm')]),
+        year_month: String(r[at('ym')]),
+        revenue: Math.round(num(r[at('rev')]) * 1000), // 千 → 元
+        yoy_pct: num(r[at('yoy')]),
+        mom_pct: num(r[at('mom')]),
+        cum_revenue: Math.round(num(r[at('cum')]) * 1000),
+        cum_yoy_pct: num(r[at('cum_yoy')]),
+        ttm_revenue: Math.round(num(r[at('ttm')]) * 1000),
+        ttm_yoy_pct: num(r[at('ttm_yoy')]),
+        three_month_yoy_pct: num(r[at('q_yoy')]),
+        announce_date: String(r[at('ann')]).slice(0, 10),
+      });
+    }
+    return out;
   }
 }
 

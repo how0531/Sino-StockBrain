@@ -33,3 +33,4 @@ storage:
     - earnings-calls/            # 法說會逐字稿
     - analyst-notes/             # 賣方研報
     - institutional-flow/        # 三大法人買賣超
+    - fundamentals/              # 月營收 / 季財報快照（fundamentals-revenue handler 寫）
