@@ -148,6 +148,11 @@ export interface StockDataSource {
    *  actual). OPTIONAL — metabase only. `yearMonth` ('YYYYMM') matches the
    *  cmoney snapshot month; omit for latest. */
   getConsensusEPS?(market: Market, yearMonth?: string): Promise<ConsensusEPS[]>;
+
+  /** Latest trading date the source has daily quotes for (YYYY-MM-DD).
+   *  OPTIONAL — used by analytics handlers (mover-detect) so they can resolve
+   *  "today" without walking back from real calendar today through holidays. */
+  getLatestQuoteDate?(market: Market): Promise<string | null>;
 }
 
 export interface ResolveOpts {

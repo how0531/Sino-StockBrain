@@ -231,6 +231,13 @@ export class MetabaseStockDataSource implements StockDataSource {
     return out;
   }
 
+  async getLatestQuoteDate(market: Market): Promise<string | null> {
+    if (market !== 'TWSE' && market !== 'TPEX') return null;
+    const r = await this.query('SELECT toString(max("日期")) AS d FROM cmoney."日收盤表排行"');
+    if (!r.rows.length || r.rows[0]![0] == null) return null;
+    return String(r.rows[0]![0]).slice(0, 10);
+  }
+
   async getConsensusEPS(market: Market, yearMonth?: string): Promise<ConsensusEPS[]> {
     if (market !== 'TWSE' && market !== 'TPEX') return [];
     const T = 'cmoney."月機構預估盈餘與EPS"';

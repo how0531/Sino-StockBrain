@@ -34,3 +34,5 @@ storage:
     - analyst-notes/             # 賣方研報
     - institutional-flow/        # 三大法人買賣超
     - fundamentals/              # 月營收 / 季財報快照（fundamentals-revenue handler 寫）
+    - movers/                    # 每日漲跌 / 量能 Top N 快照（movers-detect handler 寫；歸因層入口）
+    - attribution/               # 每日 mover 的多源證據包（attribution-gather handler 寫）
