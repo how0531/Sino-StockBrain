@@ -67,6 +67,21 @@ interface ConsensusEPS {
   updated_date: string;
 }
 
+interface AttributionEvidence {
+  type: string;
+  score: number;
+  evidence: string;
+}
+interface AttributionBundle {
+  ticker: string;
+  name: string;
+  date: string;
+  price_change_pct: number;
+  market_avg_pct: number;
+  candidates: AttributionEvidence[];
+  narrative_hints: string[];
+}
+
 const groups: ConceptGroup[] = JSON.parse(readFileSync(join(ENTITIES, 'concept-groups.json'), 'utf8'));
 const master: Record<string, Row> = JSON.parse(readFileSync(join(ENTITIES, 'ticker-master.json'), 'utf8'));
 const PROFILES_PATH = join(ENTITIES, 'ticker-profiles.json');
@@ -89,6 +104,16 @@ function loadLatestIndex<T>(kind: 'revenue' | 'eps'): { ymDir: string; byTicker:
 }
 const latestRevenue = loadLatestIndex<MonthlyRevenue>('revenue');
 const latestEPS = loadLatestIndex<ConsensusEPS>('eps');
+
+/** Latest attribution/<YYYY-MM-DD>/ dir, optional. Per-ticker JSON files
+ *  (no _index.json) so we read on-demand in renderPage. */
+function loadLatestAttributionDate(): string | null {
+  const dir = join(BRAIN_DIR, 'attribution');
+  if (!existsSync(dir)) return null;
+  const days = readdirSync(dir).filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d)).sort();
+  return days.length ? days[days.length - 1]! : null;
+}
+const latestAttributionDate = loadLatestAttributionDate();
 
 // Tags a hand-curated seed theme owns — map to the seed slug, not slugifyTag.
 const SEED_MAP: Record<string, string> = { 被動元件: 'passive-components', 'CoWoS-L': 'cowos' };
@@ -274,6 +299,32 @@ function renderPage(code: string, m: Row): string {
     if (refs.length) lines.push(`詳見 ${refs.join('、')}`);
 
     sections.push(`\n## 財務脈動\n\n${lines.join('\n')}`);
+  }
+
+  // 近期動能與可能原因 — only if attribution exists for this code on the
+  // latest mover date. Section omitted for non-movers (most tickers).
+  if (latestAttributionDate) {
+    const attrPath = join(BRAIN_DIR, 'attribution', latestAttributionDate, `${code}.json`);
+    if (existsSync(attrPath)) {
+      const a: AttributionBundle = JSON.parse(readFileSync(attrPath, 'utf8'));
+      const lines: string[] = [];
+      lines.push(`> ${a.date} 收盤 **${fmtPctSigned(a.price_change_pct)}** (大盤均 ${fmtPctSigned(a.market_avg_pct)})`);
+      lines.push('');
+      if (a.narrative_hints.length) {
+        lines.push(`提示：${a.narrative_hints.join('、')}`);
+        lines.push('');
+      }
+      const top = a.candidates.slice(0, 3);
+      if (top.length === 0) {
+        lines.push('_(無顯著證據候選)_');
+      } else {
+        for (const c of top) {
+          lines.push(`- **${c.type}** (${c.score.toFixed(2)}) — ${c.evidence}`);
+        }
+      }
+      lines.push('', `詳見 [[attribution/${a.date}/${code}]]`);
+      sections.push(`\n## 近期動能與可能原因\n\n${lines.join('\n')}`);
+    }
   }
 
   sections.push(`\n## 所屬族群\n\n${themeLine}`);
