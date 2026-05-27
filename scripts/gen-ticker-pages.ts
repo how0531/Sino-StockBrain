@@ -1,26 +1,26 @@
 #!/usr/bin/env bun
 /**
- * gen-ticker-pages.ts — ④ "last mile". Auto-generate a lightweight ticker node
- * for every listed stock in ticker-master.json. Once every stock is a node,
- * BOTH edge classes resolve: news→個股 (market-wide alias map) AND 族群→個股
- * (the theme pages). The graph spans the whole market.
+ * gen-ticker-pages.ts — auto-generate wiki-style ticker pages for every listed
+ * stock. After ticker-profiles.json landed alongside the slim master, this
+ * generator promotes the per-ticker page from a one-line stub to a full
+ * factual entry:
  *
- * 族群 linking (P2a — full concept lattice):
- *   Each ticker lists EVERY concept group it belongs to that has a theme page
- *   on disk, as `[[themes/<slug>]]`. We mirror the theme pages by existence —
- *   a code links to a group iff `themes/<slug>.md` exists (so gen-concept-themes
- *   must run FIRST). This auto-includes the seed slugs (被動元件→passive-components,
- *   CoWoS-L→cowos) and any sub-4-member hot theme that was hand/seed-created,
- *   without re-deriving the [4,80] selection here. Multi-group stocks (e.g. 國巨
- *   in MLCC/濾波器/蘋果/被動元件/電容器/電感器/電阻器) bridge neighbourhoods —
- *   that's the "weak chain" topology.
+ *   公司基本資料 / 主要業務 / 所屬族群 / 觀察點 Catalysts / 大事年表
+ *
+ * All sections are sourced from structured data (cmoney 公司基本資料 +
+ * statementdog concept groups), so NO LLM is invoked here. Narrative sections
+ * (e.g. "近期動態" summarising news flow) are intentionally left out — those
+ * belong to a separate LLM pass that must run through compliance-filter.
+ *
+ * 族群 linking — each ticker lists every concept group it belongs to that has
+ * a theme page on disk, as `[[themes/<slug>]]`. Mirror by existence — code →
+ * group iff `themes/<slug>.md` exists, so gen-concept-themes MUST run first.
  *
  * Idempotency:
- *   - generated stubs (`generated: true`) are OVERWRITTEN so a re-run refreshes
- *     their 族群 list after the theme set grows.
- *   - hand-curated pages (no `generated: true`) are SKIPPED — never clobbered.
+ *   - `generated: true` pages are OVERWRITTEN (a re-run refreshes the data).
+ *   - hand-curated pages (frontmatter without `generated: true`) are SKIPPED.
  *
- * Re-run after refreshing data files / regenerating themes:
+ * Re-run sequence:
  *   bun run scripts/gen-concept-themes.ts [<brain_dir>]   # themes first
  *   bun run scripts/gen-ticker-pages.ts   [<brain_dir>]   # then tickers
  */
@@ -32,9 +32,20 @@ const ENTITIES = join(import.meta.dir, '..', 'src', 'core', 'entities');
 
 interface ConceptGroup { tag: string; codes: string[]; }
 interface Row { name: string; abbr: string; en: string; market: string; industry: string; }
+interface Profile {
+  full_name?: string; industry?: string; industry_position?: string;
+  business?: string; focus?: string; listed_date?: string;
+  chairman?: string; ceo?: string; spokesperson?: string;
+  employees?: number; capital_million?: number; export_ratio?: number;
+  website?: string; isin?: string;
+}
 
 const groups: ConceptGroup[] = JSON.parse(readFileSync(join(ENTITIES, 'concept-groups.json'), 'utf8'));
 const master: Record<string, Row> = JSON.parse(readFileSync(join(ENTITIES, 'ticker-master.json'), 'utf8'));
+const PROFILES_PATH = join(ENTITIES, 'ticker-profiles.json');
+const profiles: Record<string, Profile> = existsSync(PROFILES_PATH)
+  ? JSON.parse(readFileSync(PROFILES_PATH, 'utf8'))
+  : {};
 
 // Tags a hand-curated seed theme owns — map to the seed slug, not slugifyTag.
 const SEED_MAP: Record<string, string> = { 被動元件: 'passive-components', 'CoWoS-L': 'cowos' };
@@ -69,32 +80,115 @@ function exch(market: string): string {
   return market === '2' ? 'TPEX' : 'TWSE';
 }
 
+/** YAML-safe double-quoted string (handles ":" "\\" `"` in CJK fields like 總裁:魏哲家). */
+function yq(v: string): string {
+  return JSON.stringify(v);
+}
+
+/** "NT$ 2,593 億" — capital_million is the cmoney column "實收資本額(百萬)". */
+function fmtCapital(million?: number): string {
+  if (!million || million <= 0) return '';
+  const yi = million / 100;
+  if (yi >= 1) return `NT$ ${Math.round(yi).toLocaleString('en')} 億`;
+  return `NT$ ${Math.round(million).toLocaleString('en')} 百萬`;
+}
+
+function fmtPct(p?: number): string {
+  if (p === undefined || p === null || Number.isNaN(p)) return '';
+  return `${Math.round(p)}%`;
+}
+
+/** Frontmatter lines that exist only when the profile has data — keeps the
+ *  YAML compact and lets downstream `key in frontmatter` mean something. */
+function buildFrontmatter(code: string, m: Row, p: Profile): string {
+  const lines: string[] = [
+    'type: ticker',
+    `slug: tickers/${code}`,
+    `title: ${yq(`${m.name} (${code})`)}`,
+    `ticker: "${code}"`,
+    `name: ${yq(m.name)}`,
+    `exchange: ${exch(m.market)}`,
+    'market: TW',
+    `industry: ${yq(m.industry || p.industry || '')}`,
+  ];
+  if (p.full_name) lines.push(`full_name: ${yq(p.full_name)}`);
+  if (p.industry_position) lines.push(`industry_position: ${yq(p.industry_position)}`);
+  if (p.listed_date) lines.push(`listed_date: ${p.listed_date}`);
+  if (p.isin) lines.push(`isin: ${p.isin}`);
+  if (p.website) lines.push(`website: ${yq(p.website)}`);
+  lines.push('generated: true');
+  return lines.join('\n');
+}
+
 function renderPage(code: string, m: Row): string {
+  const p: Profile = profiles[code] ?? {};
   const themes = code2themes.get(code) ?? [];
   const themeLine = themes.length
     ? themes.map((t) => `[[themes/${t.slug}]] (${t.tag})`).join('、')
-    : '（暫無題材族群歸屬）';
-  return `---
-type: ticker
-slug: tickers/${code}
-title: "${m.name} (${code})"
-ticker: "${code}"
-name: "${m.name}"
-exchange: ${exch(m.market)}
-market: TW
-industry: "${m.industry}"
-generated: true
----
+    : '（暫無題材族群歸屬，可能未在 statementdog 概念股清單上）';
 
-# ${m.name} (${code})
+  // Lead — prefer 產業地位 (the gold one-liner), fall back to 營業焦點, else generic.
+  const lead = p.industry_position || p.focus || `${m.industry || '上市公司'}（自動生成節點）`;
 
-> 自動生成的個股節點（來源：cmoney 上市櫃公司基本資料 + statementdog 族群）。
-> 基本面、籌碼、催化劑、投資觀點請人工或後續 pipeline 補在這之上。
+  // 公司基本資料 — assemble line by line so missing fields drop cleanly.
+  const basicLines: string[] = [];
+  if (p.full_name) basicLines.push(`- 公司全名：${p.full_name}`);
+  basicLines.push(`- 產業：${m.industry || p.industry || '—'}`);
+  if (p.listed_date) basicLines.push(`- 上市日期：${p.listed_date}`);
+  const exec: string[] = [];
+  if (p.chairman) exec.push(`董事長：${p.chairman}`);
+  if (p.ceo && p.ceo !== p.chairman) exec.push(`總經理：${p.ceo}`);
+  if (exec.length) basicLines.push(`- ${exec.join('　·　')}`);
+  if (p.spokesperson) basicLines.push(`- 發言人：${p.spokesperson}`);
+  const capLine: string[] = [];
+  const cap = fmtCapital(p.capital_million);
+  if (cap) capLine.push(`實收資本額：${cap}`);
+  if (p.employees && p.employees > 0) capLine.push(`員工 ${p.employees.toLocaleString('en')} 人`);
+  const pct = fmtPct(p.export_ratio);
+  if (pct) capLine.push(`外銷比重 ${pct}`);
+  if (capLine.length) basicLines.push(`- ${capLine.join('　·　')}`);
+  if (p.website) basicLines.push(`- 網址：${p.website}`);
 
-**產業**：${m.industry || '—'}
+  // 主要業務 — cmoney 經營項目 + 營業焦點. If both absent, omit section.
+  const businessParts: string[] = [];
+  if (p.business) businessParts.push(`> ${p.business}`);
+  if (p.focus && p.focus !== p.industry_position) {
+    businessParts.push(`\n營業焦點：${p.focus}`);
+  }
 
-**所屬族群**：${themeLine}
-`;
+  // 大事年表 — auto only the listing event; hand-curated milestones append later.
+  const timeline: string[] = [];
+  if (p.listed_date) {
+    const venue = m.market === '2' ? '上櫃' : '上市';
+    timeline.push(`- ${p.listed_date}　${venue}掛牌`);
+  }
+
+  const sections: string[] = [];
+  sections.push(`# ${m.name} (${code})`);
+  sections.push(`\n> ${lead}`);
+  if (basicLines.length) {
+    sections.push(`\n## 公司基本資料\n\n${basicLines.join('\n')}`);
+  }
+  if (businessParts.length) {
+    sections.push(`\n## 主要業務\n\n${businessParts.join('\n')}`);
+  }
+  sections.push(`\n## 所屬族群\n\n${themeLine}`);
+  sections.push(
+    `\n## 觀察點 Catalysts\n\n` +
+      `- 每月 10 日前：月營收公告\n` +
+      `- 季度法說會（通常 1/4/7/10 月）\n` +
+      (themes.length
+        ? `- 所屬題材觸發：${themes.slice(0, 3).map((t) => `[[themes/${t.slug}]]`).join('、')}`
+        : `- 同產業（${m.industry || '—'}）動態`),
+  );
+  if (timeline.length) {
+    sections.push(`\n## 大事年表\n\n${timeline.join('\n')}`);
+  }
+  sections.push(
+    `\n---\n*此頁由 \`gen-ticker-pages.ts\` 自動生成；要客製化請從 frontmatter 移除 \`generated: true\` 後手動編輯，重生時不會被覆蓋。*`,
+  );
+
+  return `---\n${buildFrontmatter(code, m, p)}\n---\n\n${sections.join('\n')}\n`;
 }
 
 /** Is this an auto-generated stub (safe to overwrite) vs a hand-curated page? */
