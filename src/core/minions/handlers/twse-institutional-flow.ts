@@ -9,10 +9,11 @@
  *
  * Why this matters: institutional flow is the user's #1 heat signal. Foreign
  * buy-sell tends to lead price moves by 1-3 days; trust (投信) flow signals
- * mid-frequency rotation. 自營 (dealer) is EXCLUDED — mostly hedging /
- * market-making noise. 投信 here is ALL-投信 (incl. passive ETF 申購買回); the
- * snapshot body flags that 權值股 / ETF-component numbers are index-rebalance-
- * driven, not manager conviction. total_net = 外資 + 投信.
+ * mid-frequency rotation. 自營 (dealer) uses 自行買賣 ONLY — 避險 leg is
+ * structurally driven by warrant/option market-making and excluded. 投信 here
+ * is ALL-投信 (incl. passive ETF 申購買回); the snapshot body flags that
+ * 權值股 / ETF-component numbers are index-rebalance-driven, not manager
+ * conviction. total_net = 外資 + 投信 + 自營(自行買賣).
  *
  * Mock vs real: defaults to `source=mock` until the customer's ticker DB
  * lands. Mock data is correlated with the matching daily-quotes output for
@@ -171,13 +172,14 @@ total_net: ${flow.total_net}
 net_intensity: ${flow.net_intensity ?? 0}
 ---
 
-# ${flow.name} (${flow.ticker}) — 法人買賣超 ${flow.date}
+# ${flow.name} (${flow.ticker}) — 三大法人買賣超 ${flow.date}
 
 - 外資及陸資：${fmtNet(flow.foreign_net)} 股
 - 投信：${fmtNet(flow.trust_net)} 股
-- 合計（外資＋投信）：${fmtNet(flow.total_net)} 股 (強度 ${((flow.net_intensity ?? 0) * 100).toFixed(2)}% of vol)
+- 自營商（自行買賣）：${fmtNet(flow.dealer_net)} 股
+- 合計（三大法人）：${fmtNet(flow.total_net)} 股 (強度 ${((flow.net_intensity ?? 0) * 100).toFixed(2)}% of vol)
 
-> 註：自營商已排除（避險／造市雜訊）。投信為全投信，含 ETF 申購買回等被動流；金融股／ETF 成分股的投信數字主要反映指數再平衡，解讀權值股需留意。
+> 註：自營商僅取「自行買賣」（真實 prop bet），「避險」leg 已排除（warrant／option 造市結構性反向流，非方向性訊號）。投信為全投信，含 ETF 申購買回等被動流；金融股／ETF 成分股的投信數字主要反映指數再平衡，解讀權值股需留意。
 
 關聯：[[tickers/${flow.ticker}]]、[[prices/twse/${flow.date}/${flow.ticker}]]
 `;
@@ -194,7 +196,7 @@ function renderSummary(
   const topOutflow = sorted.slice(-10).reverse();
 
   const fmtRow = (r: InstitutionalFlow): string =>
-    `- [[tickers/${r.ticker}]] ${r.name} — 合計（外資＋投信）${fmtNet(r.total_net)} 股（外資 ${fmtNet(r.foreign_net)}, 投信 ${fmtNet(r.trust_net)}）`;
+    `- [[tickers/${r.ticker}]] ${r.name} — 三大法人合計 ${fmtNet(r.total_net)} 股（外資 ${fmtNet(r.foreign_net)}, 投信 ${fmtNet(r.trust_net)}, 自營(自行) ${fmtNet(r.dealer_net)}）`;
 
   const writtenLinks = written.map(fmtRow).join('\n');
 
@@ -206,7 +208,7 @@ market: TWSE
 source: ${sourceName}
 ---
 
-# TWSE ${date} 法人買賣超 Summary（外資＋投信，自營排除）
+# TWSE ${date} 三大法人買賣超 Summary（外資＋投信＋自營自行買賣）
 
 - 總筆數：${all.length}
 - 寫入 watchlist 筆數：${written.length}

@@ -140,10 +140,15 @@ export class MetabaseStockDataSource implements StockDataSource {
 
   async getInstitutionalFlow(market: Market, date: string): Promise<InstitutionalFlow[]> {
     if (market !== 'TWSE' && market !== 'TPEX') return [];
-    // Base query: 外資買賣超 (張) + 成交量(股) for net_intensity. The 外資 table
-    // is near-universe so we drive the row set from it and LEFT JOIN price for
-    // vol. 外資買賣超 is in 張 (lots); ×1000 → shares, to match volume's unit
-    // AND the InstitutionalFlow contract ("net ... shares").
+    // Three legs, three single-table queries merged in JS (faster than ClickHouse
+    // JOIN over 1900+ tickers). All `*買賣超` columns are in 張 (lots), ×1000
+    // → shares to match the InstitutionalFlow contract.
+    //
+    // 自營 (dealer): we use 「自行買賣」 ONLY — not the combined `自營商買賣超`.
+    // The combined number folds in 避險 (option/warrant market-making hedge
+    // flow), which is structurally large and reactive to derivatives positions
+    // not directional bets — that's why the old impl dropped dealer entirely.
+    // 自行買賣 is the real proprietary bet leg and IS a signal worth keeping.
     const foreignSql =
       'SELECT f."股票代號" AS code, f."股票名稱" AS nm, f."外資買賣超" AS net_lots, ' +
       'p."成交量(股)" AS vol ' +
@@ -151,27 +156,32 @@ export class MetabaseStockDataSource implements StockDataSource {
       'LEFT JOIN cmoney."日收盤表排行" AS p ' +
       '  ON f."股票代號" = p."股票代號" AND toDate(f."日期") = toDate(p."日期") ' +
       `WHERE toDate(f."日期") = '${date}' AND match(f."股票代號", '^[0-9]{4}$')`;
-    // 投信 net (張) — single-table, date-filtered, cheap. Merged in JS by
-    // 股票代號 to avoid a heavy ClickHouse JOIN. 自營 deliberately not queried.
     const trustSql =
       'SELECT "股票代號" AS code, "投信買賣超" AS net_lots ' +
       'FROM cmoney."日投信明細與排行" ' +
       `WHERE toDate("日期") = '${date}' AND match("股票代號", '^[0-9]{4}$')`;
+    const dealerSql =
+      'SELECT "股票代號" AS code, "自營商買賣超(自行買賣)" AS net_lots ' +
+      'FROM cmoney."日自營商進出排行" ' +
+      `WHERE toDate("日期") = '${date}' AND match("股票代號", '^[0-9]{4}$')`;
 
-    const [foreignRes, trustRes] = await Promise.all([
+    const [foreignRes, trustRes, dealerRes] = await Promise.all([
       this.query(foreignSql),
       this.query(trustSql),
+      this.query(dealerSql),
     ]);
 
     const trustByCode = lotsToSharesMap(trustRes);
+    const dealerByCode = lotsToSharesMap(dealerRes);
 
     const at = (n: string) => foreignRes.cols.indexOf(n);
     const flows: InstitutionalFlow[] = [];
     for (const r of foreignRes.rows) {
       const code = String(r[at('code')]);
-      const foreignShares = Math.round(num(r[at('net_lots')]) * 1000); // 張 → 股
+      const foreignShares = Math.round(num(r[at('net_lots')]) * 1000);
       const trustShares = trustByCode.get(code) ?? 0;
-      const totalShares = foreignShares + trustShares; // 自營 excluded by design
+      const dealerShares = dealerByCode.get(code) ?? 0; // 自行買賣 only
+      const totalShares = foreignShares + trustShares + dealerShares;
       const vol = num(r[at('vol')]);
       flows.push({
         ticker: code,
@@ -179,9 +189,9 @@ export class MetabaseStockDataSource implements StockDataSource {
         date,
         foreign_net: foreignShares,
         trust_net: trustShares,
-        dealer_net: 0, // 自營 excluded: hedging / market-making noise
+        dealer_net: dealerShares,
         total_net: totalShares,
-        net_intensity: vol > 0 ? totalShares / vol : 0, // signed: (外資+投信) net 股 / 成交股數
+        net_intensity: vol > 0 ? totalShares / vol : 0, // signed: 三大法人 net 股 / 成交股數
       });
     }
     return flows;

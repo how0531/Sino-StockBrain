@@ -190,14 +190,13 @@ function buildEvidence(args: {
     let evidence: string;
     if (aligned >= 0) {
       evidence =
-        `外資+投信合計 net ${formatShares(f.total_net)} 股 (強度 ${(intensity * 100).toFixed(1)}%)，` +
-        `外資 ${formatShares(f.foreign_net)}，投信 ${formatShares(f.trust_net)}`;
-      if (intensity > 0.05) hints.push('外資/投信買盤強');
+        `三大法人 net ${formatShares(f.total_net)} 股 (強度 ${(intensity * 100).toFixed(1)}%)：` +
+        `外資 ${formatShares(f.foreign_net)}，投信 ${formatShares(f.trust_net)}，自營(自行) ${formatShares(f.dealer_net)}`;
+      if (intensity > 0.05) hints.push('三大法人買盤強');
     } else {
-      // Contrarian — keep on record but score 0 so it doesn't claim causation.
       evidence =
-        `逆勢：外資+投信 net ${formatShares(f.total_net)} 股 (強度 ${(intensity * 100).toFixed(1)}%) 與股價方向相反，` +
-        `非因法人推動`;
+        `逆勢：三大法人 net ${formatShares(f.total_net)} 股 (強度 ${(intensity * 100).toFixed(1)}%) 與股價方向相反，` +
+        `非因法人推動；外資 ${formatShares(f.foreign_net)}，投信 ${formatShares(f.trust_net)}，自營(自行) ${formatShares(f.dealer_net)}`;
       hints.push('法人逆勢 (散戶推動)');
     }
     if (score >= 0.05 || aligned < 0) { // skip near-zero aligned, but keep contrarian as hint
